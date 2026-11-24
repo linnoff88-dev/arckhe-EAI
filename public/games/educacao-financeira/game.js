@@ -199,7 +199,7 @@
             desc: 'O que fazer para se divertir?',
             options: [
                 { text: 'Parque gratuito (R$ 0)', cost: 0, category: 'necessidades', feedback: 'Diversao nao precisa custar caro!' },
-                { text: 'Cinema + lanche (R$ 80)', cost: 80, category: 'desejos', feedback: 'Lazer faz bem, com moderacao.' },
+                { text: 'CARCKHÉ + lanche (R$ 80)', cost: 80, category: 'desejos', feedback: 'Lazer faz bem, com moderacao.' },
                 { text: 'Show + balada (R$ 250)', cost: 250, category: 'desejos', feedback: 'Diversao cara! Sera que vale?' }
             ]
         },

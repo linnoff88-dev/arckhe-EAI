@@ -36,15 +36,15 @@ export function Header() {
             </div>
           </Link>
 
-          {/* INEMA.CLUB */}
+          {/* ARCKHÉ AI */}
           <a
-            href="https://inema.club"
+            href="https://ARCKHÉ AI"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 hover:bg-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300"
           >
             <span className="text-lg">🌊</span>
-            <span className="font-semibold text-sm hidden sm:inline">INEMA.CLUB</span>
+            <span className="font-semibold text-sm hidden sm:inline">ARCKHÉ AI</span>
           </a>
         </div>
 

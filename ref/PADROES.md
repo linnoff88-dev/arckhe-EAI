@@ -36,7 +36,7 @@
 ### Elementos da Barra
 | Posição | Elemento | Link/Ação |
 |---------|----------|-----------|
-| Esquerda | 🌊 INEMA.CLUB | https://inema.club (nova aba) |
+| Esquerda | 🌊 ARCKHÉ AI | https://ARCKHÉ AI (nova aba) |
 | Esquerda | 🎮 EAI Games | / (página inicial) |
 | Direita | 📤 Compartilhar | Menu de compartilhamento |
 
@@ -352,7 +352,7 @@ function loadState() {
 - [ ] `eai-header.js` incluído (antes de `</body>`)
 - [ ] Sistema de recompensas implementado (coins, diamonds, gold)
 - [ ] Baú do tesouro funcionando
-- [ ] Barra superior com links (INEMA.CLUB, EAI, Compartilhar)
+- [ ] Barra superior com links (ARCKHÉ AI, EAI, Compartilhar)
 - [ ] Design responsivo
 - [ ] Cores seguindo paleta da categoria
 - [ ] Feedback visual para acertos/erros

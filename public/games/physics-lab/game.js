@@ -18,7 +18,7 @@ const GameData = {
   labs: [
     { id: 'mechanics', name: 'Mecânica', icon: '⚙️', color: '#4CAF50', levels: 50, unlockLevel: 0,
       topics: ['Movimento', 'Força', 'Energia', 'Momentum', 'Gravidade'] },
-    { id: 'kinematics', name: 'Cinemática', icon: '🚀', color: '#2196F3', levels: 50, unlockLevel: 10,
+    { id: 'kARCKHÉtics', name: 'Cinemática', icon: '🚀', color: '#2196F3', levels: 50, unlockLevel: 10,
       topics: ['MRU', 'MRUV', 'Queda Livre', 'Lançamento'] },
     { id: 'dynamics', name: 'Dinâmica', icon: '💪', color: '#FF9800', levels: 50, unlockLevel: 20,
       topics: ['Leis de Newton', 'Atrito', 'Força Resultante'] },
@@ -81,7 +81,7 @@ const PhysicsProblems = {
     const diff = Math.min(10, Math.floor(level / 5) + 1);
     switch(labId) {
       case 'mechanics': return this.mechanics(diff);
-      case 'kinematics': return this.kinematics(diff);
+      case 'kARCKHÉtics': return this.kARCKHÉtics(diff);
       case 'dynamics': return this.dynamics(diff);
       case 'energy': return this.energy(diff);
       case 'waves': return this.waves(diff);
@@ -131,7 +131,7 @@ const PhysicsProblems = {
     return { question, options, correctIndex: options.indexOf(answer), answer };
   },
 
-  kinematics(diff) {
+  kARCKHÉtics(diff) {
     const types = ['mru', 'mruv', 'freefall'];
     const type = types[Math.floor(Math.random() * types.length)];
     let question, answer, options;

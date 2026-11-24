@@ -1,5 +1,5 @@
 // EAI Games Header Component
-// Adds INEMA.CLUB link, EAI link, and Share button to all games
+// Adds ARCKHÉ AI link, EAI link, and Share button to all games
 
 (function() {
     // Create header styles
@@ -49,11 +49,11 @@
             transform: scale(1.05);
         }
 
-        .eai-link-inema {
+        .eai-link-ARCKHÉ {
             background: linear-gradient(135deg, #06B6D4, #0891B2);
         }
 
-        .eai-link-inema:hover {
+        .eai-link-ARCKHÉ:hover {
             background: linear-gradient(135deg, #22D3EE, #06B6D4);
         }
 
@@ -210,11 +210,11 @@
     header.className = 'eai-top-bar';
     header.innerHTML = `
         <div class="eai-top-links">
-            <a href="https://inema.club" target="_blank" class="eai-link eai-link-inema">
+            <a href="https://ARCKHÉ AI" target="_blank" class="eai-link eai-link-ARCKHÉ">
                 <span style="font-size: 1.1rem;">🌊</span>
-                <span class="text">INEMA.CLUB</span>
+                <span class="text">ARCKHÉ AI</span>
             </a>
-            <a href="https://eai.inema.club/" class="eai-link eai-link-home">
+            <a href="https://eai.ARCKHÉ AI/" class="eai-link eai-link-home">
                 <span style="font-size: 1.1rem;">🎮</span>
                 <span class="text">EAI Games</span>
             </a>

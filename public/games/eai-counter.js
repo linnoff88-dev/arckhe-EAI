@@ -6,10 +6,10 @@
 // Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyCYurXxeGx6bOb7hgm2rwk09NI4TN8CFcM",
-  authDomain: "inematds-80d25.firebaseapp.com",
-  databaseURL: "https://inematds-80d25-default-rtdb.firebaseio.com",
-  projectId: "inematds-80d25",
-  storageBucket: "inematds-80d25.firebasestorage.app",
+  authDomain: "linnoff88-dev-80d25.firebaseapp.com",
+  databaseURL: "https://linnoff88-dev-80d25-default-rtdb.firebaseio.com",
+  projectId: "linnoff88-dev-80d25",
+  storageBucket: "linnoff88-dev-80d25.firebasestorage.app",
   messagingSenderId: "807705373058",
   appId: "1:807705373058:web:cd5ed3acfeb4a3eef6c79b"
 };

@@ -1058,7 +1058,7 @@ docker (for local PostgreSQL)
 
 ```bash
 # Clone repository
-git clone git@github.com:inematds/EAI.git
+git clone git@github.com:linnoff88-dev/EAI.git
 cd EAI
 
 # Install dependencies
