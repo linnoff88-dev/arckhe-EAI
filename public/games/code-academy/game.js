@@ -36,15 +36,15 @@ const CHALLENGES = {
     { q: 'Como imprimir "Olá" em Python?', a: ['print("Olá")', 'echo "Olá"', 'console.log("Olá")', 'System.out.print("Olá")'], correct: 0 },
     { q: 'Qual operador define potência em Python?', a: ['**', '^', 'pow', '//'], correct: 0 },
     { q: 'Como criar uma lista em Python?', a: ['lista = []', 'lista = {}', 'lista = ()', 'list lista'], correct: 0 },
-    { q: 'Qual função retorna o tamanho de uma lista?', a: ['len()', 'size()', 'length()', 'count()'], correct: 0 },
-    { q: 'Como definir uma função em Python?', a: ['def funcao():', 'function funcao():', 'func funcao():', 'void funcao():'], correct: 0 },
+    { q: 'Qual funçêo retorna o tamanho de uma lista?', a: ['len()', 'size()', 'length()', 'count()'], correct: 0 },
+    { q: 'Como definir uma funçêo em Python?', a: ['def funcao():', 'function funcao():', 'func funcao():', 'void funcao():'], correct: 0 },
     { q: 'O que faz "range(5)"?', a: ['Gera 0,1,2,3,4', 'Gera 1,2,3,4,5', 'Gera 0,1,2,3,4,5', 'Erro'], correct: 0 }
   ],
   1: [ // JavaScript
     { q: 'Como declarar uma variável em JS moderno?', a: ['let x = 5', 'var x = 5', 'int x = 5', 'x := 5'], correct: 0 },
     { q: 'Qual método adiciona item ao final do array?', a: ['push()', 'append()', 'add()', 'insert()'], correct: 0 },
     { q: 'Como criar uma arrow function?', a: ['() => {}', 'function() {}', '-> {}', 'lambda: {}'], correct: 0 },
-    { q: 'O que é "===" em JavaScript?', a: ['Igualdade estrita', 'Atribuição', 'Igualdade fraca', 'Comparação'], correct: 0 },
+    { q: 'O que é "===" em JavaScript?', a: ['Igualdade estrita', 'Atribuiçêo', 'Igualdade fraca', 'Comparaçêo'], correct: 0 },
     { q: 'Como selecionar elemento por ID no DOM?', a: ['document.getElementById()', 'document.querySelector()', 'document.getElement()', '$()'], correct: 0 }
   ],
   2: [ // HTML/CSS
@@ -58,12 +58,12 @@ const CHALLENGES = {
     { q: 'Como declarar um método main em Java?', a: ['public static void main(String[] args)', 'void main()', 'def main():', 'function main()'], correct: 0 },
     { q: 'Qual palavra-chave cria objeto?', a: ['new', 'create', 'make', 'instance'], correct: 0 },
     { q: 'Como criar array em Java?', a: ['int[] arr = new int[5]', 'arr = []', 'array arr', 'int arr[][]'], correct: 0 },
-    { q: 'O que é uma classe em Java?', a: ['Template para objetos', 'Variável', 'Função', 'Loop'], correct: 0 }
+    { q: 'O que é uma classe em Java?', a: ['Template para objetos', 'Variável', 'Funçêo', 'Loop'], correct: 0 }
   ],
   4: [ // C/C++
     { q: 'Qual é o header para input/output em C?', a: ['<stdio.h>', '<iostream>', '<io.h>', '<input.h>'], correct: 0 },
     { q: 'Como alocar memória dinamicamente em C?', a: ['malloc()', 'new', 'alloc()', 'memory()'], correct: 0 },
-    { q: 'O que é um ponteiro?', a: ['Variável que armazena endereço', 'Tipo de dado', 'Função', 'Loop'], correct: 0 },
+    { q: 'O que é um ponteiro?', a: ['Variável que armazena endereço', 'Tipo de dado', 'Funçêo', 'Loop'], correct: 0 },
     { q: 'Qual operador acessa membro via ponteiro?', a: ['->', '.', '::', '&'], correct: 0 }
   ],
   5: [ // SQL
@@ -80,9 +80,9 @@ const CHALLENGES = {
   ],
   7: [ // Algoritmos
     { q: 'Qual a complexidade do Bubble Sort?', a: ['O(n²)', 'O(n)', 'O(log n)', 'O(n log n)'], correct: 0 },
-    { q: 'O que é busca binária?', a: ['Divisão e conquista em lista ordenada', 'Busca linear', 'Busca aleatória', 'Busca em grafo'], correct: 0 },
+    { q: 'O que é busca binária?', a: ['Divisêo e conquista em lista ordenada', 'Busca linear', 'Busca aleatória', 'Busca em grafo'], correct: 0 },
     { q: 'Qual algoritmo tem O(n log n)?', a: ['Merge Sort', 'Bubble Sort', 'Selection Sort', 'Insertion Sort'], correct: 0 },
-    { q: 'O que é recursão?', a: ['Função que chama a si mesma', 'Loop infinito', 'Estrutura de dados', 'Tipo de variável'], correct: 0 }
+    { q: 'O que é recursêo?', a: ['Funçêo que chama a si mesma', 'Loop infinito', 'Estrutura de dados', 'Tipo de variável'], correct: 0 }
   ],
   8: [ // Estruturas de Dados
     { q: 'O que é uma pilha (stack)?', a: ['LIFO - Last In First Out', 'FIFO - First In First Out', 'Acesso aleatório', 'Lista ordenada'], correct: 0 },
@@ -91,8 +91,8 @@ const CHALLENGES = {
     { q: 'O que é hash table?', a: ['Estrutura chave-valor', 'Lista ordenada', 'Árvore balanceada', 'Pilha especial'], correct: 0 }
   ],
   9: [ // DevOps
-    { q: 'O que é Docker?', a: ['Plataforma de containers', 'Linguagem de programação', 'Banco de dados', 'Framework web'], correct: 0 },
-    { q: 'O que é CI/CD?', a: ['Integração e Deploy Contínuos', 'Linguagem de marcação', 'Tipo de servidor', 'Protocolo de rede'], correct: 0 },
+    { q: 'O que é Docker?', a: ['Plataforma de containers', 'Linguagem de programaçêo', 'Banco de dados', 'Framework web'], correct: 0 },
+    { q: 'O que é CI/CD?', a: ['Integraçêo e Deploy Contínuos', 'Linguagem de marcaçêo', 'Tipo de servidor', 'Protocolo de rede'], correct: 0 },
     { q: 'O que é Kubernetes?', a: ['Orquestrador de containers', 'Sistema operacional', 'Banco de dados', 'Linguagem'], correct: 0 },
     { q: 'O que é um pipeline?', a: ['Sequência automatizada de tarefas', 'Tipo de servidor', 'Protocolo', 'Container'], correct: 0 }
   ]

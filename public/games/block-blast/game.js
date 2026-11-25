@@ -125,9 +125,9 @@ class BlockBlastGame {
     this.tutorialPage = 0;
     this.tutorialPages = [
       { title: 'Bem-vindo!', lines: ['Arraste os blocos para o tabuleiro!', 'Preencha linhas ou colunas', 'para limpá-las e pontuar!'], emoji: '🧱' },
-      { title: 'Combos', lines: ['Limpe várias linhas de uma vez!', 'Quanto mais linhas, mais pontos!', 'Combos multiplicam sua pontuação!'], emoji: '💥' },
+      { title: 'Combos', lines: ['Limpe várias linhas de uma vez!', 'Quanto mais linhas, mais pontos!', 'Combos multiplicam sua pontuaçêo!'], emoji: '💥' },
       { title: 'Power-ups', lines: ['💣 Remove área 3x3', '↩️ Desfaz última jogada', '🔄 Troca os blocos atuais', '➖ Remove uma linha inteira'], emoji: '✨' },
-      { title: 'Fim de Jogo', lines: ['O jogo acaba quando não há', 'espaço para nenhum bloco!', 'Planeje bem suas jogadas!'], emoji: '🎮' }
+      { title: 'Fim de Jogo', lines: ['O jogo acaba quando nêo há', 'espaço para nenhum bloco!', 'Planeje bem suas jogadas!'], emoji: '🎮' }
     ];
 
     // Controles
@@ -247,7 +247,7 @@ class BlockBlastGame {
 
   handleMouseMove(x, y) {
     if (this.selectedBlock) {
-      // Atualizar posição do bloco sendo arrastado
+      // Atualizar posiçêo do bloco sendo arrastado
     }
   }
 
@@ -370,7 +370,7 @@ class BlockBlastGame {
       this.xp += totalLines * 5;
       this.checkLevelUp();
 
-      // Animação de limpeza
+      // Animaçêo de limpeza
       rowsToClear.forEach(r => {
         for (let c = 0; c < this.gridSize; c++) {
           this.addClearEffect(r, c);
@@ -397,7 +397,7 @@ class BlockBlastGame {
       this.linesCleared += totalLines;
       this.totalLinesCleared += totalLines;
 
-      // Notificação
+      // Notificaçêo
       if (totalLines > 1 || this.combo > 1) {
         const msg = totalLines > 1 ? `${totalLines}x LINHAS! +${points}` : `Combo x${this.combo}! +${points}`;
         this.addNotification(msg, this.canvas.width / 2, this.gridY + this.cellSize * 4);
@@ -598,7 +598,7 @@ class BlockBlastGame {
       this.handleThemesClick(x, y);
     }
 
-    // Botão voltar
+    // Botêo voltar
     if (this.state === 'shop' || this.state === 'themes' || this.state === 'achievements') {
       const btnY = this.canvas.height - 65;
       if (y > btnY && y < btnY + 45 && x > cx - 60 && x < cx + 60) {
@@ -1156,7 +1156,7 @@ class BlockBlastGame {
       this.ctx.fillText(pu.desc, 75, y + 45);
       this.ctx.fillText(`x${pu.count}`, 75, y + 62);
 
-      // Botão comprar
+      // Botêo comprar
       const canBuy = this.coins >= pu.price;
       const btnX = this.canvas.width - 100;
       this.ctx.fillStyle = canBuy ? 'rgba(255, 193, 7, 0.8)' : 'rgba(100, 100, 100, 0.5)';
@@ -1388,7 +1388,7 @@ class BlockBlastGame {
       this.ctx.fill();
     }
 
-    // Botão
+    // Botêo
     const btnWidth = 200;
     const btnHeight = 50;
     const btnX = cx - btnWidth / 2;

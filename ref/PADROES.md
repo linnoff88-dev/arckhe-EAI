@@ -1,6 +1,6 @@
 # EAI Games - Padrões de Desenvolvimento
 
-> Documento de referência com todos os padrões definidos para criação e alteração de jogos na plataforma EAI Games.
+> Documento de referência com todos os padrões definidos para criaçêo e alteraçêo de jogos na plataforma EAI Games.
 
 ---
 
@@ -34,7 +34,7 @@
 ```
 
 ### Elementos da Barra
-| Posição | Elemento | Link/Ação |
+| Posiçêo | Elemento | Link/Açêo |
 |---------|----------|-----------|
 | Esquerda | 🌊 ARCKHÉ AI | https://ARCKHÉ AI (nova aba) |
 | Esquerda | 🎮 EAI Games | / (página inicial) |
@@ -59,7 +59,7 @@
 ```
 
 ### Tipos de Moeda
-| Tipo | Emoji | Valor em Moedas | Descrição |
+| Tipo | Emoji | Valor em Moedas | Descriçêo |
 |------|-------|-----------------|-----------|
 | Coin | 🪙 | 1 | Moeda básica |
 | Diamond | 💎 | 100 | Conquistas médias |
@@ -78,7 +78,7 @@ const wallet = getWallet();
 ```
 
 ### Baú do Tesouro
-- Botão flutuante no canto inferior direito (🎁)
+- Botêo flutuante no canto inferior direito (🎁)
 - Abre modal mostrando moedas, diamantes e ouro
 - Total convertido em moedas
 
@@ -86,9 +86,9 @@ const wallet = getWallet();
 
 ## 4. Sistema de Recompensas
 
-### Padrão de Recompensas por Ação
+### Padrêo de Recompensas por Açêo
 
-| Ação | Coins | Diamonds | Gold |
+| Açêo | Coins | Diamonds | Gold |
 |------|-------|----------|------|
 | Acerto simples | 5-15 | - | - |
 | Acerto com streak | +2 por streak | - | - |
@@ -99,14 +99,14 @@ const wallet = getWallet();
 | Recorde pessoal | - | 1-2 | 1 |
 
 ### Sistema de Vidas
-- Padrão: 5 vidas (❤️)
+- Padrêo: 5 vidas (❤️)
 - Erro: -1 vida
 - Game Over quando vidas = 0
 - Pode reiniciar o jogo
 
 ### Sistema de Pontos
 - Erros subtraem pontos (5-10 pontos)
-- Pontuação mínima = 0 (não fica negativa)
+- Pontuaçêo mínima = 0 (nêo fica negativa)
 
 ---
 
@@ -123,10 +123,10 @@ Nível 3: 30.000 moedas (desafio avançado)
 ### Regras
 1. **Nível 1 sempre grátis** - permite acumular moedas
 2. Jogador pode repetir níveis para ganhar mais moedas
-3. Moedas são compartilhadas entre todos os jogos
+3. Moedas sêo compartilhadas entre todos os jogos
 4. Modal de desbloqueio mostra preço e saldo atual
 
-### Implementação
+### Implementaçêo
 ```javascript
 const LEVEL_PRICES = { 2: 10000, 3: 30000 };
 
@@ -160,7 +160,7 @@ function confirmUnlock() {
 ### Padrões de UI
 
 ```css
-/* Botão primário */
+/* Botêo primário */
 .btn-primary {
     background: linear-gradient(135deg, #667eea, #764ba2);
     border-radius: 25px;
@@ -168,7 +168,7 @@ function confirmUnlock() {
     font-weight: bold;
 }
 
-/* Cartão de jogo */
+/* Cartêo de jogo */
 .game-card {
     background: rgba(255,255,255,0.95);
     border-radius: 20px;
@@ -189,7 +189,7 @@ function confirmUnlock() {
 }
 ```
 
-### Animações Padrão
+### Animações Padrêo
 ```css
 /* Bounce para emojis/ícones */
 @keyframes bounce {
@@ -233,17 +233,17 @@ function speak(text, lang) {
 }
 ```
 
-### Padrão de Uso
+### Padrêo de Uso
 - Auto-play ao mostrar palavra/pergunta
-- Botão 🔊 para repetir
-- Animação no botão enquanto fala
+- Botêo 🔊 para repetir
+- Animaçêo no botêo enquanto fala
 
 ---
 
 ## 8. Armazenamento (localStorage)
 
-### Chaves Padrão
-| Chave | Descrição |
+### Chaves Padrêo
+| Chave | Descriçêo |
 |-------|-----------|
 | `eai_wallet` | Moedas, diamantes e ouro |
 | `eai_favorites` | Jogos favoritos |
@@ -326,7 +326,7 @@ function loadState() {
     id: 'eai-meu-jogo',
     slug: 'meu-jogo',
     title: 'Meu Jogo',
-    description: 'Descrição do jogo...',
+    description: 'Descriçêo do jogo...',
     thumbnailUrl: 'https://placehold.co/400x300/COR/white?text=Titulo',
     embedUrl: '/games/meu-jogo.html',
     area: 'EDUCATIONAL', // ou 'ARCADE'
@@ -403,11 +403,11 @@ function loadState() {
 
 ---
 
-## Versão do Documento
+## Versêo do Documento
 
-| Versão | Data | Alterações |
+| Versêo | Data | Alterações |
 |--------|------|------------|
-| 1.0 | 2024-01-15 | Versão inicial |
+| 1.0 | 2024-01-15 | Versêo inicial |
 
 ---
 

@@ -1,5 +1,5 @@
 // Space Explorer Kids - EAI Games
-// Aventura espacial para crianças com exploração de planetas
+// Aventura espacial para crianças com exploraçêo de planetas
 
 class SpaceExplorerKids {
   constructor() {
@@ -53,7 +53,7 @@ class SpaceExplorerKids {
       { name: 'Saturno', emoji: '🪐', color: '#f1c40f', unlocked: false, unlockStars: 500, missions: 5 },
       { name: 'Urano', emoji: '🔵', color: '#3498db', unlocked: false, unlockStars: 800, missions: 5 },
       { name: 'Netuno', emoji: '💙', color: '#2980b9', unlocked: false, unlockStars: 1200, missions: 5 },
-      { name: 'Plutão', emoji: '⚪', color: '#95a5a6', unlocked: false, unlockStars: 2000, missions: 5 }
+      { name: 'Plutêo', emoji: '⚪', color: '#95a5a6', unlocked: false, unlockStars: 2000, missions: 5 }
     ];
 
     // Current mission
@@ -86,7 +86,7 @@ class SpaceExplorerKids {
 
     // Achievements
     this.achievements = [
-      { id: 'first_flight', name: 'Primeiro Voo', desc: 'Complete sua primeira missão', icon: '🚀', unlocked: false },
+      { id: 'first_flight', name: 'Primeiro Voo', desc: 'Complete sua primeira missêo', icon: '🚀', unlocked: false },
       { id: 'star_collector', name: 'Coletor de Estrelas', desc: 'Colete 100 estrelas', icon: '⭐', unlocked: false, progress: 0, target: 100 },
       { id: 'planet_visitor', name: 'Explorador', desc: 'Visite 4 planetas', icon: '🪐', unlocked: false },
       { id: 'all_planets', name: 'Mestre Galáctico', desc: 'Visite todos os planetas', icon: '🌌', unlocked: false },
@@ -997,7 +997,7 @@ class SpaceExplorerKids {
       ctx.fillStyle = available ? '#fff' : '#666';
       ctx.font = 'bold 16px Arial';
       ctx.textAlign = 'left';
-      ctx.fillText(`Missão ${i + 1}`, 35, y + 25);
+      ctx.fillText(`Missêo ${i + 1}`, 35, y + 25);
 
       ctx.font = '12px Arial';
       ctx.fillStyle = available ? '#87ceeb' : '#555';
@@ -1102,8 +1102,8 @@ class SpaceExplorerKids {
     const names = {
       fuelCapacity: 'Tanque de Combustível',
       fuelEfficiency: 'Eficiência de Combustível',
-      starMagnet: 'Imã de Estrelas',
-      shieldDuration: 'Duração do Escudo'
+      starMagnet: 'Imê de Estrelas',
+      shieldDuration: 'Duraçêo do Escudo'
     };
 
     const startY = 100;
@@ -1310,7 +1310,7 @@ class SpaceExplorerKids {
     ctx.fillStyle = '#ffd700';
     ctx.font = 'bold 36px Arial';
     ctx.textAlign = 'center';
-    ctx.fillText('🎉 Missão Completa! 🎉', w/2, h/2 - 80);
+    ctx.fillText('🎉 Missêo Completa! 🎉', w/2, h/2 - 80);
 
     ctx.font = '50px Arial';
     ctx.fillText('🚀', w/2, h/2 - 20);
@@ -1340,7 +1340,7 @@ class SpaceExplorerKids {
     ctx.fillStyle = '#ff4444';
     ctx.font = 'bold 36px Arial';
     ctx.textAlign = 'center';
-    ctx.fillText('Missão Falhou!', w/2, h/2 - 60);
+    ctx.fillText('Missêo Falhou!', w/2, h/2 - 60);
 
     ctx.font = '60px Arial';
     ctx.fillText('💥', w/2, h/2 + 10);

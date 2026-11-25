@@ -2,7 +2,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// Configuração do canvas
+// Configuraçêo do canvas
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -58,83 +58,83 @@ const QUESTIONS = {
     0: [ // Floresta Tropical
         { q: 'Qual é a principal característica das florestas tropicais?', a: ['Alta biodiversidade', 'Baixa umidade', 'Poucas árvores', 'Solo congelado'], correct: 0 },
         { q: 'O que é o dossel florestal?', a: ['Camada superior de copas', 'Solo da floresta', 'Raízes das árvores', 'Lago tropical'], correct: 0 },
-        { q: 'Qual processo converte CO2 em oxigênio?', a: ['Fotossíntese', 'Respiração', 'Decomposição', 'Evaporação'], correct: 0 },
+        { q: 'Qual processo converte CO2 em oxigênio?', a: ['Fotossíntese', 'Respiraçêo', 'Decomposiçêo', 'Evaporaçêo'], correct: 0 },
         { q: 'Qual animal é polinizador na floresta tropical?', a: ['Beija-flor', 'Onça', 'Preguiça', 'Tucano'], correct: 0 },
         { q: 'O que é epífita?', a: ['Planta que cresce sobre outra', 'Animal herbívoro', 'Fungo do solo', 'Inseto voador'], correct: 0 },
         { q: 'Qual é o maior rio de floresta tropical?', a: ['Amazonas', 'Nilo', 'Mississipi', 'Ganges'], correct: 0 },
         { q: 'O que causa o efeito estufa nas florestas?', a: ['Desmatamento', 'Chuva', 'Animais', 'Fotossíntese'], correct: 0 },
         { q: 'Qual camada tem menos luz na floresta?', a: ['Sub-bosque', 'Dossel', 'Emergente', 'Copa'], correct: 0 },
         { q: 'O que é biodiversidade?', a: ['Variedade de vida', 'Tipo de solo', 'Clima quente', 'Água limpa'], correct: 0 },
-        { q: 'Qual inseto é essencial na decomposição?', a: ['Cupim', 'Borboleta', 'Abelha', 'Libélula'], correct: 0 }
+        { q: 'Qual inseto é essencial na decomposiçêo?', a: ['Cupim', 'Borboleta', 'Abelha', 'Libélula'], correct: 0 }
     ],
     1: [ // Oceanos
         { q: 'Qual é a maior zona oceânica?', a: ['Zona abissal', 'Zona eufótica', 'Zona costeira', 'Zona pelágica'], correct: 0 },
         { q: 'O que é fitoplâncton?', a: ['Microalgas fotossintetizantes', 'Peixes pequenos', 'Corais', 'Bactérias'], correct: 0 },
         { q: 'Quanto do oxigênio vem dos oceanos?', a: ['50-80%', '10-20%', '5%', '90%'], correct: 0 },
-        { q: 'O que é acidificação oceânica?', a: ['Absorção de CO2', 'Aumento de sal', 'Aquecimento', 'Poluição'], correct: 0 },
+        { q: 'O que é acidificaçêo oceânica?', a: ['Absorçêo de CO2', 'Aumento de sal', 'Aquecimento', 'Poluiçêo'], correct: 0 },
         { q: 'Qual corrente aquece a Europa?', a: ['Corrente do Golfo', 'Humboldt', 'Kuroshio', 'Benguela'], correct: 0 },
-        { q: 'O que são zonas mortas oceânicas?', a: ['Áreas sem oxigênio', 'Profundezas escuras', 'Regiões geladas', 'Praias poluídas'], correct: 0 },
+        { q: 'O que sêo zonas mortas oceânicas?', a: ['Áreas sem oxigênio', 'Profundezas escuras', 'Regiões geladas', 'Praias poluídas'], correct: 0 },
         { q: 'Qual animal é topo de cadeia oceânica?', a: ['Orca', 'Atum', 'Sardinha', 'Lula'], correct: 0 },
-        { q: 'O que é o ciclo do carbono marinho?', a: ['Absorção e liberação de CO2', 'Movimento de peixes', 'Maré', 'Correntes'], correct: 0 },
+        { q: 'O que é o ciclo do carbono marinho?', a: ['Absorçêo e liberaçêo de CO2', 'Movimento de peixes', 'Maré', 'Correntes'], correct: 0 },
         { q: 'Qual é o maior ecossistema da Terra?', a: ['Oceano', 'Floresta', 'Deserto', 'Tundra'], correct: 0 },
-        { q: 'O que são algas marinhas?', a: ['Plantas aquáticas', 'Animais', 'Rochas', 'Vírus'], correct: 0 }
+        { q: 'O que sêo algas marinhas?', a: ['Plantas aquáticas', 'Animais', 'Rochas', 'Vírus'], correct: 0 }
     ],
     2: [ // Savana
         { q: 'Qual é a característica da savana?', a: ['Gramíneas com árvores esparsas', 'Floresta densa', 'Gelo permanente', 'Deserto total'], correct: 0 },
         { q: 'Qual é o maior herbívoro da savana?', a: ['Elefante', 'Zebra', 'Gnu', 'Impala'], correct: 0 },
-        { q: 'O que são queimadas naturais na savana?', a: ['Renovação do ecossistema', 'Destruição total', 'Poluição', 'Doença'], correct: 0 },
+        { q: 'O que sêo queimadas naturais na savana?', a: ['Renovaçêo do ecossistema', 'Destruiçêo total', 'Poluiçêo', 'Doença'], correct: 0 },
         { q: 'Qual árvore é símbolo da savana africana?', a: ['Baobá', 'Pinheiro', 'Carvalho', 'Sequoia'], correct: 0 },
-        { q: 'O que é migração de gnus?', a: ['Deslocamento em massa', 'Hibernação', 'Reprodução', 'Alimentação'], correct: 0 },
-        { q: 'Qual predador domina a savana?', a: ['Leão', 'Lobo', 'Urso', 'Águia'], correct: 0 },
-        { q: 'Quantas estações tem a savana?', a: ['Duas: seca e úmida', 'Quatro estações', 'Uma estação', 'Três estações'], correct: 0 },
-        { q: 'O que são cupinzeiros na savana?', a: ['Ninhos de térmitas', 'Rochas', 'Plantas', 'Tocas'], correct: 0 },
-        { q: 'Qual animal cava poços na seca?', a: ['Elefante', 'Leão', 'Hiena', 'Abutre'], correct: 0 },
-        { q: 'O que é simbiose na savana?', a: ['Cooperação entre espécies', 'Competição', 'Predação', 'Parasitismo'], correct: 0 }
+        { q: 'O que é migraçêo de gnus?', a: ['Deslocamento em massa', 'Hibernaçêo', 'Reproduçêo', 'Alimentaçêo'], correct: 0 },
+        { q: 'Qual predador domina a savana?', a: ['Leêo', 'Lobo', 'Urso', 'Águia'], correct: 0 },
+        { q: 'Quantas estações tem a savana?', a: ['Duas: seca e úmida', 'Quatro estações', 'Uma estaçêo', 'Três estações'], correct: 0 },
+        { q: 'O que sêo cupinzeiros na savana?', a: ['Ninhos de térmitas', 'Rochas', 'Plantas', 'Tocas'], correct: 0 },
+        { q: 'Qual animal cava poços na seca?', a: ['Elefante', 'Leêo', 'Hiena', 'Abutre'], correct: 0 },
+        { q: 'O que é simbiose na savana?', a: ['Cooperaçêo entre espécies', 'Competiçêo', 'Predaçêo', 'Parasitismo'], correct: 0 }
     ],
     3: [ // Tundra
         { q: 'O que é permafrost?', a: ['Solo permanentemente congelado', 'Neve fresca', 'Gelo flutuante', 'Chuva gelada'], correct: 0 },
         { q: 'Qual animal migra na tundra?', a: ['Caribu', 'Urso polar', 'Lemingue', 'Coruja'], correct: 0 },
-        { q: 'O que são líquens?', a: ['Simbiose fungo-alga', 'Animais', 'Rochas', 'Gelo'], correct: 0 },
+        { q: 'O que sêo líquens?', a: ['Simbiose fungo-alga', 'Animais', 'Rochas', 'Gelo'], correct: 0 },
         { q: 'Por que a tundra é importante para o clima?', a: ['Armazena carbono', 'Produz chuva', 'Aquece o planeta', 'Cria ventos'], correct: 0 },
-        { q: 'Qual é a vegetação típica da tundra?', a: ['Musgos e arbustos baixos', 'Árvores altas', 'Cactos', 'Palmeiras'], correct: 0 },
+        { q: 'Qual é a vegetaçêo típica da tundra?', a: ['Musgos e arbustos baixos', 'Árvores altas', 'Cactos', 'Palmeiras'], correct: 0 },
         { q: 'O que acontece com o permafrost no aquecimento?', a: ['Derrete e libera metano', 'Fica mais frio', 'Desaparece', 'Cresce'], correct: 0 },
-        { q: 'Qual predador vive na tundra ártica?', a: ['Raposa ártica', 'Leão', 'Tigre', 'Onça'], correct: 0 },
-        { q: 'O que são auroras boreais?', a: ['Fenômeno luminoso', 'Tempestade', 'Terremoto', 'Eclipse'], correct: 0 },
+        { q: 'Qual predador vive na tundra ártica?', a: ['Raposa ártica', 'Leêo', 'Tigre', 'Onça'], correct: 0 },
+        { q: 'O que sêo auroras boreais?', a: ['Fenômeno luminoso', 'Tempestade', 'Terremoto', 'Eclipse'], correct: 0 },
         { q: 'Quantos meses dura o inverno na tundra?', a: ['8-10 meses', '2-3 meses', '12 meses', '4-5 meses'], correct: 0 },
         { q: 'O que é tundra alpina?', a: ['Tundra em montanhas', 'Tundra costeira', 'Tundra ártica', 'Tundra tropical'], correct: 0 }
     ],
     4: [ // Deserto
         { q: 'Como as plantas do deserto armazenam água?', a: ['Em tecidos suculentos', 'Nas folhas grandes', 'No ar', 'Na areia'], correct: 0 },
-        { q: 'O que são oásis?', a: ['Áreas com água no deserto', 'Dunas altas', 'Tempestades de areia', 'Rochas'], correct: 0 },
-        { q: 'Qual animal é símbolo do deserto?', a: ['Camelo', 'Elefante', 'Leão', 'Urso'], correct: 0 },
-        { q: 'Como os animais do deserto evitam o calor?', a: ['São noturnos', 'Nadam', 'Voam', 'Hibernam'], correct: 0 },
-        { q: 'O que é desertificação?', a: ['Expansão do deserto', 'Chuva no deserto', 'Plantas crescendo', 'Animais migrando'], correct: 0 },
+        { q: 'O que sêo oásis?', a: ['Áreas com água no deserto', 'Dunas altas', 'Tempestades de areia', 'Rochas'], correct: 0 },
+        { q: 'Qual animal é símbolo do deserto?', a: ['Camelo', 'Elefante', 'Leêo', 'Urso'], correct: 0 },
+        { q: 'Como os animais do deserto evitam o calor?', a: ['Sêo noturnos', 'Nadam', 'Voam', 'Hibernam'], correct: 0 },
+        { q: 'O que é desertificaçêo?', a: ['Expansêo do deserto', 'Chuva no deserto', 'Plantas crescendo', 'Animais migrando'], correct: 0 },
         { q: 'Qual deserto é o maior do mundo?', a: ['Saara', 'Gobi', 'Atacama', 'Mojave'], correct: 0 },
-        { q: 'O que são ventos alísios?', a: ['Ventos constantes tropicais', 'Tempestades', 'Chuvas', 'Neve'], correct: 0 },
+        { q: 'O que sêo ventos alísios?', a: ['Ventos constantes tropicais', 'Tempestades', 'Chuvas', 'Neve'], correct: 0 },
         { q: 'Como cactos fazem fotossíntese?', a: ['Pelo caule', 'Pelas raízes', 'Pelas flores', 'Pelas sementes'], correct: 0 },
-        { q: 'O que é amplitude térmica no deserto?', a: ['Grande variação de temperatura', 'Temperatura constante', 'Umidade alta', 'Vento forte'], correct: 0 },
+        { q: 'O que é amplitude térmica no deserto?', a: ['Grande variaçêo de temperatura', 'Temperatura constante', 'Umidade alta', 'Vento forte'], correct: 0 },
         { q: 'Qual inseto poliniza cactos?', a: ['Mariposa', 'Abelha', 'Formiga', 'Besouro'], correct: 0 }
     ],
     5: [ // Mangue
-        { q: 'O que são manguezais?', a: ['Ecossistema costeiro', 'Floresta de montanha', 'Deserto', 'Tundra'], correct: 0 },
-        { q: 'Qual função dos mangues na costa?', a: ['Proteção contra erosão', 'Produção de sal', 'Aquecimento', 'Resfriamento'], correct: 0 },
-        { q: 'O que são raízes aéreas?', a: ['Raízes expostas ao ar', 'Raízes subterrâneas', 'Folhas', 'Galhos'], correct: 0 },
-        { q: 'Qual animal nasce no mangue?', a: ['Caranguejo', 'Baleia', 'Tubarão', 'Golfinho'], correct: 0 },
-        { q: 'Por que mangues são berçários?', a: ['Protegem filhotes', 'Têm muito alimento', 'São quentes', 'Têm sal'], correct: 0 },
-        { q: 'O que é lama do mangue?', a: ['Sedimento rico em nutrientes', 'Poluição', 'Areia', 'Rocha'], correct: 0 },
+        { q: 'O que sêo manguezais?', a: ['Ecossistema costeiro', 'Floresta de montanha', 'Deserto', 'Tundra'], correct: 0 },
+        { q: 'Qual funçêo dos mangues na costa?', a: ['Proteçêo contra erosêo', 'Produçêo de sal', 'Aquecimento', 'Resfriamento'], correct: 0 },
+        { q: 'O que sêo raízes aéreas?', a: ['Raízes expostas ao ar', 'Raízes subterrâneas', 'Folhas', 'Galhos'], correct: 0 },
+        { q: 'Qual animal nasce no mangue?', a: ['Caranguejo', 'Baleia', 'Tubarêo', 'Golfinho'], correct: 0 },
+        { q: 'Por que mangues sêo berçários?', a: ['Protegem filhotes', 'Têm muito alimento', 'Sêo quentes', 'Têm sal'], correct: 0 },
+        { q: 'O que é lama do mangue?', a: ['Sedimento rico em nutrientes', 'Poluiçêo', 'Areia', 'Rocha'], correct: 0 },
         { q: 'Qual ave vive no mangue?', a: ['Garça', 'Pinguim', 'Avestruz', 'Águia'], correct: 0 },
         { q: 'Como mangues sequestram carbono?', a: ['Armazenam no solo', 'Liberam no ar', 'Queimam', 'Evaporam'], correct: 0 },
-        { q: 'O que ameaça os manguezais?', a: ['Urbanização', 'Chuva', 'Maré', 'Sol'], correct: 0 },
-        { q: 'Qual peixe vive no mangue?', a: ['Robalo', 'Atum', 'Salmão', 'Bacalhau'], correct: 0 }
+        { q: 'O que ameaça os manguezais?', a: ['Urbanizaçêo', 'Chuva', 'Maré', 'Sol'], correct: 0 },
+        { q: 'Qual peixe vive no mangue?', a: ['Robalo', 'Atum', 'Salmêo', 'Bacalhau'], correct: 0 }
     ],
     6: [ // Recifes de Coral
-        { q: 'O que são corais?', a: ['Animais coloniais', 'Plantas', 'Rochas', 'Algas'], correct: 0 },
-        { q: 'O que é branqueamento de coral?', a: ['Perda de algas simbiontes', 'Crescimento', 'Reprodução', 'Alimentação'], correct: 0 },
+        { q: 'O que sêo corais?', a: ['Animais coloniais', 'Plantas', 'Rochas', 'Algas'], correct: 0 },
+        { q: 'O que é branqueamento de coral?', a: ['Perda de algas simbiontes', 'Crescimento', 'Reproduçêo', 'Alimentaçêo'], correct: 0 },
         { q: 'Qual é o maior recife do mundo?', a: ['Grande Barreira de Coral', 'Recife de Belize', 'Mar Vermelho', 'Caribe'], correct: 0 },
-        { q: 'O que são zooxantelas?', a: ['Algas que vivem em corais', 'Peixes pequenos', 'Moluscos', 'Crustáceos'], correct: 0 },
-        { q: 'Por que recifes são importantes?', a: ['Biodiversidade marinha', 'Produção de sal', 'Navegação', 'Pesca industrial'], correct: 0 },
-        { q: 'Qual peixe limpa outros peixes?', a: ['Peixe-limpador', 'Tubarão', 'Atum', 'Peixe-palhaço'], correct: 0 },
-        { q: 'O que é simbiose coral-alga?', a: ['Benefício mútuo', 'Predação', 'Competição', 'Parasitismo'], correct: 0 },
+        { q: 'O que sêo zooxantelas?', a: ['Algas que vivem em corais', 'Peixes pequenos', 'Moluscos', 'Crustáceos'], correct: 0 },
+        { q: 'Por que recifes sêo importantes?', a: ['Biodiversidade marinha', 'Produçêo de sal', 'Navegaçêo', 'Pesca industrial'], correct: 0 },
+        { q: 'Qual peixe limpa outros peixes?', a: ['Peixe-limpador', 'Tubarêo', 'Atum', 'Peixe-palhaço'], correct: 0 },
+        { q: 'O que é simbiose coral-alga?', a: ['Benefício mútuo', 'Predaçêo', 'Competiçêo', 'Parasitismo'], correct: 0 },
         { q: 'Qual ameaça os recifes?', a: ['Aquecimento oceânico', 'Chuva', 'Vento', 'Neve'], correct: 0 },
         { q: 'Como corais se reproduzem?', a: ['Liberando gametas', 'Dividindo', 'Voando', 'Caminhando'], correct: 0 },
         { q: 'O que é atol?', a: ['Ilha de coral circular', 'Rocha vulcânica', 'Praia', 'Montanha'], correct: 0 }
@@ -145,27 +145,27 @@ const QUESTIONS = {
         { q: 'Qual animal é símbolo do Pantanal?', a: ['Tuiuiú', 'Onça', 'Jacaré', 'Arara'], correct: 0 },
         { q: 'O que é corixo?', a: ['Canal natural', 'Montanha', 'Árvore', 'Animal'], correct: 0 },
         { q: 'Quantas espécies de peixes tem o Pantanal?', a: ['Mais de 260', 'Cerca de 50', 'Menos de 20', 'Mais de 1000'], correct: 0 },
-        { q: 'O que é piracema?', a: ['Migração de peixes', 'Seca', 'Cheia', 'Tempestade'], correct: 0 },
-        { q: 'Qual felino vive no Pantanal?', a: ['Onça-pintada', 'Leão', 'Tigre', 'Leopardo'], correct: 0 },
-        { q: 'O que são capões no Pantanal?', a: ['Ilhas de vegetação', 'Lagos', 'Rios', 'Morros'], correct: 0 },
-        { q: 'Qual estação alaga o Pantanal?', a: ['Chuvosa', 'Seca', 'Inverno', 'Outono'], correct: 0 },
-        { q: 'O que é pecuária pantaneira?', a: ['Criação extensiva', 'Agricultura', 'Mineração', 'Pesca'], correct: 0 }
+        { q: 'O que é piracema?', a: ['Migraçêo de peixes', 'Seca', 'Cheia', 'Tempestade'], correct: 0 },
+        { q: 'Qual felino vive no Pantanal?', a: ['Onça-pintada', 'Leêo', 'Tigre', 'Leopardo'], correct: 0 },
+        { q: 'O que sêo capões no Pantanal?', a: ['Ilhas de vegetaçêo', 'Lagos', 'Rios', 'Morros'], correct: 0 },
+        { q: 'Qual estaçêo alaga o Pantanal?', a: ['Chuvosa', 'Seca', 'Inverno', 'Outono'], correct: 0 },
+        { q: 'O que é pecuária pantaneira?', a: ['Criaçêo extensiva', 'Agricultura', 'Mineraçêo', 'Pesca'], correct: 0 }
     ],
     8: [ // Cerrado
         { q: 'O que é o Cerrado?', a: ['Savana brasileira', 'Floresta tropical', 'Deserto', 'Tundra'], correct: 0 },
         { q: 'Quanto da água do Brasil nasce no Cerrado?', a: ['Cerca de 70%', 'Cerca de 10%', 'Cerca de 30%', 'Cerca de 90%'], correct: 0 },
-        { q: 'O que são veredas?', a: ['Áreas com buritis', 'Montanhas', 'Desertos', 'Praias'], correct: 0 },
-        { q: 'Qual fruto é típico do Cerrado?', a: ['Pequi', 'Maçã', 'Uva', 'Laranja'], correct: 0 },
+        { q: 'O que sêo veredas?', a: ['Áreas com buritis', 'Montanhas', 'Desertos', 'Praias'], correct: 0 },
+        { q: 'Qual fruto é típico do Cerrado?', a: ['Pequi', 'Maçê', 'Uva', 'Laranja'], correct: 0 },
         { q: 'O que é cascudo no Cerrado?', a: ['Árvore com casca grossa', 'Peixe', 'Inseto', 'Ave'], correct: 0 },
-        { q: 'Por que o fogo é natural no Cerrado?', a: ['Adaptação das plantas', 'Destruição', 'Poluição', 'Acidente'], correct: 0 },
-        { q: 'Qual animal é endêmico do Cerrado?', a: ['Lobo-guará', 'Leão', 'Elefante', 'Urso'], correct: 0 },
+        { q: 'Por que o fogo é natural no Cerrado?', a: ['Adaptaçêo das plantas', 'Destruiçêo', 'Poluiçêo', 'Acidente'], correct: 0 },
+        { q: 'Qual animal é endêmico do Cerrado?', a: ['Lobo-guará', 'Leêo', 'Elefante', 'Urso'], correct: 0 },
         { q: 'O que ameaça o Cerrado?', a: ['Agronegócio', 'Chuva', 'Vento', 'Frio'], correct: 0 },
         { q: 'Quanto do Cerrado já foi desmatado?', a: ['Mais de 50%', 'Menos de 10%', 'Cerca de 20%', 'Nenhum'], correct: 0 },
-        { q: 'O que são campos rupestres?', a: ['Vegetação em rochas', 'Florestas densas', 'Desertos', 'Pântanos'], correct: 0 }
+        { q: 'O que sêo campos rupestres?', a: ['Vegetaçêo em rochas', 'Florestas densas', 'Desertos', 'Pântanos'], correct: 0 }
     ],
     9: [ // Amazônia Profunda
         { q: 'Quantas espécies vivem na Amazônia?', a: ['Milhões', 'Centenas', 'Dezenas', 'Bilhões'], correct: 0 },
-        { q: 'O que são rios voadores?', a: ['Umidade transportada pelo ar', 'Rios subterrâneos', 'Cachoeiras', 'Lagos'], correct: 0 },
+        { q: 'O que sêo rios voadores?', a: ['Umidade transportada pelo ar', 'Rios subterrâneos', 'Cachoeiras', 'Lagos'], correct: 0 },
         { q: 'Qual é a maior onça da Amazônia?', a: ['Onça-pintada', 'Onça-parda', 'Jaguatirica', 'Gato-maracajá'], correct: 0 },
         { q: 'O que é igapó?', a: ['Floresta inundada permanente', 'Montanha', 'Deserto', 'Praia'], correct: 0 },
         { q: 'Qual peixe é o maior da Amazônia?', a: ['Pirarucu', 'Piranha', 'Tucunaré', 'Tambaqui'], correct: 0 },
@@ -383,7 +383,7 @@ function drawMenu() {
     ctx.fillText(`🌡️ Carbono Reduzido: ${playerData.carbonReduced} kg`, canvas.width/2, 640);
 }
 
-// Desenhar seleção de biomas
+// Desenhar seleçêo de biomas
 function drawBiomeSelect() {
     drawNatureBackground();
     drawHUD();
@@ -393,7 +393,7 @@ function drawBiomeSelect() {
     ctx.textAlign = 'center';
     ctx.fillText('🌍 ESCOLHA O BIOMA', canvas.width/2, 100);
 
-    // Botão voltar
+    // Botêo voltar
     ctx.fillStyle = '#8B0000';
     ctx.fillRect(20, 80, 100, 40);
     ctx.fillStyle = '#FFF';
@@ -453,7 +453,7 @@ function drawBiomeSelect() {
     maxScroll = Math.max(0, BIOMES.length * (cardHeight + 15) - (canvas.height - 180));
 }
 
-// Desenhar seleção de zona
+// Desenhar seleçêo de zona
 function drawZoneSelect() {
     const biome = BIOMES[selectedBiome];
 
@@ -521,7 +521,7 @@ function drawZoneSelect() {
     maxScroll = Math.max(0, Math.ceil(biome.zones / cols) * (size + spacing) - (canvas.height - 200));
 }
 
-// Desenhar questão
+// Desenhar questêo
 function drawQuestion() {
     const biome = BIOMES[selectedBiome];
 
@@ -552,7 +552,7 @@ function drawQuestion() {
         showingResult = false;
     }
 
-    // Caixa da questão
+    // Caixa da questêo
     ctx.fillStyle = 'rgba(0, 50, 0, 0.9)';
     ctx.shadowColor = '#000';
     ctx.shadowBlur = 15;
@@ -599,7 +599,7 @@ function drawQuestion() {
         ctx.fillText(answer.text, canvas.width/2, y + 38);
     });
 
-    // Botão confirmar
+    // Botêo confirmar
     if (selectedAnswer !== null && !showingResult) {
         ctx.fillStyle = '#228B22';
         ctx.fillRect(canvas.width/2 - 100, 610, 200, 50);
@@ -706,7 +706,7 @@ function drawShop() {
         ctx.font = 'bold 16px Arial';
         ctx.fillText(`${item.currency === 'gems' ? '💎' : '🪙'} ${item.price}`, x + 15, cardY + 72);
 
-        // Botão comprar
+        // Botêo comprar
         ctx.fillStyle = '#228B22';
         ctx.fillRect(x + 200, cardY + 50, 65, 28);
         ctx.fillStyle = '#FFF';
@@ -798,7 +798,7 @@ function drawAchievements() {
         { name: 'Explorador', desc: 'Desbloqueie 3 biomas', icon: '🗺️', unlocked: playerData.unlockedBiomes.length >= 3 },
         { name: 'Naturalista', desc: 'Descubra 10 espécies', icon: '🐾', unlocked: playerData.species.length >= 10 },
         { name: 'Ecologista', desc: 'Alcance nível 10', icon: '🌍', unlocked: level >= 10 },
-        { name: 'Guardião Verde', desc: 'Acumule 1000 pontos verdes', icon: '🌿', unlocked: playerData.greenPoints >= 1000 },
+        { name: 'Guardiêo Verde', desc: 'Acumule 1000 pontos verdes', icon: '🌿', unlocked: playerData.greenPoints >= 1000 },
         { name: 'Herói do Clima', desc: 'Reduza 500kg de carbono', icon: '🌡️', unlocked: playerData.carbonReduced >= 500 },
         { name: 'Mestre Ecossistema', desc: 'Complete todos os biomas', icon: '👑', unlocked: false }
     ];
@@ -1046,6 +1046,6 @@ canvas.addEventListener('touchmove', (e) => {
     }
 }, { passive: false });
 
-// Inicialização
+// Inicializaçêo
 loadGame();
 gameLoop();

@@ -29,9 +29,9 @@ class FruitNinjaGame {
     // Frutas
     this.fruits = [];
     this.fruitTypes = [
-      { emoji: '🍎', name: 'Maçã', points: 10, frequency: 0.2, color: '#ff4444' },
+      { emoji: '🍎', name: 'Maçê', points: 10, frequency: 0.2, color: '#ff4444' },
       { emoji: '🍊', name: 'Laranja', points: 15, frequency: 0.18, color: '#ff8800' },
-      { emoji: '🍋', name: 'Limão', points: 12, frequency: 0.15, color: '#ffff00' },
+      { emoji: '🍋', name: 'Limêo', points: 12, frequency: 0.15, color: '#ffff00' },
       { emoji: '🍇', name: 'Uva', points: 20, frequency: 0.12, color: '#9933ff' },
       { emoji: '🍉', name: 'Melancia', points: 25, frequency: 0.1, color: '#44ff44' },
       { emoji: '🍓', name: 'Morango', points: 18, frequency: 0.1, color: '#ff3366' },
@@ -92,10 +92,10 @@ class FruitNinjaGame {
     this.upgrades = [
       { id: 'extraLife', name: 'Vida Extra', desc: '+1 vida inicial', price: 300, level: 0, maxLevel: 3, effect: 1 },
       { id: 'comboBonus', name: 'Bônus Combo', desc: '+20% pontos combo', price: 400, level: 0, maxLevel: 5, effect: 0.2 },
-      { id: 'fruitMagnet', name: 'Imã de Frutas', desc: 'Frutas mais lentas', price: 500, level: 0, maxLevel: 3, effect: 0.1 },
+      { id: 'fruitMagnet', name: 'Imê de Frutas', desc: 'Frutas mais lentas', price: 500, level: 0, maxLevel: 3, effect: 0.1 },
       { id: 'doubleCoins', name: 'Moedas x2', desc: 'Dobra as moedas', price: 1000, level: 0, maxLevel: 1, effect: 2 },
       { id: 'bombShield', name: 'Escudo Bomba', desc: 'Ignora 1 bomba/jogo', price: 750, level: 0, maxLevel: 2, effect: 1 },
-      { id: 'starDuration', name: 'Duração Estrela', desc: '+2s power-ups', price: 600, level: 0, maxLevel: 3, effect: 2000 }
+      { id: 'starDuration', name: 'Duraçêo Estrela', desc: '+2s power-ups', price: 600, level: 0, maxLevel: 3, effect: 2000 }
     ];
     this.loadUpgrades();
     this.bombShields = 0;
@@ -289,7 +289,7 @@ class FruitNinjaGame {
       half: 'right'
     });
 
-    // Notificação de combo
+    // Notificaçêo de combo
     if (this.combo >= 3) {
       this.addNotification(`Combo x${this.combo}! +${points}`, fruit.x, fruit.y);
     }
@@ -515,7 +515,7 @@ class FruitNinjaGame {
       this.xpToNextLevel = this.level * 100;
     }
 
-    // Atualizar desafio de pontuação
+    // Atualizar desafio de pontuaçêo
     if (this.score > this.dailyChallenges[2].current) {
       this.dailyChallenges[2].current = this.score;
     }
@@ -589,7 +589,7 @@ class FruitNinjaGame {
         this.fruits.splice(i, 1);
         // Perder vida por fruta perdida apenas no clássico
         if (this.currentMode === 'classic') {
-          // Não perde vida, apenas pontos
+          // Nêo perde vida, apenas pontos
         }
       }
     }
@@ -680,7 +680,7 @@ class FruitNinjaGame {
     this.ctx.fillStyle = gradient;
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
-    // Decoração de fundo
+    // Decoraçêo de fundo
     this.ctx.globalAlpha = 0.1;
     for (let i = 0; i < 5; i++) {
       this.ctx.font = '100px Arial';
@@ -906,7 +906,7 @@ class FruitNinjaGame {
   }
 
   drawHUD() {
-    // Pontuação
+    // Pontuaçêo
     this.ctx.font = 'bold 32px Arial';
     this.ctx.fillStyle = '#FFEB3B';
     this.ctx.textAlign = 'left';
@@ -977,7 +977,7 @@ class FruitNinjaGame {
 
     this.ctx.font = '28px Arial';
     this.ctx.fillStyle = '#FFEB3B';
-    this.ctx.fillText(`Pontuação: ${this.score}`, cx, 160);
+    this.ctx.fillText(`Pontuaçêo: ${this.score}`, cx, 160);
 
     if (this.score >= this.highScore) {
       this.ctx.font = '24px Arial';
@@ -1058,7 +1058,7 @@ class FruitNinjaGame {
       this.ctx.fillStyle = '#8BC34A';
       this.ctx.fillText(`Nível ${upgrade.level}/${upgrade.maxLevel}`, 30, y + 65);
 
-      // Botão comprar
+      // Botêo comprar
       if (!maxed) {
         const btnX = this.canvas.width - 120;
         this.ctx.fillStyle = canBuy ? 'rgba(255, 193, 7, 0.8)' : 'rgba(158, 158, 158, 0.5)';
@@ -1078,7 +1078,7 @@ class FruitNinjaGame {
       }
     });
 
-    // Botão voltar
+    // Botêo voltar
     this.drawBackButton();
   }
 
@@ -1312,7 +1312,7 @@ class FruitNinjaGame {
       this.ctx.fill();
     }
 
-    // Botão
+    // Botêo
     const btnWidth = 200;
     const btnHeight = 50;
     const btnX = cx - btnWidth / 2;
@@ -1364,7 +1364,7 @@ class FruitNinjaGame {
     } else if (this.state === 'modes') {
       this.handleModesClick(x, y);
     } else if (this.state === 'achievements' || this.state === 'shop' || this.state === 'blades' || this.state === 'modes') {
-      // Botão voltar
+      // Botêo voltar
       const btnY = this.canvas.height - 70;
       if (y > btnY && y < btnY + 45 && x > cx - 60 && x < cx + 60) {
         this.state = 'menu';
@@ -1403,7 +1403,7 @@ class FruitNinjaGame {
       }
     });
 
-    // Botão voltar
+    // Botêo voltar
     const btnY = this.canvas.height - 70;
     const cx = this.canvas.width / 2;
     if (y > btnY && y < btnY + 45 && x > cx - 60 && x < cx + 60) {
@@ -1435,7 +1435,7 @@ class FruitNinjaGame {
       }
     });
 
-    // Botão voltar
+    // Botêo voltar
     const btnY = this.canvas.height - 70;
     const cx = this.canvas.width / 2;
     if (y > btnY && y < btnY + 45 && x > cx - 60 && x < cx + 60) {
@@ -1454,7 +1454,7 @@ class FruitNinjaGame {
       }
     });
 
-    // Botão voltar
+    // Botêo voltar
     const btnY = this.canvas.height - 70;
     const cx = this.canvas.width / 2;
     if (y > btnY && y < btnY + 45 && x > cx - 60 && x < cx + 60) {

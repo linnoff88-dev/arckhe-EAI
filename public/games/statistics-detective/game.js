@@ -2,7 +2,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// Configuração do canvas
+// Configuraçêo do canvas
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -46,10 +46,10 @@ const TOPICS = [
     { id: 2, name: 'Distribuições', color: '#9B59B6', icon: '📈', unlockLevel: 10, cases: 50 },
     { id: 3, name: 'Amostragem', color: '#1ABC9C', icon: '🔍', unlockLevel: 15, cases: 50 },
     { id: 4, name: 'Inferência', color: '#F39C12', icon: '🎯', unlockLevel: 20, cases: 50 },
-    { id: 5, name: 'Regressão', color: '#2ECC71', icon: '📉', unlockLevel: 25, cases: 50 },
+    { id: 5, name: 'Regressêo', color: '#2ECC71', icon: '📉', unlockLevel: 25, cases: 50 },
     { id: 6, name: 'Testes de Hipóteses', color: '#E91E63', icon: '⚖️', unlockLevel: 30, cases: 50 },
     { id: 7, name: 'ANOVA', color: '#00BCD4', icon: '🔬', unlockLevel: 35, cases: 50 },
-    { id: 8, name: 'Correlação', color: '#FF5722', icon: '🔗', unlockLevel: 40, cases: 50 },
+    { id: 8, name: 'Correlaçêo', color: '#FF5722', icon: '🔗', unlockLevel: 40, cases: 50 },
     { id: 9, name: 'Big Data Analytics', color: '#673AB7', icon: '💻', unlockLevel: 45, cases: 50 }
 ];
 
@@ -59,11 +59,11 @@ const QUESTIONS = {
         { q: 'O que é a média aritmética?', a: ['Soma dividida pela quantidade', 'Valor mais frequente', 'Valor central', 'Maior menos menor'], correct: 0 },
         { q: 'O que é a mediana?', a: ['Valor central ordenado', 'Soma dos valores', 'Valor mais comum', 'Diferença entre extremos'], correct: 0 },
         { q: 'O que é a moda?', a: ['Valor mais frequente', 'Valor do meio', 'Média dos valores', 'Menor valor'], correct: 0 },
-        { q: 'O que mede o desvio padrão?', a: ['Dispersão dos dados', 'Valor central', 'Valor máximo', 'Soma total'], correct: 0 },
-        { q: 'O que é variância?', a: ['Quadrado do desvio padrão', 'Média', 'Mediana', 'Moda'], correct: 0 },
-        { q: 'O que é amplitude?', a: ['Máximo menos mínimo', 'Média', 'Mediana', 'Desvio padrão'], correct: 0 },
+        { q: 'O que mede o desvio padrêo?', a: ['Dispersêo dos dados', 'Valor central', 'Valor máximo', 'Soma total'], correct: 0 },
+        { q: 'O que é variância?', a: ['Quadrado do desvio padrêo', 'Média', 'Mediana', 'Moda'], correct: 0 },
+        { q: 'O que é amplitude?', a: ['Máximo menos mínimo', 'Média', 'Mediana', 'Desvio padrêo'], correct: 0 },
         { q: 'Para dados {2,4,4,6}, qual é a moda?', a: ['4', '2', '6', '4,5'], correct: 0 },
-        { q: 'O que são quartis?', a: ['Divisões em 4 partes', 'Divisões em 2 partes', 'Média', 'Moda'], correct: 0 },
+        { q: 'O que sêo quartis?', a: ['Divisões em 4 partes', 'Divisões em 2 partes', 'Média', 'Moda'], correct: 0 },
         { q: 'O que é um outlier?', a: ['Valor muito diferente', 'Valor normal', 'Média', 'Mediana'], correct: 0 },
         { q: 'O que é frequência relativa?', a: ['Frequência dividida pelo total', 'Frequência absoluta', 'Soma', 'Média'], correct: 0 }
     ],
@@ -71,108 +71,108 @@ const QUESTIONS = {
         { q: 'Qual é a probabilidade de sair cara em uma moeda?', a: ['50% ou 0,5', '25%', '75%', '100%'], correct: 0 },
         { q: 'O que é um evento certo?', a: ['Probabilidade = 1', 'Probabilidade = 0', 'Probabilidade = 0,5', 'Nunca acontece'], correct: 0 },
         { q: 'O que é espaço amostral?', a: ['Todos resultados possíveis', 'Apenas favoráveis', 'Apenas um resultado', 'Nenhum resultado'], correct: 0 },
-        { q: 'O que são eventos mutuamente exclusivos?', a: ['Não podem ocorrer juntos', 'Ocorrem sempre juntos', 'São independentes', 'São dependentes'], correct: 0 },
+        { q: 'O que sêo eventos mutuamente exclusivos?', a: ['Nêo podem ocorrer juntos', 'Ocorrem sempre juntos', 'Sêo independentes', 'Sêo dependentes'], correct: 0 },
         { q: 'P(A ou B) para exclusivos é?', a: ['P(A) + P(B)', 'P(A) × P(B)', 'P(A) - P(B)', 'P(A) / P(B)'], correct: 0 },
         { q: 'O que é probabilidade condicional?', a: ['P(A|B) dado que B ocorreu', 'P(A) + P(B)', 'P(A) × P(B)', 'P(A ou B)'], correct: 0 },
         { q: 'O que afirma o Teorema de Bayes?', a: ['Atualiza probabilidades', 'Soma probabilidades', 'Multiplica sempre', 'Divide sempre'], correct: 0 },
         { q: 'Em um dado, P(número par)?', a: ['1/2 ou 50%', '1/6', '1/3', '2/3'], correct: 0 },
-        { q: 'O que são eventos independentes?', a: ['Um não afeta o outro', 'Um afeta o outro', 'São iguais', 'São opostos'], correct: 0 },
+        { q: 'O que sêo eventos independentes?', a: ['Um nêo afeta o outro', 'Um afeta o outro', 'Sêo iguais', 'Sêo opostos'], correct: 0 },
         { q: 'Qual é a soma de todas probabilidades?', a: ['1 ou 100%', '0', '0,5', 'Infinito'], correct: 0 }
     ],
     2: [ // Distribuições
-        { q: 'O que é distribuição normal?', a: ['Curva em sino simétrica', 'Linha reta', 'Exponencial', 'Uniforme'], correct: 0 },
+        { q: 'O que é distribuiçêo normal?', a: ['Curva em sino simétrica', 'Linha reta', 'Exponencial', 'Uniforme'], correct: 0 },
         { q: 'Na normal, qual % está em 1 desvio?', a: ['Cerca de 68%', '50%', '95%', '99%'], correct: 0 },
         { q: 'Na normal, qual % está em 2 desvios?', a: ['Cerca de 95%', '68%', '50%', '99%'], correct: 0 },
-        { q: 'O que é distribuição binomial?', a: ['Sucesso/fracasso em n tentativas', 'Sempre normal', 'Sempre uniforme', 'Contínua'], correct: 0 },
+        { q: 'O que é distribuiçêo binomial?', a: ['Sucesso/fracasso em n tentativas', 'Sempre normal', 'Sempre uniforme', 'Contínua'], correct: 0 },
         { q: 'O que caracteriza Poisson?', a: ['Eventos raros em intervalo', 'Eventos comuns', 'Sempre normal', 'Sempre uniforme'], correct: 0 },
-        { q: 'O que é distribuição uniforme?', a: ['Mesma probabilidade para todos', 'Curva em sino', 'Exponencial', 'Assimétrica'], correct: 0 },
+        { q: 'O que é distribuiçêo uniforme?', a: ['Mesma probabilidade para todos', 'Curva em sino', 'Exponencial', 'Assimétrica'], correct: 0 },
         { q: 'O que é assimetria?', a: ['Desvio da simetria', 'Perfeita simetria', 'Média = Mediana', 'Normal'], correct: 0 },
         { q: 'O que é curtose?', a: ['Grau de achatamento', 'Assimetria', 'Média', 'Variância'], correct: 0 },
         { q: 'Z-score mede o quê?', a: ['Desvios da média', 'Média', 'Moda', 'Variância'], correct: 0 },
-        { q: 'Distribuição t é usada quando?', a: ['Amostras pequenas', 'Amostras grandes', 'Sempre', 'Nunca'], correct: 0 }
+        { q: 'Distribuiçêo t é usada quando?', a: ['Amostras pequenas', 'Amostras grandes', 'Sempre', 'Nunca'], correct: 0 }
     ],
     3: [ // Amostragem
-        { q: 'O que é população?', a: ['Conjunto total de interesse', 'Parte do conjunto', 'Média', 'Amostra'], correct: 0 },
-        { q: 'O que é amostra?', a: ['Subconjunto da população', 'População inteira', 'Média', 'Variância'], correct: 0 },
-        { q: 'O que é amostragem aleatória simples?', a: ['Todos têm mesma chance', 'Seleção conveniente', 'Primeiro encontrado', 'Maior valor'], correct: 0 },
+        { q: 'O que é populaçêo?', a: ['Conjunto total de interesse', 'Parte do conjunto', 'Média', 'Amostra'], correct: 0 },
+        { q: 'O que é amostra?', a: ['Subconjunto da populaçêo', 'Populaçêo inteira', 'Média', 'Variância'], correct: 0 },
+        { q: 'O que é amostragem aleatória simples?', a: ['Todos têm mesma chance', 'Seleçêo conveniente', 'Primeiro encontrado', 'Maior valor'], correct: 0 },
         { q: 'O que é amostragem estratificada?', a: ['Divide em grupos e amostra', 'Totalmente aleatória', 'Por conveniência', 'Sistemática'], correct: 0 },
-        { q: 'O que é erro amostral?', a: ['Diferença amostra-população', 'Zero erro', 'Erro de digitação', 'Erro de cálculo'], correct: 0 },
-        { q: 'O que é viés de seleção?', a: ['Amostra não representativa', 'Amostra perfeita', 'Erro aleatório', 'Erro de cálculo'], correct: 0 },
-        { q: 'Aumentar n faz o quê com o erro?', a: ['Diminui o erro', 'Aumenta o erro', 'Não muda', 'Elimina totalmente'], correct: 0 },
+        { q: 'O que é erro amostral?', a: ['Diferença amostra-populaçêo', 'Zero erro', 'Erro de digitaçêo', 'Erro de cálculo'], correct: 0 },
+        { q: 'O que é viés de seleçêo?', a: ['Amostra nêo representativa', 'Amostra perfeita', 'Erro aleatório', 'Erro de cálculo'], correct: 0 },
+        { q: 'Aumentar n faz o quê com o erro?', a: ['Diminui o erro', 'Aumenta o erro', 'Nêo muda', 'Elimina totalmente'], correct: 0 },
         { q: 'O que é amostragem por conglomerados?', a: ['Seleciona grupos inteiros', 'Individual', 'Estratificada', 'Sistemática'], correct: 0 },
-        { q: 'O que é censo?', a: ['Pesquisa toda população', 'Apenas amostra', 'Estimativa', 'Previsão'], correct: 0 },
-        { q: 'O que é parâmetro?', a: ['Característica da população', 'Característica da amostra', 'Estimativa', 'Erro'], correct: 0 }
+        { q: 'O que é censo?', a: ['Pesquisa toda populaçêo', 'Apenas amostra', 'Estimativa', 'Previsêo'], correct: 0 },
+        { q: 'O que é parâmetro?', a: ['Característica da populaçêo', 'Característica da amostra', 'Estimativa', 'Erro'], correct: 0 }
     ],
     4: [ // Inferência
-        { q: 'O que é inferência estatística?', a: ['Conclusões sobre população via amostra', 'Descrição de dados', 'Gráficos', 'Tabelas'], correct: 0 },
+        { q: 'O que é inferência estatística?', a: ['Conclusões sobre populaçêo via amostra', 'Descriçêo de dados', 'Gráficos', 'Tabelas'], correct: 0 },
         { q: 'O que é estimador?', a: ['Estatística que estima parâmetro', 'Parâmetro exato', 'Erro', 'Viés'], correct: 0 },
         { q: 'O que é intervalo de confiança?', a: ['Faixa provável do parâmetro', 'Valor exato', 'Erro zero', 'Certeza absoluta'], correct: 0 },
         { q: 'IC 95% significa?', a: ['95% das vezes contém o parâmetro', '95% de certeza', '5% de erro', 'Exatamente 95%'], correct: 0 },
         { q: 'O que é nível de confiança?', a: ['Probabilidade do IC conter parâmetro', 'Erro', 'Variância', 'Média'], correct: 0 },
-        { q: 'Aumentar confiança faz IC?', a: ['Ficar mais largo', 'Ficar mais estreito', 'Não mudar', 'Desaparecer'], correct: 0 },
+        { q: 'Aumentar confiança faz IC?', a: ['Ficar mais largo', 'Ficar mais estreito', 'Nêo mudar', 'Desaparecer'], correct: 0 },
         { q: 'O que é margem de erro?', a: ['Metade da largura do IC', 'IC inteiro', 'Média', 'Variância'], correct: 0 },
-        { q: 'O que é estimador não-viesado?', a: ['Esperança igual ao parâmetro', 'Sempre errado', 'Viesado', 'Inconsistente'], correct: 0 },
-        { q: 'O que Teorema Central do Limite diz?', a: ['Médias tendem à normal', 'Dados são normais', 'Variância é zero', 'Erro é infinito'], correct: 0 },
+        { q: 'O que é estimador nêo-viesado?', a: ['Esperança igual ao parâmetro', 'Sempre errado', 'Viesado', 'Inconsistente'], correct: 0 },
+        { q: 'O que Teorema Central do Limite diz?', a: ['Médias tendem à normal', 'Dados sêo normais', 'Variância é zero', 'Erro é infinito'], correct: 0 },
         { q: 'O que é grau de liberdade?', a: ['Valores livres para variar', 'Erro', 'Viés', 'Parâmetro'], correct: 0 }
     ],
-    5: [ // Regressão
-        { q: 'O que é regressão linear?', a: ['Relação linear entre variáveis', 'Sem relação', 'Curva', 'Dispersão total'], correct: 0 },
+    5: [ // Regressêo
+        { q: 'O que é regressêo linear?', a: ['Relaçêo linear entre variáveis', 'Sem relaçêo', 'Curva', 'Dispersêo total'], correct: 0 },
         { q: 'O que é variável dependente?', a: ['Y, que é explicada', 'X, que explica', 'Constante', 'Erro'], correct: 0 },
         { q: 'O que é variável independente?', a: ['X, que explica', 'Y, que é explicada', 'Constante', 'Erro'], correct: 0 },
-        { q: 'O que R² mede?', a: ['Variação explicada pelo modelo', 'Média', 'Variância', 'Erro'], correct: 0 },
+        { q: 'O que R² mede?', a: ['Variaçêo explicada pelo modelo', 'Média', 'Variância', 'Erro'], correct: 0 },
         { q: 'R² = 1 significa?', a: ['Ajuste perfeito', 'Nenhum ajuste', 'Metade explicada', 'Erro máximo'], correct: 0 },
         { q: 'O que é resíduo?', a: ['Diferença real-predito', 'Valor predito', 'Valor real', 'Média'], correct: 0 },
-        { q: 'O que são mínimos quadrados?', a: ['Minimiza soma dos quadrados dos resíduos', 'Maximiza erros', 'Ignora erros', 'Soma resíduos'], correct: 0 },
-        { q: 'O que é intercepto?', a: ['Valor de Y quando X=0', 'Inclinação', 'X quando Y=0', 'Erro'], correct: 0 },
-        { q: 'O que é coeficiente angular?', a: ['Inclinação da reta', 'Intercepto', 'Erro', 'R²'], correct: 0 },
-        { q: 'Regressão múltipla tem?', a: ['Várias variáveis independentes', 'Uma variável', 'Nenhuma variável', 'Só constante'], correct: 0 }
+        { q: 'O que sêo mínimos quadrados?', a: ['Minimiza soma dos quadrados dos resíduos', 'Maximiza erros', 'Ignora erros', 'Soma resíduos'], correct: 0 },
+        { q: 'O que é intercepto?', a: ['Valor de Y quando X=0', 'Inclinaçêo', 'X quando Y=0', 'Erro'], correct: 0 },
+        { q: 'O que é coeficiente angular?', a: ['Inclinaçêo da reta', 'Intercepto', 'Erro', 'R²'], correct: 0 },
+        { q: 'Regressêo múltipla tem?', a: ['Várias variáveis independentes', 'Uma variável', 'Nenhuma variável', 'Só constante'], correct: 0 }
     ],
     6: [ // Testes de Hipóteses
-        { q: 'O que é hipótese nula (H0)?', a: ['Afirmação a ser testada', 'Sempre verdadeira', 'Sempre falsa', 'Alternativa'], correct: 0 },
-        { q: 'O que é hipótese alternativa (H1)?', a: ['Contradiz H0', 'Igual a H0', 'Sempre falsa', 'Não existe'], correct: 0 },
+        { q: 'O que é hipótese nula (H0)?', a: ['Afirmaçêo a ser testada', 'Sempre verdadeira', 'Sempre falsa', 'Alternativa'], correct: 0 },
+        { q: 'O que é hipótese alternativa (H1)?', a: ['Contradiz H0', 'Igual a H0', 'Sempre falsa', 'Nêo existe'], correct: 0 },
         { q: 'O que é p-valor?', a: ['Probabilidade de obter resultado sob H0', 'Probabilidade de H0', 'Sempre 0,05', 'Erro'], correct: 0 },
         { q: 'P-valor < α significa?', a: ['Rejeitar H0', 'Aceitar H0', 'Nada muda', 'Erro tipo II'], correct: 0 },
         { q: 'O que é erro tipo I?', a: ['Rejeitar H0 verdadeira', 'Aceitar H0 falsa', 'Nenhum erro', 'Erro de cálculo'], correct: 0 },
-        { q: 'O que é erro tipo II?', a: ['Não rejeitar H0 falsa', 'Rejeitar H0 verdadeira', 'Nenhum erro', 'Erro de cálculo'], correct: 0 },
+        { q: 'O que é erro tipo II?', a: ['Nêo rejeitar H0 falsa', 'Rejeitar H0 verdadeira', 'Nenhum erro', 'Erro de cálculo'], correct: 0 },
         { q: 'O que é nível de significância α?', a: ['Probabilidade máxima de erro tipo I', 'Erro tipo II', 'P-valor', 'Confiança'], correct: 0 },
         { q: 'Teste t é usado para?', a: ['Comparar médias', 'Comparar variâncias', 'Comparar proporções', 'Comparar modas'], correct: 0 },
-        { q: 'Teste qui-quadrado é para?', a: ['Variáveis categóricas', 'Médias', 'Variâncias', 'Regressão'], correct: 0 },
+        { q: 'Teste qui-quadrado é para?', a: ['Variáveis categóricas', 'Médias', 'Variâncias', 'Regressêo'], correct: 0 },
         { q: 'O que é poder do teste?', a: ['1 - P(erro tipo II)', 'P(erro tipo I)', 'P-valor', 'α'], correct: 0 }
     ],
     7: [ // ANOVA
         { q: 'O que ANOVA significa?', a: ['Análise de Variância', 'Análise de Média', 'Análise de Moda', 'Análise de Desvio'], correct: 0 },
         { q: 'ANOVA compara?', a: ['Médias de 3+ grupos', 'Apenas 2 grupos', 'Variâncias', 'Proporções'], correct: 0 },
-        { q: 'O que é variação entre grupos?', a: ['Diferença entre médias dos grupos', 'Dentro do grupo', 'Erro', 'Total'], correct: 0 },
-        { q: 'O que é variação dentro dos grupos?', a: ['Variação dentro de cada grupo', 'Entre grupos', 'Total', 'Nenhuma'], correct: 0 },
-        { q: 'O que é estatística F?', a: ['Razão de variâncias', 'Média', 'Desvio padrão', 'T-score'], correct: 0 },
+        { q: 'O que é variaçêo entre grupos?', a: ['Diferença entre médias dos grupos', 'Dentro do grupo', 'Erro', 'Total'], correct: 0 },
+        { q: 'O que é variaçêo dentro dos grupos?', a: ['Variaçêo dentro de cada grupo', 'Entre grupos', 'Total', 'Nenhuma'], correct: 0 },
+        { q: 'O que é estatística F?', a: ['Razêo de variâncias', 'Média', 'Desvio padrêo', 'T-score'], correct: 0 },
         { q: 'ANOVA assume?', a: ['Normalidade e variâncias iguais', 'Nada', 'Assimetria', 'Variâncias diferentes'], correct: 0 },
         { q: 'O que é ANOVA de um fator?', a: ['Um fator independente', 'Dois fatores', 'Três fatores', 'Nenhum fator'], correct: 0 },
-        { q: 'O que é ANOVA fatorial?', a: ['Dois ou mais fatores', 'Um fator', 'Nenhum fator', 'Regressão'], correct: 0 },
+        { q: 'O que é ANOVA fatorial?', a: ['Dois ou mais fatores', 'Um fator', 'Nenhum fator', 'Regressêo'], correct: 0 },
         { q: 'Após ANOVA significativa, fazer?', a: ['Testes post-hoc', 'Nada', 'Nova ANOVA', 'Ignorar'], correct: 0 },
-        { q: 'O que é teste de Tukey?', a: ['Teste post-hoc', 'Teste inicial', 'ANOVA', 'Regressão'], correct: 0 }
+        { q: 'O que é teste de Tukey?', a: ['Teste post-hoc', 'Teste inicial', 'ANOVA', 'Regressêo'], correct: 0 }
     ],
-    8: [ // Correlação
-        { q: 'Correlação mede?', a: ['Força e direção da relação', 'Causalidade', 'Média', 'Variância'], correct: 0 },
-        { q: 'Correlação de Pearson varia de?', a: ['-1 a +1', '0 a 1', '-∞ a +∞', '0 a 100'], correct: 0 },
-        { q: 'r = +1 significa?', a: ['Correlação positiva perfeita', 'Correlação negativa', 'Sem correlação', 'Correlação média'], correct: 0 },
-        { q: 'r = 0 significa?', a: ['Sem correlação linear', 'Correlação perfeita', 'Correlação negativa', 'Correlação positiva'], correct: 0 },
-        { q: 'r = -1 significa?', a: ['Correlação negativa perfeita', 'Correlação positiva', 'Sem correlação', 'Erro'], correct: 0 },
-        { q: 'Correlação implica causalidade?', a: ['Não necessariamente', 'Sempre', 'Nunca', 'Às vezes sim'], correct: 0 },
-        { q: 'O que é correlação espúria?', a: ['Aparente mas sem sentido', 'Correlação real', 'Correlação perfeita', 'Sem correlação'], correct: 0 },
-        { q: 'Correlação de Spearman é para?', a: ['Dados ordinais ou não-lineares', 'Apenas normais', 'Apenas contínuos', 'Apenas categóricos'], correct: 0 },
-        { q: 'r² na correlação é?', a: ['Coeficiente de determinação', 'Correlação negativa', 'Erro', 'Variância'], correct: 0 },
-        { q: 'O que é multicolinearidade?', a: ['Alta correlação entre preditores', 'Sem correlação', 'Correlação perfeita', 'Erro de medida'], correct: 0 }
+    8: [ // Correlaçêo
+        { q: 'Correlaçêo mede?', a: ['Força e direçêo da relaçêo', 'Causalidade', 'Média', 'Variância'], correct: 0 },
+        { q: 'Correlaçêo de Pearson varia de?', a: ['-1 a +1', '0 a 1', '-∞ a +∞', '0 a 100'], correct: 0 },
+        { q: 'r = +1 significa?', a: ['Correlaçêo positiva perfeita', 'Correlaçêo negativa', 'Sem correlaçêo', 'Correlaçêo média'], correct: 0 },
+        { q: 'r = 0 significa?', a: ['Sem correlaçêo linear', 'Correlaçêo perfeita', 'Correlaçêo negativa', 'Correlaçêo positiva'], correct: 0 },
+        { q: 'r = -1 significa?', a: ['Correlaçêo negativa perfeita', 'Correlaçêo positiva', 'Sem correlaçêo', 'Erro'], correct: 0 },
+        { q: 'Correlaçêo implica causalidade?', a: ['Nêo necessariamente', 'Sempre', 'Nunca', 'Às vezes sim'], correct: 0 },
+        { q: 'O que é correlaçêo espúria?', a: ['Aparente mas sem sentido', 'Correlaçêo real', 'Correlaçêo perfeita', 'Sem correlaçêo'], correct: 0 },
+        { q: 'Correlaçêo de Spearman é para?', a: ['Dados ordinais ou nêo-lineares', 'Apenas normais', 'Apenas contínuos', 'Apenas categóricos'], correct: 0 },
+        { q: 'r² na correlaçêo é?', a: ['Coeficiente de determinaçêo', 'Correlaçêo negativa', 'Erro', 'Variância'], correct: 0 },
+        { q: 'O que é multicolinearidade?', a: ['Alta correlaçêo entre preditores', 'Sem correlaçêo', 'Correlaçêo perfeita', 'Erro de medida'], correct: 0 }
     ],
     9: [ // Big Data Analytics
         { q: 'O que caracteriza Big Data?', a: ['Volume, Velocidade, Variedade', 'Apenas volume', 'Apenas velocidade', 'Apenas variedade'], correct: 0 },
-        { q: 'O que é machine learning?', a: ['Aprendizado por máquinas', 'Programação manual', 'Estatística básica', 'Gráficos'], correct: 0 },
+        { q: 'O que é machine learning?', a: ['Aprendizado por máquinas', 'Programaçêo manual', 'Estatística básica', 'Gráficos'], correct: 0 },
         { q: 'O que é overfitting?', a: ['Modelo decorou os dados', 'Modelo generaliza bem', 'Sem erro', 'Erro mínimo'], correct: 0 },
         { q: 'O que é data mining?', a: ['Descoberta de padrões em dados', 'Armazenamento', 'Backup', 'Limpeza'], correct: 0 },
-        { q: 'O que é validação cruzada?', a: ['Avaliar modelo em diferentes partes', 'Treinar uma vez', 'Ignorar teste', 'Usar todos dados'], correct: 0 },
+        { q: 'O que é validaçêo cruzada?', a: ['Avaliar modelo em diferentes partes', 'Treinar uma vez', 'Ignorar teste', 'Usar todos dados'], correct: 0 },
         { q: 'O que é clustering?', a: ['Agrupar dados similares', 'Classificar com rótulos', 'Prever valores', 'Ordenar dados'], correct: 0 },
-        { q: 'O que é classificação?', a: ['Prever categorias', 'Agrupar sem rótulos', 'Prever valores contínuos', 'Ordenar'], correct: 0 },
-        { q: 'O que é regressão em ML?', a: ['Prever valores contínuos', 'Classificar', 'Agrupar', 'Ordenar'], correct: 0 },
-        { q: 'O que são redes neurais?', a: ['Modelos inspirados no cérebro', 'Redes de computadores', 'Internet', 'Banco de dados'], correct: 0 },
+        { q: 'O que é classificaçêo?', a: ['Prever categorias', 'Agrupar sem rótulos', 'Prever valores contínuos', 'Ordenar'], correct: 0 },
+        { q: 'O que é regressêo em ML?', a: ['Prever valores contínuos', 'Classificar', 'Agrupar', 'Ordenar'], correct: 0 },
+        { q: 'O que sêo redes neurais?', a: ['Modelos inspirados no cérebro', 'Redes de computadores', 'Internet', 'Banco de dados'], correct: 0 },
         { q: 'O que é deep learning?', a: ['Redes neurais profundas', 'Aprendizado superficial', 'Estatística básica', 'Gráficos'], correct: 0 }
     ]
 };
@@ -180,7 +180,7 @@ const QUESTIONS = {
 // Loja
 const SHOP_ITEMS = [
     { id: 'evidence_pack', name: 'Pacote de Evidências', price: 100, currency: 'coins', description: '+50 evidências' },
-    { id: 'accuracy_boost', name: 'Boost de Precisão', price: 150, currency: 'coins', description: '+10% precisão' },
+    { id: 'accuracy_boost', name: 'Boost de Precisêo', price: 150, currency: 'coins', description: '+10% precisêo' },
     { id: 'case_files', name: 'Arquivos de Casos', price: 200, currency: 'coins', description: '+5 casos' },
     { id: 'topic_unlock', name: 'Desbloquear Tópico', price: 5, currency: 'gems', description: 'Próximo tópico' },
     { id: 'double_xp', name: 'XP Dobrado', price: 3, currency: 'gems', description: '2x XP por 10 casos' },
@@ -403,11 +403,11 @@ function drawMenu() {
     ctx.fillRect(canvas.width/2 - 150, 580, 300, 80);
     ctx.fillStyle = '#3498DB';
     ctx.font = '16px Arial';
-    ctx.fillText(`🎯 Precisão: ${playerData.accuracy}%`, canvas.width/2, 610);
+    ctx.fillText(`🎯 Precisêo: ${playerData.accuracy}%`, canvas.width/2, 610);
     ctx.fillText(`📑 Evidências: ${playerData.evidence.length}`, canvas.width/2, 640);
 }
 
-// Desenhar seleção de tópicos
+// Desenhar seleçêo de tópicos
 function drawTopicSelect() {
     drawStatBackground();
     drawHUD();
@@ -417,7 +417,7 @@ function drawTopicSelect() {
     ctx.textAlign = 'center';
     ctx.fillText('📊 TÓPICOS ESTATÍSTICOS', canvas.width/2, 100);
 
-    // Botão voltar
+    // Botêo voltar
     ctx.fillStyle = '#E74C3C';
     ctx.fillRect(20, 80, 100, 40);
     ctx.fillStyle = '#FFF';
@@ -478,7 +478,7 @@ function drawTopicSelect() {
     maxScroll = Math.max(0, TOPICS.length * (cardHeight + 15) - (canvas.height - 180));
 }
 
-// Desenhar seleção de caso
+// Desenhar seleçêo de caso
 function drawCaseSelect() {
     const topic = TOPICS[selectedTopic];
 
@@ -551,7 +551,7 @@ function drawCaseSelect() {
     maxScroll = Math.max(0, Math.ceil(topic.cases / cols) * (size + spacing) - (canvas.height - 200));
 }
 
-// Desenhar questão
+// Desenhar questêo
 function drawQuestion() {
     const topic = TOPICS[selectedTopic];
 
@@ -587,7 +587,7 @@ function drawQuestion() {
         showingResult = false;
     }
 
-    // Caixa da questão
+    // Caixa da questêo
     ctx.fillStyle = 'rgba(15, 15, 35, 0.95)';
     ctx.shadowColor = '#000';
     ctx.shadowBlur = 15;
@@ -634,7 +634,7 @@ function drawQuestion() {
         ctx.fillText(answer.text, canvas.width/2, y + 38);
     });
 
-    // Botão confirmar
+    // Botêo confirmar
     if (selectedAnswer !== null && !showingResult) {
         ctx.fillStyle = '#3498DB';
         ctx.fillRect(canvas.width/2 - 100, 610, 200, 50);
@@ -740,7 +740,7 @@ function drawShop() {
         ctx.font = 'bold 16px Arial';
         ctx.fillText(`${item.currency === 'gems' ? '💎' : '🪙'} ${item.price}`, x + 15, cardY + 72);
 
-        // Botão comprar
+        // Botêo comprar
         ctx.fillStyle = '#3498DB';
         ctx.fillRect(x + 200, cardY + 50, 65, 28);
         ctx.fillStyle = '#FFF';
@@ -779,7 +779,7 @@ function drawCasesResolved() {
 
     const stats = [
         `📊 Casos Resolvidos: ${playerData.casesSolved}`,
-        `🎯 Precisão: ${playerData.accuracy}%`,
+        `🎯 Precisêo: ${playerData.accuracy}%`,
         `📑 Evidências: ${playerData.evidence.length}`,
         `📚 Tópicos Estudados: ${playerData.unlockedTopics.length}`,
         `🔍 Nível Detetive: ${level}`
@@ -802,8 +802,8 @@ function drawCasesResolved() {
     ctx.fillStyle = '#3498DB';
     ctx.font = '14px Arial';
     const tips = [
-        'Correlação não implica causalidade.',
-        'A média pode enganar - veja a distribuição.',
+        'Correlaçêo nêo implica causalidade.',
+        'A média pode enganar - veja a distribuiçêo.',
         'Amostras maiores reduzem o erro.',
         'Sempre questione a fonte dos dados.'
     ];
@@ -829,7 +829,7 @@ function drawAchievements() {
     const achievements = [
         { name: 'Primeiro Caso', desc: 'Resolva seu primeiro caso', icon: '🔍', unlocked: true },
         { name: 'Analista', desc: 'Desbloqueie 3 tópicos', icon: '📊', unlocked: playerData.unlockedTopics.length >= 3 },
-        { name: 'Preciso', desc: 'Mantenha 90%+ de precisão', icon: '🎯', unlocked: playerData.accuracy >= 90 },
+        { name: 'Preciso', desc: 'Mantenha 90%+ de precisêo', icon: '🎯', unlocked: playerData.accuracy >= 90 },
         { name: 'Detetive', desc: 'Resolva 50 casos', icon: '🕵️', unlocked: playerData.casesSolved >= 50 },
         { name: 'Estatístico', desc: 'Alcance nível 10', icon: '📈', unlocked: level >= 10 },
         { name: 'Expert', desc: 'Complete 5 tópicos', icon: '🏅', unlocked: Object.values(playerData.topicProgress).filter(p => p >= 50).length >= 5 },
@@ -927,7 +927,7 @@ function processAnswer() {
         }
     } else {
         createParticles(canvas.width/2, 400, '#E74C3C', 20);
-        // Ajustar precisão
+        // Ajustar precisêo
         if (playerData.casesSolved > 0) {
             playerData.accuracy = Math.max(0, playerData.accuracy - 1);
         }
@@ -1084,6 +1084,6 @@ canvas.addEventListener('touchmove', (e) => {
     }
 }, { passive: false });
 
-// Inicialização
+// Inicializaçêo
 loadGame();
 gameLoop();

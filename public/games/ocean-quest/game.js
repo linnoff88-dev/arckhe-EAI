@@ -15,7 +15,7 @@ class OceanQuest {
       { title: 'Bem-vindo ao Ocean Quest!', lines: ['Explore o oceano profundo', 'e colete tesouros!'], emoji: '🐠' },
       { title: 'Como Jogar', lines: ['Toque/Clique para nadar', 'Colete pérolas e conchas', 'Evite os tubarões!'], emoji: '🎮' },
       { title: 'Tesouros', lines: ['🐚 Concha = 10 moedas', '🦪 Pérola = 25 moedas', '💎 Diamante = 50 moedas'], emoji: '💰' },
-      { title: 'Poderes', lines: ['⚡ Velocidade turbo', '🛡️ Escudo protetor', '🧲 Imã de tesouros'], emoji: '✨' },
+      { title: 'Poderes', lines: ['⚡ Velocidade turbo', '🛡️ Escudo protetor', '🧲 Imê de tesouros'], emoji: '✨' },
       { title: 'Mundos', lines: ['5 oceanos diferentes', '10 níveis cada um', 'Desbloqueie todos!'], emoji: '🌊' },
       { title: 'Vamos Nadar!', lines: ['Colete XP para subir de nível', 'Compre peixes na loja', 'Boa aventura!'], emoji: '🎉' }
     ];
@@ -40,7 +40,7 @@ class OceanQuest {
       blowfish: { emoji: '🐡', name: 'Baiacu', speed: 0.9, price: 800 },
       dolphin: { emoji: '🐬', name: 'Golfinho', speed: 1.3, price: 1500 },
       whale: { emoji: '🐋', name: 'Baleia', speed: 0.8, price: 2500 },
-      shark: { emoji: '🦈', name: 'Tubarão Amigo', speed: 1.4, price: 5000 },
+      shark: { emoji: '🦈', name: 'Tubarêo Amigo', speed: 1.4, price: 5000 },
       octopus: { emoji: '🐙', name: 'Polvo', speed: 1.2, price: 3500 },
       turtle: { emoji: '🐢', name: 'Tartaruga', speed: 0.7, price: 2000 },
       seahorse: { emoji: '🦑', name: 'Lula', speed: 1.15, price: 4000 },
@@ -77,8 +77,8 @@ class OceanQuest {
     // Upgrades
     this.upgrades = {
       swimSpeed: { level: 0, maxLevel: 10, basePrice: 200, name: 'Velocidade' },
-      magnetRange: { level: 0, maxLevel: 10, basePrice: 300, name: 'Alcance Imã' },
-      shieldDuration: { level: 0, maxLevel: 10, basePrice: 400, name: 'Duração Escudo' },
+      magnetRange: { level: 0, maxLevel: 10, basePrice: 300, name: 'Alcance Imê' },
+      shieldDuration: { level: 0, maxLevel: 10, basePrice: 400, name: 'Duraçêo Escudo' },
       coinMultiplier: { level: 0, maxLevel: 10, basePrice: 500, name: 'Multiplicador' }
     };
     this.loadUpgrades();

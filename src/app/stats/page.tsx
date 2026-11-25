@@ -123,9 +123,9 @@ export default async function StatsPage() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '1.5rem' }}>
 
-          {/* Cliques por seção */}
+          {/* Cliques por seçêo */}
           <div style={{ background: '#1e293b', borderRadius: 12, padding: '1.5rem', border: '1px solid #334155' }}>
-            <h2 style={{ margin: '0 0 1.25rem', fontSize: '1rem', fontWeight: 600, color: '#cbd5e1' }}>Cliques por seção</h2>
+            <h2 style={{ margin: '0 0 1.25rem', fontSize: '1rem', fontWeight: 600, color: '#cbd5e1' }}>Cliques por seçêo</h2>
             {sectionData.length === 0
               ? <p style={{ color: '#475569', fontSize: '0.85rem' }}>Nenhum clique ainda.</p>
               : sectionData.map((s) => (
@@ -165,7 +165,7 @@ export default async function StatsPage() {
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
                 <thead>
                   <tr style={{ borderBottom: '1px solid #334155' }}>
-                    {['#', 'Link', 'Seção', 'Cliques'].map((h) => (
+                    {['#', 'Link', 'Seçêo', 'Cliques'].map((h) => (
                       <th key={h} style={{ padding: '0.5rem 0.75rem', color: '#64748b', textAlign: h === 'Cliques' ? 'right' : 'left', fontWeight: 600 }}>{h}</th>
                     ))}
                   </tr>

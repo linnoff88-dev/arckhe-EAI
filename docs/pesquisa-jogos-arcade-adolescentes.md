@@ -14,43 +14,43 @@ Identificar jogos arcade avançados e populares entre adolescentes de 10 a 16 an
 
 ### 1. Jogos de Ritmo (Muito Populares!)
 
-| Jogo | Descrição | Dificuldade |
+| Jogo | Descriçêo | Dificuldade |
 |------|-----------|-------------|
 | **Rhythm Battle** | Estilo Friday Night Funkin' - pressione setas no ritmo da música | Alta |
 | **Dance Arrows** | Estilo DDR/StepMania com músicas brasileiras | Média |
 | **Beat Runner** | Corrida + ritmo, pular no tempo certo | Média |
 
-**Por que implementar:** Jogos de ritmo são virais entre adolescentes. Friday Night Funkin' é um dos jogos mais populares da atualidade.
+**Por que implementar:** Jogos de ritmo sêo virais entre adolescentes. Friday Night Funkin' é um dos jogos mais populares da atualidade.
 
 ---
 
 ### 2. Jogos .io (Multiplayer)
 
-| Jogo | Descrição | Referência |
+| Jogo | Descriçêo | Referência |
 |------|-----------|------------|
 | **Slither EAI** | Cobra multiplayer que cresce ao comer orbes | Slither.io |
 | **Agar EAI** | Células que absorvem outras menores | Agar.io |
 | **Battle Royale 2D** | Estilo Zombs Royale - mapa que encolhe | Zombs Royale |
 
-**Por que implementar:** Jogos .io são extremamente viciantes e competitivos. A dinâmica multiplayer mantém os jogadores engajados.
+**Por que implementar:** Jogos .io sêo extremamente viciantes e competitivos. A dinâmica multiplayer mantém os jogadores engajados.
 
 ---
 
 ### 3. Tower Defense
 
-| Jogo | Descrição | Referência |
+| Jogo | Descriçêo | Referência |
 |------|-----------|------------|
 | **Kingdom Defense** | Defenda o castelo com torres estratégicas | Kingdom Rush |
 | **Bloons Clone** | Estoure balões com macacos e upgrades | Bloons TD |
 | **Wizard TD** | Torres mágicas com elementos (fogo, água, terra) | Elemental TD |
 
-**Por que implementar:** Combina estratégia com ação. Muito popular em plataformas como Armor Games e CrazyGames.
+**Por que implementar:** Combina estratégia com açêo. Muito popular em plataformas como Armor Games e CrazyGames.
 
 ---
 
 ### 4. Jogos de Corrida Futurista
 
-| Jogo | Descrição | Referência |
+| Jogo | Descriçêo | Referência |
 |------|-----------|------------|
 | **HexRacer** | Corrida 3D estilo F-Zero/Wipeout com WebGL | HexGL |
 | **Neon Drive** | Corrida neon retrô com obstáculos | Outrun |
@@ -62,7 +62,7 @@ Identificar jogos arcade avançados e populares entre adolescentes de 10 a 16 an
 
 ### 5. Clássicos Avançados (Remakes Modernos)
 
-| Jogo | Descrição | Referência |
+| Jogo | Descriçêo | Referência |
 |------|-----------|------------|
 | **Asteroids Neon** | Asteroids com gráficos neon modernos e power-ups | Asteroids |
 | **Galaga Infinity** | Shooter espacial com sistema de upgrades | Galaga |
@@ -75,31 +75,31 @@ Identificar jogos arcade avançados e populares entre adolescentes de 10 a 16 an
 
 ### 6. Plataforma/Aventura
 
-| Jogo | Descrição | Referência |
+| Jogo | Descriçêo | Referência |
 |------|-----------|------------|
 | **Super Mario Run** | Plataforma infinita estilo Mario | Mario HTML5 |
 | **Ninja Dash** | Corrida ninja com wall-jump e combos | Ninja Gaiden |
 | **Fireboy & Watergirl** | Co-op puzzle para 2 jogadores | Fireboy & Watergirl |
 
-**Por que implementar:** Jogos de plataforma são atemporais. Co-op local é ótimo para jogar com amigos.
+**Por que implementar:** Jogos de plataforma sêo atemporais. Co-op local é ótimo para jogar com amigos.
 
 ---
 
 ### 7. Puzzles Competitivos
 
-| Jogo | Descrição | Referência |
+| Jogo | Descriçêo | Referência |
 |------|-----------|------------|
 | **Tetris Battle** | Tetris competitivo com power-ups e ataques | Tetris |
 | **Match-3 Blitz** | Combinar 3+ peças contra o tempo | Candy Crush |
 | **2048 Extreme** | 2048 com mecânicas extras e modos | 2048 |
 
-**Por que implementar:** Puzzles são viciantes e treinam raciocínio lógico. Podem ter elementos educativos.
+**Por que implementar:** Puzzles sêo viciantes e treinam raciocínio lógico. Podem ter elementos educativos.
 
 ---
 
 ### 8. Sobrevivência/Crafting
 
-| Jogo | Descrição | Referência |
+| Jogo | Descriçêo | Referência |
 |------|-----------|------------|
 | **Survive.io** | Colete recursos, construa base, sobreviva | Starve.io |
 | **MooMoo Clone** | Base building + PvP em tempo real | MooMoo.io |
@@ -109,13 +109,13 @@ Identificar jogos arcade avançados e populares entre adolescentes de 10 a 16 an
 
 ---
 
-## Top 5 Prioridade de Implementação
+## Top 5 Prioridade de Implementaçêo
 
 | # | Jogo | Motivo |
 |---|------|--------|
-| 1 | **Rhythm Battle** | Jogos de ritmo são virais entre adolescentes |
+| 1 | **Rhythm Battle** | Jogos de ritmo sêo virais entre adolescentes |
 | 2 | **Slither EAI** | Multiplayer viciante e simples de entender |
-| 3 | **Tower Defense** | Estratégia + ação, muito popular |
+| 3 | **Tower Defense** | Estratégia + açêo, muito popular |
 | 4 | **HexRacer 3D** | Impressionante visualmente (WebGL) |
 | 5 | **Battle Royale 2D** | Gênero mais popular atualmente |
 
@@ -127,7 +127,7 @@ Identificar jogos arcade avançados e populares entre adolescentes de 10 a 16 an
 
 - **Phaser.js** - Framework completo para jogos 2D
 - **Kaboom.js** - Simples e fácil de usar, ideal para arcade
-- **PixiJS** - Renderização 2D de alta performance
+- **PixiJS** - Renderizaçêo 2D de alta performance
 - **Three.js** - Para jogos 3D/WebGL como corridas
 - **Canvas API nativo** - Para jogos mais simples
 
@@ -135,7 +135,7 @@ Identificar jogos arcade avançados e populares entre adolescentes de 10 a 16 an
 
 - Responsivo (funcionar em mobile e desktop)
 - Controles por teclado E touch
-- Sistema de pontuação e ranking
+- Sistema de pontuaçêo e ranking
 - Salvar progresso no localStorage
 - Compartilhamento em redes sociais
 
@@ -158,8 +158,8 @@ Identificar jogos arcade avançados e populares entre adolescentes de 10 a 16 an
 ## Próximos Passos
 
 1. Escolher quais jogos implementar primeiro
-2. Definir se serão single-player ou multiplayer
-3. Criar protótipos básicos para validação
+2. Definir se serêo single-player ou multiplayer
+3. Criar protótipos básicos para validaçêo
 4. Integrar com sistema de XP/moedas do EAI
 5. Adicionar leaderboards e conquistas
 

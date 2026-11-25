@@ -58,7 +58,7 @@ const achievements: Achievement[] = [
   { id: 'games_5', title: 'Explorador', description: 'Jogou 5 jogos diferentes', icon: '🗺️', xpReward: 40, coinReward: 25, unlocked: false },
   { id: 'games_10', title: 'Mestre dos Jogos', description: 'Jogou 10 jogos diferentes', icon: '👑', xpReward: 75, coinReward: 50, unlocked: false },
   { id: 'bau_first', title: 'Caçador de Tesouros', description: 'Abriu sua primeira Caixa Mágica', icon: '🎁', xpReward: 15, coinReward: 0, unlocked: false },
-  { id: 'level_5', title: 'Em Ascensão', description: 'Alcançou o nível 5', icon: '⭐', xpReward: 100, coinReward: 50, unlocked: false },
+  { id: 'level_5', title: 'Em Ascensêo', description: 'Alcançou o nível 5', icon: '⭐', xpReward: 100, coinReward: 50, unlocked: false },
   { id: 'level_10', title: 'Veterano', description: 'Alcançou o nível 10', icon: '🌟', xpReward: 200, coinReward: 100, unlocked: false },
 ];
 

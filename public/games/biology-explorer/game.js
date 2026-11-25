@@ -18,7 +18,7 @@ const AREAS = [
   { id: 4, name: 'Anatomia', color: '#dc2626', icon: '🫀', unlockLevel: 20, missions: 50 },
   { id: 5, name: 'Fisiologia', color: '#0891b2', icon: '🧠', unlockLevel: 30, missions: 50 },
   { id: 6, name: 'Ecologia', color: '#15803d', icon: '🌍', unlockLevel: 40, missions: 50 },
-  { id: 7, name: 'Evolução', color: '#7c2d12', icon: '🦴', unlockLevel: 50, missions: 50 },
+  { id: 7, name: 'Evoluçêo', color: '#7c2d12', icon: '🦴', unlockLevel: 50, missions: 50 },
   { id: 8, name: 'Microbiologia', color: '#4f46e5', icon: '🦠', unlockLevel: 60, missions: 50 },
   { id: 9, name: 'Biotecnologia', color: '#0d9488', icon: '⚗️', unlockLevel: 70, missions: 50 }
 ];
@@ -53,76 +53,76 @@ let totalSpecimens = 0;
 // Questions database
 const QUESTIONS = {
   0: [ // Citologia
-    { q: 'Qual organela é responsável pela respiração celular?', a: ['Mitocôndria', 'Ribossomo', 'Lisossomo', 'Complexo de Golgi'], correct: 0 },
+    { q: 'Qual organela é responsável pela respiraçêo celular?', a: ['Mitocôndria', 'Ribossomo', 'Lisossomo', 'Complexo de Golgi'], correct: 0 },
     { q: 'O que é a membrana plasmática?', a: ['Envoltório celular seletivo', 'Núcleo da célula', 'Organela de síntese', 'Estrutura de suporte'], correct: 0 },
     { q: 'Qual estrutura contém o material genético?', a: ['Núcleo', 'Citoplasma', 'Membrana', 'Ribossomo'], correct: 0 },
-    { q: 'O que são ribossomos?', a: ['Síntese de proteínas', 'Digestão celular', 'Produção de ATP', 'Armazenamento'], correct: 0 },
-    { q: 'Qual a função do Complexo de Golgi?', a: ['Processamento e secreção', 'Respiração celular', 'Fotossíntese', 'Divisão celular'], correct: 0 },
-    { q: 'O que são lisossomos?', a: ['Digestão intracelular', 'Síntese de lipídios', 'Produção de energia', 'Suporte estrutural'], correct: 0 }
+    { q: 'O que sêo ribossomos?', a: ['Síntese de proteínas', 'Digestêo celular', 'Produçêo de ATP', 'Armazenamento'], correct: 0 },
+    { q: 'Qual a funçêo do Complexo de Golgi?', a: ['Processamento e secreçêo', 'Respiraçêo celular', 'Fotossíntese', 'Divisêo celular'], correct: 0 },
+    { q: 'O que sêo lisossomos?', a: ['Digestêo intracelular', 'Síntese de lipídios', 'Produçêo de energia', 'Suporte estrutural'], correct: 0 }
   ],
   1: [ // Genética
     { q: 'O que é DNA?', a: ['Ácido desoxirribonucleico', 'Ácido ribonucleico', 'Proteína celular', 'Carboidrato complexo'], correct: 0 },
     { q: 'Quantos cromossomos tem uma célula humana?', a: ['46', '23', '48', '44'], correct: 0 },
     { q: 'O que é um gene?', a: ['Sequência de DNA', 'Tipo de proteína', 'Organela celular', 'Membrana nuclear'], correct: 0 },
     { q: 'Quem descobriu a estrutura do DNA?', a: ['Watson e Crick', 'Mendel', 'Darwin', 'Pasteur'], correct: 0 },
-    { q: 'O que é um alelo?', a: ['Versão de um gene', 'Tipo de célula', 'Proteína estrutural', 'Organela'], correct: 0 },
+    { q: 'O que é um alelo?', a: ['Versêo de um gene', 'Tipo de célula', 'Proteína estrutural', 'Organela'], correct: 0 },
     { q: 'O que determina genótipo dominante?', a: ['Letra maiúscula (AA/Aa)', 'Letra minúscula (aa)', 'Número par', 'Cromossomo X'], correct: 0 }
   ],
   2: [ // Botânica
     { q: 'Onde ocorre a fotossíntese?', a: ['Cloroplastos', 'Mitocôndrias', 'Núcleo', 'Vacúolo'], correct: 0 },
-    { q: 'O que é o xilema?', a: ['Transporte de água/seiva bruta', 'Transporte de seiva elaborada', 'Tecido de sustentação', 'Tecido de revestimento'], correct: 0 },
-    { q: 'Qual é a função das raízes?', a: ['Absorção e fixação', 'Fotossíntese', 'Reprodução', 'Transpiração'], correct: 0 },
-    { q: 'O que são estômatos?', a: ['Poros para trocas gasosas', 'Células reprodutivas', 'Vasos condutores', 'Tecido de proteção'], correct: 0 },
-    { q: 'O que é floema?', a: ['Transporte de seiva elaborada', 'Transporte de água', 'Fotossíntese', 'Respiração'], correct: 0 }
+    { q: 'O que é o xilema?', a: ['Transporte de água/seiva bruta', 'Transporte de seiva elaborada', 'Tecido de sustentaçêo', 'Tecido de revestimento'], correct: 0 },
+    { q: 'Qual é a funçêo das raízes?', a: ['Absorçêo e fixaçêo', 'Fotossíntese', 'Reproduçêo', 'Transpiraçêo'], correct: 0 },
+    { q: 'O que sêo estômatos?', a: ['Poros para trocas gasosas', 'Células reprodutivas', 'Vasos condutores', 'Tecido de proteçêo'], correct: 0 },
+    { q: 'O que é floema?', a: ['Transporte de seiva elaborada', 'Transporte de água', 'Fotossíntese', 'Respiraçêo'], correct: 0 }
   ],
   3: [ // Zoologia
-    { q: 'O que são vertebrados?', a: ['Animais com coluna vertebral', 'Animais sem ossos', 'Animais aquáticos', 'Animais microscópicos'], correct: 0 },
+    { q: 'O que sêo vertebrados?', a: ['Animais com coluna vertebral', 'Animais sem ossos', 'Animais aquáticos', 'Animais microscópicos'], correct: 0 },
     { q: 'Qual classe pertencem os sapos?', a: ['Anfíbios', 'Répteis', 'Mamíferos', 'Peixes'], correct: 0 },
     { q: 'O que caracteriza os mamíferos?', a: ['Glândulas mamárias e pelos', 'Escamas e sangue frio', 'Penas e asas', 'Pele úmida'], correct: 0 },
-    { q: 'O que são artrópodes?', a: ['Exoesqueleto e patas articuladas', 'Corpo mole sem ossos', 'Animais de sangue quente', 'Vertebrados marinhos'], correct: 0 },
+    { q: 'O que sêo artrópodes?', a: ['Exoesqueleto e patas articuladas', 'Corpo mole sem ossos', 'Animais de sangue quente', 'Vertebrados marinhos'], correct: 0 },
     { q: 'Qual filo pertencem as águas-vivas?', a: ['Cnidários', 'Moluscos', 'Anelídeos', 'Equinodermos'], correct: 0 }
   ],
   4: [ // Anatomia
     { q: 'Quantos ossos tem o corpo humano adulto?', a: ['206', '300', '150', '250'], correct: 0 },
-    { q: 'Qual o maior órgão do corpo?', a: ['Pele', 'Fígado', 'Pulmão', 'Cérebro'], correct: 0 },
-    { q: 'O que é o coração?', a: ['Músculo cardíaco', 'Órgão digestivo', 'Glândula endócrina', 'Tecido nervoso'], correct: 0 },
-    { q: 'Onde são produzidas as hemácias?', a: ['Medula óssea', 'Fígado', 'Baço', 'Rins'], correct: 0 },
-    { q: 'Qual a função dos rins?', a: ['Filtração do sangue', 'Digestão', 'Respiração', 'Circulação'], correct: 0 }
+    { q: 'Qual o maior órgêo do corpo?', a: ['Pele', 'Fígado', 'Pulmêo', 'Cérebro'], correct: 0 },
+    { q: 'O que é o coraçêo?', a: ['Músculo cardíaco', 'Órgêo digestivo', 'Glândula endócrina', 'Tecido nervoso'], correct: 0 },
+    { q: 'Onde sêo produzidas as hemácias?', a: ['Medula óssea', 'Fígado', 'Baço', 'Rins'], correct: 0 },
+    { q: 'Qual a funçêo dos rins?', a: ['Filtraçêo do sangue', 'Digestêo', 'Respiraçêo', 'Circulaçêo'], correct: 0 }
   ],
   5: [ // Fisiologia
-    { q: 'O que é homeostase?', a: ['Equilíbrio interno', 'Divisão celular', 'Reprodução', 'Digestão'], correct: 0 },
-    { q: 'Como funciona a respiração celular?', a: ['Glicose + O2 → ATP + CO2', 'CO2 + H2O → Glicose', 'Proteína → Aminoácidos', 'ATP → ADP'], correct: 0 },
-    { q: 'O que são hormônios?', a: ['Mensageiros químicos', 'Células de defesa', 'Proteínas estruturais', 'Enzimas digestivas'], correct: 0 },
+    { q: 'O que é homeostase?', a: ['Equilíbrio interno', 'Divisêo celular', 'Reproduçêo', 'Digestêo'], correct: 0 },
+    { q: 'Como funciona a respiraçêo celular?', a: ['Glicose + O2 → ATP + CO2', 'CO2 + H2O → Glicose', 'Proteína → Aminoácidos', 'ATP → ADP'], correct: 0 },
+    { q: 'O que sêo hormônios?', a: ['Mensageiros químicos', 'Células de defesa', 'Proteínas estruturais', 'Enzimas digestivas'], correct: 0 },
     { q: 'Qual glândula controla o metabolismo?', a: ['Tireoide', 'Pâncreas', 'Hipófise', 'Adrenal'], correct: 0 },
-    { q: 'O que é sinapse?', a: ['Conexão entre neurônios', 'Divisão celular', 'Contração muscular', 'Filtração renal'], correct: 0 }
+    { q: 'O que é sinapse?', a: ['Conexêo entre neurônios', 'Divisêo celular', 'Contraçêo muscular', 'Filtraçêo renal'], correct: 0 }
   ],
   6: [ // Ecologia
-    { q: 'O que é uma cadeia alimentar?', a: ['Fluxo de energia entre seres', 'Tipo de reprodução', 'Ciclo da água', 'Migração animal'], correct: 0 },
-    { q: 'O que são produtores?', a: ['Organismos autótrofos', 'Animais herbívoros', 'Decompositores', 'Consumidores'], correct: 0 },
-    { q: 'O que é biodiversidade?', a: ['Variedade de espécies', 'Poluição ambiental', 'Extinção em massa', 'Reprodução animal'], correct: 0 },
+    { q: 'O que é uma cadeia alimentar?', a: ['Fluxo de energia entre seres', 'Tipo de reproduçêo', 'Ciclo da água', 'Migraçêo animal'], correct: 0 },
+    { q: 'O que sêo produtores?', a: ['Organismos autótrofos', 'Animais herbívoros', 'Decompositores', 'Consumidores'], correct: 0 },
+    { q: 'O que é biodiversidade?', a: ['Variedade de espécies', 'Poluiçêo ambiental', 'Extinçêo em massa', 'Reproduçêo animal'], correct: 0 },
     { q: 'O que é um ecossistema?', a: ['Comunidade + ambiente físico', 'Grupo de animais', 'Tipo de planta', 'Ciclo de vida'], correct: 0 },
-    { q: 'O que é nicho ecológico?', a: ['Função do organismo no ambiente', 'Habitat de uma espécie', 'Tipo de alimentação', 'Comportamento social'], correct: 0 }
+    { q: 'O que é nicho ecológico?', a: ['Funçêo do organismo no ambiente', 'Habitat de uma espécie', 'Tipo de alimentaçêo', 'Comportamento social'], correct: 0 }
   ],
-  7: [ // Evolução
-    { q: 'Quem propôs a seleção natural?', a: ['Charles Darwin', 'Gregor Mendel', 'Louis Pasteur', 'Jean Lamarck'], correct: 0 },
-    { q: 'O que é adaptação?', a: ['Característica favorável à sobrevivência', 'Mudança de habitat', 'Tipo de reprodução', 'Doença genética'], correct: 0 },
-    { q: 'O que são fósseis?', a: ['Vestígios de seres antigos', 'Rochas vulcânicas', 'Minerais raros', 'Cristais naturais'], correct: 0 },
-    { q: 'O que é especiação?', a: ['Formação de novas espécies', 'Extinção de espécies', 'Migração animal', 'Mutação genética'], correct: 0 },
-    { q: 'O que é deriva genética?', a: ['Mudança aleatória de frequências', 'Seleção natural', 'Migração', 'Mutação'], correct: 0 }
+  7: [ // Evoluçêo
+    { q: 'Quem propôs a seleçêo natural?', a: ['Charles Darwin', 'Gregor Mendel', 'Louis Pasteur', 'Jean Lamarck'], correct: 0 },
+    { q: 'O que é adaptaçêo?', a: ['Característica favorável à sobrevivência', 'Mudança de habitat', 'Tipo de reproduçêo', 'Doença genética'], correct: 0 },
+    { q: 'O que sêo fósseis?', a: ['Vestígios de seres antigos', 'Rochas vulcânicas', 'Minerais raros', 'Cristais naturais'], correct: 0 },
+    { q: 'O que é especiaçêo?', a: ['Formaçêo de novas espécies', 'Extinçêo de espécies', 'Migraçêo animal', 'Mutaçêo genética'], correct: 0 },
+    { q: 'O que é deriva genética?', a: ['Mudança aleatória de frequências', 'Seleçêo natural', 'Migraçêo', 'Mutaçêo'], correct: 0 }
   ],
   8: [ // Microbiologia
-    { q: 'O que são bactérias?', a: ['Procariontes unicelulares', 'Eucariontes', 'Vírus', 'Fungos'], correct: 0 },
+    { q: 'O que sêo bactérias?', a: ['Procariontes unicelulares', 'Eucariontes', 'Vírus', 'Fungos'], correct: 0 },
     { q: 'O que é um vírus?', a: ['Agente infeccioso acelular', 'Bactéria pequena', 'Célula animal', 'Fungo microscópico'], correct: 0 },
-    { q: 'O que são antibióticos?', a: ['Substâncias contra bactérias', 'Vacinas', 'Vitaminas', 'Hormônios'], correct: 0 },
-    { q: 'O que é uma vacina?', a: ['Imunização preventiva', 'Tratamento de doença', 'Antibiótico', 'Vitamina'], correct: 0 },
-    { q: 'O que são fungos?', a: ['Eucariontes heterotróficos', 'Bactérias', 'Vírus', 'Plantas'], correct: 0 }
+    { q: 'O que sêo antibióticos?', a: ['Substâncias contra bactérias', 'Vacinas', 'Vitaminas', 'Hormônios'], correct: 0 },
+    { q: 'O que é uma vacina?', a: ['Imunizaçêo preventiva', 'Tratamento de doença', 'Antibiótico', 'Vitamina'], correct: 0 },
+    { q: 'O que sêo fungos?', a: ['Eucariontes heterotróficos', 'Bactérias', 'Vírus', 'Plantas'], correct: 0 }
   ],
   9: [ // Biotecnologia
     { q: 'O que é transgênico?', a: ['Organismo com gene de outra espécie', 'Planta orgânica', 'Animal clonado', 'Célula mutante'], correct: 0 },
-    { q: 'O que é PCR?', a: ['Reação em cadeia da polimerase', 'Proteína celular', 'Tipo de RNA', 'Enzima digestiva'], correct: 0 },
-    { q: 'O que é clonagem?', a: ['Cópia genética idêntica', 'Mutação genética', 'Reprodução sexuada', 'Seleção natural'], correct: 0 },
-    { q: 'O que é CRISPR?', a: ['Edição genética', 'Tipo de vírus', 'Proteína estrutural', 'Vacina'], correct: 0 },
-    { q: 'O que são células-tronco?', a: ['Células indiferenciadas', 'Células mortas', 'Bactérias', 'Vírus'], correct: 0 }
+    { q: 'O que é PCR?', a: ['Reaçêo em cadeia da polimerase', 'Proteína celular', 'Tipo de RNA', 'Enzima digestiva'], correct: 0 },
+    { q: 'O que é clonagem?', a: ['Cópia genética idêntica', 'Mutaçêo genética', 'Reproduçêo sexuada', 'Seleçêo natural'], correct: 0 },
+    { q: 'O que é CRISPR?', a: ['Ediçêo genética', 'Tipo de vírus', 'Proteína estrutural', 'Vacina'], correct: 0 },
+    { q: 'O que sêo células-tronco?', a: ['Células indiferenciadas', 'Células mortas', 'Bactérias', 'Vírus'], correct: 0 }
   ]
 };
 
@@ -135,7 +135,7 @@ const SPECIMEN_TYPES = {
   4: ['Osso', 'Músculo', 'Sangue', 'Tecido nervoso', 'Pele'],
   5: ['Neurônio', 'Hemácia', 'Leucócito', 'Plaqueta', 'Hormônio'],
   6: ['Produtor', 'Consumidor', 'Decompositor', 'Parasita', 'Simbionte'],
-  7: ['Fóssil', 'Âmbar', 'Vestígio', 'Pegada', 'Impressão'],
+  7: ['Fóssil', 'Âmbar', 'Vestígio', 'Pegada', 'Impressêo'],
   8: ['Bactéria', 'Vírus', 'Fungo', 'Protozoário', 'Alga'],
   9: ['Plasmídeo', 'Vetor', 'Enzima', 'Anticorpo', 'Célula-tronco']
 };
@@ -147,7 +147,7 @@ const SHOP_ITEMS = [
   { id: 'pcr', name: 'Máquina PCR', desc: '+30% XP em Biotec', cost: 50, gem: true },
   { id: 'sequencer', name: 'Sequenciador', desc: 'Desbloqueia bônus', cost: 100, gem: true },
   { id: 'specimen_pack', name: 'Pack Espécimes', desc: '5 espécimes aleatórios', cost: 500, gem: false },
-  { id: 'lab_upgrade', name: 'Expansão Lab', desc: 'Mais equipamentos', cost: 75, gem: true }
+  { id: 'lab_upgrade', name: 'Expansêo Lab', desc: 'Mais equipamentos', cost: 75, gem: true }
 ];
 
 // Particles
@@ -432,7 +432,7 @@ function drawMission() {
   ctx.fillStyle = '#fff';
   ctx.font = 'bold 18px Arial';
   ctx.textAlign = 'center';
-  ctx.fillText(`${area.icon} ${area.name} - Missão ${currentMission + 1}`, canvas.width / 2, 35);
+  ctx.fillText(`${area.icon} ${area.name} - Missêo ${currentMission + 1}`, canvas.width / 2, 35);
 
   // Streak
   if (streak > 0) {
@@ -506,7 +506,7 @@ function drawMissionComplete() {
   ctx.fillStyle = '#4ade80';
   ctx.font = 'bold 40px Arial';
   ctx.textAlign = 'center';
-  ctx.fillText('🎉 MISSÃO COMPLETA!', canvas.width / 2, canvas.height / 2 - 60);
+  ctx.fillText('🎉 MISSêO COMPLETA!', canvas.width / 2, canvas.height / 2 - 60);
 
   const reward = 40 + currentMission * 5;
   ctx.fillStyle = '#ffd700';

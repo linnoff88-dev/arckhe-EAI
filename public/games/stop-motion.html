@@ -505,16 +505,16 @@
 
         <div class="result-screen" id="result-screen">
             <div class="result-icon">🎬</div>
-            <div class="result-title">Animação Salva!</div>
-            <div class="result-message" id="result-message">Sua animação ficou incrível!</div>
+            <div class="result-title">Animaçêo Salva!</div>
+            <div class="result-message" id="result-message">Sua animaçêo ficou incrível!</div>
             <div class="result-score" id="result-score">+50 pontos</div>
-            <button class="control-btn btn-play" onclick="newAnimation()">🎬 Nova Animação</button>
+            <button class="control-btn btn-play" onclick="newAnimation()">🎬 Nova Animaçêo</button>
         </div>
 
         <div class="saved-container" id="saved-container">
             <div class="saved-title">📁 Minhas Animações</div>
             <div class="saved-grid" id="saved-grid">
-                <p style="opacity: 0.5; width: 100%; text-align: center;">Nenhuma animação salva ainda</p>
+                <p style="opacity: 0.5; width: 100%; text-align: center;">Nenhuma animaçêo salva ainda</p>
             </div>
         </div>
 
@@ -551,10 +551,10 @@
 
         const tips = [
             'Mova os objetos um pouco entre cada frame para criar movimento!',
-            'Quanto mais frames, mais suave a animação!',
+            'Quanto mais frames, mais suave a animaçêo!',
             'Comece com movimentos simples.',
             'Use a velocidade mais lenta para ver os detalhes.',
-            'Conte uma história com sua animação!',
+            'Conte uma história com sua animaçêo!',
             'Experimente diferentes objetos juntos!',
             'Salve suas melhores criações!'
         ];
@@ -792,7 +792,7 @@
 
         function playAnimation() {
             if (gameState.frames.length < 2) {
-                alert('Adicione pelo menos 2 frames para criar uma animação!');
+                alert('Adicione pelo menos 2 frames para criar uma animaçêo!');
                 return;
             }
 
@@ -873,7 +873,7 @@
             document.getElementById('result-score').textContent = `+${points} pontos!`;
 
             const messages = [
-                'Sua animação ficou incrível!',
+                'Sua animaçêo ficou incrível!',
                 'Você é um verdadeiro animador!',
                 'Que criatividade fantástica!',
                 'Continue criando coisas incríveis!'
@@ -910,7 +910,7 @@
             const grid = document.getElementById('saved-grid');
 
             if (gameState.savedAnimations.length === 0) {
-                grid.innerHTML = '<p style="opacity: 0.5; width: 100%; text-align: center;">Nenhuma animação salva ainda</p>';
+                grid.innerHTML = '<p style="opacity: 0.5; width: 100%; text-align: center;">Nenhuma animaçêo salva ainda</p>';
                 return;
             }
 

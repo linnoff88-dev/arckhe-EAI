@@ -1,6 +1,6 @@
 // ============================================================
-// Lógica de Programação - Jogo Educativo
-// Introdução a conceitos de programação (8º-9º ano)
+// Lógica de Programaçêo - Jogo Educativo
+// Introduçêo a conceitos de programaçêo (8º-9º ano)
 // ============================================================
 
 (function () {
@@ -175,9 +175,9 @@
             available: [CMD.FORWARD, CMD.LEFT, CMD.RIGHT],
             optimal: 7
         },
-        // Level 4: Introdução ao loop
+        // Level 4: Introduçêo ao loop
         {
-            name: 'Repetição',
+            name: 'Repetiçêo',
             hint: 'Use "Repetir" para executar comandos várias vezes!',
             cols: 7, rows: 5,
             startDir: DIR.RIGHT,
@@ -194,7 +194,7 @@
         // Level 5: Loop com curva
         {
             name: 'Quadrado',
-            hint: 'Repita um padrão de avanço + giro para fazer um quadrado!',
+            hint: 'Repita um padrêo de avanço + giro para fazer um quadrado!',
             cols: 6, rows: 6,
             startDir: DIR.RIGHT,
             grid: [
@@ -224,7 +224,7 @@
             available: [CMD.FORWARD, CMD.LEFT, CMD.RIGHT, CMD.REPEAT],
             optimal: 2
         },
-        // Level 7: Introdução condicional
+        // Level 7: Introduçêo condicional
         {
             name: 'Decisões',
             hint: 'Use "Se Parede" para desviar quando houver parede à frente!',
@@ -244,7 +244,7 @@
         // Level 8: Condicional com loop
         {
             name: 'Labirinto',
-            hint: 'Combine repetição e condicionais para navegar o labirinto!',
+            hint: 'Combine repetiçêo e condicionais para navegar o labirinto!',
             cols: 7, rows: 7,
             startDir: DIR.DOWN,
             grid: [

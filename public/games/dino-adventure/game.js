@@ -78,7 +78,7 @@ class DinoAdventureGame {
     this.upgrades = [
       { id: 'jumpBoost', name: 'Super Pulo', desc: '+10% altura do pulo', price: 200, level: 0, maxLevel: 5, effect: 0.1 },
       { id: 'speedBoost', name: 'Velocidade', desc: '+10% velocidade', price: 250, level: 0, maxLevel: 5, effect: 0.1 },
-      { id: 'coinMagnet', name: 'Imã de Moedas', desc: '+20% alcance do imã', price: 300, level: 0, maxLevel: 5, effect: 0.2 },
+      { id: 'coinMagnet', name: 'Imê de Moedas', desc: '+20% alcance do imê', price: 300, level: 0, maxLevel: 5, effect: 0.2 },
       { id: 'extraLife', name: 'Vida Extra', desc: '+1 vida por fase', price: 400, level: 0, maxLevel: 3, effect: 1 }
     ];
     this.loadUpgrades();
@@ -110,7 +110,7 @@ class DinoAdventureGame {
     this.tutorialPages = [
       { title: 'Bem-vindo!', lines: ['Ajude o dinossauro na aventura!', 'Colete moedas e ovos especiais!', 'Chegue ao portal para completar!'], emoji: '🦕' },
       { title: 'Controles', lines: ['← → ou deslize para mover', 'Toque ou ↑ para pular', 'Evite os inimigos!'], emoji: '🎮' },
-      { title: 'Power-ups', lines: ['🛡️ Escudo protetor', '⚡ Super velocidade', '🧲 Imã de moedas'], emoji: '✨' },
+      { title: 'Power-ups', lines: ['🛡️ Escudo protetor', '⚡ Super velocidade', '🧲 Imê de moedas'], emoji: '✨' },
       { title: 'Mundos', lines: ['Explore 5 mundos diferentes!', 'Cada mundo tem 10 fases!', 'Vamos começar a aventura!'], emoji: '🌍' }
     ];
 
@@ -218,7 +218,7 @@ class DinoAdventureGame {
     const difficulty = (world - 1) * 0.2 + stage * 0.05;
     this.levelWidth = 2000 + world * 500 + stage * 100;
 
-    // Chão base
+    // Chêo base
     this.platforms.push({
       x: 0,
       y: this.groundY,
@@ -383,7 +383,7 @@ class DinoAdventureGame {
     this.player.x += this.player.vx;
     this.player.y += this.player.vy;
 
-    // Colisão com plataformas
+    // Colisêo com plataformas
     this.player.grounded = false;
     for (const platform of this.platforms) {
       // Atualizar plataformas móveis
@@ -402,7 +402,7 @@ class DinoAdventureGame {
         }
       }
 
-      // Verificar colisão
+      // Verificar colisêo
       if (this.checkPlatformCollision(platform)) {
         if (platform.type === 'breaking' && !platform.breaking) {
           platform.breaking = true;
@@ -410,7 +410,7 @@ class DinoAdventureGame {
       }
     }
 
-    // Colisão com chão
+    // Colisêo com chêo
     if (this.player.y + this.player.height > this.groundY + 50) {
       this.takeDamage();
     }
@@ -421,7 +421,7 @@ class DinoAdventureGame {
       this.player.x = this.levelWidth - this.player.width;
     }
 
-    // Animação
+    // Animaçêo
     if (this.player.vx !== 0 && this.player.grounded) {
       this.player.animFrame += 0.2;
     }
@@ -500,7 +500,7 @@ class DinoAdventureGame {
         }
       }
 
-      // Colisão com jogador
+      // Colisêo com jogador
       if (this.checkEnemyCollision(enemy)) {
         if (!this.activePowerUps.shield) {
           this.takeDamage();
@@ -604,7 +604,7 @@ class DinoAdventureGame {
     const names = {
       shield: '🛡️ Escudo ativado!',
       speed: '⚡ Velocidade ativada!',
-      magnet: '🧲 Imã ativado!'
+      magnet: '🧲 Imê ativado!'
     };
 
     this.addNotification(names[type], this.player.x, this.player.y);
@@ -653,7 +653,7 @@ class DinoAdventureGame {
   completeStage() {
     this.state = 'levelComplete';
 
-    // Bônus por não tomar dano
+    // Bônus por nêo tomar dano
     if (this.noDamageTaken) {
       this.stageScore += 100;
       this.coins += 10;
@@ -826,7 +826,7 @@ class DinoAdventureGame {
     this.ctx.save();
     this.ctx.translate(-this.camera.x, 0);
 
-    // Chão decorativo
+    // Chêo decorativo
     this.ctx.fillStyle = '#228B22';
     this.ctx.fillRect(0, this.groundY, this.levelWidth, this.canvas.height - this.groundY);
 
@@ -1003,7 +1003,7 @@ class DinoAdventureGame {
       }
     }
 
-    // Animação de caminhada
+    // Animaçêo de caminhada
     const walkOffset = this.player.grounded && Math.abs(this.player.vx) > 0 ?
       Math.sin(this.player.animFrame) * 3 : 0;
 
@@ -1026,7 +1026,7 @@ class DinoAdventureGame {
     }
     this.ctx.fillText(livesText, 20, 35);
 
-    // Moedas e pontuação
+    // Moedas e pontuaçêo
     this.ctx.font = '20px Arial';
     this.ctx.fillStyle = '#FFD700';
     this.ctx.fillText(`🪙 ${this.coins}`, 20, 65);
@@ -1131,7 +1131,7 @@ class DinoAdventureGame {
 
     this.ctx.font = '28px Arial';
     this.ctx.fillStyle = '#FFD700';
-    this.ctx.fillText(`Pontuação: ${this.stageScore}`, cx, 180);
+    this.ctx.fillText(`Pontuaçêo: ${this.stageScore}`, cx, 180);
 
     // Bônus
     this.ctx.font = '18px Arial';
@@ -1186,11 +1186,11 @@ class DinoAdventureGame {
 
     this.ctx.font = '24px Arial';
     this.ctx.fillStyle = '#FFD700';
-    this.ctx.fillText(`Pontuação: ${this.stageScore}`, cx, 180);
+    this.ctx.fillText(`Pontuaçêo: ${this.stageScore}`, cx, 180);
 
     this.ctx.font = '18px Arial';
     this.ctx.fillStyle = '#FFFFFF';
-    this.ctx.fillText('Não desista! Tente novamente!', cx, 230);
+    this.ctx.fillText('Nêo desista! Tente novamente!', cx, 230);
 
     const buttons = [
       { text: '🔄 TENTAR NOVAMENTE', y: 300 },
@@ -1389,7 +1389,7 @@ class DinoAdventureGame {
       this.ctx.fill();
     }
 
-    // Botão
+    // Botêo
     const btnWidth = 200;
     const btnHeight = 50;
     const btnX = cx - btnWidth / 2;
@@ -1458,7 +1458,7 @@ class DinoAdventureGame {
       this.handleDinoSelectClick(x, y);
     }
 
-    // Botão voltar
+    // Botêo voltar
     if (this.state === 'shop' || this.state === 'dinos' || this.state === 'achievements') {
       const btnY = this.canvas.height - 65;
       if (y > btnY && y < btnY + 45 && x > cx - 60 && x < cx + 60) {

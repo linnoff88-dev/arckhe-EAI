@@ -485,7 +485,7 @@
                 <div class="progress-bar" id="progressBar" style="width: 0%"></div>
             </div>
 
-            <div class="question" id="question">Complete o padrão!</div>
+            <div class="question" id="question">Complete o padrêo!</div>
 
             <div class="puzzle-area" id="puzzleArea"></div>
 
@@ -690,7 +690,7 @@
 
         // Puzzle de padrões
         function setupPatternPuzzle() {
-            document.getElementById('question').textContent = 'Complete o padrão!';
+            document.getElementById('question').textContent = 'Complete o padrêo!';
 
             const puzzleArea = document.getElementById('puzzleArea');
             puzzleArea.innerHTML = '';
@@ -718,7 +718,7 @@
                     while (b === a) b = set[Math.floor(Math.random() * set.length)];
                     sequence = [a, b, a, b, a];
                     answer = b;
-                    gameState.hint = 'O padrão se repete de 2 em 2!';
+                    gameState.hint = 'O padrêo se repete de 2 em 2!';
                     break;
                 case 'repeat3':
                     const x = set[Math.floor(Math.random() * set.length)];
@@ -728,14 +728,14 @@
                     while (z === x || z === y) z = set[Math.floor(Math.random() * set.length)];
                     sequence = [x, y, z, x, y];
                     answer = z;
-                    gameState.hint = 'O padrão se repete de 3 em 3!';
+                    gameState.hint = 'O padrêo se repete de 3 em 3!';
                     break;
                 case 'growing':
                     const item = set[Math.floor(Math.random() * set.length)];
                     sequence = [item, item, item, item, item, item];
                     const missingPos = Math.floor(Math.random() * 6);
                     answer = item;
-                    gameState.hint = 'Todos os elementos são iguais!';
+                    gameState.hint = 'Todos os elementos sêo iguais!';
                     break;
                 case 'alternate':
                     const p = set[Math.floor(Math.random() * set.length)];
@@ -749,7 +749,7 @@
 
             gameState.correctAnswer = answer;
 
-            // Posição do ?
+            // Posiçêo do ?
             const questionPos = sequence.length;
 
             const patternDiv = document.createElement('div');
@@ -802,7 +802,7 @@
                 }
             }
 
-            // Criar matriz 3x3 com padrão
+            // Criar matriz 3x3 com padrêo
             const matrix = [
                 [elements[0], elements[1], elements[2]],
                 [elements[1], elements[2], elements[0]],
@@ -854,7 +854,7 @@
 
             const solution = solutions[Math.floor(Math.random() * solutions.length)];
 
-            // Escolher posição para esconder
+            // Escolher posiçêo para esconder
             const emptyRow = Math.floor(Math.random() * 4);
             const emptyCol = Math.floor(Math.random() * 4);
 
@@ -876,7 +876,7 @@
 
             puzzleArea.appendChild(gridDiv);
 
-            // Opções são números 1-4
+            // Opções sêo números 1-4
             renderOptions(['1', '2', '3', '4']);
         }
 

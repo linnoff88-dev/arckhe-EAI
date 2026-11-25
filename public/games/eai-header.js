@@ -263,7 +263,7 @@
     function getShareData() {
         const title = document.title || 'EAI Games';
         const url = window.location.href;
-        const text = `🎮 Jogue ${title} no EAI Games! Diversão e aprendizado para toda a família.`;
+        const text = `🎮 Jogue ${title} no EAI Games! Diversêo e aprendizado para toda a família.`;
         return { title, url, text };
     }
 

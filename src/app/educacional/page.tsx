@@ -139,7 +139,7 @@ export default function EducacionalPage() {
               Nenhum jogo encontrado
             </h2>
             <p className="text-white/50 max-w-md mx-auto mb-6">
-              Não encontramos jogos com os filtros selecionados. Tente outra combinação!
+              Nêo encontramos jogos com os filtros selecionados. Tente outra combinaçêo!
             </p>
             <button
               onClick={() => {

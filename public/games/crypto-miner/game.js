@@ -1,5 +1,5 @@
 // Crypto Miner Empire - EAI Games
-// Jogo idle de mineração para adolescentes
+// Jogo idle de mineraçêo para adolescentes
 
 class CryptoMinerEmpire {
   constructor() {
@@ -12,8 +12,8 @@ class CryptoMinerEmpire {
     this.showTutorial = !localStorage.getItem('eai_cryptominer_tutorial_seen');
     this.tutorialPage = 0;
     this.tutorialPages = [
-      { title: 'Bem-vindo ao Crypto Miner!', lines: ['Construa seu império de', 'mineração de criptomoedas!'], emoji: '🪙' },
-      { title: 'Mineração', lines: ['Toque para minerar', 'Compre GPUs automáticas', 'Ganhe crypto 24/7!'], emoji: '⛏️' },
+      { title: 'Bem-vindo ao Crypto Miner!', lines: ['Construa seu império de', 'mineraçêo de criptomoedas!'], emoji: '🪙' },
+      { title: 'Mineraçêo', lines: ['Toque para minerar', 'Compre GPUs automáticas', 'Ganhe crypto 24/7!'], emoji: '⛏️' },
       { title: 'Criptomoedas', lines: ['Bitcoin, Ethereum, Dogecoin...', 'Cada uma com valor diferente', 'Negocie no mercado!'], emoji: '📈' },
       { title: 'Equipamentos', lines: ['GPUs mineram automaticamente', 'Melhore seu hashrate', 'Reduza o consumo de energia'], emoji: '🖥️' },
       { title: 'Energia', lines: ['Monitore seu consumo', 'Compre painéis solares', 'para energia grátis!'], emoji: '⚡' },
@@ -48,7 +48,7 @@ class CryptoMinerEmpire {
     this.equipment = {
       basic_gpu: { name: 'GPU Básica', hashrate: 1, power: 5, price: 100, owned: 0, emoji: '🖥️' },
       gaming_gpu: { name: 'GPU Gamer', hashrate: 5, power: 15, price: 500, owned: 0, emoji: '🎮' },
-      mining_rig: { name: 'Rig de Mineração', hashrate: 20, power: 50, price: 2000, owned: 0, emoji: '⛏️' },
+      mining_rig: { name: 'Rig de Mineraçêo', hashrate: 20, power: 50, price: 2000, owned: 0, emoji: '⛏️' },
       asic_miner: { name: 'ASIC Miner', hashrate: 100, power: 200, price: 10000, owned: 0, emoji: '🔧' },
       quantum_miner: { name: 'Quantum Miner', hashrate: 500, power: 300, price: 50000, owned: 0, emoji: '🌀' }
     };
@@ -1052,7 +1052,7 @@ class CryptoMinerEmpire {
     ctx.fillText('← Voltar', 50, 35);
 
     const descriptions = {
-      hashBoost: 'Aumenta poder de mineração',
+      hashBoost: 'Aumenta poder de mineraçêo',
       efficiency: 'Reduz consumo de energia',
       autoSell: 'Vende crypto automaticamente',
       multiMine: 'Minera múltiplas cryptos'

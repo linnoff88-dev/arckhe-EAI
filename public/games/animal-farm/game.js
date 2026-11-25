@@ -15,8 +15,8 @@ class AnimalFarmBuilder {
       { title: 'Bem-vindo à Fazenda!', lines: ['Construa sua fazenda dos sonhos', 'com muitos animais!'], emoji: '🏡' },
       { title: 'Animais', lines: ['Compre animais na loja', 'Cada um produz recursos', 'automaticamente!'], emoji: '🐄' },
       { title: 'Recursos', lines: ['🥛 Leite dos animais', '🥚 Ovos das galinhas', '🧀 Queijo processado'], emoji: '📦' },
-      { title: 'Construções', lines: ['🏠 Celeiros para animais', '🌾 Silos para ração', '🏭 Fábricas para processar'], emoji: '🏗️' },
-      { title: 'Expansão', lines: ['Desbloqueie novas áreas', 'Compre decorações', 'Faça sua fazenda linda!'], emoji: '🌻' },
+      { title: 'Construções', lines: ['🏠 Celeiros para animais', '🌾 Silos para raçêo', '🏭 Fábricas para processar'], emoji: '🏗️' },
+      { title: 'Expansêo', lines: ['Desbloqueie novas áreas', 'Compre decorações', 'Faça sua fazenda linda!'], emoji: '🌻' },
       { title: 'Vamos Começar!', lines: ['Comece com uma galinha', 'e cresça sua fazenda!', 'Divirta-se!'], emoji: '🎉' }
     ];
 
@@ -41,7 +41,7 @@ class AnimalFarmBuilder {
       egg: { name: 'Ovos', emoji: '🥚', count: 0 },
       milk: { name: 'Leite', emoji: '🥛', count: 0 },
       meat: { name: 'Carne', emoji: '🥩', count: 0 },
-      wool: { name: 'Lã', emoji: '🧶', count: 0 },
+      wool: { name: 'Lê', emoji: '🧶', count: 0 },
       feather: { name: 'Penas', emoji: '🪶', count: 0 },
       cheese: { name: 'Queijo', emoji: '🧀', count: 0 },
       ride: { name: 'Passeios', emoji: '🎠', count: 0 },

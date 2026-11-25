@@ -74,13 +74,13 @@ class BubblePopGame {
       { id: 'startMoves', name: 'Jogadas Iniciais', desc: '+3 jogadas por fase', price: 300, level: 0, maxLevel: 5, effect: 3 },
       { id: 'coinBonus', name: 'Bônus Moedas', desc: '+20% moedas ganhas', price: 400, level: 0, maxLevel: 5, effect: 0.2 },
       { id: 'comboMulti', name: 'Multiplicador', desc: '+10% pontos combo', price: 500, level: 0, maxLevel: 5, effect: 0.1 },
-      { id: 'bubbleSize', name: 'Precisão', desc: 'Bolhas maiores', price: 350, level: 0, maxLevel: 3, effect: 2 }
+      { id: 'bubbleSize', name: 'Precisêo', desc: 'Bolhas maiores', price: 350, level: 0, maxLevel: 3, effect: 2 }
     ];
     this.loadUpgrades();
 
     // Conquistas
     this.achievements = [
-      { id: 'first_pop', name: 'Primeira Explosão', desc: 'Estoure 3 bolhas de uma vez', icon: '🎈', unlocked: false },
+      { id: 'first_pop', name: 'Primeira Explosêo', desc: 'Estoure 3 bolhas de uma vez', icon: '🎈', unlocked: false },
       { id: 'combo_5', name: 'Combo Master', desc: 'Faça combo de 5', icon: '🔥', unlocked: false },
       { id: 'stage_10', name: 'Explorador', desc: 'Complete 10 fases', icon: '🗺️', unlocked: false },
       { id: 'stage_25', name: 'Aventureiro', desc: 'Complete 25 fases', icon: '⛰️', unlocked: false },
@@ -170,7 +170,7 @@ class BubblePopGame {
       const cols = row % 2 === 0 ? this.gridCols : this.gridCols - 1;
 
       for (let col = 0; col < cols; col++) {
-        // Chance de não ter bolha
+        // Chance de nêo ter bolha
         if (Math.random() < 0.1 + stage * 0.005) continue;
 
         const colorIndex = Math.floor(Math.random() * colors);
@@ -261,7 +261,7 @@ class BubblePopGame {
       this.shootingBubble.x += this.shootingBubble.vx;
       this.shootingBubble.y += this.shootingBubble.vy;
 
-      // Colisão com paredes
+      // Colisêo com paredes
       const leftBound = (this.canvas.width - this.gridCols * this.bubbleRadius * 2) / 2 + this.bubbleRadius;
       const rightBound = this.canvas.width - leftBound;
 
@@ -270,13 +270,13 @@ class BubblePopGame {
         this.shootingBubble.x = Math.max(leftBound, Math.min(rightBound, this.shootingBubble.x));
       }
 
-      // Colisão com topo
+      // Colisêo com topo
       if (this.shootingBubble.y < this.bubbleRadius * 2) {
         this.snapBubble();
         return;
       }
 
-      // Colisão com outras bolhas
+      // Colisêo com outras bolhas
       for (const bubble of this.bubbles) {
         const dist = Math.sqrt((this.shootingBubble.x - bubble.x) ** 2 + (this.shootingBubble.y - bubble.y) ** 2);
         if (dist < this.bubbleRadius * 2) {
@@ -345,7 +345,7 @@ class BubblePopGame {
   }
 
   snapBubble() {
-    // Encontrar posição mais próxima no grid
+    // Encontrar posiçêo mais próxima no grid
     const row = Math.round((this.shootingBubble.y - this.bubbleRadius) / (this.bubbleRadius * 1.73));
     const offsetX = row % 2 === 0 ? 0 : this.bubbleRadius;
     const baseX = (this.canvas.width - this.gridCols * this.bubbleRadius * 2) / 2;
@@ -484,7 +484,7 @@ class BubblePopGame {
     const index = this.bubbles.indexOf(bubble);
     if (index === -1) return;
 
-    // Animação de estouro
+    // Animaçêo de estouro
     this.poppingBubbles.push({
       x: bubble.x,
       y: bubble.y,
@@ -532,7 +532,7 @@ class BubblePopGame {
       });
     }
 
-    // Bolhas não conectadas caem
+    // Bolhas nêo conectadas caem
     const floating = this.bubbles.filter(b => !connected.has(`${b.x},${b.y}`));
 
     floating.forEach(b => {
@@ -618,7 +618,7 @@ class BubblePopGame {
     this.ctx.fillStyle = gradient;
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
-    // Decoração
+    // Decoraçêo
     this.ctx.globalAlpha = 0.1;
     for (let i = 0; i < 20; i++) {
       this.ctx.fillStyle = '#ffffff';
@@ -870,7 +870,7 @@ class BubblePopGame {
 
       if (y < this.bubbleRadius * 2) break;
 
-      // Colisão com bolhas
+      // Colisêo com bolhas
       let hit = false;
       for (const bubble of this.bubbles) {
         const dist = Math.sqrt((x - bubble.x) ** 2 + (y - bubble.y) ** 2);
@@ -893,7 +893,7 @@ class BubblePopGame {
   }
 
   drawHUD() {
-    // Pontuação
+    // Pontuaçêo
     this.ctx.font = 'bold 24px Arial';
     this.ctx.fillStyle = '#FFD700';
     this.ctx.textAlign = 'left';
@@ -952,7 +952,7 @@ class BubblePopGame {
 
     this.ctx.font = '24px Arial';
     this.ctx.fillStyle = '#FFD700';
-    this.ctx.fillText(`Pontuação: ${this.score}`, cx, 180);
+    this.ctx.fillText(`Pontuaçêo: ${this.score}`, cx, 180);
 
     this.ctx.font = '20px Arial';
     this.ctx.fillStyle = '#B39DDB';
@@ -1004,7 +1004,7 @@ class BubblePopGame {
 
     this.ctx.font = '24px Arial';
     this.ctx.fillStyle = '#FFD700';
-    this.ctx.fillText(`Pontuação: ${this.score}`, cx, 180);
+    this.ctx.fillText(`Pontuaçêo: ${this.score}`, cx, 180);
 
     this.ctx.font = '18px Arial';
     this.ctx.fillStyle = '#B39DDB';
@@ -1126,7 +1126,7 @@ class BubblePopGame {
       this.ctx.fillStyle = '#CE93D8';
       this.ctx.fillText(`x${pu.count}`, 75, y + 60);
 
-      // Botão comprar
+      // Botêo comprar
       const canBuy = this.coins >= pu.price;
       const btnX = this.canvas.width - 100;
       this.ctx.fillStyle = canBuy ? 'rgba(255, 193, 7, 0.8)' : 'rgba(100, 100, 100, 0.5)';
@@ -1233,7 +1233,7 @@ class BubblePopGame {
       this.ctx.fill();
     }
 
-    // Botão
+    // Botêo
     const btnWidth = 200;
     const btnHeight = 50;
     const btnX = cx - btnWidth / 2;
@@ -1326,7 +1326,7 @@ class BubblePopGame {
       this.handleShopClick(x, y);
     }
 
-    // Botão voltar
+    // Botêo voltar
     if (this.state === 'levels' || this.state === 'shop') {
       const btnY = this.canvas.height - 65;
       if (y > btnY && y < btnY + 45 && x > cx - 60 && x < cx + 60) {

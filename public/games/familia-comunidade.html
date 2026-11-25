@@ -425,7 +425,7 @@
         </div>
         <div class="stat">
             <div class="stat-value" id="accuracy">0%</div>
-            <div class="stat-label">Precisão</div>
+            <div class="stat-label">Precisêo</div>
         </div>
     </div>
 
@@ -518,27 +518,27 @@
         const familyQuestions = [
             {
                 type: 'multiple',
-                question: 'Quem é a mãe do seu pai?',
-                options: ['Avó', 'Tia', 'Prima', 'Irmã'],
+                question: 'Quem é a mêe do seu pai?',
+                options: ['Avó', 'Tia', 'Prima', 'Irmê'],
                 correct: 0,
                 emoji: '👵',
-                fact: 'A avó paterna é a mãe do seu pai. Ela faz parte da sua família!'
+                fact: 'A avó paterna é a mêe do seu pai. Ela faz parte da sua família!'
             },
             {
                 type: 'multiple',
-                question: 'Como chamamos o irmão da nossa mãe?',
+                question: 'Como chamamos o irmêo da nossa mêe?',
                 options: ['Primo', 'Tio', 'Avô', 'Pai'],
                 correct: 1,
                 emoji: '👨',
-                fact: 'O tio é o irmão dos nossos pais. Podemos ter tios maternos e paternos!'
+                fact: 'O tio é o irmêo dos nossos pais. Podemos ter tios maternos e paternos!'
             },
             {
                 type: 'multiple',
-                question: 'Quem são os filhos dos seus tios?',
-                options: ['Irmãos', 'Avós', 'Primos', 'Pais'],
+                question: 'Quem sêo os filhos dos seus tios?',
+                options: ['Irmêos', 'Avós', 'Primos', 'Pais'],
                 correct: 2,
                 emoji: '👧👦',
-                fact: 'Os primos são filhos dos nossos tios. São como irmãos, mas de outra casa!'
+                fact: 'Os primos sêo filhos dos nossos tios. Sêo como irmêos, mas de outra casa!'
             },
             {
                 type: 'multiple',
@@ -546,7 +546,7 @@
                 options: ['Só adultos', 'Pessoas que se amam', 'Só crianças', 'Vizinhos'],
                 correct: 1,
                 emoji: '❤️',
-                fact: 'Família são pessoas ligadas por amor e cuidado. Existem muitos tipos de família!'
+                fact: 'Família sêo pessoas ligadas por amor e cuidado. Existem muitos tipos de família!'
             },
             {
                 type: 'multiple',
@@ -562,30 +562,30 @@
                 options: ['Muito dinheiro', 'Amor e respeito', 'Casa grande', 'Muitos brinquedos'],
                 correct: 1,
                 emoji: '😊',
-                fact: 'O amor, respeito e cuidado são os ingredientes de uma família feliz!'
+                fact: 'O amor, respeito e cuidado sêo os ingredientes de uma família feliz!'
             },
             {
                 type: 'multiple',
-                question: 'Como devemos tratar nossos irmãos?',
+                question: 'Como devemos tratar nossos irmêos?',
                 options: ['Com brigas', 'Com respeito', 'Ignorando', 'Com gritos'],
                 correct: 1,
                 emoji: '🤝',
-                fact: 'Tratar os irmãos com respeito fortalece os laços familiares!'
+                fact: 'Tratar os irmêos com respeito fortalece os laços familiares!'
             },
             {
                 type: 'multiple',
-                question: 'Quem é o pai da sua mãe?',
-                options: ['Tio', 'Primo', 'Avô materno', 'Irmão'],
+                question: 'Quem é o pai da sua mêe?',
+                options: ['Tio', 'Primo', 'Avô materno', 'Irmêo'],
                 correct: 2,
                 emoji: '👴',
-                fact: 'O avô materno é o pai da sua mãe. Avós têm muita sabedoria para compartilhar!'
+                fact: 'O avô materno é o pai da sua mêe. Avós têm muita sabedoria para compartilhar!'
             }
         ];
 
         const communityQuestions = [
             {
                 type: 'place',
-                question: 'Onde compramos pão e alimentos?',
+                question: 'Onde compramos pêo e alimentos?',
                 places: [
                     { emoji: '🏫', name: 'Escola' },
                     { emoji: '🏥', name: 'Hospital' },
@@ -595,7 +595,7 @@
                     { emoji: '🏟️', name: 'Praça' }
                 ],
                 correct: 2,
-                fact: 'Na padaria compramos pães fresquinhos! O padeiro acorda bem cedinho para fazer nosso pão!'
+                fact: 'Na padaria compramos pêes fresquinhos! O padeiro acorda bem cedinho para fazer nosso pêo!'
             },
             {
                 type: 'place',
@@ -665,7 +665,7 @@
                     { emoji: '🏠', name: 'Casa' }
                 ],
                 correct: 1,
-                fact: 'Os bombeiros são heróis que nos protegem de incêndios e acidentes!'
+                fact: 'Os bombeiros sêo heróis que nos protegem de incêndios e acidentes!'
             },
             {
                 type: 'place',
@@ -720,7 +720,7 @@
                 options: ['Policial', 'Bombeiro', 'Carteiro', 'Professor'],
                 correct: 1,
                 emoji: '👨‍🚒',
-                fact: 'Bombeiros são muito corajosos e salvam vidas todos os dias!'
+                fact: 'Bombeiros sêo muito corajosos e salvam vidas todos os dias!'
             },
             {
                 type: 'multiple',
@@ -732,11 +732,11 @@
             },
             {
                 type: 'multiple',
-                question: 'Quem faz nosso pão?',
+                question: 'Quem faz nosso pêo?',
                 options: ['Padeiro', 'Professor', 'Médico', 'Policial'],
                 correct: 0,
                 emoji: '🥖',
-                fact: 'Padeiros acordam de madrugada para fazer pão fresquinho!'
+                fact: 'Padeiros acordam de madrugada para fazer pêo fresquinho!'
             },
             {
                 type: 'multiple',
@@ -965,7 +965,7 @@
                 playSound('correct');
             } else {
                 gameState.streak = 0;
-                feedback.textContent = '❌ Não foi dessa vez. Tente de novo!';
+                feedback.textContent = '❌ Nêo foi dessa vez. Tente de novo!';
                 feedback.className = 'feedback show wrong';
                 playSound('wrong');
             }

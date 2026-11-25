@@ -2,7 +2,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// Configuração do canvas
+// Configuraçêo do canvas
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -44,7 +44,7 @@ const SCHOOLS = [
     { id: 1, name: 'Filosofia Medieval', color: '#4A4A4A', icon: '📜', unlockLevel: 5, debates: 50 },
     { id: 2, name: 'Racionalismo', color: '#4169E1', icon: '🧠', unlockLevel: 10, debates: 50 },
     { id: 3, name: 'Empirismo', color: '#2E8B57', icon: '🔬', unlockLevel: 15, debates: 50 },
-    { id: 4, name: 'Idealismo Alemão', color: '#800080', icon: '💭', unlockLevel: 20, debates: 50 },
+    { id: 4, name: 'Idealismo Alemêo', color: '#800080', icon: '💭', unlockLevel: 20, debates: 50 },
     { id: 5, name: 'Existencialismo', color: '#1C1C1C', icon: '🎭', unlockLevel: 25, debates: 50 },
     { id: 6, name: 'Fenomenologia', color: '#708090', icon: '👁️', unlockLevel: 30, debates: 50 },
     { id: 7, name: 'Filosofia Analítica', color: '#4682B4', icon: '📊', unlockLevel: 35, debates: 50 },
@@ -55,64 +55,64 @@ const SCHOOLS = [
 // Banco de questões por escola
 const QUESTIONS = {
     0: [ // Filosofia Antiga
-        { q: 'Quem disse "Só sei que nada sei"?', a: ['Sócrates', 'Platão', 'Aristóteles', 'Tales'], correct: 0 },
+        { q: 'Quem disse "Só sei que nada sei"?', a: ['Sócrates', 'Platêo', 'Aristóteles', 'Tales'], correct: 0 },
         { q: 'O que é a Alegoria da Caverna?', a: ['Metáfora do conhecimento', 'História real', 'Lei física', 'Ritual religioso'], correct: 0 },
         { q: 'Qual é o conceito de eudaimonia?', a: ['Felicidade/bem-estar', 'Tristeza', 'Medo', 'Raiva'], correct: 0 },
-        { q: 'Quem fundou a Academia em Atenas?', a: ['Platão', 'Sócrates', 'Aristóteles', 'Pitágoras'], correct: 0 },
-        { q: 'O que é o Logos para os gregos?', a: ['Razão/Palavra', 'Emoção', 'Corpo', 'Dinheiro'], correct: 0 },
+        { q: 'Quem fundou a Academia em Atenas?', a: ['Platêo', 'Sócrates', 'Aristóteles', 'Pitágoras'], correct: 0 },
+        { q: 'O que é o Logos para os gregos?', a: ['Razêo/Palavra', 'Emoçêo', 'Corpo', 'Dinheiro'], correct: 0 },
         { q: 'Qual escola pregava a ataraxia?', a: ['Estoicismo', 'Sofismo', 'Platonismo', 'Cinismo'], correct: 0 },
-        { q: 'O que significa maiêutica socrática?', a: ['Arte de fazer perguntas', 'Escrita', 'Oratória', 'Meditação'], correct: 0 },
-        { q: 'Quem disse "O homem é a medida de todas as coisas"?', a: ['Protágoras', 'Sócrates', 'Platão', 'Zenão'], correct: 0 },
-        { q: 'O que são as Formas de Platão?', a: ['Ideias perfeitas eternas', 'Objetos físicos', 'Sentimentos', 'Leis'], correct: 0 },
+        { q: 'O que significa maiêutica socrática?', a: ['Arte de fazer perguntas', 'Escrita', 'Oratória', 'Meditaçêo'], correct: 0 },
+        { q: 'Quem disse "O homem é a medida de todas as coisas"?', a: ['Protágoras', 'Sócrates', 'Platêo', 'Zenêo'], correct: 0 },
+        { q: 'O que sêo as Formas de Platêo?', a: ['Ideias perfeitas eternas', 'Objetos físicos', 'Sentimentos', 'Leis'], correct: 0 },
         { q: 'Qual é a ética de Aristóteles?', a: ['Virtude como meio-termo', 'Prazer máximo', 'Dever absoluto', 'Utilidade'], correct: 0 }
     ],
     1: [ // Filosofia Medieval
-        { q: 'Quem escreveu "A Cidade de Deus"?', a: ['Santo Agostinho', 'São Tomás', 'Boécio', 'Anselmo'], correct: 0 },
+        { q: 'Quem escreveu "A Cidade de Deus"?', a: ['Santo Agostinho', 'Sêo Tomás', 'Boécio', 'Anselmo'], correct: 0 },
         { q: 'O que é a prova ontológica?', a: ['Argumento para Deus', 'Lei física', 'Teoria matemática', 'Regra moral'], correct: 0 },
-        { q: 'Qual é a síntese de São Tomás de Aquino?', a: ['Fé e razão', 'Corpo e alma', 'Bem e mal', 'Céu e terra'], correct: 0 },
+        { q: 'Qual é a síntese de Sêo Tomás de Aquino?', a: ['Fé e razêo', 'Corpo e alma', 'Bem e mal', 'Céu e terra'], correct: 0 },
         { q: 'O que é universais na filosofia medieval?', a: ['Conceitos gerais', 'Reis', 'Planetas', 'Animais'], correct: 0 },
-        { q: 'Quem propôs as 5 vias para provar Deus?', a: ['São Tomás', 'Agostinho', 'Ockham', 'Duns Scotus'], correct: 0 },
+        { q: 'Quem propôs as 5 vias para provar Deus?', a: ['Sêo Tomás', 'Agostinho', 'Ockham', 'Duns Scotus'], correct: 0 },
         { q: 'O que é a Navalha de Ockham?', a: ['Princípio de simplicidade', 'Arma', 'Ferramenta', 'Técnica cirúrgica'], correct: 0 },
         { q: 'Qual filósofo islâmico influenciou o Ocidente?', a: ['Averróis', 'Maomé', 'Saladino', 'Omar'], correct: 0 },
-        { q: 'O que é escolástica?', a: ['Método filosófico medieval', 'Escola', 'Religião', 'Arte'], correct: 0 },
-        { q: 'Qual conceito explica o mal segundo Agostinho?', a: ['Privação do bem', 'Criação divina', 'Matéria', 'Destino'], correct: 0 },
-        { q: 'O que é a disputa dos universais?', a: ['Debate sobre conceitos gerais', 'Guerra', 'Competição', 'Jogo'], correct: 0 }
+        { q: 'O que é escolástica?', a: ['Método filosófico medieval', 'Escola', 'Religiêo', 'Arte'], correct: 0 },
+        { q: 'Qual conceito explica o mal segundo Agostinho?', a: ['Privaçêo do bem', 'Criaçêo divina', 'Matéria', 'Destino'], correct: 0 },
+        { q: 'O que é a disputa dos universais?', a: ['Debate sobre conceitos gerais', 'Guerra', 'Competiçêo', 'Jogo'], correct: 0 }
     ],
     2: [ // Racionalismo
         { q: 'Quem disse "Penso, logo existo"?', a: ['Descartes', 'Spinoza', 'Leibniz', 'Pascal'], correct: 0 },
-        { q: 'O que é a dúvida metódica?', a: ['Questionar tudo sistematicamente', 'Não pensar', 'Aceitar tudo', 'Meditar'], correct: 0 },
-        { q: 'O que são ideias inatas para racionalistas?', a: ['Conhecimento nascido conosco', 'Experiências', 'Sentimentos', 'Hábitos'], correct: 0 },
+        { q: 'O que é a dúvida metódica?', a: ['Questionar tudo sistematicamente', 'Nêo pensar', 'Aceitar tudo', 'Meditar'], correct: 0 },
+        { q: 'O que sêo ideias inatas para racionalistas?', a: ['Conhecimento nascido conosco', 'Experiências', 'Sentimentos', 'Hábitos'], correct: 0 },
         { q: 'Qual é a substância única de Spinoza?', a: ['Deus/Natureza', 'Mente', 'Corpo', 'Tempo'], correct: 0 },
-        { q: 'O que é a harmonia preestabelecida de Leibniz?', a: ['Sincronização das mônadas', 'Música', 'Arte', 'Dança'], correct: 0 },
-        { q: 'O que são mônadas?', a: ['Unidades simples de substância', 'Moedas', 'Átomos', 'Células'], correct: 0 },
-        { q: 'Qual é o método de Descartes?', a: ['Análise e síntese', 'Tentativa e erro', 'Observação', 'Intuição'], correct: 0 },
+        { q: 'O que é a harmonia preestabelecida de Leibniz?', a: ['Sincronizaçêo das mônadas', 'Música', 'Arte', 'Dança'], correct: 0 },
+        { q: 'O que sêo mônadas?', a: ['Unidades simples de substância', 'Moedas', 'Átomos', 'Células'], correct: 0 },
+        { q: 'Qual é o método de Descartes?', a: ['Análise e síntese', 'Tentativa e erro', 'Observaçêo', 'Intuiçêo'], correct: 0 },
         { q: 'O que é res cogitans?', a: ['Substância pensante', 'Matéria', 'Espaço', 'Tempo'], correct: 0 },
         { q: 'O que é panteísmo de Spinoza?', a: ['Deus é tudo', 'Muitos deuses', 'Sem deus', 'Deus pessoal'], correct: 0 },
         { q: 'Qual é o melhor dos mundos possíveis?', a: ['Conceito de Leibniz', 'Teoria de Descartes', 'Ideia de Spinoza', 'Pensamento de Pascal'], correct: 0 }
     ],
     3: [ // Empirismo
         { q: 'Quem disse que a mente é uma "tábula rasa"?', a: ['John Locke', 'David Hume', 'Berkeley', 'Bacon'], correct: 0 },
-        { q: 'O que é empirismo?', a: ['Conhecimento vem da experiência', 'Conhecimento inato', 'Fé religiosa', 'Intuição'], correct: 0 },
-        { q: 'O que é o problema da indução de Hume?', a: ['Não podemos provar causação', 'Matemática falha', 'Lógica inválida', 'Ciência errada'], correct: 0 },
+        { q: 'O que é empirismo?', a: ['Conhecimento vem da experiência', 'Conhecimento inato', 'Fé religiosa', 'Intuiçêo'], correct: 0 },
+        { q: 'O que é o problema da induçêo de Hume?', a: ['Nêo podemos provar causaçêo', 'Matemática falha', 'Lógica inválida', 'Ciência errada'], correct: 0 },
         { q: 'O que Berkeley negava existir?', a: ['Matéria independente', 'Deus', 'Mente', 'Ideias'], correct: 0 },
-        { q: 'O que são impressões para Hume?', a: ['Percepções vívidas', 'Opiniões', 'Teorias', 'Crenças'], correct: 0 },
+        { q: 'O que sêo impressões para Hume?', a: ['Percepções vívidas', 'Opiniões', 'Teorias', 'Crenças'], correct: 0 },
         { q: 'Qual é o lema de Berkeley?', a: ['Ser é ser percebido', 'Penso logo existo', 'O homem é livre', 'Deus existe'], correct: 0 },
         { q: 'O que Locke distingue em qualidades?', a: ['Primárias e secundárias', 'Boas e más', 'Grandes e pequenas', 'Fortes e fracas'], correct: 0 },
-        { q: 'O que é associação de ideias?', a: ['Conexão mental de conceitos', 'União política', 'Grupo social', 'Clube'], correct: 0 },
+        { q: 'O que é associaçêo de ideias?', a: ['Conexêo mental de conceitos', 'Uniêo política', 'Grupo social', 'Clube'], correct: 0 },
         { q: 'Quem propôs o método experimental?', a: ['Francis Bacon', 'Locke', 'Hume', 'Berkeley'], correct: 0 },
         { q: 'O que é ceticismo humeano?', a: ['Dúvida sobre conhecimento', 'Crença total', 'Fé religiosa', 'Certeza absoluta'], correct: 0 }
     ],
-    4: [ // Idealismo Alemão
-        { q: 'Quem escreveu "Crítica da Razão Pura"?', a: ['Kant', 'Hegel', 'Fichte', 'Schelling'], correct: 0 },
-        { q: 'O que é o imperativo categórico?', a: ['Lei moral universal', 'Conselho', 'Sugestão', 'Opinião'], correct: 0 },
+    4: [ // Idealismo Alemêo
+        { q: 'Quem escreveu "Crítica da Razêo Pura"?', a: ['Kant', 'Hegel', 'Fichte', 'Schelling'], correct: 0 },
+        { q: 'O que é o imperativo categórico?', a: ['Lei moral universal', 'Conselho', 'Sugestêo', 'Opiniêo'], correct: 0 },
         { q: 'O que é a dialética hegeliana?', a: ['Tese-antítese-síntese', 'Monólogo', 'Discurso', 'Debate'], correct: 0 },
-        { q: 'O que são fenômenos para Kant?', a: ['Coisas como aparecem', 'Coisas em si', 'Ideias', 'Sentimentos'], correct: 0 },
-        { q: 'O que é noumeno?', a: ['Coisa em si', 'Aparência', 'Ilusão', 'Sonho'], correct: 0 },
-        { q: 'Qual é o Espírito Absoluto de Hegel?', a: ['Razão universal realizada', 'Fantasma', 'Deus pessoal', 'Alma individual'], correct: 0 },
+        { q: 'O que sêo fenômenos para Kant?', a: ['Coisas como aparecem', 'Coisas em si', 'Ideias', 'Sentimentos'], correct: 0 },
+        { q: 'O que é noumeno?', a: ['Coisa em si', 'Aparência', 'Ilusêo', 'Sonho'], correct: 0 },
+        { q: 'Qual é o Espírito Absoluto de Hegel?', a: ['Razêo universal realizada', 'Fantasma', 'Deus pessoal', 'Alma individual'], correct: 0 },
         { q: 'O que é a priori para Kant?', a: ['Antes da experiência', 'Depois da experiência', 'Durante', 'Sem experiência'], correct: 0 },
         { q: 'O que é juízo sintético a priori?', a: ['Amplia conhecimento sem experiência', 'Analisa conceitos', 'Observa fatos', 'Deduz lógica'], correct: 0 },
-        { q: 'Qual revolução Kant promoveu?', a: ['Copernicana na filosofia', 'Industrial', 'Francesa', 'Científica'], correct: 0 },
-        { q: 'O que é aufhebung em Hegel?', a: ['Superação que preserva', 'Destruição', 'Criação', 'Negação'], correct: 0 }
+        { q: 'Qual revoluçêo Kant promoveu?', a: ['Copernicana na filosofia', 'Industrial', 'Francesa', 'Científica'], correct: 0 },
+        { q: 'O que é aufhebung em Hegel?', a: ['Superaçêo que preserva', 'Destruiçêo', 'Criaçêo', 'Negaçêo'], correct: 0 }
     ],
     5: [ // Existencialismo
         { q: 'Quem disse "A existência precede a essência"?', a: ['Sartre', 'Camus', 'Heidegger', 'Kierkegaard'], correct: 0 },
@@ -128,48 +128,48 @@ const QUESTIONS = {
     ],
     6: [ // Fenomenologia
         { q: 'Quem fundou a fenomenologia?', a: ['Husserl', 'Heidegger', 'Sartre', 'Merleau-Ponty'], correct: 0 },
-        { q: 'O que é a epoché fenomenológica?', a: ['Suspensão do juízo', 'Julgamento', 'Opinião', 'Crença'], correct: 0 },
+        { q: 'O que é a epoché fenomenológica?', a: ['Suspensêo do juízo', 'Julgamento', 'Opiniêo', 'Crença'], correct: 0 },
         { q: 'O que é intencionalidade da consciência?', a: ['Consciência de algo', 'Vazio mental', 'Inconsciência', 'Sono'], correct: 0 },
         { q: 'O que significa "às coisas mesmas"?', a: ['Voltar à experiência', 'Ignorar fatos', 'Teorizar', 'Abstrair'], correct: 0 },
-        { q: 'O que é o mundo da vida (Lebenswelt)?', a: ['Experiência cotidiana pré-científica', 'Laboratório', 'Teoria', 'Abstração'], correct: 0 },
+        { q: 'O que é o mundo da vida (Lebenswelt)?', a: ['Experiência cotidiana pré-científica', 'Laboratório', 'Teoria', 'Abstraçêo'], correct: 0 },
         { q: 'Quem desenvolveu fenomenologia do corpo?', a: ['Merleau-Ponty', 'Husserl', 'Heidegger', 'Sartre'], correct: 0 },
-        { q: 'O que é redução eidética?', a: ['Busca da essência', 'Diminuição', 'Simplificação', 'Eliminação'], correct: 0 },
-        { q: 'O que são vivências na fenomenologia?', a: ['Experiências conscientes', 'Memórias', 'Sonhos', 'Fantasias'], correct: 0 },
-        { q: 'O que é horizonte de sentido?', a: ['Contexto de significação', 'Limite físico', 'Linha', 'Borda'], correct: 0 },
-        { q: 'Qual é o papel do corpo na fenomenologia?', a: ['Modo de ser no mundo', 'Máquina', 'Prisão', 'Obstáculo'], correct: 0 }
+        { q: 'O que é reduçêo eidética?', a: ['Busca da essência', 'Diminuiçêo', 'Simplificaçêo', 'Eliminaçêo'], correct: 0 },
+        { q: 'O que sêo vivências na fenomenologia?', a: ['Experiências conscientes', 'Memórias', 'Sonhos', 'Fantasias'], correct: 0 },
+        { q: 'O que é horizonte de sentido?', a: ['Contexto de significaçêo', 'Limite físico', 'Linha', 'Borda'], correct: 0 },
+        { q: 'Qual é o papel do corpo na fenomenologia?', a: ['Modo de ser no mundo', 'Máquina', 'Prisêo', 'Obstáculo'], correct: 0 }
     ],
     7: [ // Filosofia Analítica
         { q: 'Quem escreveu "Tractatus Logico-Philosophicus"?', a: ['Wittgenstein', 'Russell', 'Frege', 'Moore'], correct: 0 },
         { q: 'O que é análise lógica da linguagem?', a: ['Estudo da estrutura proposicional', 'Gramática', 'Poesia', 'Retórica'], correct: 0 },
-        { q: 'O que são jogos de linguagem?', a: ['Usos contextuais da linguagem', 'Brincadeiras', 'Competições', 'Puzzles'], correct: 0 },
+        { q: 'O que sêo jogos de linguagem?', a: ['Usos contextuais da linguagem', 'Brincadeiras', 'Competições', 'Puzzles'], correct: 0 },
         { q: 'Quem propôs a teoria das descrições?', a: ['Russell', 'Wittgenstein', 'Frege', 'Carnap'], correct: 0 },
-        { q: 'O que é positivismo lógico?', a: ['Só proposições verificáveis têm sentido', 'Otimismo', 'Religião', 'Metafísica'], correct: 0 },
-        { q: 'O que é significado como uso?', a: ['Segundo Wittgenstein tardio', 'Definição de dicionário', 'Etimologia', 'Tradução'], correct: 0 },
+        { q: 'O que é positivismo lógico?', a: ['Só proposições verificáveis têm sentido', 'Otimismo', 'Religiêo', 'Metafísica'], correct: 0 },
+        { q: 'O que é significado como uso?', a: ['Segundo Wittgenstein tardio', 'Definiçêo de dicionário', 'Etimologia', 'Traduçêo'], correct: 0 },
         { q: 'Quem fundou a lógica moderna?', a: ['Frege', 'Aristóteles', 'Russell', 'Wittgenstein'], correct: 0 },
         { q: 'O que é o atomismo lógico?', a: ['Mundo composto de fatos simples', 'Física', 'Química', 'Biologia'], correct: 0 },
-        { q: 'O que é o princípio de verificação?', a: ['Sentido depende de verificabilidade', 'Prova matemática', 'Experimento', 'Observação'], correct: 0 },
-        { q: 'O que são proposições atômicas?', a: ['Proposições mais simples', 'Física nuclear', 'Química', 'Energia'], correct: 0 }
+        { q: 'O que é o princípio de verificaçêo?', a: ['Sentido depende de verificabilidade', 'Prova matemática', 'Experimento', 'Observaçêo'], correct: 0 },
+        { q: 'O que sêo proposições atômicas?', a: ['Proposições mais simples', 'Física nuclear', 'Química', 'Energia'], correct: 0 }
     ],
     8: [ // Ética Contemporânea
         { q: 'O que é utilitarismo?', a: ['Maior bem para o maior número', 'Egoísmo', 'Dever', 'Virtude'], correct: 0 },
         { q: 'Quem desenvolveu a teoria da justiça como equidade?', a: ['John Rawls', 'Nozick', 'Singer', 'Mill'], correct: 0 },
-        { q: 'O que é o véu da ignorância?', a: ['Experimento mental de Rawls', 'Cegueira', 'Ignorância real', 'Falta de educação'], correct: 0 },
+        { q: 'O que é o véu da ignorância?', a: ['Experimento mental de Rawls', 'Cegueira', 'Ignorância real', 'Falta de educaçêo'], correct: 0 },
         { q: 'O que defende Peter Singer?', a: ['Direitos dos animais', 'Nacionalismo', 'Capitalismo', 'Isolamento'], correct: 0 },
         { q: 'O que é ética do discurso?', a: ['Normas via diálogo racional', 'Retórica', 'Oratória', 'Debate político'], correct: 0 },
         { q: 'Quem propôs o libertarianismo político?', a: ['Robert Nozick', 'Rawls', 'Marx', 'Mill'], correct: 0 },
         { q: 'O que é comunitarismo?', a: ['Ênfase na comunidade', 'Individualismo', 'Anarquismo', 'Totalitarismo'], correct: 0 },
-        { q: 'O que é bioética?', a: ['Ética da vida e medicina', 'Biologia', 'Ecologia', 'Nutrição'], correct: 0 },
+        { q: 'O que é bioética?', a: ['Ética da vida e medicina', 'Biologia', 'Ecologia', 'Nutriçêo'], correct: 0 },
         { q: 'O que é o dilema do bonde?', a: ['Experimento moral', 'Problema de transporte', 'Engenharia', 'Urbanismo'], correct: 0 },
         { q: 'Quem desenvolveu a ética do cuidado?', a: ['Carol Gilligan', 'Rawls', 'Kant', 'Mill'], correct: 0 }
     ],
     9: [ // Filosofia da Mente
-        { q: 'O que é o problema mente-corpo?', a: ['Relação entre mental e físico', 'Exercício', 'Dieta', 'Sono'], correct: 0 },
-        { q: 'O que é dualismo cartesiano?', a: ['Mente e corpo são distintos', 'Monismo', 'Materialismo', 'Idealismo'], correct: 0 },
-        { q: 'O que são qualia?', a: ['Experiências subjetivas', 'Números', 'Lógica', 'Linguagem'], correct: 0 },
-        { q: 'O que é funcionalismo mental?', a: ['Estados mentais são funções', 'Estrutura cerebral', 'Comportamento', 'Química'], correct: 0 },
+        { q: 'O que é o problema mente-corpo?', a: ['Relaçêo entre mental e físico', 'Exercício', 'Dieta', 'Sono'], correct: 0 },
+        { q: 'O que é dualismo cartesiano?', a: ['Mente e corpo sêo distintos', 'Monismo', 'Materialismo', 'Idealismo'], correct: 0 },
+        { q: 'O que sêo qualia?', a: ['Experiências subjetivas', 'Números', 'Lógica', 'Linguagem'], correct: 0 },
+        { q: 'O que é funcionalismo mental?', a: ['Estados mentais sêo funções', 'Estrutura cerebral', 'Comportamento', 'Química'], correct: 0 },
         { q: 'O que é o argumento do quarto chinês?', a: ['Contra IA forte', 'Sobre China', 'Linguística', 'Geografia'], correct: 0 },
         { q: 'Quem propôs o eliminativismo?', a: ['Churchlands', 'Dennett', 'Chalmers', 'Nagel'], correct: 0 },
-        { q: 'O que é o problema difícil da consciência?', a: ['Por que existe experiência subjetiva', 'Matemática', 'Física', 'Computação'], correct: 0 },
+        { q: 'O que é o problema difícil da consciência?', a: ['Por que existe experiência subjetiva', 'Matemática', 'Física', 'Computaçêo'], correct: 0 },
         { q: 'O que é inteligência artificial forte?', a: ['Máquinas realmente pensantes', 'Robôs fortes', 'Computadores rápidos', 'Algoritmos'], correct: 0 },
         { q: 'O que é panpsiquismo?', a: ['Consciência é fundamental', 'Materialismo', 'Dualismo', 'Behaviorismo'], correct: 0 },
         { q: 'O que Thomas Nagel perguntou sobre morcegos?', a: ['Como é ser um morcego', 'Onde vivem', 'O que comem', 'Como voam'], correct: 0 }
@@ -180,7 +180,7 @@ const QUESTIONS = {
 const SHOP_ITEMS = [
     { id: 'wisdom_tome', name: 'Tomo da Sabedoria', price: 100, currency: 'coins', description: '+50 sabedoria' },
     { id: 'argument_pack', name: 'Pacote de Argumentos', price: 150, currency: 'coins', description: '+5 argumentos' },
-    { id: 'reputation_boost', name: 'Boost de Reputação', price: 200, currency: 'coins', description: '+100 reputação' },
+    { id: 'reputation_boost', name: 'Boost de Reputaçêo', price: 200, currency: 'coins', description: '+100 reputaçêo' },
     { id: 'school_unlock', name: 'Desbloquear Escola', price: 5, currency: 'gems', description: 'Próxima escola' },
     { id: 'double_xp', name: 'XP Dobrado', price: 3, currency: 'gems', description: '2x XP por 10 debates' },
     { id: 'philosopher_skin', name: 'Toga de Filósofo', price: 10, currency: 'gems', description: 'Visual clássico' }
@@ -354,10 +354,10 @@ function drawMenu() {
         ctx.fillText(btn.text, canvas.width/2, btn.y + 40);
     });
 
-    // Citação aleatória
+    // Citaçêo aleatória
     const quotes = [
         '"Conhece-te a ti mesmo" - Sócrates',
-        '"A vida não examinada não vale a pena ser vivida"',
+        '"A vida nêo examinada nêo vale a pena ser vivida"',
         '"O homem é a medida de todas as coisas"',
         '"Penso, logo existo" - Descartes'
     ];
@@ -368,7 +368,7 @@ function drawMenu() {
     ctx.fillText(quotes[Math.floor(Date.now() / 5000) % quotes.length], canvas.width/2, 618);
 }
 
-// Desenhar seleção de escolas
+// Desenhar seleçêo de escolas
 function drawSchoolSelect() {
     drawPhilosophyBackground();
     drawHUD();
@@ -378,7 +378,7 @@ function drawSchoolSelect() {
     ctx.textAlign = 'center';
     ctx.fillText('📜 ESCOLAS FILOSÓFICAS', canvas.width/2, 100);
 
-    // Botão voltar
+    // Botêo voltar
     ctx.fillStyle = '#8B0000';
     ctx.fillRect(20, 80, 100, 40);
     ctx.fillStyle = '#FFF';
@@ -439,7 +439,7 @@ function drawSchoolSelect() {
     maxScroll = Math.max(0, SCHOOLS.length * (cardHeight + 15) - (canvas.height - 180));
 }
 
-// Desenhar seleção de debate
+// Desenhar seleçêo de debate
 function drawDebateSelect() {
     const school = SCHOOLS[selectedSchool];
 
@@ -511,7 +511,7 @@ function drawDebateSelect() {
     maxScroll = Math.max(0, Math.ceil(school.debates / cols) * (size + spacing) - (canvas.height - 200));
 }
 
-// Desenhar questão
+// Desenhar questêo
 function drawQuestion() {
     const school = SCHOOLS[selectedSchool];
 
@@ -546,7 +546,7 @@ function drawQuestion() {
         showingResult = false;
     }
 
-    // Caixa da questão estilo pergaminho
+    // Caixa da questêo estilo pergaminho
     ctx.fillStyle = 'rgba(139, 69, 19, 0.9)';
     ctx.shadowColor = '#000';
     ctx.shadowBlur = 15;
@@ -593,7 +593,7 @@ function drawQuestion() {
         ctx.fillText(answer.text, canvas.width/2, y + 38);
     });
 
-    // Botão confirmar
+    // Botêo confirmar
     if (selectedAnswer !== null && !showingResult) {
         ctx.fillStyle = '#8B4513';
         ctx.fillRect(canvas.width/2 - 100, 610, 200, 50);
@@ -701,7 +701,7 @@ function drawShop() {
         ctx.font = 'bold 16px Arial';
         ctx.fillText(`${item.currency === 'gems' ? '💎' : '🪙'} ${item.price}`, x + 15, cardY + 72);
 
-        // Botão comprar
+        // Botêo comprar
         ctx.fillStyle = '#8B4513';
         ctx.fillRect(x + 200, cardY + 50, 65, 28);
         ctx.fillStyle = '#FFD700';
@@ -742,7 +742,7 @@ function drawAcademy() {
         `📜 Sabedoria: ${playerData.wisdom}`,
         `🏛️ Escolas Estudadas: ${playerData.unlockedSchools.length}`,
         `⚖️ Argumentos: ${playerData.arguments.length}`,
-        `🎖️ Reputação: ${playerData.reputation}`,
+        `🎖️ Reputaçêo: ${playerData.reputation}`,
         `🎓 Nível Acadêmico: ${level}`
     ];
 
@@ -750,7 +750,7 @@ function drawAcademy() {
         ctx.fillText(stat, canvas.width/2, 195 + i * 35);
     });
 
-    // Citação do dia
+    // Citaçêo do dia
     ctx.fillStyle = 'rgba(139, 69, 19, 0.8)';
     ctx.fillRect(canvas.width/2 - 200, 380, 400, 100);
     ctx.strokeStyle = '#FFD700';
@@ -758,14 +758,14 @@ function drawAcademy() {
 
     ctx.fillStyle = '#FFD700';
     ctx.font = 'bold 18px Georgia';
-    ctx.fillText('💡 Reflexão Filosófica', canvas.width/2, 415);
+    ctx.fillText('💡 Reflexêo Filosófica', canvas.width/2, 415);
 
     ctx.fillStyle = '#E6E6FA';
     ctx.font = 'italic 14px Georgia';
     const reflections = [
         'A filosofia começa com o espanto.',
-        'Uma vida não examinada não vale a pena ser vivida.',
-        'O sábio é aquele que sabe que não sabe.',
+        'Uma vida nêo examinada nêo vale a pena ser vivida.',
+        'O sábio é aquele que sabe que nêo sabe.',
         'A dúvida é o começo da sabedoria.'
     ];
     ctx.fillText(reflections[Math.floor(Date.now() / 6000) % reflections.length], canvas.width/2, 455);
@@ -1041,6 +1041,6 @@ canvas.addEventListener('touchmove', (e) => {
     }
 }, { passive: false });
 
-// Inicialização
+// Inicializaçêo
 loadGame();
 gameLoop();

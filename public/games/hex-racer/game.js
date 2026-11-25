@@ -341,7 +341,7 @@ class HexRacer {
     const speedPercent = this.speed / this.maxSpeed;
     const dx = dt * 2 * speedPercent;
 
-    // Direção
+    // Direçêo
     if (this.keys['arrowleft'] || this.keys['a']) {
       this.playerX -= dx * this.playerVehicle.handling;
     }
@@ -352,10 +352,10 @@ class HexRacer {
     // Força centrífuga nas curvas
     this.playerX -= dx * speedPercent * playerSegment.curve * this.centrifugal;
 
-    // Limitar posição
+    // Limitar posiçêo
     this.playerX = Math.max(-2, Math.min(2, this.playerX));
 
-    // Aceleração
+    // Aceleraçêo
     if (this.keys['arrowup'] || this.keys['w']) {
       this.speed += this.accel * dt;
     } else if (this.keys['arrowdown'] || this.keys['s']) {
@@ -422,7 +422,7 @@ class HexRacer {
     // Limitar velocidade
     this.speed = Math.max(0, Math.min(this.speed, this.maxSpeed * (this.usingNitro ? 1.5 : 1)));
 
-    // Atualizar posição
+    // Atualizar posiçêo
     const oldPosition = this.position;
     this.position += this.speed * dt;
 
@@ -458,18 +458,18 @@ class HexRacer {
       car.offset += Math.sin(this.raceTime + car.z * 0.001) * 0.001;
       car.offset = Math.max(-1.5, Math.min(1.5, car.offset));
 
-      // Verificar colisão com jogador
+      // Verificar colisêo com jogador
       const carSegment = Math.floor(car.z / this.segmentLength);
       const playerSegmentIndex = Math.floor(this.position / this.segmentLength);
 
       if (Math.abs(carSegment - playerSegmentIndex) < 3) {
         const carX = car.offset;
         if (Math.abs(this.playerX - carX) < 0.3) {
-          // Colisão!
+          // Colisêo!
           this.speed *= 0.5;
           this.playerX += (this.playerX - carX) * 2;
 
-          // Partículas de colisão
+          // Partículas de colisêo
           for (let i = 0; i < 10; i++) {
             this.particles.push({
               x: this.canvas.width / 2,
@@ -493,7 +493,7 @@ class HexRacer {
   finishRace() {
     this.state = 'finished';
 
-    // Calcular posição
+    // Calcular posiçêo
     const totalTime = this.raceTime;
     let position = 1;
     for (const car of this.cars) {
@@ -594,7 +594,7 @@ class HexRacer {
     ctx.fillStyle = '#FFD93D';
     ctx.fillText(`${this.eaiCoins} Coins | ${this.eaiXP} XP`, cx, 165);
 
-    // Seleção de pista
+    // Seleçêo de pista
     ctx.font = 'bold 24px Arial';
     ctx.fillStyle = '#fff';
     ctx.fillText('Escolha a Pista', cx, 220);
@@ -621,7 +621,7 @@ class HexRacer {
       ctx.fillText(track.difficulty, x, y + 75);
     });
 
-    // Seleção de veículo
+    // Seleçêo de veículo
     ctx.font = 'bold 24px Arial';
     ctx.fillStyle = '#fff';
     ctx.fillText('Escolha o Veículo', cx, 400);
@@ -662,7 +662,7 @@ class HexRacer {
       }
     });
 
-    // Botão jogar
+    // Botêo jogar
     const vehicle = this.vehicles[this.selectedVehicle];
     const canPlay = this.unlockedVehicles.includes(vehicle.id);
 
@@ -935,7 +935,7 @@ class HexRacer {
     ctx.fillStyle = '#888';
     ctx.fillText(`Volta ${this.currentLap + 1}/${this.currentTrack.laps}`, this.canvas.width - 30, 80);
 
-    // Posição
+    // Posiçêo
     ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
     ctx.beginPath();
     ctx.roundRect(this.canvas.width / 2 - 60, 20, 120, 50, 10);
@@ -955,7 +955,7 @@ class HexRacer {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
     ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
-    // Posição
+    // Posiçêo
     const posColors = { 1: '#FFD700', 2: '#C0C0C0', 3: '#CD7F32' };
     ctx.fillStyle = posColors[this.finalPosition] || '#fff';
     ctx.font = 'bold 80px Arial';
@@ -979,7 +979,7 @@ class HexRacer {
     ctx.fillStyle = '#FFD93D';
     ctx.fillText(`+${baseCoins} Coins | +${baseXP} XP`, cx, cy + 60);
 
-    // Botão continuar
+    // Botêo continuar
     ctx.fillStyle = '#4ECDC4';
     ctx.beginPath();
     ctx.roundRect(cx - 100, cy + 100, 200, 50, 25);
@@ -1049,7 +1049,7 @@ class HexRacer {
   }
 }
 
-// Inicialização
+// Inicializaçêo
 window.addEventListener('load', () => {
   const canvas = document.getElementById('gameCanvas');
   if (canvas) {

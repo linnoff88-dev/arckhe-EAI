@@ -114,7 +114,7 @@ export default function BuscaPage() {
                 Nenhum resultado encontrado
               </h2>
               <p className="text-white/60 max-w-md mx-auto mb-6">
-                Não encontramos jogos para &quot;{query}&quot;. Tente buscar por outro termo.
+                Nêo encontramos jogos para &quot;{query}&quot;. Tente buscar por outro termo.
               </p>
               <div className="flex justify-center gap-3">
                 <Link
@@ -143,7 +143,7 @@ export default function BuscaPage() {
             <div className="max-w-2xl mx-auto">
               <h2 className="text-sm font-medium text-white/50 mb-3">Sugestões de busca</h2>
               <div className="flex flex-wrap gap-2">
-                {['puzzle', 'matemática', 'ação', 'clássico', 'lógica', 'inglês', 'geografia'].map((term) => (
+                {['puzzle', 'matemática', 'açêo', 'clássico', 'lógica', 'inglês', 'geografia'].map((term) => (
                   <button
                     key={term}
                     onClick={() => setQuery(term)}

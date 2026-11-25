@@ -15,10 +15,10 @@ const TOPICS = [
   { id: 3, name: 'Acordes', color: '#84cc16', icon: '🎸', unlockLevel: 15, lessons: 50 },
   { id: 4, name: 'Intervalos', color: '#22c55e', icon: '📊', unlockLevel: 20, lessons: 50 },
   { id: 5, name: 'Harmonia', color: '#14b8a6', icon: '🎼', unlockLevel: 30, lessons: 50 },
-  { id: 6, name: 'Composição', color: '#0ea5e9', icon: '✏️', unlockLevel: 40, lessons: 50 },
+  { id: 6, name: 'Composiçêo', color: '#0ea5e9', icon: '✏️', unlockLevel: 40, lessons: 50 },
   { id: 7, name: 'História da Música', color: '#6366f1', icon: '📜', unlockLevel: 50, lessons: 50 },
   { id: 8, name: 'Instrumentos', color: '#8b5cf6', icon: '🎺', unlockLevel: 60, lessons: 50 },
-  { id: 9, name: 'Produção Musical', color: '#ec4899', icon: '🎧', unlockLevel: 70, lessons: 50 }
+  { id: 9, name: 'Produçêo Musical', color: '#ec4899', icon: '🎧', unlockLevel: 70, lessons: 50 }
 ];
 
 let currentTopic = 0;
@@ -30,7 +30,7 @@ let lessonScroll = 0;
 const QUESTIONS = {
   0: [
     { q: 'Quantas notas musicais existem na escala ocidental?', a: ['7 (Dó a Si)', '5', '12', '8'], correct: 0 },
-    { q: 'Qual é a clave mais comum para piano (mão direita)?', a: ['Clave de Sol', 'Clave de Fá', 'Clave de Dó', 'Clave de Ré'], correct: 0 },
+    { q: 'Qual é a clave mais comum para piano (mêo direita)?', a: ['Clave de Sol', 'Clave de Fá', 'Clave de Dó', 'Clave de Ré'], correct: 0 },
     { q: 'Qual nota vem depois de Mi?', a: ['Fá', 'Sol', 'Ré', 'Si'], correct: 0 },
     { q: 'O que é uma pausa na música?', a: ['Silêncio medido', 'Nota longa', 'Acorde', 'Escala'], correct: 0 }
   ],
@@ -38,7 +38,7 @@ const QUESTIONS = {
     { q: 'O que significa o compasso 4/4?', a: ['4 tempos por compasso', '4 notas', '44 batidas', 'Muito rápido'], correct: 0 },
     { q: 'O que é BPM?', a: ['Batidas por minuto', 'Baixo por música', 'Banda principal', 'Barra por melodia'], correct: 0 },
     { q: 'Quanto vale uma semínima?', a: ['1 tempo', '2 tempos', '4 tempos', '1/2 tempo'], correct: 0 },
-    { q: 'O que é síncope?', a: ['Deslocamento do acento', 'Nota longa', 'Silêncio', 'Repetição'], correct: 0 }
+    { q: 'O que é síncope?', a: ['Deslocamento do acento', 'Nota longa', 'Silêncio', 'Repetiçêo'], correct: 0 }
   ],
   2: [
     { q: 'Quantos semitons tem uma escala maior?', a: ['12', '7', '8', '5'], correct: 0 },
@@ -56,8 +56,8 @@ const QUESTIONS = {
     { q: 'Quantos semitons tem uma oitava?', a: ['12', '8', '7', '10'], correct: 0 }
   ],
   5: [
-    { q: 'O que é harmonia?', a: ['Combinação de sons simultâneos', 'Melodia principal', 'Ritmo', 'Silêncio'], correct: 0 },
-    { q: 'O que é cadência?', a: ['Progressão harmônica conclusiva', 'Ritmo rápido', 'Nota longa', 'Escala'], correct: 0 },
+    { q: 'O que é harmonia?', a: ['Combinaçêo de sons simultâneos', 'Melodia principal', 'Ritmo', 'Silêncio'], correct: 0 },
+    { q: 'O que é cadência?', a: ['Progressêo harmônica conclusiva', 'Ritmo rápido', 'Nota longa', 'Escala'], correct: 0 },
     { q: 'O que é tonalidade?', a: ['Centro tonal de uma música', 'Volume', 'Velocidade', 'Instrumento'], correct: 0 }
   ],
   6: [
@@ -71,14 +71,14 @@ const QUESTIONS = {
     { q: 'Quem é considerado pai da música?', a: ['Bach', 'Mozart', 'Beethoven', 'Handel'], correct: 0 }
   ],
   8: [
-    { q: 'Qual família do violino?', a: ['Cordas', 'Sopro', 'Percussão', 'Teclas'], correct: 0 },
-    { q: 'Qual instrumento tem 88 teclas?', a: ['Piano', 'Órgão', 'Acordeão', 'Sintetizador'], correct: 0 },
-    { q: 'O que é um instrumento de sopro?', a: ['Som por vibração de ar', 'Cordas vibram', 'Percutido', 'Eletrônico'], correct: 0 }
+    { q: 'Qual família do violino?', a: ['Cordas', 'Sopro', 'Percussêo', 'Teclas'], correct: 0 },
+    { q: 'Qual instrumento tem 88 teclas?', a: ['Piano', 'Órgêo', 'Acordeêo', 'Sintetizador'], correct: 0 },
+    { q: 'O que é um instrumento de sopro?', a: ['Som por vibraçêo de ar', 'Cordas vibram', 'Percutido', 'Eletrônico'], correct: 0 }
   ],
   9: [
-    { q: 'O que é DAW?', a: ['Software de produção musical', 'Instrumento', 'Microfone', 'Amplificador'], correct: 0 },
+    { q: 'O que é DAW?', a: ['Software de produçêo musical', 'Instrumento', 'Microfone', 'Amplificador'], correct: 0 },
     { q: 'O que é mixagem?', a: ['Balancear elementos da música', 'Gravar', 'Compor', 'Tocar'], correct: 0 },
-    { q: 'O que é masterização?', a: ['Finalização do áudio', 'Gravação', 'Mixagem', 'Composição'], correct: 0 }
+    { q: 'O que é masterizaçêo?', a: ['Finalizaçêo do áudio', 'Gravaçêo', 'Mixagem', 'Composiçêo'], correct: 0 }
   ]
 };
 
@@ -369,7 +369,7 @@ function drawLesson() {
   ctx.fillStyle = '#fff';
   ctx.font = 'bold 14px Arial';
   ctx.textAlign = 'center';
-  ctx.fillText(`${topic.icon} Lição ${currentLesson + 1}`, canvas.width / 2, 28);
+  ctx.fillText(`${topic.icon} Liçêo ${currentLesson + 1}`, canvas.width / 2, 28);
 
   if (streak > 0) {
     ctx.fillStyle = '#f472b6';

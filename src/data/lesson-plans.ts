@@ -78,15 +78,15 @@ export const lessonPlans: LessonPlan[] = [
     bnccCodes: ['EF01MA04', 'EF01MA05'],
     materials: [
       'Computadores/tablets com acesso à internet',
-      'Projetor para demonstração',
+      'Projetor para demonstraçêo',
       'Fichas numéricas impressas (opcional)',
       'Quadro branco'
     ],
     steps: [
       {
-        phase: 'Introdução',
+        phase: 'Introduçêo',
         duration: '10 min',
-        description: 'Ativação do conhecimento prévio',
+        description: 'Ativaçêo do conhecimento prévio',
         activities: [
           'Perguntar aos alunos até que número eles sabem contar',
           'Mostrar a tabela numérica de 1 a 100 no quadro',
@@ -96,7 +96,7 @@ export const lessonPlans: LessonPlan[] = [
       {
         phase: 'Desenvolvimento',
         duration: '25 min',
-        description: 'Exploração do jogo educativo',
+        description: 'Exploraçêo do jogo educativo',
         activities: [
           'Apresentar o jogo "Números até 100" na EAI',
           'Demonstrar os modos: Contagem, Tabela, Quiz e Sequência',
@@ -107,7 +107,7 @@ export const lessonPlans: LessonPlan[] = [
       {
         phase: 'Fechamento',
         duration: '15 min',
-        description: 'Consolidação e discussão',
+        description: 'Consolidaçêo e discussêo',
         activities: [
           'Roda de conversa sobre descobertas',
           'Desafio: encontrar padrões na tabela',
@@ -124,10 +124,10 @@ export const lessonPlans: LessonPlan[] = [
       }
     ],
     assessment: [
-      'Observação da participação durante o jogo',
+      'Observaçêo da participaçêo durante o jogo',
       'Capacidade de contar sequencialmente',
       'Reconhecimento de números aleatórios',
-      'Identificação de dezenas completas'
+      'Identificaçêo de dezenas completas'
     ],
     extensions: [
       'Caça ao tesouro numérico pela escola',
@@ -145,17 +145,17 @@ export const lessonPlans: LessonPlan[] = [
   {
     id: 'mat-soma-subtracao',
     slug: 'operacoes-soma-subtracao',
-    title: 'Dominando Soma e Subtração',
+    title: 'Dominando Soma e Subtraçêo',
     subject: 'Matemática',
     subjectIcon: '🔢',
     grades: [2, 3],
     duration: '2 aulas (50min cada)',
     difficulty: 'medio',
     objectives: [
-      'Resolver operações de adição até 20',
-      'Resolver operações de subtração até 20',
-      'Compreender a relação entre soma e subtração',
-      'Usar representação visual para resolver problemas'
+      'Resolver operações de adiçêo até 20',
+      'Resolver operações de subtraçêo até 20',
+      'Compreender a relaçêo entre soma e subtraçêo',
+      'Usar representaçêo visual para resolver problemas'
     ],
     bnccCodes: ['EF02MA05', 'EF02MA06', 'EF03MA05'],
     materials: [
@@ -168,11 +168,11 @@ export const lessonPlans: LessonPlan[] = [
       {
         phase: 'Aquecimento',
         duration: '10 min',
-        description: 'Revisão com material concreto',
+        description: 'Revisêo com material concreto',
         activities: [
           'Manipular blocos para representar somas',
           'Criar situações-problema orais',
-          'Relacionar adição com "juntar"'
+          'Relacionar adiçêo com "juntar"'
         ]
       },
       {
@@ -180,19 +180,19 @@ export const lessonPlans: LessonPlan[] = [
         duration: '30 min',
         description: 'Jogo interativo',
         activities: [
-          'Acessar o jogo "Soma e Subtração" na EAI',
+          'Acessar o jogo "Soma e Subtraçêo" na EAI',
           'Começar pelo nível fácil (1-10)',
           'Progredir para níveis mais desafiadores',
-          'Usar representação visual do jogo'
+          'Usar representaçêo visual do jogo'
         ]
       },
       {
-        phase: 'Aplicação',
+        phase: 'Aplicaçêo',
         duration: '10 min',
         description: 'Problemas do cotidiano',
         activities: [
           'Resolver 3 situações-problema escritas',
-          'Compartilhar estratégias de resolução',
+          'Compartilhar estratégias de resoluçêo',
           'Registrar aprendizados'
         ]
       }
@@ -200,20 +200,20 @@ export const lessonPlans: LessonPlan[] = [
     games: [
       {
         slug: 'soma-subtracao',
-        title: 'Soma e Subtração',
+        title: 'Soma e Subtraçêo',
         usage: 'Prática das 4 operações com visual',
         duration: '30 min'
       }
     ],
     assessment: [
       'Acertos no jogo (modo de 3 níveis)',
-      'Resolução de problemas escritos',
-      'Explicação do raciocínio usado'
+      'Resoluçêo de problemas escritos',
+      'Explicaçêo do raciocínio usado'
     ],
     teacherTips: [
-      'Incentive o uso da representação visual antes do cálculo mental',
+      'Incentive o uso da representaçêo visual antes do cálculo mental',
       'Comemore pequenas conquistas',
-      'Permita calculadora para verificação, não resolução'
+      'Permita calculadora para verificaçêo, nêo resoluçêo'
     ],
     thumbnailColor: 'from-cyan-500 to-blue-500',
     featured: true
@@ -229,7 +229,7 @@ export const lessonPlans: LessonPlan[] = [
     difficulty: 'medio',
     objectives: [
       'Memorizar as tabuadas de 2 a 10',
-      'Compreender a multiplicação como adição repetida',
+      'Compreender a multiplicaçêo como adiçêo repetida',
       'Identificar padrões nas tabuadas',
       'Aplicar tabuada em situações-problema'
     ],
@@ -242,13 +242,13 @@ export const lessonPlans: LessonPlan[] = [
     ],
     steps: [
       {
-        phase: 'Aula 1 - Introdução',
+        phase: 'Aula 1 - Introduçêo',
         duration: '50 min',
-        description: 'Compreensão do conceito',
+        description: 'Compreensêo do conceito',
         activities: [
-          'Explicar multiplicação como adição repetida',
+          'Explicar multiplicaçêo como adiçêo repetida',
           'Construir tabela de tabuada coletivamente',
-          'Identificar padrões (números pares, terminação)',
+          'Identificar padrões (números pares, terminaçêo)',
           'Primeiro contato com o jogo Corrida da Tabuada'
         ]
       },
@@ -258,19 +258,19 @@ export const lessonPlans: LessonPlan[] = [
         description: 'Treino intensivo',
         activities: [
           'Aquecimento oral em duplas',
-          'Sessão de jogo: Corrida da Tabuada',
-          'Competição amigável entre alunos',
+          'Sessêo de jogo: Corrida da Tabuada',
+          'Competiçêo amigável entre alunos',
           'Registro de melhores tempos'
         ]
       },
       {
-        phase: 'Aula 3 - Aplicação',
+        phase: 'Aula 3 - Aplicaçêo',
         duration: '50 min',
-        description: 'Consolidação e avaliação',
+        description: 'Consolidaçêo e avaliaçêo',
         activities: [
           'Problemas contextualizados usando tabuada',
           'Torneio final no jogo',
-          'Auto-avaliação: quais tabuadas domino?'
+          'Auto-avaliaçêo: quais tabuadas domino?'
         ]
       }
     ],
@@ -278,15 +278,15 @@ export const lessonPlans: LessonPlan[] = [
       {
         slug: 'corrida-tabuada',
         title: 'Corrida da Tabuada',
-        usage: 'Prática gamificada com competição',
+        usage: 'Prática gamificada com competiçêo',
         duration: '20-25 min por aula'
       }
     ],
     assessment: [
       'Tempo de resposta no jogo',
-      'Acertos em avaliação escrita',
+      'Acertos em avaliaçêo escrita',
       'Capacidade de explicar padrões',
-      'Aplicação em problemas'
+      'Aplicaçêo em problemas'
     ],
     extensions: [
       'Criar jogos de tabuleiro com tabuada',
@@ -294,9 +294,9 @@ export const lessonPlans: LessonPlan[] = [
       'Tabuada cantada/rimada'
     ],
     teacherTips: [
-      'Foque em uma tabuada por dia para memorização',
+      'Foque em uma tabuada por dia para memorizaçêo',
       'Use truques: tabuada do 9 com os dedos',
-      'Não force velocidade antes da compreensão'
+      'Nêo force velocidade antes da compreensêo'
     ],
     thumbnailColor: 'from-yellow-500 to-orange-500',
     featured: true
@@ -311,7 +311,7 @@ export const lessonPlans: LessonPlan[] = [
     duration: '2 aulas (50min cada)',
     difficulty: 'medio',
     objectives: [
-      'Compreender o conceito de fração como parte de um todo',
+      'Compreender o conceito de fraçêo como parte de um todo',
       'Identificar numerador e denominador',
       'Comparar frações com mesmo denominador',
       'Representar frações visualmente'
@@ -325,7 +325,7 @@ export const lessonPlans: LessonPlan[] = [
     ],
     steps: [
       {
-        phase: 'Contextualização',
+        phase: 'Contextualizaçêo',
         duration: '15 min',
         description: 'Frações no cotidiano',
         activities: [
@@ -335,20 +335,20 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Exploração Digital',
+        phase: 'Exploraçêo Digital',
         duration: '25 min',
         description: 'Jogo Pizza de Frações',
         activities: [
           'Apresentar o jogo na EAI',
           'Alunos exploram os desafios',
-          'Progressão de níveis: 1/2, 1/3, 1/4, etc.',
+          'Progressêo de níveis: 1/2, 1/3, 1/4, etc.',
           'Registrar frações trabalhadas'
         ]
       },
       {
-        phase: 'Sistematização',
+        phase: 'Sistematizaçêo',
         duration: '10 min',
-        description: 'Formalização do conceito',
+        description: 'Formalizaçêo do conceito',
         activities: [
           'Definir numerador e denominador',
           'Criar frações com o próprio corpo (grupos)',
@@ -360,19 +360,19 @@ export const lessonPlans: LessonPlan[] = [
       {
         slug: 'pizza-fracoes',
         title: 'Pizza de Frações',
-        usage: 'Visualização concreta de frações',
+        usage: 'Visualizaçêo concreta de frações',
         duration: '25 min'
       }
     ],
     assessment: [
-      'Representação correta de frações',
-      'Identificação de numerador/denominador',
-      'Comparação de frações simples',
-      'Participação nas atividades'
+      'Representaçêo correta de frações',
+      'Identificaçêo de numerador/denominador',
+      'Comparaçêo de frações simples',
+      'Participaçêo nas atividades'
     ],
     teacherTips: [
       'Use sempre a pergunta "Quantas partes iguais?"',
-      'Relacione com divisão sempre que possível',
+      'Relacione com divisêo sempre que possível',
       'Evite frações impróprias no início'
     ],
     thumbnailColor: 'from-red-500 to-pink-500',
@@ -402,7 +402,7 @@ export const lessonPlans: LessonPlan[] = [
     ],
     steps: [
       {
-        phase: 'Motivação',
+        phase: 'Motivaçêo',
         duration: '10 min',
         description: 'Por que precisamos saber as horas?',
         activities: [
@@ -412,7 +412,7 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Manipulação',
+        phase: 'Manipulaçêo',
         duration: '15 min',
         description: 'Relógios concretos',
         activities: [
@@ -432,7 +432,7 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Aplicação',
+        phase: 'Aplicaçêo',
         duration: '5 min',
         description: 'Relacionando com o dia',
         activities: [
@@ -452,7 +452,7 @@ export const lessonPlans: LessonPlan[] = [
     assessment: [
       'Leitura de horas cheias',
       'Posicionamento correto dos ponteiros',
-      'Relação horário-rotina'
+      'Relaçêo horário-rotina'
     ],
     teacherTips: [
       'Comece apenas com horas cheias',
@@ -464,7 +464,7 @@ export const lessonPlans: LessonPlan[] = [
   {
     id: 'mat-quiz-geral',
     slug: 'quiz-matematica-revisao',
-    title: 'Revisão de Matemática com Quiz',
+    title: 'Revisêo de Matemática com Quiz',
     subject: 'Matemática',
     subjectIcon: '🔢',
     grades: [2, 3, 4, 5],
@@ -474,7 +474,7 @@ export const lessonPlans: LessonPlan[] = [
       'Revisar as 4 operações básicas',
       'Identificar pontos fortes e fracos',
       'Desenvolver agilidade no cálculo mental',
-      'Trabalhar sob pressão de tempo'
+      'Trabalhar sob pressêo de tempo'
     ],
     bnccCodes: ['EF03MA05', 'EF04MA04', 'EF05MA07'],
     materials: [
@@ -489,11 +489,11 @@ export const lessonPlans: LessonPlan[] = [
         description: 'Cálculo mental rápido',
         activities: [
           'Rodada de perguntas orais',
-          'Revisão relâmpago das operações'
+          'Revisêo relâmpago das operações'
         ]
       },
       {
-        phase: 'Competição',
+        phase: 'Competiçêo',
         duration: '35 min',
         description: 'Quiz interativo',
         activities: [
@@ -504,11 +504,11 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Reflexão',
+        phase: 'Reflexêo',
         duration: '10 min',
-        description: 'Auto-avaliação',
+        description: 'Auto-avaliaçêo',
         activities: [
-          'Qual operação foi mais difícil?',
+          'Qual operaçêo foi mais difícil?',
           'Onde preciso melhorar?',
           'Definir meta pessoal'
         ]
@@ -518,18 +518,18 @@ export const lessonPlans: LessonPlan[] = [
       {
         slug: 'quiz-matematica',
         title: 'Quiz de Matemática',
-        usage: 'Avaliação gamificada das 4 operações',
+        usage: 'Avaliaçêo gamificada das 4 operações',
         duration: '35 min'
       }
     ],
     assessment: [
-      'Pontuação no quiz',
-      'Auto-avaliação reflexiva',
+      'Pontuaçêo no quiz',
+      'Auto-avaliaçêo reflexiva',
       'Progresso entre rodadas'
     ],
     teacherTips: [
       'Ajuste o nível ao da turma',
-      'Celebre progresso, não apenas vitórias',
+      'Celebre progresso, nêo apenas vitórias',
       'Use para diagnóstico de dificuldades'
     ],
     thumbnailColor: 'from-cyan-500 to-teal-500'
@@ -554,7 +554,7 @@ export const lessonPlans: LessonPlan[] = [
     bnccCodes: ['EF01LP04', 'EF01LP05', 'EF01LP06'],
     materials: [
       'Computadores/tablets',
-      'Letras móveis (EVA ou papelão)',
+      'Letras móveis (EVA ou papelêo)',
       'Cartazes do alfabeto',
       'Fichas de palavras com imagens'
     ],
@@ -582,7 +582,7 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Aula 3 - Aplicação',
+        phase: 'Aula 3 - Aplicaçêo',
         duration: '50 min',
         description: 'Usando o alfabeto',
         activities: [
@@ -603,9 +603,9 @@ export const lessonPlans: LessonPlan[] = [
     ],
     assessment: [
       'Reconhecimento das 26 letras',
-      'Nomeação de letras aleatórias',
+      'Nomeaçêo de letras aleatórias',
       'Escrita do próprio nome',
-      'Diferenciação vogais/consoantes'
+      'Diferenciaçêo vogais/consoantes'
     ],
     extensions: [
       'Livro do alfabeto da turma',
@@ -644,19 +644,19 @@ export const lessonPlans: LessonPlan[] = [
     ],
     steps: [
       {
-        phase: 'Sensibilização',
+        phase: 'Sensibilizaçêo',
         duration: '10 min',
         description: 'Por que escrever certo?',
         activities: [
           'Mostrar exemplos de confusões por erros',
-          'Discutir a importância da comunicação clara',
+          'Discutir a importância da comunicaçêo clara',
           'Apresentar o jogo Soletrando'
         ]
       },
       {
         phase: 'Prática Guiada',
         duration: '30 min',
-        description: 'Jogo de soletração',
+        description: 'Jogo de soletraçêo',
         activities: [
           'Jogar "Soletrando" na EAI',
           'Anotar palavras difíceis',
@@ -665,12 +665,12 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Produção',
+        phase: 'Produçêo',
         duration: '10 min',
-        description: 'Aplicação da ortografia',
+        description: 'Aplicaçêo da ortografia',
         activities: [
           'Ditado de palavras do jogo',
-          'Correção coletiva',
+          'Correçêo coletiva',
           'Registro no caderno de palavras'
         ]
       }
@@ -690,7 +690,7 @@ export const lessonPlans: LessonPlan[] = [
     ],
     teacherTips: [
       'Foque em famílias de palavras',
-      'Celebre o esforço, não apenas acertos',
+      'Celebre o esforço, nêo apenas acertos',
       'Crie mural de palavras conquistadas'
     ],
     thumbnailColor: 'from-purple-500 to-pink-500'
@@ -719,7 +719,7 @@ export const lessonPlans: LessonPlan[] = [
     ],
     steps: [
       {
-        phase: 'Exploração',
+        phase: 'Exploraçêo',
         duration: '15 min',
         description: 'Descobrindo palavras',
         activities: [
@@ -740,7 +740,7 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Produção',
+        phase: 'Produçêo',
         duration: '10 min',
         description: 'Usando novas palavras',
         activities: [
@@ -760,7 +760,7 @@ export const lessonPlans: LessonPlan[] = [
       {
         slug: 'palavras-embaralhadas',
         title: 'Palavras Embaralhadas',
-        usage: 'Fixação do vocabulário',
+        usage: 'Fixaçêo do vocabulário',
         duration: '10 min extra'
       }
     ],
@@ -788,25 +788,25 @@ export const lessonPlans: LessonPlan[] = [
     difficulty: 'medio',
     objectives: [
       'Conhecer o teclado QWERTY',
-      'Posicionar corretamente as mãos',
+      'Posicionar corretamente as mêos',
       'Digitar sem olhar para o teclado',
-      'Aumentar velocidade de digitação'
+      'Aumentar velocidade de digitaçêo'
     ],
     bnccCodes: ['EF05LP26', 'EF67LP38'],
     materials: [
       'Computadores com teclado',
       'Diagrama do teclado impresso',
       'Cronômetro',
-      'Textos para digitação'
+      'Textos para digitaçêo'
     ],
     steps: [
       {
-        phase: 'Aula 1 - Introdução',
+        phase: 'Aula 1 - Introduçêo',
         duration: '50 min',
         description: 'Conhecendo o teclado',
         activities: [
           'Apresentar layout QWERTY',
-          'Ensinar posição base das mãos',
+          'Ensinar posiçêo base das mêos',
           'Primeiros exercícios: letras da linha base',
           'Jogar modo iniciante'
         ]
@@ -818,7 +818,7 @@ export const lessonPlans: LessonPlan[] = [
         activities: [
           'Praticar letras da linha superior',
           'Combinações de letras',
-          'Sessão de treino no jogo'
+          'Sessêo de treino no jogo'
         ]
       },
       {
@@ -838,33 +838,33 @@ export const lessonPlans: LessonPlan[] = [
         activities: [
           'Teste de velocidade inicial',
           'Treino intensivo',
-          'Teste final e comparação'
+          'Teste final e comparaçêo'
         ]
       }
     ],
     games: [
       {
         slug: 'heroi-digitacao',
-        title: 'Herói da Digitação',
-        usage: 'Prática gamificada de digitação',
+        title: 'Herói da Digitaçêo',
+        usage: 'Prática gamificada de digitaçêo',
         duration: '30 min por aula'
       }
     ],
     assessment: [
       'Palavras por minuto (WPM)',
       'Taxa de acerto',
-      'Postura e posição das mãos',
-      'Evolução ao longo das aulas'
+      'Postura e posiçêo das mêos',
+      'Evoluçêo ao longo das aulas'
     ],
     extensions: [
-      'Competição de digitação',
-      'Digitação de textos próprios',
+      'Competiçêo de digitaçêo',
+      'Digitaçêo de textos próprios',
       'Certificado de digitador'
     ],
     teacherTips: [
-      'Priorize precisão antes de velocidade',
-      'Não permita olhar para o teclado',
-      'Faça pausas para descanso das mãos'
+      'Priorize precisêo antes de velocidade',
+      'Nêo permita olhar para o teclado',
+      'Faça pausas para descanso das mêos'
     ],
     thumbnailColor: 'from-violet-500 to-purple-500'
   },
@@ -894,7 +894,7 @@ export const lessonPlans: LessonPlan[] = [
     ],
     steps: [
       {
-        phase: 'Motivação',
+        phase: 'Motivaçêo',
         duration: '10 min',
         description: 'O que é ser cientista?',
         activities: [
@@ -904,7 +904,7 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Experimentação',
+        phase: 'Experimentaçêo',
         duration: '30 min',
         description: 'Laboratório virtual',
         activities: [
@@ -915,7 +915,7 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Discussão',
+        phase: 'Discussêo',
         duration: '10 min',
         description: 'Compartilhando descobertas',
         activities: [
@@ -935,8 +935,8 @@ export const lessonPlans: LessonPlan[] = [
     ],
     assessment: [
       'Registro de experimentos',
-      'Participação nas discussões',
-      'Formulação de hipóteses',
+      'Participaçêo nas discussões',
+      'Formulaçêo de hipóteses',
       'Curiosidade demonstrada'
     ],
     extensions: [
@@ -946,7 +946,7 @@ export const lessonPlans: LessonPlan[] = [
     ],
     teacherTips: [
       'Deixe alunos escolherem temas de interesse',
-      'Valorize perguntas, não só respostas',
+      'Valorize perguntas, nêo só respostas',
       'Conecte sempre com experiências reais'
     ],
     thumbnailColor: 'from-green-500 to-emerald-500',
@@ -996,7 +996,7 @@ export const lessonPlans: LessonPlan[] = [
           'Jogar "Memória dos Estados"',
           'Aprender siglas e capitais',
           'Curiosidades de cada estado',
-          'Quiz de localização'
+          'Quiz de localizaçêo'
         ]
       },
       {
@@ -1005,8 +1005,8 @@ export const lessonPlans: LessonPlan[] = [
         description: 'Diversidade brasileira',
         activities: [
           'Explorar comida típica no jogo',
-          'Pontos turísticos de cada região',
-          'Apresentação: meu estado',
+          'Pontos turísticos de cada regiêo',
+          'Apresentaçêo: meu estado',
           'Mapa ilustrado da turma'
         ]
       }
@@ -1015,20 +1015,20 @@ export const lessonPlans: LessonPlan[] = [
       {
         slug: 'mapa-brasil-interativo',
         title: 'Mapa do Brasil Interativo',
-        usage: 'Localização de estados e regiões',
+        usage: 'Localizaçêo de estados e regiões',
         duration: '20 min'
       },
       {
         slug: 'memoria-estados',
         title: 'Memória dos Estados',
-        usage: 'Fixação de siglas, capitais e cultura',
+        usage: 'Fixaçêo de siglas, capitais e cultura',
         duration: '25 min'
       }
     ],
     assessment: [
-      'Localização de estados no mapa',
+      'Localizaçêo de estados no mapa',
       'Conhecimento de capitais',
-      'Identificação de regiões',
+      'Identificaçêo de regiões',
       'Informações culturais'
     ],
     extensions: [
@@ -1072,7 +1072,7 @@ export const lessonPlans: LessonPlan[] = [
       {
         phase: 'Warm-up',
         duration: '10 min',
-        description: 'Introdução ao inglês',
+        description: 'Introduçêo ao inglês',
         activities: [
           'Saudações: Hello, Hi, Good morning',
           'Palavras em inglês que já conhecem',
@@ -1111,19 +1111,19 @@ export const lessonPlans: LessonPlan[] = [
       {
         slug: 'vocabulario-mundial',
         title: 'Vocabulário Mundial',
-        usage: 'Comparação português-inglês',
+        usage: 'Comparaçêo português-inglês',
         duration: '15 min extra'
       }
     ],
     assessment: [
       'Reconhecimento de palavras',
       'Pronúncia correta',
-      'Associação imagem-palavra',
+      'Associaçêo imagem-palavra',
       'Uso em contexto simples'
     ],
     teacherTips: [
       'Use sempre o áudio do jogo',
-      'Não corrija pronúncia excessivamente',
+      'Nêo corrija pronúncia excessivamente',
       'Celebre tentativas de falar'
     ],
     thumbnailColor: 'from-blue-600 to-red-500',
@@ -1160,7 +1160,7 @@ export const lessonPlans: LessonPlan[] = [
           'Brainstorm de profissões conhecidas',
           'Jogar modo Inglês do jogo',
           'Frases: "I am a...", "I want to be..."',
-          'Apresentação pessoal em inglês'
+          'Apresentaçêo pessoal em inglês'
         ]
       },
       {
@@ -1175,14 +1175,14 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Aula 3 - Alemão/Italiano/Japonês',
+        phase: 'Aula 3 - Alemêo/Italiano/Japonês',
         duration: '50 min',
         description: 'Explorando culturas',
         activities: [
-          'Introdução a alfabetos diferentes',
+          'Introduçêo a alfabetos diferentes',
           'Explorar todos os idiomas do jogo',
           'Criar glossário multilíngue',
-          'Apresentação: profissão dos sonhos em 3 idiomas'
+          'Apresentaçêo: profissêo dos sonhos em 3 idiomas'
         ]
       }
     ],
@@ -1197,16 +1197,16 @@ export const lessonPlans: LessonPlan[] = [
     assessment: [
       'Vocabulário em pelo menos 2 idiomas',
       'Pronúncia básica',
-      'Construção de frases simples',
-      'Comparação entre idiomas'
+      'Construçêo de frases simples',
+      'Comparaçêo entre idiomas'
     ],
     extensions: [
       'Pesquisar profissões em outros países',
-      'Entrevistar familiar sobre profissão',
+      'Entrevistar familiar sobre profissêo',
       'Criar vídeo multilíngue'
     ],
     teacherTips: [
-      'Não espere fluência, foque em exposição',
+      'Nêo espere fluência, foque em exposiçêo',
       'Valorize curiosidade linguística',
       'Use o jogo para auto-estudo também'
     ],
@@ -1227,7 +1227,7 @@ export const lessonPlans: LessonPlan[] = [
       'Identificar padrões e sequências',
       'Resolver problemas de lógica',
       'Desenvolver pensamento estratégico',
-      'Exercitar memória e atenção'
+      'Exercitar memória e atençêo'
     ],
     bnccCodes: ['EF04MA11', 'EF05MA11', 'EF06MA33'],
     materials: [
@@ -1259,7 +1259,7 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Reflexão',
+        phase: 'Reflexêo',
         duration: '10 min',
         description: 'Compartilhando estratégias',
         activities: [
@@ -1278,8 +1278,8 @@ export const lessonPlans: LessonPlan[] = [
       }
     ],
     assessment: [
-      'Conclusão de desafios',
-      'Explicação do raciocínio',
+      'Conclusêo de desafios',
+      'Explicaçêo do raciocínio',
       'Persistência diante de dificuldades',
       'Transferência para novos problemas'
     ],
@@ -1289,8 +1289,8 @@ export const lessonPlans: LessonPlan[] = [
       'Clube de lógica'
     ],
     teacherTips: [
-      'Valorize o processo, não só a resposta',
-      'Permita colaboração entre alunos',
+      'Valorize o processo, nêo só a resposta',
+      'Permita colaboraçêo entre alunos',
       'Ajuste dificuldade individualmente'
     ],
     thumbnailColor: 'from-indigo-500 to-purple-500',
@@ -1310,8 +1310,8 @@ export const lessonPlans: LessonPlan[] = [
     objectives: [
       'Compreender conceitos de fractais na natureza',
       'Desenvolver raciocínio espacial',
-      'Praticar adaptação a regras variáveis',
-      'Trabalhar resolução de problemas'
+      'Praticar adaptaçêo a regras variáveis',
+      'Trabalhar resoluçêo de problemas'
     ],
     bnccCodes: ['EF05MA16', 'EF06CI01', 'EF07MA23'],
     materials: [
@@ -1322,9 +1322,9 @@ export const lessonPlans: LessonPlan[] = [
     ],
     steps: [
       {
-        phase: 'Introdução aos Fractais',
+        phase: 'Introduçêo aos Fractais',
         duration: '15 min',
-        description: 'O que são fractais?',
+        description: 'O que sêo fractais?',
         activities: [
           'Mostrar fractais na natureza: brocólis, samambaias, raios',
           'Explicar padrões que se repetem',
@@ -1332,14 +1332,14 @@ export const lessonPlans: LessonPlan[] = [
         ]
       },
       {
-        phase: 'Exploração Digital',
+        phase: 'Exploraçêo Digital',
         duration: '25 min',
         description: 'Jogo FRACTAL WORLDS',
         activities: [
           'Jogar "FRACTAL WORLDS" na EAI',
           'Explorar os 5 mundos temáticos',
           'Observar como as regras mudam',
-          'Discutir estratégias de adaptação'
+          'Discutir estratégias de adaptaçêo'
         ]
       },
       {
@@ -1349,7 +1349,7 @@ export const lessonPlans: LessonPlan[] = [
         activities: [
           'Listar onde encontramos fractais',
           'Desenhar fractal inspirado na natureza',
-          'Discussão: por que a natureza usa padrões?'
+          'Discussêo: por que a natureza usa padrões?'
         ]
       }
     ],
@@ -1357,14 +1357,14 @@ export const lessonPlans: LessonPlan[] = [
       {
         slug: 'fractal-worlds',
         title: 'FRACTAL WORLDS',
-        usage: 'Exploração de mundos com regras dinâmicas',
+        usage: 'Exploraçêo de mundos com regras dinâmicas',
         duration: '25 min'
       }
     ],
     assessment: [
-      'Compreensão do conceito de fractal',
-      'Adaptação às mudanças de regras',
-      'Identificação de padrões',
+      'Compreensêo do conceito de fractal',
+      'Adaptaçêo às mudanças de regras',
+      'Identificaçêo de padrões',
       'Criatividade nos desenhos'
     ],
     extensions: [
@@ -1374,7 +1374,7 @@ export const lessonPlans: LessonPlan[] = [
     ],
     teacherTips: [
       'Foque na beleza dos padrões',
-      'Não se preocupe com matemática complexa',
+      'Nêo se preocupe com matemática complexa',
       'Conecte sempre com exemplos visuais'
     ],
     thumbnailColor: 'from-cyan-500 to-blue-500'
@@ -1391,13 +1391,13 @@ export const lessonPlans: LessonPlan[] = [
     objectives: [
       'Desenvolver pensamento estratégico',
       'Praticar tomada de decisões',
-      'Resolver problemas sob pressão',
+      'Resolver problemas sob pressêo',
       'Trabalhar em diferentes "papéis" (classes)'
     ],
     bnccCodes: ['EF05MA11', 'EF06MA33', 'EF07MA36'],
     materials: [
       'Computadores/tablets',
-      'Quadro para discussão de estratégias',
+      'Quadro para discussêo de estratégias',
       'Fichas de planejamento',
       'Timer'
     ],
@@ -1444,9 +1444,9 @@ export const lessonPlans: LessonPlan[] = [
     ],
     assessment: [
       'Capacidade de planejamento',
-      'Adaptação a desafios',
-      'Reflexão sobre escolhas',
-      'Colaboração nas discussões'
+      'Adaptaçêo a desafios',
+      'Reflexêo sobre escolhas',
+      'Colaboraçêo nas discussões'
     ],
     extensions: [
       'Criar estratégia para problema real',
@@ -1454,9 +1454,9 @@ export const lessonPlans: LessonPlan[] = [
       'Diário de decisões'
     ],
     teacherTips: [
-      'Não há classe "melhor" - todas têm valor',
-      'Incentive experimentação',
-      'Foque no processo de decisão'
+      'Nêo há classe "melhor" - todas têm valor',
+      'Incentive experimentaçêo',
+      'Foque no processo de decisêo'
     ],
     thumbnailColor: 'from-purple-600 to-pink-500'
   }

@@ -32,14 +32,14 @@ class DragonQuestGame {
 
     // Dragons
     this.dragons = [
-      { id: 'fire', name: 'Dragão de Fogo', emoji: '🔥', element: 'fire', hp: 100, atk: 25, def: 10, unlocked: true, level: 1 },
-      { id: 'water', name: 'Dragão de Água', emoji: '💧', element: 'water', hp: 120, atk: 20, def: 15, unlocked: false, level: 1 },
-      { id: 'earth', name: 'Dragão de Terra', emoji: '🌍', element: 'earth', hp: 150, atk: 18, def: 20, unlocked: false, level: 1 },
-      { id: 'wind', name: 'Dragão de Vento', emoji: '🌪️', element: 'wind', hp: 90, atk: 30, def: 8, unlocked: false, level: 1 },
-      { id: 'lightning', name: 'Dragão Trovão', emoji: '⚡', element: 'lightning', hp: 95, atk: 35, def: 5, unlocked: false, level: 1 },
-      { id: 'ice', name: 'Dragão de Gelo', emoji: '❄️', element: 'ice', hp: 110, atk: 22, def: 18, unlocked: false, level: 1 },
-      { id: 'shadow', name: 'Dragão Sombrio', emoji: '🌑', element: 'shadow', hp: 100, atk: 28, def: 12, unlocked: false, level: 1 },
-      { id: 'light', name: 'Dragão Celestial', emoji: '✨', element: 'light', hp: 130, atk: 25, def: 25, unlocked: false, level: 1 }
+      { id: 'fire', name: 'Dragêo de Fogo', emoji: '🔥', element: 'fire', hp: 100, atk: 25, def: 10, unlocked: true, level: 1 },
+      { id: 'water', name: 'Dragêo de Água', emoji: '💧', element: 'water', hp: 120, atk: 20, def: 15, unlocked: false, level: 1 },
+      { id: 'earth', name: 'Dragêo de Terra', emoji: '🌍', element: 'earth', hp: 150, atk: 18, def: 20, unlocked: false, level: 1 },
+      { id: 'wind', name: 'Dragêo de Vento', emoji: '🌪️', element: 'wind', hp: 90, atk: 30, def: 8, unlocked: false, level: 1 },
+      { id: 'lightning', name: 'Dragêo Trovêo', emoji: '⚡', element: 'lightning', hp: 95, atk: 35, def: 5, unlocked: false, level: 1 },
+      { id: 'ice', name: 'Dragêo de Gelo', emoji: '❄️', element: 'ice', hp: 110, atk: 22, def: 18, unlocked: false, level: 1 },
+      { id: 'shadow', name: 'Dragêo Sombrio', emoji: '🌑', element: 'shadow', hp: 100, atk: 28, def: 12, unlocked: false, level: 1 },
+      { id: 'light', name: 'Dragêo Celestial', emoji: '✨', element: 'light', hp: 130, atk: 25, def: 25, unlocked: false, level: 1 }
     ];
     this.loadDragons();
     this.selectedDragon = this.dragons[0];
@@ -85,11 +85,11 @@ class DragonQuestGame {
     this.achievements = [
       { id: 'first_battle', name: 'Primeiro Combate', desc: 'Vença sua primeira batalha', icon: '⚔️', unlocked: false },
       { id: 'dragon_2', name: 'Domador', desc: 'Desbloqueie 2 dragões', icon: '🐉', unlocked: false },
-      { id: 'dragon_5', name: 'Mestre Dragão', desc: 'Desbloqueie 5 dragões', icon: '🐲', unlocked: false },
+      { id: 'dragon_5', name: 'Mestre Dragêo', desc: 'Desbloqueie 5 dragões', icon: '🐲', unlocked: false },
       { id: 'realm_clear', name: 'Conquistador', desc: 'Complete um reino', icon: '🏰', unlocked: false },
       { id: 'level_10', name: 'Guerreiro', desc: 'Alcance nível 10', icon: '⭐', unlocked: false },
-      { id: 'level_25', name: 'Campeão', desc: 'Alcance nível 25', icon: '🏆', unlocked: false },
-      { id: 'dragon_max', name: 'Lenda', desc: 'Evolua um dragão ao máximo', icon: '👑', unlocked: false },
+      { id: 'level_25', name: 'Campeêo', desc: 'Alcance nível 25', icon: '🏆', unlocked: false },
+      { id: 'dragon_max', name: 'Lenda', desc: 'Evolua um dragêo ao máximo', icon: '👑', unlocked: false },
       { id: 'all_realms', name: 'Imperador', desc: 'Complete todos os reinos', icon: '🌟', unlocked: false }
     ];
     this.loadAchievements();
@@ -377,12 +377,12 @@ class DragonQuestGame {
     const items = [
       { name: '50 Energia', price: 100, priceType: 'coins', give: () => { this.energy = Math.min(this.maxEnergy, this.energy + 50); } },
       { name: '10 Essência', price: 200, priceType: 'coins', give: () => { this.dragonEssence += 10; } },
-      { name: 'Dragão de Água', price: 500, priceType: 'coins', give: () => { this.unlockDragon('water'); } },
-      { name: 'Dragão de Terra', price: 750, priceType: 'coins', give: () => { this.unlockDragon('earth'); } },
-      { name: 'Dragão de Vento', price: 50, priceType: 'diamonds', give: () => { this.unlockDragon('wind'); } },
-      { name: 'Dragão Trovão', price: 75, priceType: 'diamonds', give: () => { this.unlockDragon('lightning'); } },
-      { name: 'Dragão de Gelo', price: 100, priceType: 'diamonds', give: () => { this.unlockDragon('ice'); } },
-      { name: 'Dragão Sombrio', price: 150, priceType: 'diamonds', give: () => { this.unlockDragon('shadow'); } }
+      { name: 'Dragêo de Água', price: 500, priceType: 'coins', give: () => { this.unlockDragon('water'); } },
+      { name: 'Dragêo de Terra', price: 750, priceType: 'coins', give: () => { this.unlockDragon('earth'); } },
+      { name: 'Dragêo de Vento', price: 50, priceType: 'diamonds', give: () => { this.unlockDragon('wind'); } },
+      { name: 'Dragêo Trovêo', price: 75, priceType: 'diamonds', give: () => { this.unlockDragon('lightning'); } },
+      { name: 'Dragêo de Gelo', price: 100, priceType: 'diamonds', give: () => { this.unlockDragon('ice'); } },
+      { name: 'Dragêo Sombrio', price: 150, priceType: 'diamonds', give: () => { this.unlockDragon('shadow'); } }
     ];
 
     items.forEach((item, i) => {
@@ -421,7 +421,7 @@ class DragonQuestGame {
     const isBoss = this.currentStage % 5 === 0;
 
     this.enemy = {
-      name: isBoss ? 'Dragão Boss' : 'Inimigo',
+      name: isBoss ? 'Dragêo Boss' : 'Inimigo',
       emoji: isBoss ? '🐲' : ['👹', '👺', '💀', '🧟', '🦇'][Math.floor(Math.random() * 5)],
       maxHP: basePower * (isBoss ? 3 : 1),
       hp: basePower * (isBoss ? 3 : 1),
@@ -1107,12 +1107,12 @@ class DragonQuestGame {
     const items = [
       { name: '50 Energia', price: 100, priceType: 'coins', emoji: '⚡' },
       { name: '10 Essência', price: 200, priceType: 'coins', emoji: '💠' },
-      { name: 'Dragão de Água', price: 500, priceType: 'coins', emoji: '💧' },
-      { name: 'Dragão de Terra', price: 750, priceType: 'coins', emoji: '🌍' },
-      { name: 'Dragão de Vento', price: 50, priceType: 'diamonds', emoji: '🌪️' },
-      { name: 'Dragão Trovão', price: 75, priceType: 'diamonds', emoji: '⚡' },
-      { name: 'Dragão de Gelo', price: 100, priceType: 'diamonds', emoji: '❄️' },
-      { name: 'Dragão Sombrio', price: 150, priceType: 'diamonds', emoji: '🌑' }
+      { name: 'Dragêo de Água', price: 500, priceType: 'coins', emoji: '💧' },
+      { name: 'Dragêo de Terra', price: 750, priceType: 'coins', emoji: '🌍' },
+      { name: 'Dragêo de Vento', price: 50, priceType: 'diamonds', emoji: '🌪️' },
+      { name: 'Dragêo Trovêo', price: 75, priceType: 'diamonds', emoji: '⚡' },
+      { name: 'Dragêo de Gelo', price: 100, priceType: 'diamonds', emoji: '❄️' },
+      { name: 'Dragêo Sombrio', price: 150, priceType: 'diamonds', emoji: '🌑' }
     ];
 
     items.forEach((item, i) => {
@@ -1252,7 +1252,7 @@ class DragonQuestGame {
 
     ctx.font = '18px Arial';
     ctx.fillStyle = '#fff';
-    ctx.fillText('Seu dragão foi derrotado...', w/2, h/2);
+    ctx.fillText('Seu dragêo foi derrotado...', w/2, h/2);
     ctx.fillText('Evolua seus dragões e tente novamente!', w/2, h/2 + 30);
 
     ctx.fillStyle = '#aaa';

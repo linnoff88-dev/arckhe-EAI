@@ -1,4 +1,4 @@
-# Plano de Ação: 5 Novos Jogos Arcade 2025
+# Plano de Açêo: 5 Novos Jogos Arcade 2025
 
 **Data:** 30 de Dezembro de 2025
 **Baseado em:** Pesquisa de tendências de jogos 2025
@@ -8,12 +8,12 @@
 
 ## Resumo dos Jogos
 
-| # | Jogo | Categoria | Inspiração | Complexidade |
+| # | Jogo | Categoria | Inspiraçêo | Complexidade |
 |---|------|-----------|------------|--------------|
 | 1 | Ball Fusion Arena | Puzzle/Arcade | BALL x PIT + Peggle | Média |
 | 2 | Fashion Battle EAI | Social/Casual | Dress to Impress | Média |
 | 3 | Plinko Tycoon | Idle/Casual | Nubby's Number Factory | Fácil |
-| 4 | Survivors EAI | Ação/Roguelike | Vampire Survivors | Alta |
+| 4 | Survivors EAI | Açêo/Roguelike | Vampire Survivors | Alta |
 | 5 | Merge Kingdom | Estratégia | Merge games + Auto-battler | Média |
 
 ---
@@ -27,7 +27,7 @@ Jogo estilo brick-breaker com elementos roguelike. O jogador lança bolas que qu
 - [ ] Sistema de lançamento de bolas com física
 - [ ] Grid de blocos destrutíveis (tijolos coloridos)
 - [ ] Power-ups que caem dos blocos
-- [ ] Sistema de fusão: combinar 2 bolas iguais = bola melhor
+- [ ] Sistema de fusêo: combinar 2 bolas iguais = bola melhor
 - [ ] Tipos de bolas: Normal, Fogo, Gelo, Elétrica, Laser, Explosiva
 - [ ] Upgrades permanentes entre runs
 - [ ] Sistema de waves/níveis progressivos
@@ -37,8 +37,8 @@ Jogo estilo brick-breaker com elementos roguelike. O jogador lança bolas que qu
 - [ ] 10+ power-ups diferentes
 - [ ] Sistema de combo (quebrar múltiplos blocos)
 - [ ] Boss battles a cada 10 níveis
-- [ ] Leaderboard de pontuação
-- [ ] Integração EAI (XP, moedas)
+- [ ] Leaderboard de pontuaçêo
+- [ ] Integraçêo EAI (XP, moedas)
 
 ### Controles
 - Mouse/Touch para mirar e lançar
@@ -52,12 +52,12 @@ Jogo estilo brick-breaker com elementos roguelike. O jogador lança bolas que qu
 Jogo social de moda inspirado no viral "Dress to Impress" do Roblox. Jogadores criam looks baseados em temas e votam nos melhores.
 
 ### Mecânicas Principais
-- [ ] Sistema de customização de personagem
+- [ ] Sistema de customizaçêo de personagem
 - [ ] Guarda-roupa com roupas, acessórios, cabelos
 - [ ] Temas aleatórios para cada rodada
 - [ ] Timer para montar o look
-- [ ] Sistema de votação (estrelas 1-5)
-- [ ] Ranking e premiação
+- [ ] Sistema de votaçêo (estrelas 1-5)
+- [ ] Ranking e premiaçêo
 
 ### Características
 - [ ] 50+ peças de roupa iniciais
@@ -130,8 +130,8 @@ Jogo de sobrevivência estilo Vampire Survivors. O jogador controla um personage
 - [ ] Projéteis mágicos
 - [ ] Escudo orbital
 - [ ] Raio elétrico
-- [ ] Explosão de área
-- [ ] Invocação de aliados
+- [ ] Explosêo de área
+- [ ] Invocaçêo de aliados
 
 ### Inimigos
 - [ ] Slimes (básico)
@@ -145,7 +145,7 @@ Jogo de sobrevivência estilo Vampire Survivors. O jogador controla um personage
 - [ ] 10+ armas/habilidades
 - [ ] Evoluções de armas (combinar 2 = arma suprema)
 - [ ] Mapa procedural
-- [ ] Sistema de meta-progressão
+- [ ] Sistema de meta-progressêo
 - [ ] Moedas para desbloquear personagens/itens
 
 ### Controles
@@ -157,7 +157,7 @@ Jogo de sobrevivência estilo Vampire Survivors. O jogador controla um personage
 ## Jogo 5: Merge Kingdom
 
 ### Conceito
-Jogo de fusão onde o jogador combina unidades iguais para criar unidades mais fortes, que batalham automaticamente contra inimigos.
+Jogo de fusêo onde o jogador combina unidades iguais para criar unidades mais fortes, que batalham automaticamente contra inimigos.
 
 ### Mecânicas Principais
 - [ ] Grid de batalha (5x5 ou 6x6)
@@ -172,11 +172,11 @@ Jogo de fusão onde o jogador combina unidades iguais para criar unidades mais f
 - [ ] Arqueiro (ranged, DPS)
 - [ ] Mago (AoE, magia)
 - [ ] Curandeiro (suporte)
-- [ ] Cada tipo tem 8 níveis de evolução
+- [ ] Cada tipo tem 8 níveis de evoluçêo
 
 ### Características
 - [ ] Sistema de waves infinitas
-- [ ] Progressão de dificuldade
+- [ ] Progressêo de dificuldade
 - [ ] Moedas para comprar unidades
 - [ ] Diamantes para acelerar/premium
 - [ ] Conquistas e milestones
@@ -196,7 +196,7 @@ Jogo de fusão onde o jogador combina unidades iguais para criar unidades mais f
 
 ## Cronograma de Desenvolvimento
 
-### Ordem de Criação
+### Ordem de Criaçêo
 
 1. **Plinko Tycoon** - Mais simples, mecânica comprovada
 2. **Ball Fusion Arena** - Brick-breaker com twist moderno
@@ -209,7 +209,7 @@ Jogo de fusão onde o jogador combina unidades iguais para criar unidades mais f
 Para cada jogo:
 - [ ] Criar estrutura de arquivos (game.js, index.html)
 - [ ] Implementar mecânica core
-- [ ] Adicionar sistemas de progressão
+- [ ] Adicionar sistemas de progressêo
 - [ ] Implementar UI/HUD
 - [ ] Adicionar efeitos visuais e sons
 - [ ] Integrar sistema EAI (XP, moedas)
@@ -227,15 +227,15 @@ Para cada jogo:
 - localStorage para saves
 
 ### Padrões
-- Classes ES6 para organização
+- Classes ES6 para organizaçêo
 - requestAnimationFrame para game loop
 - Touch e mouse support
 - Responsivo para mobile
 
-### Integração EAI
+### Integraçêo EAI
 - Salvar progresso no localStorage
 - postMessage para comunicar XP/moedas ao parent
-- Formato padrão de dados do jogador
+- Formato padrêo de dados do jogador
 
 ---
 
@@ -244,7 +244,7 @@ Para cada jogo:
 ### Gameplay
 - [ ] Jogável em 30 segundos de tutorial
 - [ ] Loop de gameplay satisfatório
-- [ ] Progressão clara e recompensadora
+- [ ] Progressêo clara e recompensadora
 - [ ] Rejogabilidade alta
 
 ### Técnico

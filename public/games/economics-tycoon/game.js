@@ -17,7 +17,7 @@ const SECTORS = [
   { id: 3, name: 'Comércio Internacional', color: '#7c3aed', icon: '🚢', unlockLevel: 15, lessons: 50 },
   { id: 4, name: 'Empreendedorismo', color: '#ea580c', icon: '🚀', unlockLevel: 20, lessons: 50 },
   { id: 5, name: 'Marketing', color: '#ec4899', icon: '📢', unlockLevel: 30, lessons: 50 },
-  { id: 6, name: 'Gestão de Pessoas', color: '#14b8a6', icon: '👥', unlockLevel: 40, lessons: 50 },
+  { id: 6, name: 'Gestêo de Pessoas', color: '#14b8a6', icon: '👥', unlockLevel: 40, lessons: 50 },
   { id: 7, name: 'Contabilidade', color: '#78716c', icon: '📊', unlockLevel: 50, lessons: 50 },
   { id: 8, name: 'Direito Empresarial', color: '#1e3a8a', icon: '⚖️', unlockLevel: 60, lessons: 50 },
   { id: 9, name: 'Economia Digital', color: '#8b5cf6', icon: '💻', unlockLevel: 70, lessons: 50 }
@@ -41,67 +41,67 @@ let business = {
 // Questions database
 const QUESTIONS = {
   0: [ // Microeconomia
-    { q: 'O que é a Lei da Oferta e Demanda?', a: ['Relação preço/quantidade', 'Lei fiscal', 'Regulamento comercial', 'Imposto'], correct: 0 },
-    { q: 'O que acontece quando a demanda aumenta?', a: ['Preço tende a subir', 'Preço cai', 'Nada muda', 'Produção para'], correct: 0 },
+    { q: 'O que é a Lei da Oferta e Demanda?', a: ['Relaçêo preço/quantidade', 'Lei fiscal', 'Regulamento comercial', 'Imposto'], correct: 0 },
+    { q: 'O que acontece quando a demanda aumenta?', a: ['Preço tende a subir', 'Preço cai', 'Nada muda', 'Produçêo para'], correct: 0 },
     { q: 'O que é elasticidade-preço?', a: ['Sensibilidade da demanda ao preço', 'Flexibilidade do produto', 'Tipo de embalagem', 'Durabilidade'], correct: 0 },
-    { q: 'O que é custo de oportunidade?', a: ['Valor da melhor alternativa', 'Preço do produto', 'Custo de produção', 'Lucro esperado'], correct: 0 },
+    { q: 'O que é custo de oportunidade?', a: ['Valor da melhor alternativa', 'Preço do produto', 'Custo de produçêo', 'Lucro esperado'], correct: 0 },
     { q: 'O que caracteriza um monopólio?', a: ['Uma empresa domina o mercado', 'Muitas empresas competem', 'Governo controla', 'Livre concorrência'], correct: 0 }
   ],
   1: [ // Macroeconomia
-    { q: 'O que é PIB?', a: ['Produto Interno Bruto', 'Preço Industrial Básico', 'Produção Industrial', 'Pagamento Interno'], correct: 0 },
-    { q: 'O que é inflação?', a: ['Aumento geral dos preços', 'Queda dos preços', 'Aumento do PIB', 'Crescimento econômico'], correct: 0 },
+    { q: 'O que é PIB?', a: ['Produto Interno Bruto', 'Preço Industrial Básico', 'Produçêo Industrial', 'Pagamento Interno'], correct: 0 },
+    { q: 'O que é inflaçêo?', a: ['Aumento geral dos preços', 'Queda dos preços', 'Aumento do PIB', 'Crescimento econômico'], correct: 0 },
     { q: 'O que o Banco Central controla?', a: ['Política monetária', 'Preços de produtos', 'Salários', 'Importações'], correct: 0 },
     { q: 'O que é taxa de desemprego?', a: ['% de desempregados na força de trabalho', 'Número total de empregos', 'Salário mínimo', 'PIB per capita'], correct: 0 },
-    { q: 'O que é recessão?', a: ['Contração econômica', 'Crescimento acelerado', 'Inflação alta', 'Pleno emprego'], correct: 0 }
+    { q: 'O que é recessêo?', a: ['Contraçêo econômica', 'Crescimento acelerado', 'Inflaçêo alta', 'Pleno emprego'], correct: 0 }
   ],
   2: [ // Mercado Financeiro
-    { q: 'O que são ações?', a: ['Frações de propriedade de empresa', 'Títulos de dívida', 'Moeda estrangeira', 'Imóveis'], correct: 0 },
-    { q: 'O que é a Bolsa de Valores?', a: ['Mercado de negociação de ações', 'Banco', 'Loja', 'Fábrica'], correct: 0 },
-    { q: 'O que são dividendos?', a: ['Parte do lucro distribuída', 'Impostos', 'Dívidas', 'Custos'], correct: 0 },
-    { q: 'O que é diversificação?', a: ['Distribuir investimentos', 'Concentrar em um ativo', 'Vender tudo', 'Não investir'], correct: 0 },
+    { q: 'O que sêo ações?', a: ['Frações de propriedade de empresa', 'Títulos de dívida', 'Moeda estrangeira', 'Imóveis'], correct: 0 },
+    { q: 'O que é a Bolsa de Valores?', a: ['Mercado de negociaçêo de ações', 'Banco', 'Loja', 'Fábrica'], correct: 0 },
+    { q: 'O que sêo dividendos?', a: ['Parte do lucro distribuída', 'Impostos', 'Dívidas', 'Custos'], correct: 0 },
+    { q: 'O que é diversificaçêo?', a: ['Distribuir investimentos', 'Concentrar em um ativo', 'Vender tudo', 'Nêo investir'], correct: 0 },
     { q: 'O que é renda fixa?', a: ['Retorno previsível', 'Retorno variável', 'Sem retorno', 'Alto risco'], correct: 0 }
   ],
   3: [ // Comércio Internacional
-    { q: 'O que é exportação?', a: ['Venda para outros países', 'Compra de outros países', 'Venda local', 'Produção interna'], correct: 0 },
+    { q: 'O que é exportaçêo?', a: ['Venda para outros países', 'Compra de outros países', 'Venda local', 'Produçêo interna'], correct: 0 },
     { q: 'O que é balança comercial?', a: ['Diferença entre exportações e importações', 'Tipo de transporte', 'Moeda internacional', 'Acordo diplomático'], correct: 0 },
-    { q: 'O que são tarifas?', a: ['Impostos sobre importações', 'Preços de produtos', 'Salários', 'Lucros'], correct: 0 },
+    { q: 'O que sêo tarifas?', a: ['Impostos sobre importações', 'Preços de produtos', 'Salários', 'Lucros'], correct: 0 },
     { q: 'O que é câmbio?', a: ['Troca de moedas', 'Tipo de banco', 'Imposto', 'Produto'], correct: 0 }
   ],
   4: [ // Empreendedorismo
     { q: 'O que é um MVP?', a: ['Produto Mínimo Viável', 'Marketing Virtual', 'Mercado Variável', 'Modelo de Venda'], correct: 0 },
     { q: 'O que é startup?', a: ['Empresa inovadora em crescimento', 'Empresa antiga', 'Governo', 'ONG'], correct: 0 },
-    { q: 'O que é pitch?', a: ['Apresentação rápida do negócio', 'Tipo de produto', 'Relatório', 'Contrato'], correct: 0 },
+    { q: 'O que é pitch?', a: ['Apresentaçêo rápida do negócio', 'Tipo de produto', 'Relatório', 'Contrato'], correct: 0 },
     { q: 'O que é break-even?', a: ['Ponto de equilíbrio', 'Lucro máximo', 'Prejuízo', 'Falência'], correct: 0 }
   ],
   5: [ // Marketing
-    { q: 'O que são os 4 Ps do Marketing?', a: ['Produto, Preço, Praça, Promoção', 'Pessoas, Processos, Produtos, Preços', 'Propaganda, Publicidade, Preço, Prazo', 'Produção, Planejamento, Promoção, Preço'], correct: 0 },
-    { q: 'O que é segmentação de mercado?', a: ['Dividir mercado em grupos', 'Unificar clientes', 'Ignorar diferenças', 'Vender para todos igual'], correct: 0 },
-    { q: 'O que é branding?', a: ['Gestão de marca', 'Tipo de produto', 'Preço', 'Logística'], correct: 0 },
-    { q: 'O que é CRM?', a: ['Gestão de relacionamento com cliente', 'Tipo de software', 'Imposto', 'Contrato'], correct: 0 }
+    { q: 'O que sêo os 4 Ps do Marketing?', a: ['Produto, Preço, Praça, Promoçêo', 'Pessoas, Processos, Produtos, Preços', 'Propaganda, Publicidade, Preço, Prazo', 'Produçêo, Planejamento, Promoçêo, Preço'], correct: 0 },
+    { q: 'O que é segmentaçêo de mercado?', a: ['Dividir mercado em grupos', 'Unificar clientes', 'Ignorar diferenças', 'Vender para todos igual'], correct: 0 },
+    { q: 'O que é branding?', a: ['Gestêo de marca', 'Tipo de produto', 'Preço', 'Logística'], correct: 0 },
+    { q: 'O que é CRM?', a: ['Gestêo de relacionamento com cliente', 'Tipo de software', 'Imposto', 'Contrato'], correct: 0 }
   ],
-  6: [ // Gestão de Pessoas
+  6: [ // Gestêo de Pessoas
     { q: 'O que é RH?', a: ['Recursos Humanos', 'Rendimento Horário', 'Relatório', 'Regulamento'], correct: 0 },
     { q: 'O que é feedback?', a: ['Retorno sobre desempenho', 'Tipo de pagamento', 'Benefício', 'Contrato'], correct: 0 },
     { q: 'O que é turnover?', a: ['Rotatividade de funcionários', 'Tipo de lucro', 'Imposto', 'Benefício'], correct: 0 },
-    { q: 'O que é clima organizacional?', a: ['Ambiente de trabalho', 'Temperatura', 'Localização', 'Tipo de empresa'], correct: 0 }
+    { q: 'O que é clima organizacional?', a: ['Ambiente de trabalho', 'Temperatura', 'Localizaçêo', 'Tipo de empresa'], correct: 0 }
   ],
   7: [ // Contabilidade
-    { q: 'O que é balanço patrimonial?', a: ['Demonstração de ativos e passivos', 'Tipo de conta', 'Imposto', 'Lucro'], correct: 0 },
-    { q: 'O que são ativos?', a: ['Bens e direitos', 'Dívidas', 'Impostos', 'Custos'], correct: 0 },
-    { q: 'O que são passivos?', a: ['Obrigações e dívidas', 'Bens', 'Lucros', 'Vendas'], correct: 0 },
-    { q: 'O que é DRE?', a: ['Demonstração do Resultado', 'Departamento', 'Divisão', 'Documento'], correct: 0 }
+    { q: 'O que é balanço patrimonial?', a: ['Demonstraçêo de ativos e passivos', 'Tipo de conta', 'Imposto', 'Lucro'], correct: 0 },
+    { q: 'O que sêo ativos?', a: ['Bens e direitos', 'Dívidas', 'Impostos', 'Custos'], correct: 0 },
+    { q: 'O que sêo passivos?', a: ['Obrigações e dívidas', 'Bens', 'Lucros', 'Vendas'], correct: 0 },
+    { q: 'O que é DRE?', a: ['Demonstraçêo do Resultado', 'Departamento', 'Divisêo', 'Documento'], correct: 0 }
   ],
   8: [ // Direito Empresarial
     { q: 'O que é CNPJ?', a: ['Cadastro de empresa', 'Cadastro pessoal', 'Imposto', 'Contrato'], correct: 0 },
     { q: 'O que é MEI?', a: ['Microempreendedor Individual', 'Empresa grande', 'Banco', 'Imposto'], correct: 0 },
-    { q: 'O que é contrato social?', a: ['Documento de constituição', 'Acordo de trabalho', 'Imposto', 'Benefício'], correct: 0 },
+    { q: 'O que é contrato social?', a: ['Documento de constituiçêo', 'Acordo de trabalho', 'Imposto', 'Benefício'], correct: 0 },
     { q: 'O que é compliance?', a: ['Conformidade com regras', 'Tipo de produto', 'Marketing', 'Vendas'], correct: 0 }
   ],
   9: [ // Economia Digital
     { q: 'O que é e-commerce?', a: ['Comércio eletrônico', 'Economia tradicional', 'Banco', 'Fábrica'], correct: 0 },
     { q: 'O que é fintech?', a: ['Tecnologia financeira', 'Tipo de banco', 'Moeda', 'Imposto'], correct: 0 },
     { q: 'O que é blockchain?', a: ['Tecnologia de registro distribuído', 'Tipo de moeda', 'Banco digital', 'Aplicativo'], correct: 0 },
-    { q: 'O que é economia compartilhada?', a: ['Modelo de acesso vs propriedade', 'Economia tradicional', 'Monopólio', 'Importação'], correct: 0 }
+    { q: 'O que é economia compartilhada?', a: ['Modelo de acesso vs propriedade', 'Economia tradicional', 'Monopólio', 'Importaçêo'], correct: 0 }
   ]
 };
 
@@ -122,8 +122,8 @@ let investments = {
 // Shop items
 const SHOP_ITEMS = [
   { id: 'employee', name: 'Contratar Funcionário', desc: '+1 Funcionário', cost: 2000, gem: false },
-  { id: 'marketing', name: 'Campanha Marketing', desc: '+10 Reputação', cost: 1500, gem: false },
-  { id: 'expansion', name: 'Expansão', desc: '+5% Market Share', cost: 5000, gem: false },
+  { id: 'marketing', name: 'Campanha Marketing', desc: '+10 Reputaçêo', cost: 1500, gem: false },
+  { id: 'expansion', name: 'Expansêo', desc: '+5% Market Share', cost: 5000, gem: false },
   { id: 'advisor', name: 'Consultor', desc: '+25% XP', cost: 30, gem: true },
   { id: 'franchise', name: 'Franquia', desc: 'Receita passiva', cost: 50, gem: true },
   { id: 'ipo', name: 'Preparar IPO', desc: 'Desbloqueio especial', cost: 100, gem: true }
@@ -387,7 +387,7 @@ function drawLesson() {
   ctx.fillStyle = '#fff';
   ctx.font = 'bold 15px Arial';
   ctx.textAlign = 'center';
-  ctx.fillText(`${sector.icon} Lição ${currentLesson + 1}`, canvas.width / 2, 30);
+  ctx.fillText(`${sector.icon} Liçêo ${currentLesson + 1}`, canvas.width / 2, 30);
 
   if (streak > 0) {
     ctx.fillStyle = '#fbbf24';

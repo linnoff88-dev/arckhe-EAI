@@ -113,7 +113,7 @@ O MVP foca em duas areas: Arcade (jogos casuais) e Educacional (jogos para crian
 Interface moderna, vibrante e intuitiva que transmita diversao e aprendizado. Design inspirado em Poki/CrazyGames mas com identidade propria e foco educacional. A experiencia deve ser tao fluida que usuarios joguem sem perceber que estao em uma plataforma educacional.
 
 **Principios:**
-- Zero fricção: jogar sem cadastro, sem popups, sem barreiras
+- Zero fricçêo: jogar sem cadastro, sem popups, sem barreiras
 - Descoberta facil: encontrar jogos rapidamente
 - Visual atrativo: cores vibrantes, thumbnails de qualidade
 - Confianca para pais: visual profissional, conteudo curado

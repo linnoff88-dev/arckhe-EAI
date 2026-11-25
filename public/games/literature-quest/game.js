@@ -39,7 +39,7 @@ const QUESTIONS = {
     { q: 'Quem escreveu "Os Lusíadas"?', a: ['Luís de Camões', 'Fernando Pessoa', 'Eça de Queirós', 'Almeida Garrett'], correct: 0 },
     { q: 'Qual é o tema central de "Os Lusíadas"?', a: ['Viagem de Vasco da Gama', 'Guerra Civil', 'Amor proibido', 'Crítica social'], correct: 0 },
     { q: 'Quem criou o heterônimo Alberto Caeiro?', a: ['Fernando Pessoa', 'Camões', 'Eça de Queirós', 'Saramago'], correct: 0 },
-    { q: 'Qual obra de Eça de Queirós critica a sociedade portuguesa?', a: ['Os Maias', 'Os Lusíadas', 'Mensagem', 'Amor de Perdição'], correct: 0 }
+    { q: 'Qual obra de Eça de Queirós critica a sociedade portuguesa?', a: ['Os Maias', 'Os Lusíadas', 'Mensagem', 'Amor de Perdiçêo'], correct: 0 }
   ],
   2: [
     { q: 'Quem escreveu "Dom Quixote"?', a: ['Miguel de Cervantes', 'Shakespeare', 'Dante', 'Homero'], correct: 0 },
@@ -49,7 +49,7 @@ const QUESTIONS = {
   ],
   3: [
     { q: 'O que é um soneto?', a: ['Poema de 14 versos', 'Poema de 10 versos', 'Poema épico', 'Poema livre'], correct: 0 },
-    { q: 'O que são versos alexandrinos?', a: ['12 sílabas poéticas', '10 sílabas', '8 sílabas', '14 sílabas'], correct: 0 },
+    { q: 'O que sêo versos alexandrinos?', a: ['12 sílabas poéticas', '10 sílabas', '8 sílabas', '14 sílabas'], correct: 0 },
     { q: 'Quem foi o "Príncipe dos Poetas"?', a: ['Olavo Bilac', 'Castro Alves', 'Gonçalves Dias', 'Álvares de Azevedo'], correct: 0 },
     { q: 'O que é métrica em poesia?', a: ['Contagem de sílabas', 'Rima', 'Tema', 'Estrofe'], correct: 0 }
   ],
@@ -59,23 +59,23 @@ const QUESTIONS = {
     { q: 'Quem foi Nelson Rodrigues?', a: ['Dramaturgo brasileiro', 'Poeta português', 'Romancista inglês', 'Filósofo francês'], correct: 0 }
   ],
   5: [
-    { q: 'Qual evento marca o início do Modernismo no Brasil?', a: ['Semana de Arte Moderna de 1922', 'Independência', 'Proclamação da República', 'Abolição'], correct: 0 },
+    { q: 'Qual evento marca o início do Modernismo no Brasil?', a: ['Semana de Arte Moderna de 1922', 'Independência', 'Proclamaçêo da República', 'Aboliçêo'], correct: 0 },
     { q: 'Quem participou da Semana de 22?', a: ['Mário de Andrade', 'Machado de Assis', 'José de Alencar', 'Castro Alves'], correct: 0 },
     { q: 'Qual obra de Oswald de Andrade é icônica?', a: ['Manifesto Antropófago', 'Macunaíma', 'Pauliceia Desvairada', 'A Rosa do Povo'], correct: 0 }
   ],
   6: [
-    { q: 'Qual é característica do Romantismo?', a: ['Subjetivismo e emoção', 'Objetividade científica', 'Crítica social', 'Experimentalismo'], correct: 0 },
+    { q: 'Qual é característica do Romantismo?', a: ['Subjetivismo e emoçêo', 'Objetividade científica', 'Crítica social', 'Experimentalismo'], correct: 0 },
     { q: 'Quem foi o maior poeta romântico brasileiro?', a: ['Castro Alves', 'Olavo Bilac', 'Manuel Bandeira', 'Drummond'], correct: 0 },
     { q: 'O que é "mal do século"?', a: ['Pessimismo romântico', 'Doença física', 'Crise econômica', 'Guerra'], correct: 0 }
   ],
   7: [
-    { q: 'Qual é característica do Realismo?', a: ['Objetividade e crítica social', 'Emoção exagerada', 'Idealização', 'Nacionalismo'], correct: 0 },
+    { q: 'Qual é característica do Realismo?', a: ['Objetividade e crítica social', 'Emoçêo exagerada', 'Idealizaçêo', 'Nacionalismo'], correct: 0 },
     { q: 'O que diferencia Naturalismo do Realismo?', a: ['Determinismo biológico', 'Crítica mais leve', 'Menos detalhes', 'Mais poesia'], correct: 0 },
     { q: 'Qual obra é naturalista no Brasil?', a: ['O Cortiço', 'Dom Casmurro', 'Iracema', 'A Moreninha'], correct: 0 }
   ],
   8: [
     { q: 'Quem é Clarice Lispector?', a: ['Escritora brasileira modernista', 'Poetisa portuguesa', 'Dramaturga inglesa', 'Romancista francesa'], correct: 0 },
-    { q: 'Qual obra é de Guimarães Rosa?', a: ['Grande Sertão: Veredas', 'Vidas Secas', 'Capitães da Areia', 'O Tempo e o Vento'], correct: 0 }
+    { q: 'Qual obra é de Guimarêes Rosa?', a: ['Grande Sertêo: Veredas', 'Vidas Secas', 'Capitêes da Areia', 'O Tempo e o Vento'], correct: 0 }
   ],
   9: [
     { q: 'O que é análise literária?', a: ['Estudo interpretativo de obras', 'Biografia do autor', 'Resumo da história', 'Lista de personagens'], correct: 0 },

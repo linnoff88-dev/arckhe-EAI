@@ -448,7 +448,7 @@
         <div class="celebration" id="celebration">
             <div class="celebration-content">
                 <div class="emoji" id="celebrationEmoji">🎉</div>
-                <h2 id="celebrationTitle">Missão Completa!</h2>
+                <h2 id="celebrationTitle">Missêo Completa!</h2>
                 <p id="celebrationText">Você ganhou pontos!</p>
                 <button class="close-btn" onclick="closeCelebration()">Continuar</button>
             </div>
@@ -484,7 +484,7 @@
             { id: 17, emoji: '🎵', title: 'Cantar uma música', desc: 'Cante sua música favorita', points: 10, category: 'creative' },
             { id: 18, emoji: '🏗️', title: 'Construir algo', desc: 'Monte algo com blocos, lego ou papel', points: 20, category: 'creative' },
             { id: 19, emoji: '📝', title: 'Escrever uma história', desc: 'Crie uma história curta', points: 25, category: 'creative' },
-            { id: 20, emoji: '🎭', title: 'Fazer uma encenação', desc: 'Invente uma peça de teatro ou mímica', points: 20, category: 'creative' }
+            { id: 20, emoji: '🎭', title: 'Fazer uma encenaçêo', desc: 'Invente uma peça de teatro ou mímica', points: 20, category: 'creative' }
         ];
 
         // Desafios diários
@@ -697,7 +697,7 @@
             });
         }
 
-        // Completar missão
+        // Completar missêo
         function completeMission(mission) {
             if (gameState.missionsCompleted.includes(mission.id)) return;
 
@@ -724,19 +724,19 @@
             saveProgress();
             renderMissions();
 
-            // Mostrar celebração
+            // Mostrar celebraçêo
             showCelebration(mission);
         }
 
-        // Mostrar celebração
+        // Mostrar celebraçêo
         function showCelebration(mission) {
             document.getElementById('celebrationEmoji').textContent = mission.emoji;
-            document.getElementById('celebrationTitle').textContent = 'Missão Completa!';
+            document.getElementById('celebrationTitle').textContent = 'Missêo Completa!';
             document.getElementById('celebrationText').textContent = `Você completou "${mission.title}" e ganhou ${mission.points} pontos!`;
             document.getElementById('celebration').classList.add('show');
         }
 
-        // Fechar celebração
+        // Fechar celebraçêo
         function closeCelebration() {
             document.getElementById('celebration').classList.remove('show');
         }

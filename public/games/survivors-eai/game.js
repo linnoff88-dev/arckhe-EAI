@@ -155,7 +155,7 @@ class SurvivorsGame {
         count: 2
       },
       fire: {
-        name: 'Explosão de Fogo',
+        name: 'Explosêo de Fogo',
         color: '#e67e22',
         damage: 40,
         cooldown: 3000,
@@ -220,7 +220,7 @@ class SurvivorsGame {
       { type: 'weapon', weapon: 'magic', name: 'Orbe Mágico', desc: 'Dispara projéteis mágicos' },
       { type: 'weapon', weapon: 'lightning', name: 'Raio', desc: 'Atinge inimigos aleatórios' },
       { type: 'weapon', weapon: 'shield', name: 'Escudo Orbital', desc: 'Orbita ao redor do jogador' },
-      { type: 'weapon', weapon: 'fire', name: 'Explosão', desc: 'Explosão de área' },
+      { type: 'weapon', weapon: 'fire', name: 'Explosêo', desc: 'Explosêo de área' },
       { type: 'stat', stat: 'maxHp', value: 20, name: '+20 HP', desc: 'Aumenta vida máxima' },
       { type: 'stat', stat: 'speed', value: 0.3, name: '+Velocidade', desc: 'Move mais rápido' },
       { type: 'stat', stat: 'damage', value: 0.1, name: '+10% Dano', desc: 'Todos ataques mais fortes' },

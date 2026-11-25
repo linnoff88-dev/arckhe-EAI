@@ -631,7 +631,7 @@
 
         // Sortear letra
         function callLetter() {
-            // Letras disponíveis (não sorteadas ainda)
+            // Letras disponíveis (nêo sorteadas ainda)
             const available = allLetters.filter(l => !gameState.calledLetters.includes(l));
 
             if (available.length === 0) {
@@ -678,12 +678,12 @@
             }
 
             if (!gameState.calledLetters.includes(letter)) {
-                // Letra não foi sorteada ainda
+                // Letra nêo foi sorteada ainda
                 playSound('wrong');
                 const cells = document.querySelectorAll('.bingo-cell');
                 cells[index].classList.add('wrong');
                 setTimeout(() => cells[index].classList.remove('wrong'), 500);
-                showFeedback('Essa letra ainda não foi sorteada!', 'error');
+                showFeedback('Essa letra ainda nêo foi sorteada!', 'error');
                 return;
             }
 
@@ -742,7 +742,7 @@
             updateMedals();
             saveProgress();
 
-            // Animação
+            // Animaçêo
             const animation = document.getElementById('bingoAnimation');
             animation.classList.add('show');
 

@@ -50,7 +50,7 @@ Este documento define os objetivos de experiencia do usuario, arquitetura de inf
 
 #### Design Principles
 
-1. **Zero Fricção** - Nenhuma barreira entre o usuario e o jogo. Sem popups, sem cadastro obrigatorio, sem interrupcoes.
+1. **Zero Fricçêo** - Nenhuma barreira entre o usuario e o jogo. Sem popups, sem cadastro obrigatorio, sem interrupcoes.
 
 2. **Diversao Primeiro** - O visual deve transmitir energia e diversao. Cores vibrantes, animacoes suaves, feedback positivo.
 
@@ -306,7 +306,7 @@ graph TD
 │ │Categorias│  │Game│ │Game│ │Game│ │Game│          │
 │ │         │  │    │ │    │ │    │ │    │          │
 │ │ Todos   │  └────┘ └────┘ └────┘ └────┘          │
-│ │ Ação    │  ┌────┐ ┌────┐ ┌────┐ ┌────┐          │
+│ │ Açêo    │  ┌────┐ ┌────┐ ┌────┐ ┌────┐          │
 │ │ Puzzle  │  │Game│ │Game│ │Game│ │Game│          │
 │ │ Aventura│  │    │ │    │ │    │ │    │          │
 │ │ Corrida │  └────┘ └────┘ └────┘ └────┘          │

@@ -180,7 +180,7 @@
             transform: scale(1.05);
         }
 
-        /* ===== SELEÇÃO DE MUNDO ===== */
+        /* ===== SELEÇêO DE MUNDO ===== */
         #world-select {
             position: fixed;
             inset: 0;
@@ -812,7 +812,7 @@
             margin-top: 5px;
         }
 
-        /* ===== EVOLUÇÃO POPUP ===== */
+        /* ===== EVOLUÇêO POPUP ===== */
         .evolution-popup {
             position: fixed;
             inset: 0;
@@ -971,9 +971,9 @@
 
             <div class="modal-section">
                 <h3>🍎 Coletando Frutas</h3>
-                <p>Colete frutas pelo mapa para ganhar XP e encher sua barra de evolução. Cada fruta dá poderes diferentes!</p>
+                <p>Colete frutas pelo mapa para ganhar XP e encher sua barra de evoluçêo. Cada fruta dá poderes diferentes!</p>
                 <ul>
-                    <li><strong>🍎 Maçã:</strong> +10 XP, velocidade temporária</li>
+                    <li><strong>🍎 Maçê:</strong> +10 XP, velocidade temporária</li>
                     <li><strong>🍊 Laranja:</strong> +15 XP, regenera vida</li>
                     <li><strong>🍇 Uva:</strong> +20 XP, poder de área</li>
                     <li><strong>🍓 Morango:</strong> +25 XP, ataque forte</li>
@@ -983,7 +983,7 @@
             </div>
 
             <div class="modal-section">
-                <h3>📈 Sistema de Evolução</h3>
+                <h3>📈 Sistema de Evoluçêo</h3>
                 <p>A cada nível, sua capivara fica mais forte! No <strong>nível 9</strong>, você desbloqueia o acesso aos <strong>5 Portais Místicos</strong>!</p>
             </div>
 
@@ -1022,7 +1022,7 @@
         </div>
     </div>
 
-    <!-- SELEÇÃO DE MUNDO -->
+    <!-- SELEÇêO DE MUNDO -->
     <div id="world-select">
         <h1 class="world-title">🌍 Escolha seu Destino</h1>
         <div class="worlds-grid" id="worlds-container">
@@ -1101,10 +1101,10 @@
         </div>
     </div>
 
-    <!-- POPUP DE EVOLUÇÃO -->
+    <!-- POPUP DE EVOLUÇêO -->
     <div class="evolution-popup" id="evolution-popup">
         <div class="evolution-content">
-            <h2 class="evolution-title">✨ Evolução! ✨</h2>
+            <h2 class="evolution-title">✨ Evoluçêo! ✨</h2>
             <div class="evolution-sprites">
                 <span class="evo-sprite" id="evo-before">🦫</span>
                 <span class="evo-arrow">➡️</span>
@@ -1183,7 +1183,7 @@
     </div>
 
     <script>
-        // ===== CONFIGURAÇÃO DO JOGO =====
+        // ===== CONFIGURAÇêO DO JOGO =====
         const GAME_CONFIG = {
             fps: 60,
             tileSize: 40,
@@ -1251,7 +1251,7 @@
             { id: 'default', name: 'Capivara Comum', sprite: '🦫', type: 'Inicial', found: true },
             { id: 'baby1', name: 'Filhote Curioso', sprite: '🐹', type: 'Filhote', found: false },
             { id: 'baby2', name: 'Filhote Dorminhoco', sprite: '😴', type: 'Filhote', found: false },
-            { id: 'baby3', name: 'Filhote Brincalhão', sprite: '🎮', type: 'Filhote', found: false },
+            { id: 'baby3', name: 'Filhote Brincalhêo', sprite: '🎮', type: 'Filhote', found: false },
             { id: 'forest', name: 'Capivara da Floresta', sprite: '🌿', type: 'Rara', found: false },
             { id: 'desert', name: 'Capivara do Deserto', sprite: '🏜️', type: 'Rara', found: false },
             { id: 'ocean', name: 'Capivara Marinha', sprite: '🐠', type: 'Rara', found: false },
@@ -1262,7 +1262,7 @@
 
         // Frutas
         const FRUITS = [
-            { emoji: '🍎', name: 'Maçã', xp: 10, power: 'speed', color: '#ff0000' },
+            { emoji: '🍎', name: 'Maçê', xp: 10, power: 'speed', color: '#ff0000' },
             { emoji: '🍊', name: 'Laranja', xp: 15, power: 'heal', color: '#ffa500' },
             { emoji: '🍇', name: 'Uva', xp: 20, power: 'area', color: '#8b008b' },
             { emoji: '🍓', name: 'Morango', xp: 25, power: 'strength', color: '#ff1493' },
@@ -1293,7 +1293,7 @@
             capivaraImg.src = '/images/games/capivara-evolution.svg';
         }
 
-        // ===== INICIALIZAÇÃO =====
+        // ===== INICIALIZAÇêO =====
         function init() {
             canvas = document.getElementById('game-canvas');
             ctx = canvas.getContext('2d');
@@ -1343,7 +1343,7 @@
             if (key === 'q') cyclePower();
         }
 
-        // ===== NAVEGAÇÃO DE TELAS =====
+        // ===== NAVEGAÇêO DE TELAS =====
         function showTitleScreen() {
             gameState.screen = 'title';
             document.getElementById('title-screen').style.display = 'flex';
@@ -1420,7 +1420,7 @@
             }
         }
 
-        // ===== RENDERIZAÇÃO DE MUNDOS =====
+        // ===== RENDERIZAÇêO DE MUNDOS =====
         function renderWorlds() {
             const container = document.getElementById('worlds-container');
             container.innerHTML = '';
@@ -1441,7 +1441,7 @@
             });
         }
 
-        // ===== RENDERIZAÇÃO DE SKINS =====
+        // ===== RENDERIZAÇêO DE SKINS =====
         function renderSkins() {
             const container = document.getElementById('skins-container');
             container.innerHTML = '';
@@ -1482,7 +1482,7 @@
             saveGame();
         }
 
-        // ===== RENDERIZAÇÃO DA FAMÍLIA =====
+        // ===== RENDERIZAÇêO DA FAMÍLIA =====
         function renderFamily() {
             const container = document.getElementById('family-container');
             container.innerHTML = '';
@@ -1495,13 +1495,13 @@
                 card.innerHTML = `
                     <div class="cap-sprite">${found ? cap.sprite : '❓'}</div>
                     <div class="cap-name">${found ? cap.name : '???'}</div>
-                    <div class="cap-type">${found ? cap.type : 'Não descoberta'}</div>
+                    <div class="cap-type">${found ? cap.type : 'Nêo descoberta'}</div>
                 `;
                 container.appendChild(card);
             });
         }
 
-        // ===== INICIALIZAÇÃO DO MUNDO =====
+        // ===== INICIALIZAÇêO DO MUNDO =====
         function initWorld(worldId) {
             const world = WORLDS[worldId];
 
@@ -1522,7 +1522,7 @@
                 spawnNest();
             }
 
-            // Portal para seleção de mundos (só aparece no nível 9+)
+            // Portal para seleçêo de mundos (só aparece no nível 9+)
             if (gameState.level >= 9) {
                 gameState.portals.push({
                     x: canvas.width - 100,
@@ -1672,7 +1672,7 @@
                 return true;
             });
 
-            // Colisão com inimigos
+            // Colisêo com inimigos
             gameState.enemies.forEach(enemy => {
                 const dist = Math.sqrt(
                     Math.pow(gameState.player.x - enemy.x, 2) +
@@ -1831,7 +1831,7 @@
             document.getElementById('power-display').textContent = gameState.power;
         }
 
-        // ===== RENDERIZAÇÃO =====
+        // ===== RENDERIZAÇêO =====
         function render() {
             const world = WORLDS[gameState.currentWorld];
 
@@ -1855,7 +1855,7 @@
                 ctx.stroke();
             }
 
-            // Decoração do mundo
+            // Decoraçêo do mundo
             ctx.font = '30px Arial';
             for (let i = 0; i < 5; i++) {
                 ctx.globalAlpha = 0.3;

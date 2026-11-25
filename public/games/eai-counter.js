@@ -22,7 +22,7 @@ let gameId = null;
 function initEaiCounter(gameSlug) {
   gameId = gameSlug;
 
-  // Carregar Firebase SDK se ainda não foi carregado
+  // Carregar Firebase SDK se ainda nêo foi carregado
   if (typeof firebase === 'undefined') {
     // Carregar script do Firebase
     const script = document.createElement('script');
@@ -43,7 +43,7 @@ function initEaiCounter(gameSlug) {
 
 function setupFirebase() {
   try {
-    // Inicializar app se não existir
+    // Inicializar app se nêo existir
     if (!firebase.apps.length) {
       firebase.initializeApp(firebaseConfig);
     }
@@ -55,7 +55,7 @@ function setupFirebase() {
     // Exibir contador atual
     displayPlayCount();
   } catch (error) {
-    console.log('EAI Counter: Firebase não disponível', error);
+    console.log('EAI Counter: Firebase nêo disponível', error);
   }
 }
 

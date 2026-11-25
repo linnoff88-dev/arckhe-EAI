@@ -2,7 +2,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// Configuração do canvas
+// Configuraçêo do canvas
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -58,20 +58,20 @@ const QUESTIONS = {
     0: [ // Psicologia Geral
         { q: 'Quem é considerado o pai da psicologia científica?', a: ['Wilhelm Wundt', 'Sigmund Freud', 'B.F. Skinner', 'Carl Rogers'], correct: 0 },
         { q: 'O que estuda a psicologia?', a: ['Comportamento e mente', 'Apenas o cérebro', 'Apenas emoções', 'Apenas sonhos'], correct: 0 },
-        { q: 'O que é introspecção?', a: ['Auto-observação mental', 'Olhar para dentro do corpo', 'Meditação', 'Hipnose'], correct: 0 },
+        { q: 'O que é introspecçêo?', a: ['Auto-observaçêo mental', 'Olhar para dentro do corpo', 'Meditaçêo', 'Hipnose'], correct: 0 },
         { q: 'Qual é o objeto de estudo da psicologia?', a: ['Comportamento e processos mentais', 'Doenças', 'Medicamentos', 'Cirurgias'], correct: 0 },
-        { q: 'O que são processos cognitivos?', a: ['Pensamento, memória, percepção', 'Músculos', 'Ossos', 'Sangue'], correct: 0 },
-        { q: 'O que significa empirismo em psicologia?', a: ['Conhecimento via experiência', 'Conhecimento inato', 'Intuição', 'Sonhos'], correct: 0 },
-        { q: 'O que é método científico?', a: ['Processo sistemático de investigação', 'Opinião pessoal', 'Tradição', 'Autoridade'], correct: 0 },
+        { q: 'O que sêo processos cognitivos?', a: ['Pensamento, memória, percepçêo', 'Músculos', 'Ossos', 'Sangue'], correct: 0 },
+        { q: 'O que significa empirismo em psicologia?', a: ['Conhecimento via experiência', 'Conhecimento inato', 'Intuiçêo', 'Sonhos'], correct: 0 },
+        { q: 'O que é método científico?', a: ['Processo sistemático de investigaçêo', 'Opiniêo pessoal', 'Tradiçêo', 'Autoridade'], correct: 0 },
         { q: 'Onde surgiu o primeiro laboratório de psicologia?', a: ['Leipzig, Alemanha', 'Londres', 'Paris', 'Nova York'], correct: 0 },
         { q: 'O que é variável dependente?', a: ['O que é medido', 'O que é manipulado', 'O que é constante', 'O que é ignorado'], correct: 0 },
-        { q: 'O que é hipótese?', a: ['Previsão testável', 'Fato comprovado', 'Lei natural', 'Teoria final'], correct: 0 }
+        { q: 'O que é hipótese?', a: ['Previsêo testável', 'Fato comprovado', 'Lei natural', 'Teoria final'], correct: 0 }
     ],
     1: [ // Neurociência
         { q: 'Qual é a unidade básica do sistema nervoso?', a: ['Neurônio', 'Célula muscular', 'Célula óssea', 'Hemácia'], correct: 0 },
-        { q: 'O que são neurotransmissores?', a: ['Mensageiros químicos', 'Ossos', 'Músculos', 'Artérias'], correct: 0 },
+        { q: 'O que sêo neurotransmissores?', a: ['Mensageiros químicos', 'Ossos', 'Músculos', 'Artérias'], correct: 0 },
         { q: 'Qual neurotransmissor está ligado ao prazer?', a: ['Dopamina', 'Adrenalina', 'Cortisol', 'Insulina'], correct: 0 },
-        { q: 'O que é sinapse?', a: ['Conexão entre neurônios', 'Tipo de célula', 'Hormônio', 'Vitamina'], correct: 0 },
+        { q: 'O que é sinapse?', a: ['Conexêo entre neurônios', 'Tipo de célula', 'Hormônio', 'Vitamina'], correct: 0 },
         { q: 'Qual parte do cérebro controla emoções?', a: ['Sistema límbico', 'Medula', 'Cerebelo', 'Córtex motor'], correct: 0 },
         { q: 'O que é plasticidade cerebral?', a: ['Capacidade de mudança do cérebro', 'Rigidez mental', 'Doença', 'Tipo de exame'], correct: 0 },
         { q: 'Qual hemisfera controla a linguagem na maioria?', a: ['Esquerdo', 'Direito', 'Ambos igualmente', 'Nenhum'], correct: 0 },
@@ -88,90 +88,90 @@ const QUESTIONS = {
         { q: 'Qual é a teoria de Erikson?', a: ['Desenvolvimento psicossocial', 'Condicionamento', 'Psicanálise', 'Humanismo'], correct: 0 },
         { q: 'O que é zona de desenvolvimento proximal?', a: ['Potencial com ajuda', 'Área do cérebro', 'Tipo de escola', 'Doença'], correct: 0 },
         { q: 'Quem propôs a ZDP?', a: ['Vygotsky', 'Piaget', 'Freud', 'Skinner'], correct: 0 },
-        { q: 'O que é adolescência?', a: ['Transição para adulto', 'Doença', 'Infância', 'Velhice'], correct: 0 },
-        { q: 'O que são marcos do desenvolvimento?', a: ['Habilidades esperadas por idade', 'Doenças', 'Medicamentos', 'Escolas'], correct: 0 }
+        { q: 'O que é adolescência?', a: ['Transiçêo para adulto', 'Doença', 'Infância', 'Velhice'], correct: 0 },
+        { q: 'O que sêo marcos do desenvolvimento?', a: ['Habilidades esperadas por idade', 'Doenças', 'Medicamentos', 'Escolas'], correct: 0 }
     ],
     3: [ // Cognitiva
         { q: 'O que é memória de curto prazo?', a: ['Armazenamento temporário', 'Memória permanente', 'Esquecimento', 'Doença'], correct: 0 },
         { q: 'Qual é a capacidade da memória de trabalho?', a: ['7 ± 2 itens', '100 itens', '1000 itens', 'Ilimitada'], correct: 0 },
-        { q: 'O que é atenção seletiva?', a: ['Focar em estímulo específico', 'Atenção total', 'Desatenção', 'Sono'], correct: 0 },
-        { q: 'O que são heurísticas?', a: ['Atalhos mentais', 'Erros', 'Doenças', 'Medicamentos'], correct: 0 },
-        { q: 'O que é viés de confirmação?', a: ['Buscar info que confirma crenças', 'Ser honesto', 'Ser imparcial', 'Ter dúvida'], correct: 0 },
+        { q: 'O que é atençêo seletiva?', a: ['Focar em estímulo específico', 'Atençêo total', 'Desatençêo', 'Sono'], correct: 0 },
+        { q: 'O que sêo heurísticas?', a: ['Atalhos mentais', 'Erros', 'Doenças', 'Medicamentos'], correct: 0 },
+        { q: 'O que é viés de confirmaçêo?', a: ['Buscar info que confirma crenças', 'Ser honesto', 'Ser imparcial', 'Ter dúvida'], correct: 0 },
         { q: 'O que é dissonância cognitiva?', a: ['Conflito entre crenças e ações', 'Harmonia', 'Paz mental', 'Sono'], correct: 0 },
         { q: 'O que estuda a psicologia cognitiva?', a: ['Processos mentais', 'Músculos', 'Ossos', 'Sangue'], correct: 0 },
-        { q: 'O que é percepção?', a: ['Interpretação de estímulos', 'Visão apenas', 'Movimento', 'Digestão'], correct: 0 },
-        { q: 'O que é metacognição?', a: ['Pensar sobre o pensamento', 'Não pensar', 'Esquecer', 'Dormir'], correct: 0 },
-        { q: 'O que é resolução de problemas?', a: ['Processo de encontrar soluções', 'Criar problemas', 'Ignorar', 'Fugir'], correct: 0 }
+        { q: 'O que é percepçêo?', a: ['Interpretaçêo de estímulos', 'Visêo apenas', 'Movimento', 'Digestêo'], correct: 0 },
+        { q: 'O que é metacogniçêo?', a: ['Pensar sobre o pensamento', 'Nêo pensar', 'Esquecer', 'Dormir'], correct: 0 },
+        { q: 'O que é resoluçêo de problemas?', a: ['Processo de encontrar soluções', 'Criar problemas', 'Ignorar', 'Fugir'], correct: 0 }
     ],
     4: [ // Social
-        { q: 'O que é conformidade social?', a: ['Mudar comportamento por pressão', 'Ser rebelde', 'Isolamento', 'Liderança'], correct: 0 },
-        { q: 'Quem fez o experimento da prisão de Stanford?', a: ['Philip Zimbardo', 'Milgram', 'Asch', 'Bandura'], correct: 0 },
+        { q: 'O que é conformidade social?', a: ['Mudar comportamento por pressêo', 'Ser rebelde', 'Isolamento', 'Liderança'], correct: 0 },
+        { q: 'Quem fez o experimento da prisêo de Stanford?', a: ['Philip Zimbardo', 'Milgram', 'Asch', 'Bandura'], correct: 0 },
         { q: 'O que é obediência?', a: ['Seguir ordens de autoridade', 'Rebeldia', 'Independência', 'Ignorar'], correct: 0 },
         { q: 'Quem estudou a obediência com choques?', a: ['Stanley Milgram', 'Zimbardo', 'Asch', 'Freud'], correct: 0 },
-        { q: 'O que é preconceito?', a: ['Julgamento prévio negativo', 'Opinião informada', 'Ciência', 'Fato'], correct: 0 },
-        { q: 'O que é estereótipo?', a: ['Generalização sobre grupo', 'Fato individual', 'Verdade científica', 'Observação precisa'], correct: 0 },
-        { q: 'O que é teoria da atribuição?', a: ['Como explicamos comportamentos', 'Matemática', 'Física', 'Química'], correct: 0 },
-        { q: 'O que é facilitação social?', a: ['Melhor desempenho com outros', 'Pior desempenho', 'Isolamento', 'Medo'], correct: 0 },
+        { q: 'O que é preconceito?', a: ['Julgamento prévio negativo', 'Opiniêo informada', 'Ciência', 'Fato'], correct: 0 },
+        { q: 'O que é estereótipo?', a: ['Generalizaçêo sobre grupo', 'Fato individual', 'Verdade científica', 'Observaçêo precisa'], correct: 0 },
+        { q: 'O que é teoria da atribuiçêo?', a: ['Como explicamos comportamentos', 'Matemática', 'Física', 'Química'], correct: 0 },
+        { q: 'O que é facilitaçêo social?', a: ['Melhor desempenho com outros', 'Pior desempenho', 'Isolamento', 'Medo'], correct: 0 },
         { q: 'O que é pensamento de grupo?', a: ['Conformidade excessiva em grupos', 'Individualismo', 'Criatividade', 'Debate'], correct: 0 },
         { q: 'O que é altruísmo?', a: ['Ajudar sem esperar retorno', 'Egoísmo', 'Interesse próprio', 'Comércio'], correct: 0 }
     ],
     5: [ // Clínica
-        { q: 'O que é transtorno de ansiedade?', a: ['Preocupação excessiva', 'Alegria', 'Calma', 'Sono'], correct: 0 },
-        { q: 'O que é depressão?', a: ['Tristeza persistente e perda de interesse', 'Alegria', 'Energia', 'Euforia'], correct: 0 },
+        { q: 'O que é transtorno de ansiedade?', a: ['Preocupaçêo excessiva', 'Alegria', 'Calma', 'Sono'], correct: 0 },
+        { q: 'O que é depressêo?', a: ['Tristeza persistente e perda de interesse', 'Alegria', 'Energia', 'Euforia'], correct: 0 },
         { q: 'O que é esquizofrenia?', a: ['Transtorno com alucinações/delírios', 'Dupla personalidade', 'Ansiedade', 'Medo'], correct: 0 },
-        { q: 'O que é terapia cognitivo-comportamental?', a: ['Mudar pensamentos e comportamentos', 'Hipnose', 'Medicação apenas', 'Cirurgia'], correct: 0 },
+        { q: 'O que é terapia cognitivo-comportamental?', a: ['Mudar pensamentos e comportamentos', 'Hipnose', 'Medicaçêo apenas', 'Cirurgia'], correct: 0 },
         { q: 'O que é DSM?', a: ['Manual de diagnóstico mental', 'Medicamento', 'Exame', 'Hospital'], correct: 0 },
-        { q: 'O que é transtorno bipolar?', a: ['Oscilação entre mania e depressão', 'Ansiedade', 'Fobia', 'TOC'], correct: 0 },
+        { q: 'O que é transtorno bipolar?', a: ['Oscilaçêo entre mania e depressêo', 'Ansiedade', 'Fobia', 'TOC'], correct: 0 },
         { q: 'O que é fobia?', a: ['Medo irracional específico', 'Coragem', 'Alegria', 'Calma'], correct: 0 },
         { q: 'O que é TOC?', a: ['Obsessões e compulsões', 'Transtorno de humor', 'Esquizofrenia', 'Autismo'], correct: 0 },
-        { q: 'O que é TEPT?', a: ['Transtorno pós-traumático', 'Depressão', 'Ansiedade leve', 'Fobia'], correct: 0 },
-        { q: 'O que é psicoterapia?', a: ['Tratamento por conversa', 'Cirurgia', 'Medicação', 'Exame'], correct: 0 }
+        { q: 'O que é TEPT?', a: ['Transtorno pós-traumático', 'Depressêo', 'Ansiedade leve', 'Fobia'], correct: 0 },
+        { q: 'O que é psicoterapia?', a: ['Tratamento por conversa', 'Cirurgia', 'Medicaçêo', 'Exame'], correct: 0 }
     ],
     6: [ // Comportamental
         { q: 'Quem é o pai do behaviorismo?', a: ['John Watson', 'Freud', 'Piaget', 'Rogers'], correct: 0 },
-        { q: 'O que é condicionamento clássico?', a: ['Aprendizado por associação', 'Punição', 'Recompensa', 'Insight'], correct: 0 },
+        { q: 'O que é condicionamento clássico?', a: ['Aprendizado por associaçêo', 'Puniçêo', 'Recompensa', 'Insight'], correct: 0 },
         { q: 'Quem descobriu o condicionamento clássico?', a: ['Ivan Pavlov', 'Skinner', 'Watson', 'Bandura'], correct: 0 },
-        { q: 'O que é reforço positivo?', a: ['Adicionar estímulo agradável', 'Punição', 'Remover algo', 'Ignorar'], correct: 0 },
-        { q: 'O que é reforço negativo?', a: ['Remover estímulo aversivo', 'Punição', 'Adicionar dor', 'Ignorar'], correct: 0 },
+        { q: 'O que é reforço positivo?', a: ['Adicionar estímulo agradável', 'Puniçêo', 'Remover algo', 'Ignorar'], correct: 0 },
+        { q: 'O que é reforço negativo?', a: ['Remover estímulo aversivo', 'Puniçêo', 'Adicionar dor', 'Ignorar'], correct: 0 },
         { q: 'Quem desenvolveu o condicionamento operante?', a: ['B.F. Skinner', 'Pavlov', 'Watson', 'Freud'], correct: 0 },
-        { q: 'O que é extinção comportamental?', a: ['Fim do comportamento sem reforço', 'Morte', 'Doença', 'Aumento'], correct: 0 },
+        { q: 'O que é extinçêo comportamental?', a: ['Fim do comportamento sem reforço', 'Morte', 'Doença', 'Aumento'], correct: 0 },
         { q: 'O que é modelagem?', a: ['Reforçar aproximações', 'Punir', 'Ignorar', 'Copiar'], correct: 0 },
         { q: 'O que é caixa de Skinner?', a: ['Aparato para estudar comportamento', 'Brinquedo', 'Casa', 'Escola'], correct: 0 },
         { q: 'O que é aprendizagem observacional?', a: ['Aprender observando outros', 'Ler', 'Ouvir', 'Tocar'], correct: 0 }
     ],
     7: [ // Psicanálise
         { q: 'Quem fundou a psicanálise?', a: ['Sigmund Freud', 'Jung', 'Adler', 'Klein'], correct: 0 },
-        { q: 'O que é o inconsciente?', a: ['Conteúdos mentais não acessíveis', 'Consciência', 'Sonho', 'Vigília'], correct: 0 },
-        { q: 'Quais são as estruturas da mente para Freud?', a: ['Id, ego, superego', 'Mente, corpo, alma', 'Pensamento, emoção, ação', 'Consciente apenas'], correct: 0 },
+        { q: 'O que é o inconsciente?', a: ['Conteúdos mentais nêo acessíveis', 'Consciência', 'Sonho', 'Vigília'], correct: 0 },
+        { q: 'Quais sêo as estruturas da mente para Freud?', a: ['Id, ego, superego', 'Mente, corpo, alma', 'Pensamento, emoçêo, açêo', 'Consciente apenas'], correct: 0 },
         { q: 'O que é transferência?', a: ['Projetar sentimentos no terapeuta', 'Mudar de lugar', 'Viagem', 'Transporte'], correct: 0 },
-        { q: 'O que são mecanismos de defesa?', a: ['Estratégias inconscientes do ego', 'Armas', 'Exercícios', 'Medicamentos'], correct: 0 },
-        { q: 'O que é complexo de Édipo?', a: ['Atração pelo genitor oposto', 'Medo', 'Trauma', 'Doença'], correct: 0 },
-        { q: 'O que é livre associação?', a: ['Falar sem censura', 'Não falar', 'Escrever', 'Desenhar'], correct: 0 },
-        { q: 'O que é repressão?', a: ['Manter conteúdos fora da consciência', 'Expressar', 'Falar', 'Agir'], correct: 0 },
+        { q: 'O que sêo mecanismos de defesa?', a: ['Estratégias inconscientes do ego', 'Armas', 'Exercícios', 'Medicamentos'], correct: 0 },
+        { q: 'O que é complexo de Édipo?', a: ['Atraçêo pelo genitor oposto', 'Medo', 'Trauma', 'Doença'], correct: 0 },
+        { q: 'O que é livre associaçêo?', a: ['Falar sem censura', 'Nêo falar', 'Escrever', 'Desenhar'], correct: 0 },
+        { q: 'O que é repressêo?', a: ['Manter conteúdos fora da consciência', 'Expressar', 'Falar', 'Agir'], correct: 0 },
         { q: 'Quem desenvolveu a psicologia analítica?', a: ['Carl Jung', 'Freud', 'Adler', 'Klein'], correct: 0 },
-        { q: 'O que é arquétipo?', a: ['Padrão universal do inconsciente', 'Tipo de prédio', 'Animal', 'Planta'], correct: 0 }
+        { q: 'O que é arquétipo?', a: ['Padrêo universal do inconsciente', 'Tipo de prédio', 'Animal', 'Planta'], correct: 0 }
     ],
     8: [ // Humanista
         { q: 'Quem propôs a hierarquia das necessidades?', a: ['Abraham Maslow', 'Freud', 'Skinner', 'Piaget'], correct: 0 },
-        { q: 'O que é autorrealização?', a: ['Alcançar potencial máximo', 'Ser egoísta', 'Ter dinheiro', 'Ter poder'], correct: 0 },
+        { q: 'O que é autorrealizaçêo?', a: ['Alcançar potencial máximo', 'Ser egoísta', 'Ter dinheiro', 'Ter poder'], correct: 0 },
         { q: 'Quem desenvolveu a terapia centrada na pessoa?', a: ['Carl Rogers', 'Freud', 'Maslow', 'May'], correct: 0 },
         { q: 'O que é empatia na terapia?', a: ['Compreender perspectiva do outro', 'Dar conselhos', 'Julgar', 'Criticar'], correct: 0 },
         { q: 'O que é congruência?', a: ['Autenticidade do terapeuta', 'Mentira', 'Falsidade', 'Máscara'], correct: 0 },
-        { q: 'O que é aceitação incondicional?', a: ['Aceitar sem julgar', 'Julgar sempre', 'Criticar', 'Condenar'], correct: 0 },
-        { q: 'O que é tendência atualizante?', a: ['Impulso natural para crescer', 'Regressão', 'Estagnação', 'Declínio'], correct: 0 },
+        { q: 'O que é aceitaçêo incondicional?', a: ['Aceitar sem julgar', 'Julgar sempre', 'Criticar', 'Condenar'], correct: 0 },
+        { q: 'O que é tendência atualizante?', a: ['Impulso natural para crescer', 'Regressêo', 'Estagnaçêo', 'Declínio'], correct: 0 },
         { q: 'O que significa abordagem humanista?', a: ['Foco no potencial humano', 'Foco em doenças', 'Foco em erros', 'Foco no passado'], correct: 0 },
-        { q: 'Qual é a base das necessidades de Maslow?', a: ['Necessidades fisiológicas', 'Autorrealização', 'Estima', 'Pertencimento'], correct: 0 },
-        { q: 'O que é experiência de pico?', a: ['Momento de intensa realização', 'Depressão', 'Ansiedade', 'Medo'], correct: 0 }
+        { q: 'Qual é a base das necessidades de Maslow?', a: ['Necessidades fisiológicas', 'Autorrealizaçêo', 'Estima', 'Pertencimento'], correct: 0 },
+        { q: 'O que é experiência de pico?', a: ['Momento de intensa realizaçêo', 'Depressêo', 'Ansiedade', 'Medo'], correct: 0 }
     ],
     9: [ // Positiva
         { q: 'Quem é considerado pai da psicologia positiva?', a: ['Martin Seligman', 'Freud', 'Skinner', 'Rogers'], correct: 0 },
         { q: 'O que estuda a psicologia positiva?', a: ['Bem-estar e forças', 'Doenças', 'Traumas', 'Problemas'], correct: 0 },
-        { q: 'O que é flow?', a: ['Estado de imersão total', 'Preguiça', 'Tédio', 'Ansiedade'], correct: 0 },
+        { q: 'O que é flow?', a: ['Estado de imersêo total', 'Preguiça', 'Tédio', 'Ansiedade'], correct: 0 },
         { q: 'Quem desenvolveu o conceito de flow?', a: ['Csikszentmihalyi', 'Seligman', 'Peterson', 'Fredrickson'], correct: 0 },
-        { q: 'O que é gratidão na psicologia?', a: ['Reconhecer o positivo', 'Reclamar', 'Criticar', 'Julgar'], correct: 0 },
+        { q: 'O que é gratidêo na psicologia?', a: ['Reconhecer o positivo', 'Reclamar', 'Criticar', 'Julgar'], correct: 0 },
         { q: 'O que é resiliência?', a: ['Capacidade de superar adversidades', 'Fragilidade', 'Fraqueza', 'Desistência'], correct: 0 },
-        { q: 'O que são forças de caráter?', a: ['Qualidades positivas', 'Defeitos', 'Problemas', 'Doenças'], correct: 0 },
-        { q: 'O que é mindfulness?', a: ['Atenção plena ao presente', 'Distração', 'Preocupação', 'Ruminar'], correct: 0 },
+        { q: 'O que sêo forças de caráter?', a: ['Qualidades positivas', 'Defeitos', 'Problemas', 'Doenças'], correct: 0 },
+        { q: 'O que é mindfulness?', a: ['Atençêo plena ao presente', 'Distraçêo', 'Preocupaçêo', 'Ruminar'], correct: 0 },
         { q: 'O que é PERMA?', a: ['Modelo de bem-estar de Seligman', 'Doença', 'Medicamento', 'Exame'], correct: 0 },
         { q: 'O que é otimismo aprendido?', a: ['Aprender a ver positivamente', 'Pessimismo', 'Realismo', 'Cinismo'], correct: 0 }
     ]
@@ -402,7 +402,7 @@ function drawMenu() {
     ctx.fillText(`💕 Empatia: ${playerData.empathy}`, canvas.width/2, 640);
 }
 
-// Desenhar seleção de áreas
+// Desenhar seleçêo de áreas
 function drawAreaSelect() {
     drawLabBackground();
     drawHUD();
@@ -412,7 +412,7 @@ function drawAreaSelect() {
     ctx.textAlign = 'center';
     ctx.fillText('🔬 ÁREAS DE ESTUDO', canvas.width/2, 100);
 
-    // Botão voltar
+    // Botêo voltar
     ctx.fillStyle = '#E94560';
     ctx.fillRect(20, 80, 100, 40);
     ctx.fillStyle = '#FFF';
@@ -473,7 +473,7 @@ function drawAreaSelect() {
     maxScroll = Math.max(0, AREAS.length * (cardHeight + 15) - (canvas.height - 180));
 }
 
-// Desenhar seleção de experimento
+// Desenhar seleçêo de experimento
 function drawExperimentSelect() {
     const area = AREAS[selectedArea];
 
@@ -549,7 +549,7 @@ function drawExperimentSelect() {
     maxScroll = Math.max(0, Math.ceil(area.experiments / cols) * (size + spacing) - (canvas.height - 200));
 }
 
-// Desenhar questão
+// Desenhar questêo
 function drawQuestion() {
     const area = AREAS[selectedArea];
 
@@ -590,7 +590,7 @@ function drawQuestion() {
         showingResult = false;
     }
 
-    // Caixa da questão
+    // Caixa da questêo
     ctx.fillStyle = 'rgba(15, 15, 35, 0.95)';
     ctx.shadowColor = '#000';
     ctx.shadowBlur = 15;
@@ -637,7 +637,7 @@ function drawQuestion() {
         ctx.fillText(answer.text, canvas.width/2, y + 38);
     });
 
-    // Botão confirmar
+    // Botêo confirmar
     if (selectedAnswer !== null && !showingResult) {
         ctx.fillStyle = '#6B5B95';
         ctx.fillRect(canvas.width/2 - 100, 610, 200, 50);
@@ -743,7 +743,7 @@ function drawShop() {
         ctx.font = 'bold 16px Arial';
         ctx.fillText(`${item.currency === 'gems' ? '💎' : '🪙'} ${item.price}`, x + 15, cardY + 72);
 
-        // Botão comprar
+        // Botêo comprar
         ctx.fillStyle = '#6B5B95';
         ctx.fillRect(x + 200, cardY + 50, 65, 28);
         ctx.fillStyle = '#FFF';
@@ -800,14 +800,14 @@ function drawCases() {
 
     ctx.fillStyle = '#FFF';
     ctx.font = 'bold 18px Arial';
-    ctx.fillText('💭 Reflexão', canvas.width/2, 415);
+    ctx.fillText('💭 Reflexêo', canvas.width/2, 415);
 
     ctx.fillStyle = '#DDA0DD';
     ctx.font = '14px Arial';
     const tips = [
         'A mente é como um iceberg - só vemos a ponta.',
-        'Comportamento é comunicação.',
-        'Emoções são informações, não ordens.',
+        'Comportamento é comunicaçêo.',
+        'Emoções sêo informações, nêo ordens.',
         'O cérebro muda com a experiência.'
     ];
     ctx.fillText(tips[Math.floor(Date.now() / 6000) % tips.length], canvas.width/2, 455);
@@ -1083,6 +1083,6 @@ canvas.addEventListener('touchmove', (e) => {
     }
 }, { passive: false });
 
-// Inicialização
+// Inicializaçêo
 loadGame();
 gameLoop();

@@ -145,8 +145,8 @@
             bgGradient: ["#7c2d12", "#0d0d18"],
             questions: [
                 { q: "Em que ano os portugueses chegaram ao Brasil?", opts: ["1300", "1500", "1700", "1822"], ans: 1 },
-                { q: "Quem liderou a frota portuguesa que chegou ao Brasil?", opts: ["Cristóvão Colombo", "Vasco da Gama", "Pedro Álvares Cabral", "Napoleão"], ans: 2 },
-                { q: "Qual era a principal atividade dos indígenas Tupi?", opts: ["Mineração", "Agricultura, caça e pesca", "Construção de castelos", "Comércio marítimo"], ans: 1 },
+                { q: "Quem liderou a frota portuguesa que chegou ao Brasil?", opts: ["Cristóvêo Colombo", "Vasco da Gama", "Pedro Álvares Cabral", "Napoleêo"], ans: 2 },
+                { q: "Qual era a principal atividade dos indígenas Tupi?", opts: ["Mineraçêo", "Agricultura, caça e pesca", "Construçêo de castelos", "Comércio marítimo"], ans: 1 },
                 { q: "O que os portugueses buscavam quando chegaram ao Brasil?", opts: ["Neve", "Ouro e riquezas", "Tecnologia", "Universidades"], ans: 1 },
                 { q: "Qual árvore deu nome ao Brasil?", opts: ["Ipê", "Pau-brasil", "Jacarandá", "Araucária"], ans: 1 }
             ]
@@ -160,7 +160,7 @@
             questions: [
                 { q: "Quem proclamou a Independência do Brasil?", opts: ["Tiradentes", "Dom Pedro I", "Getúlio Vargas", "Princesa Isabel"], ans: 1 },
                 { q: "Em que data o Brasil se tornou independente?", opts: ["15 de novembro de 1889", "7 de setembro de 1822", "22 de abril de 1500", "13 de maio de 1888"], ans: 1 },
-                { q: "O que era o sistema de capitanias hereditárias?", opts: ["Divisão do Brasil em faixas de terra", "Um tipo de escola", "Um esporte colonial", "Uma festa religiosa"], ans: 0 },
+                { q: "O que era o sistema de capitanias hereditárias?", opts: ["Divisêo do Brasil em faixas de terra", "Um tipo de escola", "Um esporte colonial", "Uma festa religiosa"], ans: 0 },
                 { q: "Qual era o principal produto do Brasil Colônia no início?", opts: ["Café", "Cana-de-açúcar", "Soja", "Petróleo"], ans: 1 },
                 { q: "Quem foi Tiradentes?", opts: ["Um rei português", "Um líder da Inconfidência Mineira", "Um navegador", "Um imperador"], ans: 1 }
             ]
@@ -172,7 +172,7 @@
             color: "#c084fc", icon: "🏛️",
             bgGradient: ["#3b0764", "#0d0d18"],
             questions: [
-                { q: "Qual rio era fundamental para a civilização egípcia?", opts: ["Amazonas", "Nilo", "Tejo", "Ganges"], ans: 1 },
+                { q: "Qual rio era fundamental para a civilizaçêo egípcia?", opts: ["Amazonas", "Nilo", "Tejo", "Ganges"], ans: 1 },
                 { q: "Qual forma de governo foi inventada na Grécia Antiga?", opts: ["Monarquia", "Ditadura", "Democracia", "Feudalismo"], ans: 2 },
                 { q: "O que eram as pirâmides do Egito?", opts: ["Mercados", "Túmulos de faraós", "Templos para festas", "Escolas"], ans: 1 },
                 { q: "Qual era o principal espetáculo do Coliseu em Roma?", opts: ["Ópera", "Lutas de gladiadores", "Corridas de carro", "Aulas de filosofia"], ans: 1 },
@@ -186,11 +186,11 @@
             color: "#60a5fa", icon: "⚔️",
             bgGradient: ["#1e3a5f", "#0d0d18"],
             questions: [
-                { q: "O que era o feudalismo?", opts: ["Um sistema baseado em terras e vassalagem", "Uma religião", "Um tipo de comércio", "Uma forma de arte"], ans: 0 },
+                { q: "O que era o feudalismo?", opts: ["Um sistema baseado em terras e vassalagem", "Uma religiêo", "Um tipo de comércio", "Uma forma de arte"], ans: 0 },
                 { q: "Quem eram os senhores feudais?", opts: ["Comerciantes", "Donos de grandes extensões de terra", "Navegadores", "Artistas"], ans: 1 },
                 { q: "O que foram as Cruzadas?", opts: ["Festas medievais", "Expedições militares à Terra Santa", "Torneios de cavaleiros", "Viagens comerciais"], ans: 1 },
                 { q: "Qual país liderou as Grandes Navegações no século XV?", opts: ["Inglaterra", "França", "Portugal", "Alemanha"], ans: 2 },
-                { q: "O que motivou as Grandes Navegações?", opts: ["Turismo", "Busca por rotas comerciais e especiarias", "Esporte", "Religião apenas"], ans: 1 }
+                { q: "O que motivou as Grandes Navegações?", opts: ["Turismo", "Busca por rotas comerciais e especiarias", "Esporte", "Religiêo apenas"], ans: 1 }
             ]
         },
         {
@@ -200,11 +200,11 @@
             color: "#f43f5e", icon: "🏭",
             bgGradient: ["#4c0519", "#0d0d18"],
             questions: [
-                { q: "Em que país começou a Revolução Industrial?", opts: ["França", "Alemanha", "Inglaterra", "Estados Unidos"], ans: 2 },
-                { q: "O que marcou o início da Revolução Francesa?", opts: ["Coroação de Napoleão", "Queda da Bastilha em 1789", "Descoberta da América", "Fim da Primeira Guerra"], ans: 1 },
-                { q: "Qual foi o lema da Revolução Francesa?", opts: ["Ordem e Progresso", "Liberdade, Igualdade, Fraternidade", "Deus, Pátria e Família", "Trabalho e Paz"], ans: 1 },
-                { q: "O que a Revolução Industrial trouxe de novo?", opts: ["Agricultura manual", "Máquinas a vapor e fábricas", "Cavalos mais rápidos", "Pintura renascentista"], ans: 1 },
-                { q: "Quem foi Napoleão Bonaparte?", opts: ["Rei da Inglaterra", "Imperador francês e líder militar", "Inventor da máquina a vapor", "Filósofo iluminista"], ans: 1 }
+                { q: "Em que país começou a Revoluçêo Industrial?", opts: ["França", "Alemanha", "Inglaterra", "Estados Unidos"], ans: 2 },
+                { q: "O que marcou o início da Revoluçêo Francesa?", opts: ["Coroaçêo de Napoleêo", "Queda da Bastilha em 1789", "Descoberta da América", "Fim da Primeira Guerra"], ans: 1 },
+                { q: "Qual foi o lema da Revoluçêo Francesa?", opts: ["Ordem e Progresso", "Liberdade, Igualdade, Fraternidade", "Deus, Pátria e Família", "Trabalho e Paz"], ans: 1 },
+                { q: "O que a Revoluçêo Industrial trouxe de novo?", opts: ["Agricultura manual", "Máquinas a vapor e fábricas", "Cavalos mais rápidos", "Pintura renascentista"], ans: 1 },
+                { q: "Quem foi Napoleêo Bonaparte?", opts: ["Rei da Inglaterra", "Imperador francês e líder militar", "Inventor da máquina a vapor", "Filósofo iluminista"], ans: 1 }
             ]
         },
         {
@@ -871,7 +871,7 @@
         ctx.fillStyle = "#fff";
         ctx.font = "bold 18px 'Segoe UI', sans-serif";
         ctx.textAlign = "center";
-        ctx.fillText("Pontuação final: " + state.score + " pts", cx, statY);
+        ctx.fillText("Pontuaçêo final: " + state.score + " pts", cx, statY);
         ctx.fillStyle = "#f59e0b";
         ctx.fillText("Moedas coletadas: " + state.coins, cx, statY + 28);
         ctx.fillStyle = "#f43f5e";

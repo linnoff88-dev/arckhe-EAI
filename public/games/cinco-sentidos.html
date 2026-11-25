@@ -408,8 +408,8 @@
         </div>
 
         <div class="senses-bar">
-            <div class="sense-icon vision" title="Visão">👁️</div>
-            <div class="sense-icon hearing" title="Audição">👂</div>
+            <div class="sense-icon vision" title="Visêo">👁️</div>
+            <div class="sense-icon hearing" title="Audiçêo">👂</div>
             <div class="sense-icon smell" title="Olfato">👃</div>
             <div class="sense-icon taste" title="Paladar">👅</div>
             <div class="sense-icon touch" title="Tato">✋</div>
@@ -437,11 +437,11 @@
             <div class="sense-options" id="senseOptions">
                 <button class="sense-btn" data-sense="vision">
                     <span class="emoji">👁️</span>
-                    <span class="label">Visão</span>
+                    <span class="label">Visêo</span>
                 </button>
                 <button class="sense-btn" data-sense="hearing">
                     <span class="emoji">👂</span>
-                    <span class="label">Audição</span>
+                    <span class="label">Audiçêo</span>
                 </button>
                 <button class="sense-btn" data-sense="smell">
                     <span class="emoji">👃</span>
@@ -481,19 +481,19 @@
         // Dados do jogo
         const senseItems = {
             vision: [
-                { emoji: '🌈', name: 'Um arco-íris colorido', info: 'A visão nos permite ver as cores do arco-íris! São 7 cores: vermelho, laranja, amarelo, verde, azul, anil e violeta.' },
-                { emoji: '📺', name: 'Um programa de TV', info: 'Usamos a visão para assistir TV e ver as imagens na tela.' },
-                { emoji: '📖', name: 'Ler um livro', info: 'A visão é essencial para ler! Nossos olhos captam as letras e nosso cérebro entende as palavras.' },
-                { emoji: '🎨', name: 'Uma pintura colorida', info: 'Artistas usam a visão para criar e apreciar obras de arte!' },
-                { emoji: '⭐', name: 'Estrelas no céu', info: 'À noite, usamos a visão para ver as estrelas brilhando no céu.' },
+                { emoji: '🌈', name: 'Um arco-íris colorido', info: 'A visêo nos permite ver as cores do arco-íris! Sêo 7 cores: vermelho, laranja, amarelo, verde, azul, anil e violeta.' },
+                { emoji: '📺', name: 'Um programa de TV', info: 'Usamos a visêo para assistir TV e ver as imagens na tela.' },
+                { emoji: '📖', name: 'Ler um livro', info: 'A visêo é essencial para ler! Nossos olhos captam as letras e nosso cérebro entende as palavras.' },
+                { emoji: '🎨', name: 'Uma pintura colorida', info: 'Artistas usam a visêo para criar e apreciar obras de arte!' },
+                { emoji: '⭐', name: 'Estrelas no céu', info: 'À noite, usamos a visêo para ver as estrelas brilhando no céu.' },
                 { emoji: '🦋', name: 'Uma borboleta voando', info: 'Vemos as lindas cores das asas da borboleta com nossos olhos.' }
             ],
             hearing: [
-                { emoji: '🎵', name: 'Uma música tocando', info: 'Nossos ouvidos captam as ondas sonoras da música! A audição nos permite apreciar sons.' },
+                { emoji: '🎵', name: 'Uma música tocando', info: 'Nossos ouvidos captam as ondas sonoras da música! A audiçêo nos permite apreciar sons.' },
                 { emoji: '🔔', name: 'O sino tocando', info: 'O som do sino viaja pelo ar até nossos ouvidos.' },
                 { emoji: '🐦', name: 'O canto de um pássaro', info: 'Cada pássaro tem um canto diferente que podemos ouvir!' },
-                { emoji: '⛈️', name: 'O som do trovão', info: 'O trovão é o som que ouvimos depois do relâmpago!' },
-                { emoji: '🗣️', name: 'Alguém conversando', info: 'Usamos a audição para ouvir o que as pessoas falam.' },
+                { emoji: '⛈️', name: 'O som do trovêo', info: 'O trovêo é o som que ouvimos depois do relâmpago!' },
+                { emoji: '🗣️', name: 'Alguém conversando', info: 'Usamos a audiçêo para ouvir o que as pessoas falam.' },
                 { emoji: '🎸', name: 'Uma guitarra tocando', info: 'As cordas da guitarra vibram e produzem sons que ouvimos.' }
             ],
             smell: [
@@ -506,7 +506,7 @@
             ],
             taste: [
                 { emoji: '🍦', name: 'Um sorvete doce', info: 'Nossa língua tem papilas gustativas que detectam sabores doces!' },
-                { emoji: '🍋', name: 'Um limão azedo', info: 'O sabor azedo do limão é detectado pelas papilas da lateral da língua.' },
+                { emoji: '🍋', name: 'Um limêo azedo', info: 'O sabor azedo do limêo é detectado pelas papilas da lateral da língua.' },
                 { emoji: '🍫', name: 'Chocolate delicioso', info: 'O chocolate combina sabores doces e amargos!' },
                 { emoji: '🧂', name: 'Comida salgada', info: 'O sal é um dos sabores básicos que nossa língua detecta.' },
                 { emoji: '🍬', name: 'Um doce colorido', info: 'Existem 5 sabores básicos: doce, salgado, azedo, amargo e umami!' },
@@ -518,7 +518,7 @@
                 { emoji: '🧸', name: 'Um ursinho macio', info: 'O tato nos permite sentir texturas macias e fofas.' },
                 { emoji: '🪨', name: 'Uma pedra áspera', info: 'Podemos sentir se algo é áspero ou liso com nosso tato.' },
                 { emoji: '💧', name: 'Água na pele', info: 'Sentimos a água molhada e sua temperatura através do tato.' },
-                { emoji: '🌬️', name: 'Vento no rosto', info: 'O vento faz pressão em nossa pele e podemos senti-lo!' }
+                { emoji: '🌬️', name: 'Vento no rosto', info: 'O vento faz pressêo em nossa pele e podemos senti-lo!' }
             ]
         };
 
@@ -696,7 +696,7 @@
             // Destacar sentido correto na barra
             document.querySelector(`.sense-icon.${gameState.correctAnswer}`).classList.add('active');
 
-            // Mostrar informação
+            // Mostrar informaçêo
             document.getElementById('infoText').textContent = gameState.currentItem.info;
             document.getElementById('infoCard').classList.add('show');
         }
@@ -741,8 +741,8 @@
             updateDisplay();
 
             const senseNames = {
-                vision: 'Visão',
-                hearing: 'Audição',
+                vision: 'Visêo',
+                hearing: 'Audiçêo',
                 smell: 'Olfato',
                 taste: 'Paladar',
                 touch: 'Tato'

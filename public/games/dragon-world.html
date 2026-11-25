@@ -275,7 +275,7 @@
       box-shadow: 0 0 50px rgba(255,250,205,0.6);
     }
 
-    /* Chão */
+    /* Chêo */
     .ground-layer {
       position: absolute;
       bottom: 0;
@@ -451,7 +451,7 @@
       50% { transform: scaleX(-1) rotate(15deg); }
     }
 
-    /* Forma de dragão */
+    /* Forma de dragêo */
     .dragon-form { display: none; }
 
     .player.is-dragon .player-body { display: none; }
@@ -575,7 +575,7 @@
       50% { transform: rotate(5deg); }
     }
 
-    /* ===== LOCAIS DE DESCANSO E ALIMENTAÇÃO ===== */
+    /* ===== LOCAIS DE DESCANSO E ALIMENTAÇêO ===== */
     .healing-spot {
       position: absolute;
       width: 80px;
@@ -623,7 +623,7 @@
       50% { transform: translateY(-10px) rotate(10deg); }
     }
 
-    /* ===== OVOS DE DRAGÃO ===== */
+    /* ===== OVOS DE DRAGêO ===== */
     .dragon-egg {
       position: absolute;
       width: 45px;
@@ -831,7 +831,7 @@
 
     .control-btn .icon { font-size: 20px; }
 
-    /* Navegação de mundo */
+    /* Navegaçêo de mundo */
     .world-nav {
       position: absolute;
       top: 50%;
@@ -1308,7 +1308,7 @@
           <!-- Controls Panel -->
           <div class="controls-panel">
             <button class="control-btn" id="btnDragon" onclick="transformToDragon()" disabled>
-              <span class="icon">🐉</span> Virar Dragão
+              <span class="icon">🐉</span> Virar Dragêo
             </button>
             <button class="control-btn" id="btnFly" onclick="toggleFly()" disabled>
               <span class="icon">🦋</span> Voar
@@ -1350,7 +1350,7 @@
             <div class="war-fighters">
               <div class="war-dragon">
                 <div class="war-dragon-sprite" id="warPlayerDragon">🐉</div>
-                <div class="war-dragon-name">Seu Dragão</div>
+                <div class="war-dragon-name">Seu Dragêo</div>
                 <div class="war-dragon-hp">
                   <div class="war-dragon-hp-fill" id="warPlayerHp" style="width: 100%"></div>
                 </div>
@@ -1358,7 +1358,7 @@
               <div class="war-vs">VS</div>
               <div class="war-dragon">
                 <div class="war-dragon-sprite" id="warEnemyDragon">🐲</div>
-                <div class="war-dragon-name" id="warEnemyName">Dragão Inimigo</div>
+                <div class="war-dragon-name" id="warEnemyName">Dragêo Inimigo</div>
                 <div class="war-dragon-hp">
                   <div class="war-dragon-hp-fill" id="warEnemyHp" style="width: 100%"></div>
                 </div>
@@ -1383,7 +1383,7 @@
   <!-- Crafting Panel -->
   <div class="ui-panel" id="craftingPanel">
     <div class="panel-header">
-      <h2 class="panel-title">⚒️ Mesa de Criação</h2>
+      <h2 class="panel-title">⚒️ Mesa de Criaçêo</h2>
       <button class="close-btn" onclick="closePanel('craftingPanel')">×</button>
     </div>
     <div class="recipes-list" id="craftRecipesList"></div>
@@ -1422,7 +1422,7 @@
         <ul>
           <li>🌍 <strong>Mundo Normal</strong> - Comece sua aventura aqui</li>
           <li>🌲 <strong>Floresta Mágica</strong> - Encontre plantas especiais</li>
-          <li>🌋 <strong>Vulcão Infernal</strong> - Dragões de fogo poderosos</li>
+          <li>🌋 <strong>Vulcêo Infernal</strong> - Dragões de fogo poderosos</li>
           <li>❄️ <strong>Reino do Gelo</strong> - Dragões de gelo raros</li>
           <li>💜 <strong>Mundo Neon</strong> - Dragões Neon Azul (RAROS!)</li>
           <li>✨ <strong>Reino Celestial</strong> - Dragões dourados</li>
@@ -1434,8 +1434,8 @@
       <div class="instructions-section">
         <h3>🐉 Dragões Raros</h3>
         <ul>
-          <li>💙 <strong>Dragão Neon Azul</strong> - Poder 2x, precisa de Plantas de Cristal</li>
-          <li>💚 <strong>Dragão Verde</strong> - Poder 3x, precisa de Plantas Místicas</li>
+          <li>💙 <strong>Dragêo Neon Azul</strong> - Poder 2x, precisa de Plantas de Cristal</li>
+          <li>💚 <strong>Dragêo Verde</strong> - Poder 3x, precisa de Plantas Místicas</li>
           <li>Encontre plantas especiais para alimentá-los!</li>
         </ul>
       </div>
@@ -1444,9 +1444,9 @@
         <h3>😈 Dragões Enfeitiçados</h3>
         <ul>
           <li>Encontre fórmulas mágicas espalhadas pelo mapa</li>
-          <li>Crie alimentos-remédios na mesa de criação</li>
-          <li>Coloque nos locais de descanso (verde) ou alimentação (laranja)</li>
-          <li>Quando o dragão usar o local, será curado!</li>
+          <li>Crie alimentos-remédios na mesa de criaçêo</li>
+          <li>Coloque nos locais de descanso (verde) ou alimentaçêo (laranja)</li>
+          <li>Quando o dragêo usar o local, será curado!</li>
         </ul>
       </div>
 
@@ -1472,7 +1472,7 @@
       </div>
 
       <div class="instructions-section">
-        <h3>📈 Evolução 3D</h3>
+        <h3>📈 Evoluçêo 3D</h3>
         <p>A partir do nível 4, o jogo ganha efeitos 3D! Quanto maior o nível, mais imersivo fica até o nível 9.</p>
       </div>
 
@@ -1531,7 +1531,7 @@
     const WORLDS = [
       { id: 0, name: 'Mundo Normal', icon: '🌍', bg: 'mundo-normal', enemies: ['common'] },
       { id: 1, name: 'Floresta Mágica', icon: '🌲', bg: 'mundo-floresta', enemies: ['forest'], plants: ['herb'] },
-      { id: 2, name: 'Vulcão Infernal', icon: '🌋', bg: 'mundo-vulcao', enemies: ['fire'], plants: ['fire_flower'] },
+      { id: 2, name: 'Vulcêo Infernal', icon: '🌋', bg: 'mundo-vulcao', enemies: ['fire'], plants: ['fire_flower'] },
       { id: 3, name: 'Reino do Gelo', icon: '❄️', bg: 'mundo-gelo', enemies: ['ice'], plants: ['ice_crystal'] },
       { id: 4, name: 'Mundo Neon', icon: '💜', bg: 'mundo-neon', enemies: ['neon'], rareType: 'neon_blue', plants: ['crystal_plant'] },
       { id: 5, name: 'Reino Celestial', icon: '✨', bg: 'mundo-celestial', enemies: ['celestial'], plants: ['golden_fruit'] },
@@ -1541,26 +1541,26 @@
 
     // ===== ITENS =====
     const ITEMS = {
-      'dragon_scale': { name: 'Escama de Dragão', emoji: '🔮', rarity: 'rare' },
-      'dragon_heart': { name: 'Coração de Dragão', emoji: '❤️‍🔥', rarity: 'legendary' },
+      'dragon_scale': { name: 'Escama de Dragêo', emoji: '🔮', rarity: 'rare' },
+      'dragon_heart': { name: 'Coraçêo de Dragêo', emoji: '❤️‍🔥', rarity: 'legendary' },
       'magic_feather': { name: 'Pena Mágica', emoji: '🪶', rarity: 'rare' },
       'crystal': { name: 'Cristal', emoji: '💎', rarity: 'uncommon' },
       'iron': { name: 'Ferro', emoji: '🔩', rarity: 'common' },
       'gold_ingot': { name: 'Barra de Ouro', emoji: '🥇', rarity: 'uncommon' },
       'nether_star': { name: 'Estrela do Nether', emoji: '⭐', rarity: 'legendary' },
-      'dragon_wings': { name: 'Asas de Dragão', emoji: '🦋', type: 'wings', rarity: 'legendary' },
+      'dragon_wings': { name: 'Asas de Dragêo', emoji: '🦋', type: 'wings', rarity: 'legendary' },
       'healing_herb': { name: 'Erva Curativa', emoji: '🌿', rarity: 'common' },
       'fire_essence': { name: 'Essência de Fogo', emoji: '🔥', rarity: 'rare' },
       'ice_shard': { name: 'Fragmento de Gelo', emoji: '❄️', rarity: 'rare' },
       'crystal_plant': { name: 'Planta de Cristal', emoji: '💠', rarity: 'epic', forRare: 'neon_blue' },
       'mystic_plant': { name: 'Planta Mística', emoji: '🌸', rarity: 'legendary', forRare: 'neon_green' },
-      'cure_potion': { name: 'Poção de Cura (Dragões)', emoji: '💚', rarity: 'epic', type: 'cure' },
+      'cure_potion': { name: 'Poçêo de Cura (Dragões)', emoji: '💚', rarity: 'epic', type: 'cure' },
       'magic_food': { name: 'Alimento Mágico', emoji: '🍖', rarity: 'rare', type: 'food' }
     };
 
     // ===== FÓRMULAS MÁGICAS =====
     const FORMULAS = {
-      'formula_purify': { name: 'Fórmula de Purificação', emoji: '📜', desc: 'Remove maldições de dragões', ingredient: 'healing_herb' },
+      'formula_purify': { name: 'Fórmula de Purificaçêo', emoji: '📜', desc: 'Remove maldições de dragões', ingredient: 'healing_herb' },
       'formula_calm': { name: 'Fórmula da Calma', emoji: '📜', desc: 'Acalma dragões furiosos', ingredient: 'crystal' },
       'formula_love': { name: 'Fórmula do Amor', emoji: '📜', desc: 'Faz dragões se tornarem amigos', ingredient: 'magic_feather' },
       'formula_heal': { name: 'Fórmula de Cura Total', emoji: '📜', desc: 'Cura completamente dragões', ingredient: 'dragon_heart' }
@@ -1568,10 +1568,10 @@
 
     // ===== POÇÕES =====
     const POTIONS = {
-      'health_potion': { name: 'Poção de Vida', emoji: '❤️', effect: 'heal', value: 50 },
-      'mana_potion': { name: 'Poção de Mana', emoji: '💙', effect: 'mana', value: 30 },
-      'flight_potion': { name: 'Poção de Voo', emoji: '🦋', effect: 'fly', duration: 30 },
-      'dragon_potion': { name: 'Elixir do Dragão', emoji: '🐉', effect: 'dragon', duration: 120 }
+      'health_potion': { name: 'Poçêo de Vida', emoji: '❤️', effect: 'heal', value: 50 },
+      'mana_potion': { name: 'Poçêo de Mana', emoji: '💙', effect: 'mana', value: 30 },
+      'flight_potion': { name: 'Poçêo de Voo', emoji: '🦋', effect: 'fly', duration: 30 },
+      'dragon_potion': { name: 'Elixir do Dragêo', emoji: '🐉', effect: 'dragon', duration: 120 }
     };
 
     // ===== RECEITAS =====
@@ -1590,8 +1590,8 @@
 
     // ===== DRAGÕES RAROS =====
     const RARE_DRAGONS = {
-      'neon_blue': { name: 'Dragão Neon Azul', emoji: '🐉', color: 'neon-blue', power: 2, food: 'crystal_plant' },
-      'neon_green': { name: 'Dragão Verde Místico', emoji: '🐲', color: 'neon-green', power: 3, food: 'mystic_plant' }
+      'neon_blue': { name: 'Dragêo Neon Azul', emoji: '🐉', color: 'neon-blue', power: 2, food: 'crystal_plant' },
+      'neon_green': { name: 'Dragêo Verde Místico', emoji: '🐲', color: 'neon-green', power: 3, food: 'mystic_plant' }
     };
 
     // ===== GUERRA DE DRAGÕES =====
@@ -1603,7 +1603,7 @@
       turn: 'player'
     };
 
-    // ===== INICIALIZAÇÃO =====
+    // ===== INICIALIZAÇêO =====
     function init() {
       loadGame();
       spawnStarterItems();
@@ -1830,11 +1830,11 @@
       showToast(`🥚 Chocando... ${egg.hatchProgress}%`);
 
       if (egg.hatchProgress >= 100) {
-        gameState.dragons.push({ id: Date.now(), color: egg.color, name: `Dragão ${gameState.dragons.length + 1}` });
+        gameState.dragons.push({ id: Date.now(), color: egg.color, name: `Dragêo ${gameState.dragons.length + 1}` });
         gameState.eggs = gameState.eggs.filter(e => e.id !== eggId);
         gameState.player.canBecomeDragon = true;
         document.getElementById('btnDragon').disabled = false;
-        showToast('🐉 Um dragão nasceu!');
+        showToast('🐉 Um dragêo nasceu!');
         gainExp(50);
         spawnEggs();
       }
@@ -1861,18 +1861,18 @@
       const dragon = gameState.evilDragons.find(d => d.id === dragonId);
       if (!dragon) return;
 
-      // Verificar se tem poção de cura
+      // Verificar se tem poçêo de cura
       if (gameState.inventory.items['cure_potion'] > 0) {
         dragon.cursed = false;
         removeItem('cure_potion', 1);
-        gameState.dragons.push({ id: Date.now(), color: '#00ff00', name: 'Dragão Salvo', wasEvil: true });
-        showToast('😇 Dragão curado e salvo! Agora é seu amigo!');
+        gameState.dragons.push({ id: Date.now(), color: '#00ff00', name: 'Dragêo Salvo', wasEvil: true });
+        showToast('😇 Dragêo curado e salvo! Agora é seu amigo!');
         gainExp(100);
         gameState.gold += 50;
         spawnEvilDragons();
         renderPetDragons();
       } else {
-        showToast('❌ Você precisa de uma Poção de Cura para salvar este dragão!');
+        showToast('❌ Você precisa de uma Poçêo de Cura para salvar este dragêo!');
       }
       saveGame();
     }
@@ -1901,16 +1901,16 @@
 
     function useCureSpot(type) {
       if (type === 'healing' && gameState.inventory.items['magic_food'] > 0) {
-        // Curar dragão próximo
+        // Curar dragêo próximo
         const evil = gameState.evilDragons.find(d => d.cursed);
         if (evil) {
           evil.hp -= 30;
           removeItem('magic_food', 1);
-          showToast('🍖 Alimento colocado! Dragão está se curando...');
+          showToast('🍖 Alimento colocado! Dragêo está se curando...');
           if (evil.hp <= 0) {
             evil.cursed = false;
-            gameState.dragons.push({ id: Date.now(), color: '#4CAF50', name: 'Dragão Curado' });
-            showToast('😇 Dragão completamente curado!');
+            gameState.dragons.push({ id: Date.now(), color: '#4CAF50', name: 'Dragêo Curado' });
+            showToast('😇 Dragêo completamente curado!');
             gainExp(80);
           }
           spawnEvilDragons();
@@ -1924,7 +1924,7 @@
     // ===== GUERRA DE DRAGÕES =====
     function startDragonWar() {
       if (gameState.dragons.length === 0) {
-        showToast('❌ Você precisa de um dragão para lutar!');
+        showToast('❌ Você precisa de um dragêo para lutar!');
         return;
       }
 
@@ -2058,7 +2058,7 @@
       saveGame();
     }
 
-    // ===== RENDERIZAÇÃO =====
+    // ===== RENDERIZAÇêO =====
     function renderAll() {
       renderInventory();
       renderPotions();
@@ -2256,7 +2256,7 @@
         case 'dragon':
           gameState.player.canBecomeDragon = true;
           document.getElementById('btnDragon').disabled = false;
-          showToast('🐉 Pode virar dragão!');
+          showToast('🐉 Pode virar dragêo!');
           break;
       }
       renderPotions();
@@ -2316,7 +2316,7 @@
         player.classList.add('is-dragon', 'flying');
         gameState.player.isDragon = true;
         gameState.player.isFlying = true;
-        showToast('🐉 Virou Dragão!');
+        showToast('🐉 Virou Dragêo!');
         gainExp(20);
       }
       saveGame();

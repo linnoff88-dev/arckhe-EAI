@@ -2,7 +2,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// Configuração do canvas
+// Configuraçêo do canvas
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -58,21 +58,21 @@ const QUESTIONS = {
     0: [ // Anatomia
         { q: 'Qual é o maior osso do corpo humano?', a: ['Fêmur', 'Tíbia', 'Úmero', 'Rádio'], correct: 0 },
         { q: 'Quantos ossos tem o corpo humano adulto?', a: ['206', '300', '150', '250'], correct: 0 },
-        { q: 'Qual órgão produz bile?', a: ['Fígado', 'Pâncreas', 'Estômago', 'Intestino'], correct: 0 },
+        { q: 'Qual órgêo produz bile?', a: ['Fígado', 'Pâncreas', 'Estômago', 'Intestino'], correct: 0 },
         { q: 'Onde fica o pâncreas?', a: ['Abdômen', 'Tórax', 'Cabeça', 'Pescoço'], correct: 0 },
-        { q: 'Qual é o maior órgão do corpo?', a: ['Pele', 'Fígado', 'Pulmão', 'Coração'], correct: 0 },
+        { q: 'Qual é o maior órgêo do corpo?', a: ['Pele', 'Fígado', 'Pulmêo', 'Coraçêo'], correct: 0 },
         { q: 'Quantas vértebras tem a coluna cervical?', a: ['7', '12', '5', '4'], correct: 0 },
-        { q: 'Qual músculo é responsável pela respiração?', a: ['Diafragma', 'Bíceps', 'Tríceps', 'Deltóide'], correct: 0 },
-        { q: 'Onde fica a artéria aorta?', a: ['Saindo do coração', 'No braço', 'Na perna', 'No pescoço'], correct: 0 },
-        { q: 'Quantos lobos tem o pulmão direito?', a: ['3', '2', '4', '5'], correct: 0 },
+        { q: 'Qual músculo é responsável pela respiraçêo?', a: ['Diafragma', 'Bíceps', 'Tríceps', 'Deltóide'], correct: 0 },
+        { q: 'Onde fica a artéria aorta?', a: ['Saindo do coraçêo', 'No braço', 'Na perna', 'No pescoço'], correct: 0 },
+        { q: 'Quantos lobos tem o pulmêo direito?', a: ['3', '2', '4', '5'], correct: 0 },
         { q: 'Qual osso protege o cérebro?', a: ['Crânio', 'Costela', 'Vértebra', 'Esterno'], correct: 0 }
     ],
     1: [ // Fisiologia
-        { q: 'Qual é a função dos glóbulos vermelhos?', a: ['Transportar oxigênio', 'Combater infecções', 'Coagular sangue', 'Produzir hormônios'], correct: 0 },
+        { q: 'Qual é a funçêo dos glóbulos vermelhos?', a: ['Transportar oxigênio', 'Combater infecções', 'Coagular sangue', 'Produzir hormônios'], correct: 0 },
         { q: 'Qual hormônio regula a glicose?', a: ['Insulina', 'Adrenalina', 'Cortisol', 'Melatonina'], correct: 0 },
         { q: 'Onde ocorre a troca gasosa?', a: ['Alvéolos', 'Brônquios', 'Traqueia', 'Faringe'], correct: 0 },
-        { q: 'Qual é a pressão arterial normal?', a: ['120/80 mmHg', '150/100 mmHg', '90/60 mmHg', '180/120 mmHg'], correct: 0 },
-        { q: 'Qual órgão filtra o sangue?', a: ['Rim', 'Fígado', 'Baço', 'Pâncreas'], correct: 0 },
+        { q: 'Qual é a pressêo arterial normal?', a: ['120/80 mmHg', '150/100 mmHg', '90/60 mmHg', '180/120 mmHg'], correct: 0 },
+        { q: 'Qual órgêo filtra o sangue?', a: ['Rim', 'Fígado', 'Baço', 'Pâncreas'], correct: 0 },
         { q: 'Quantos litros de sangue tem um adulto?', a: ['5 litros', '10 litros', '2 litros', '8 litros'], correct: 0 },
         { q: 'Qual é a frequência cardíaca normal em repouso?', a: ['60-100 bpm', '30-50 bpm', '120-150 bpm', '150-200 bpm'], correct: 0 },
         { q: 'Onde é produzida a insulina?', a: ['Pâncreas', 'Fígado', 'Rim', 'Tireoide'], correct: 0 },
@@ -80,100 +80,100 @@ const QUESTIONS = {
         { q: 'Qual sistema regula os hormônios?', a: ['Endócrino', 'Nervoso', 'Digestivo', 'Respiratório'], correct: 0 }
     ],
     2: [ // Cardiologia
-        { q: 'Quantas câmaras tem o coração?', a: ['4', '2', '3', '6'], correct: 0 },
-        { q: 'O que é infarto?', a: ['Morte de tecido cardíaco', 'Aumento do coração', 'Inflamação', 'Infecção'], correct: 0 },
-        { q: 'Qual exame mede a atividade elétrica do coração?', a: ['ECG', 'Raio-X', 'Ultrassom', 'Tomografia'], correct: 0 },
-        { q: 'O que é arritmia?', a: ['Ritmo cardíaco irregular', 'Dor no peito', 'Pressão alta', 'Falta de ar'], correct: 0 },
-        { q: 'Qual artéria leva sangue para o coração?', a: ['Coronária', 'Aorta', 'Pulmonar', 'Carótida'], correct: 0 },
-        { q: 'O que é hipertensão?', a: ['Pressão alta', 'Pressão baixa', 'Ritmo irregular', 'Sopro'], correct: 0 },
+        { q: 'Quantas câmaras tem o coraçêo?', a: ['4', '2', '3', '6'], correct: 0 },
+        { q: 'O que é infarto?', a: ['Morte de tecido cardíaco', 'Aumento do coraçêo', 'Inflamaçêo', 'Infecçêo'], correct: 0 },
+        { q: 'Qual exame mede a atividade elétrica do coraçêo?', a: ['ECG', 'Raio-X', 'Ultrassom', 'Tomografia'], correct: 0 },
+        { q: 'O que é arritmia?', a: ['Ritmo cardíaco irregular', 'Dor no peito', 'Pressêo alta', 'Falta de ar'], correct: 0 },
+        { q: 'Qual artéria leva sangue para o coraçêo?', a: ['Coronária', 'Aorta', 'Pulmonar', 'Carótida'], correct: 0 },
+        { q: 'O que é hipertensêo?', a: ['Pressêo alta', 'Pressêo baixa', 'Ritmo irregular', 'Sopro'], correct: 0 },
         { q: 'Qual válvula fica entre átrio e ventrículo esquerdo?', a: ['Mitral', 'Tricúspide', 'Aórtica', 'Pulmonar'], correct: 0 },
-        { q: 'O que é insuficiência cardíaca?', a: ['Coração não bombeia bem', 'Coração para', 'Infarto', 'Arritmia'], correct: 0 },
-        { q: 'Qual é o marcapasso natural do coração?', a: ['Nó sinoatrial', 'Nó AV', 'Feixe de His', 'Fibras de Purkinje'], correct: 0 },
+        { q: 'O que é insuficiência cardíaca?', a: ['Coraçêo nêo bombeia bem', 'Coraçêo para', 'Infarto', 'Arritmia'], correct: 0 },
+        { q: 'Qual é o marcapasso natural do coraçêo?', a: ['Nó sinoatrial', 'Nó AV', 'Feixe de His', 'Fibras de Purkinje'], correct: 0 },
         { q: 'O que é angina?', a: ['Dor no peito por falta de oxigênio', 'Infarto', 'Arritmia', 'Sopro'], correct: 0 }
     ],
     3: [ // Neurologia
         { q: 'Quantos nervos cranianos existem?', a: ['12 pares', '10 pares', '8 pares', '14 pares'], correct: 0 },
-        { q: 'O que é AVC?', a: ['Acidente vascular cerebral', 'Infarto', 'Arritmia', 'Infecção'], correct: 0 },
+        { q: 'O que é AVC?', a: ['Acidente vascular cerebral', 'Infarto', 'Arritmia', 'Infecçêo'], correct: 0 },
         { q: 'Qual parte do cérebro controla o equilíbrio?', a: ['Cerebelo', 'Córtex', 'Tronco', 'Hipotálamo'], correct: 0 },
         { q: 'O que é epilepsia?', a: ['Distúrbio com convulsões', 'Dor de cabeça', 'Tontura', 'Amnésia'], correct: 0 },
         { q: 'Qual neurotransmissor está baixo no Parkinson?', a: ['Dopamina', 'Serotonina', 'Acetilcolina', 'GABA'], correct: 0 },
         { q: 'O que protege o sistema nervoso central?', a: ['Meninges', 'Ossos apenas', 'Músculos', 'Pele'], correct: 0 },
-        { q: 'O que é esclerose múltipla?', a: ['Doença autoimune da mielina', 'Infecção', 'Tumor', 'Trauma'], correct: 0 },
+        { q: 'O que é esclerose múltipla?', a: ['Doença autoimune da mielina', 'Infecçêo', 'Tumor', 'Trauma'], correct: 0 },
         { q: 'Qual exame visualiza o cérebro?', a: ['Ressonância magnética', 'Raio-X', 'ECG', 'Endoscopia'], correct: 0 },
-        { q: 'O que é meningite?', a: ['Inflamação das meninges', 'Tumor', 'AVC', 'Epilepsia'], correct: 0 },
-        { q: 'Qual lobo processa a visão?', a: ['Occipital', 'Frontal', 'Temporal', 'Parietal'], correct: 0 }
+        { q: 'O que é meningite?', a: ['Inflamaçêo das meninges', 'Tumor', 'AVC', 'Epilepsia'], correct: 0 },
+        { q: 'Qual lobo processa a visêo?', a: ['Occipital', 'Frontal', 'Temporal', 'Parietal'], correct: 0 }
     ],
     4: [ // Ortopedia
-        { q: 'O que é fratura?', a: ['Quebra do osso', 'Luxação', 'Entorse', 'Contusão'], correct: 0 },
-        { q: 'O que é luxação?', a: ['Deslocamento da articulação', 'Fratura', 'Entorse', 'Inflamação'], correct: 0 },
-        { q: 'O que é osteoporose?', a: ['Perda de massa óssea', 'Fratura', 'Infecção', 'Tumor'], correct: 0 },
-        { q: 'Qual é o tratamento de fratura simples?', a: ['Imobilização', 'Cirurgia sempre', 'Fisioterapia apenas', 'Medicamentos apenas'], correct: 0 },
-        { q: 'O que é artrose?', a: ['Desgaste da cartilagem', 'Infecção', 'Fratura', 'Luxação'], correct: 0 },
-        { q: 'O que é escoliose?', a: ['Curvatura lateral da coluna', 'Fratura', 'Luxação', 'Infecção'], correct: 0 },
+        { q: 'O que é fratura?', a: ['Quebra do osso', 'Luxaçêo', 'Entorse', 'Contusêo'], correct: 0 },
+        { q: 'O que é luxaçêo?', a: ['Deslocamento da articulaçêo', 'Fratura', 'Entorse', 'Inflamaçêo'], correct: 0 },
+        { q: 'O que é osteoporose?', a: ['Perda de massa óssea', 'Fratura', 'Infecçêo', 'Tumor'], correct: 0 },
+        { q: 'Qual é o tratamento de fratura simples?', a: ['Imobilizaçêo', 'Cirurgia sempre', 'Fisioterapia apenas', 'Medicamentos apenas'], correct: 0 },
+        { q: 'O que é artrose?', a: ['Desgaste da cartilagem', 'Infecçêo', 'Fratura', 'Luxaçêo'], correct: 0 },
+        { q: 'O que é escoliose?', a: ['Curvatura lateral da coluna', 'Fratura', 'Luxaçêo', 'Infecçêo'], correct: 0 },
         { q: 'Qual exame mostra ossos?', a: ['Raio-X', 'ECG', 'Ultrassom', 'EEG'], correct: 0 },
-        { q: 'O que é hérnia de disco?', a: ['Deslocamento do disco vertebral', 'Fratura', 'Tumor', 'Infecção'], correct: 0 },
-        { q: 'O que é tendinite?', a: ['Inflamação do tendão', 'Fratura', 'Luxação', 'Entorse'], correct: 0 },
-        { q: 'Qual articulação mais sofre lesões?', a: ['Joelho', 'Cotovelo', 'Quadril', 'Tornozelo'], correct: 0 }
+        { q: 'O que é hérnia de disco?', a: ['Deslocamento do disco vertebral', 'Fratura', 'Tumor', 'Infecçêo'], correct: 0 },
+        { q: 'O que é tendinite?', a: ['Inflamaçêo do tendêo', 'Fratura', 'Luxaçêo', 'Entorse'], correct: 0 },
+        { q: 'Qual articulaçêo mais sofre lesões?', a: ['Joelho', 'Cotovelo', 'Quadril', 'Tornozelo'], correct: 0 }
     ],
     5: [ // Pediatria
         { q: 'Qual vacina é dada ao nascer?', a: ['BCG e Hepatite B', 'Tríplice viral', 'Polio', 'Gripe'], correct: 0 },
-        { q: 'Quando iniciar alimentação complementar?', a: ['6 meses', '3 meses', '1 ano', '2 meses'], correct: 0 },
-        { q: 'O que é icterícia neonatal?', a: ['Pele amarelada por bilirrubina', 'Febre', 'Infecção', 'Alergia'], correct: 0 },
+        { q: 'Quando iniciar alimentaçêo complementar?', a: ['6 meses', '3 meses', '1 ano', '2 meses'], correct: 0 },
+        { q: 'O que é icterícia neonatal?', a: ['Pele amarelada por bilirrubina', 'Febre', 'Infecçêo', 'Alergia'], correct: 0 },
         { q: 'Qual é o peso normal ao nascer?', a: ['2.5-4 kg', '1-2 kg', '5-6 kg', '4-5 kg'], correct: 0 },
         { q: 'Até quando amamentar exclusivamente?', a: ['6 meses', '3 meses', '1 ano', '2 anos'], correct: 0 },
-        { q: 'O que é fontanela?', a: ['Moleira do bebê', 'Osso', 'Músculo', 'Órgão'], correct: 0 },
+        { q: 'O que é fontanela?', a: ['Moleira do bebê', 'Osso', 'Músculo', 'Órgêo'], correct: 0 },
         { q: 'Quando a criança deve andar?', a: ['12-18 meses', '6 meses', '24 meses', '3 meses'], correct: 0 },
-        { q: 'O que é APGAR?', a: ['Escala de avaliação do recém-nascido', 'Vacina', 'Exame', 'Medicamento'], correct: 0 },
+        { q: 'O que é APGAR?', a: ['Escala de avaliaçêo do recém-nascido', 'Vacina', 'Exame', 'Medicamento'], correct: 0 },
         { q: 'Qual doença a vacina tríplice previne?', a: ['Sarampo, caxumba, rubéola', 'Polio', 'Hepatite', 'Gripe'], correct: 0 },
-        { q: 'O que é cólica do bebê?', a: ['Dor abdominal com choro', 'Febre', 'Infecção', 'Alergia'], correct: 0 }
+        { q: 'O que é cólica do bebê?', a: ['Dor abdominal com choro', 'Febre', 'Infecçêo', 'Alergia'], correct: 0 }
     ],
     6: [ // Farmacologia
         { q: 'O que significa via oral?', a: ['Pela boca', 'Pela veia', 'Pela pele', 'Pelo músculo'], correct: 0 },
-        { q: 'O que é efeito colateral?', a: ['Reação indesejada', 'Efeito principal', 'Cura', 'Dose'], correct: 0 },
+        { q: 'O que é efeito colateral?', a: ['Reaçêo indesejada', 'Efeito principal', 'Cura', 'Dose'], correct: 0 },
         { q: 'O que é antibiótico?', a: ['Combate bactérias', 'Combate vírus', 'Combate dor', 'Combate febre'], correct: 0 },
-        { q: 'O que é analgésico?', a: ['Alivia a dor', 'Combate infecção', 'Reduz febre', 'Combate inflamação'], correct: 0 },
-        { q: 'O que é anti-inflamatório?', a: ['Reduz inflamação', 'Combate infecção', 'Alivia dor apenas', 'Reduz febre apenas'], correct: 0 },
-        { q: 'O que é meia-vida do medicamento?', a: ['Tempo para reduzir metade da concentração', 'Validade', 'Dose', 'Efeito'], correct: 0 },
-        { q: 'O que é interação medicamentosa?', a: ['Efeito de um sobre outro', 'Dose correta', 'Via de administração', 'Validade'], correct: 0 },
+        { q: 'O que é analgésico?', a: ['Alivia a dor', 'Combate infecçêo', 'Reduz febre', 'Combate inflamaçêo'], correct: 0 },
+        { q: 'O que é anti-inflamatório?', a: ['Reduz inflamaçêo', 'Combate infecçêo', 'Alivia dor apenas', 'Reduz febre apenas'], correct: 0 },
+        { q: 'O que é meia-vida do medicamento?', a: ['Tempo para reduzir metade da concentraçêo', 'Validade', 'Dose', 'Efeito'], correct: 0 },
+        { q: 'O que é interaçêo medicamentosa?', a: ['Efeito de um sobre outro', 'Dose correta', 'Via de administraçêo', 'Validade'], correct: 0 },
         { q: 'O que significa IV?', a: ['Intravenoso', 'Intramuscular', 'Via oral', 'Subcutâneo'], correct: 0 },
-        { q: 'O que é antitérmico?', a: ['Reduz febre', 'Reduz dor', 'Combate infecção', 'Reduz inflamação'], correct: 0 },
-        { q: 'O que é vacina?', a: ['Previne doenças por imunização', 'Cura doenças', 'Alivia dor', 'Combate infecção'], correct: 0 }
+        { q: 'O que é antitérmico?', a: ['Reduz febre', 'Reduz dor', 'Combate infecçêo', 'Reduz inflamaçêo'], correct: 0 },
+        { q: 'O que é vacina?', a: ['Previne doenças por imunizaçêo', 'Cura doenças', 'Alivia dor', 'Combate infecçêo'], correct: 0 }
     ],
     7: [ // Imunologia
-        { q: 'O que são anticorpos?', a: ['Proteínas de defesa', 'Vírus', 'Bactérias', 'Células de ataque'], correct: 0 },
-        { q: 'O que é alergia?', a: ['Reação exagerada do sistema imune', 'Infecção', 'Inflamação', 'Tumor'], correct: 0 },
-        { q: 'O que são linfócitos?', a: ['Células de defesa', 'Glóbulos vermelhos', 'Plaquetas', 'Bactérias'], correct: 0 },
-        { q: 'O que é doença autoimune?', a: ['Imunidade ataca o próprio corpo', 'Infecção', 'Alergia', 'Câncer'], correct: 0 },
-        { q: 'Qual órgão produz linfócitos T?', a: ['Timo', 'Baço', 'Fígado', 'Rim'], correct: 0 },
+        { q: 'O que sêo anticorpos?', a: ['Proteínas de defesa', 'Vírus', 'Bactérias', 'Células de ataque'], correct: 0 },
+        { q: 'O que é alergia?', a: ['Reaçêo exagerada do sistema imune', 'Infecçêo', 'Inflamaçêo', 'Tumor'], correct: 0 },
+        { q: 'O que sêo linfócitos?', a: ['Células de defesa', 'Glóbulos vermelhos', 'Plaquetas', 'Bactérias'], correct: 0 },
+        { q: 'O que é doença autoimune?', a: ['Imunidade ataca o próprio corpo', 'Infecçêo', 'Alergia', 'Câncer'], correct: 0 },
+        { q: 'Qual órgêo produz linfócitos T?', a: ['Timo', 'Baço', 'Fígado', 'Rim'], correct: 0 },
         { q: 'O que é HIV?', a: ['Vírus que ataca o sistema imune', 'Bactéria', 'Fungo', 'Parasita'], correct: 0 },
         { q: 'O que é imunoglobulina?', a: ['Tipo de anticorpo', 'Célula', 'Vírus', 'Bactéria'], correct: 0 },
-        { q: 'O que é anafilaxia?', a: ['Reação alérgica grave', 'Alergia leve', 'Infecção', 'Inflamação'], correct: 0 },
+        { q: 'O que é anafilaxia?', a: ['Reaçêo alérgica grave', 'Alergia leve', 'Infecçêo', 'Inflamaçêo'], correct: 0 },
         { q: 'Onde ficam os gânglios linfáticos?', a: ['Em todo o corpo', 'Só no pescoço', 'Só nas axilas', 'Só na virilha'], correct: 0 },
-        { q: 'O que é imunidade passiva?', a: ['Receber anticorpos prontos', 'Produzir anticorpos', 'Vacina', 'Infecção'], correct: 0 }
+        { q: 'O que é imunidade passiva?', a: ['Receber anticorpos prontos', 'Produzir anticorpos', 'Vacina', 'Infecçêo'], correct: 0 }
     ],
     8: [ // Emergência
-        { q: 'O que fazer em parada cardíaca?', a: ['RCP - ressuscitação', 'Esperar', 'Dar água', 'Elevar pernas'], correct: 0 },
+        { q: 'O que fazer em parada cardíaca?', a: ['RCP - ressuscitaçêo', 'Esperar', 'Dar água', 'Elevar pernas'], correct: 0 },
         { q: 'Qual é o número de emergência no Brasil?', a: ['192 (SAMU)', '190', '193', '191'], correct: 0 },
-        { q: 'O que é engasgo?', a: ['Obstrução das vias aéreas', 'Falta de ar', 'Tosse', 'Dor no peito'], correct: 0 },
+        { q: 'O que é engasgo?', a: ['Obstruçêo das vias aéreas', 'Falta de ar', 'Tosse', 'Dor no peito'], correct: 0 },
         { q: 'O que fazer em queimadura?', a: ['Água fria corrente', 'Gelo', 'Manteiga', 'Pasta de dente'], correct: 0 },
         { q: 'O que é choque?', a: ['Falha circulatória grave', 'Susto', 'Dor', 'Febre'], correct: 0 },
-        { q: 'O que fazer em convulsão?', a: ['Proteger a cabeça, não conter', 'Segurar a língua', 'Dar água', 'Sacudir'], correct: 0 },
-        { q: 'O que é triagem?', a: ['Classificação de urgência', 'Tratamento', 'Diagnóstico', 'Exame'], correct: 0 },
-        { q: 'O que fazer em hemorragia?', a: ['Comprimir o local', 'Lavar com água', 'Não tocar', 'Elevar sempre'], correct: 0 },
-        { q: 'O que é intoxicação?', a: ['Envenenamento', 'Infecção', 'Alergia', 'Trauma'], correct: 0 },
-        { q: 'Qual é a sequência do BLS?', a: ['CAB - Circulação, Via aérea, Respiração', 'ABC', 'CBA', 'ACB'], correct: 0 }
+        { q: 'O que fazer em convulsêo?', a: ['Proteger a cabeça, nêo conter', 'Segurar a língua', 'Dar água', 'Sacudir'], correct: 0 },
+        { q: 'O que é triagem?', a: ['Classificaçêo de urgência', 'Tratamento', 'Diagnóstico', 'Exame'], correct: 0 },
+        { q: 'O que fazer em hemorragia?', a: ['Comprimir o local', 'Lavar com água', 'Nêo tocar', 'Elevar sempre'], correct: 0 },
+        { q: 'O que é intoxicaçêo?', a: ['Envenenamento', 'Infecçêo', 'Alergia', 'Trauma'], correct: 0 },
+        { q: 'Qual é a sequência do BLS?', a: ['CAB - Circulaçêo, Via aérea, Respiraçêo', 'ABC', 'CBA', 'ACB'], correct: 0 }
     ],
     9: [ // Cirurgia
-        { q: 'O que é anestesia geral?', a: ['Perda total da consciência', 'Anestesia local', 'Sedação leve', 'Sem anestesia'], correct: 0 },
+        { q: 'O que é anestesia geral?', a: ['Perda total da consciência', 'Anestesia local', 'Sedaçêo leve', 'Sem anestesia'], correct: 0 },
         { q: 'O que é laparoscopia?', a: ['Cirurgia minimamente invasiva', 'Cirurgia aberta', 'Exame', 'Tratamento'], correct: 0 },
-        { q: 'O que é assepsia?', a: ['Eliminação de microrganismos', 'Cirurgia', 'Anestesia', 'Sutura'], correct: 0 },
+        { q: 'O que é assepsia?', a: ['Eliminaçêo de microrganismos', 'Cirurgia', 'Anestesia', 'Sutura'], correct: 0 },
         { q: 'O que é sutura?', a: ['Pontos para fechar ferida', 'Corte', 'Anestesia', 'Exame'], correct: 0 },
         { q: 'O que é biópsia?', a: ['Retirada de tecido para análise', 'Cirurgia grande', 'Anestesia', 'Exame de sangue'], correct: 0 },
         { q: 'O que é hemostasia?', a: ['Controle do sangramento', 'Sutura', 'Corte', 'Anestesia'], correct: 0 },
-        { q: 'O que é transplante?', a: ['Substituição de órgão', 'Cirurgia simples', 'Exame', 'Tratamento'], correct: 0 },
-        { q: 'O que é colecistectomia?', a: ['Remoção da vesícula', 'Remoção do apêndice', 'Remoção do rim', 'Remoção do baço'], correct: 0 },
+        { q: 'O que é transplante?', a: ['Substituiçêo de órgêo', 'Cirurgia simples', 'Exame', 'Tratamento'], correct: 0 },
+        { q: 'O que é colecistectomia?', a: ['Remoçêo da vesícula', 'Remoçêo do apêndice', 'Remoçêo do rim', 'Remoçêo do baço'], correct: 0 },
         { q: 'O que é pós-operatório?', a: ['Período após cirurgia', 'Antes da cirurgia', 'Durante cirurgia', 'Exame'], correct: 0 },
-        { q: 'O que é cirurgia eletiva?', a: ['Programada, não urgente', 'Urgente', 'Emergência', 'Imediata'], correct: 0 }
+        { q: 'O que é cirurgia eletiva?', a: ['Programada, nêo urgente', 'Urgente', 'Emergência', 'Imediata'], correct: 0 }
     ]
 };
 
@@ -181,7 +181,7 @@ const QUESTIONS = {
 const SHOP_ITEMS = [
     { id: 'diagnosis_pack', name: 'Pacote de Diagnósticos', price: 100, currency: 'coins', description: '+50 diagnósticos' },
     { id: 'patient_file', name: 'Arquivo de Paciente', price: 150, currency: 'coins', description: '+1 paciente' },
-    { id: 'reputation_boost', name: 'Boost de Reputação', price: 200, currency: 'coins', description: '+100 reputação' },
+    { id: 'reputation_boost', name: 'Boost de Reputaçêo', price: 200, currency: 'coins', description: '+100 reputaçêo' },
     { id: 'specialty_unlock', name: 'Desbloquear Especialidade', price: 5, currency: 'gems', description: 'Próxima especialidade' },
     { id: 'double_xp', name: 'XP Dobrado', price: 3, currency: 'gems', description: '2x XP por 10 casos' },
     { id: 'doctor_coat', name: 'Jaleco Premium', price: 10, currency: 'gems', description: 'Visual médico' }
@@ -273,7 +273,7 @@ function drawMedicalBackground() {
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Padrão de cruz médica
+    // Padrêo de cruz médica
     ctx.globalAlpha = 0.05;
     ctx.fillStyle = '#E74C3C';
     for (let x = 0; x < canvas.width; x += 100) {
@@ -363,10 +363,10 @@ function drawMenu() {
     ctx.fillStyle = '#E74C3C';
     ctx.font = '16px Arial';
     ctx.fillText(`👥 Pacientes: ${playerData.patients.length}`, canvas.width/2, 610);
-    ctx.fillText(`⭐ Reputação: ${playerData.reputation}`, canvas.width/2, 640);
+    ctx.fillText(`⭐ Reputaçêo: ${playerData.reputation}`, canvas.width/2, 640);
 }
 
-// Desenhar seleção de especialidades
+// Desenhar seleçêo de especialidades
 function drawSpecialtySelect() {
     drawMedicalBackground();
     drawHUD();
@@ -429,7 +429,7 @@ function drawSpecialtySelect() {
     maxScroll = Math.max(0, SPECIALTIES.length * (cardHeight + 15) - (canvas.height - 180));
 }
 
-// Desenhar seleção de caso
+// Desenhar seleçêo de caso
 function drawCaseSelect() {
     const spec = SPECIALTIES[selectedSpecialty];
     const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
@@ -486,7 +486,7 @@ function drawCaseSelect() {
     maxScroll = Math.max(0, Math.ceil(spec.cases / cols) * (size + spacing) - (canvas.height - 200));
 }
 
-// Desenhar questão
+// Desenhar questêo
 function drawQuestion() {
     const spec = SPECIALTIES[selectedSpecialty];
     const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
@@ -669,7 +669,7 @@ function drawPatients() {
     const stats = [
         `📋 Diagnósticos: ${playerData.diagnoses}`,
         `👥 Pacientes: ${playerData.patients.length}`,
-        `⭐ Reputação: ${playerData.reputation}`,
+        `⭐ Reputaçêo: ${playerData.reputation}`,
         `🩺 Especialidades: ${playerData.unlockedSpecialties.length}`,
         `🏥 Nível Médico: ${level}`
     ];

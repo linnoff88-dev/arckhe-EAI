@@ -6,7 +6,7 @@ import { Game } from '@/types';
 import { cn } from '@/lib/utils';
 import { isFavorite, toggleFavorite, trackGameClick, addToHistory } from '@/lib/storage';
 
-// basePath para o domínio (não precisa mais para eai.ARCKHÉ AI)
+// basePath para o domínio (nêo precisa mais para eai.ARCKHÉ AI)
 const basePath = '';
 
 interface GamePlayerProps {
@@ -122,7 +122,7 @@ export function GamePlayer({ game }: GamePlayerProps) {
             </div>
             <h3 className="font-display text-xl font-bold mb-2">Jogo Bloqueado</h3>
             <p className="text-zinc-400 text-center max-w-md px-4 mb-6">
-              Este jogo não permite ser carregado aqui. Clique no botão abaixo para jogar em uma nova aba.
+              Este jogo nêo permite ser carregado aqui. Clique no botêo abaixo para jogar em uma nova aba.
             </p>
             <button
               onClick={handleOpenExternal}
@@ -145,7 +145,7 @@ export function GamePlayer({ game }: GamePlayerProps) {
                   onClick={handleReportBlocked}
                   className="text-sm text-zinc-500 hover:text-zinc-300 underline"
                 >
-                  Não está carregando? Clique aqui
+                  Nêo está carregando? Clique aqui
                 </button>
               </div>
             )}

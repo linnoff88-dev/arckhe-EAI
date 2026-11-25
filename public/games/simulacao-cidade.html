@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulação de Cidade - EAI</title>
+    <title>Simulaçêo de Cidade - EAI</title>
     <style>
         * {
             margin: 0;
@@ -452,7 +452,7 @@
         </div>
         <div class="stat">
             <div class="stat-value" id="population">0</div>
-            <div class="stat-label">População</div>
+            <div class="stat-label">Populaçêo</div>
         </div>
         <div class="stat">
             <div class="stat-value" id="turn">1</div>
@@ -461,10 +461,10 @@
     </div>
 
     <div class="medals-display">
-        <div class="medal medal-bronze" id="medal-bronze" title="Povoado: 50 população">🏅</div>
-        <div class="medal medal-silver" id="medal-silver" title="Vila: 200 população">🥈</div>
-        <div class="medal medal-gold" id="medal-gold" title="Cidade: 500 população">🥇</div>
-        <div class="medal medal-diamond" id="medal-diamond" title="Metrópole: 1000 população">💎</div>
+        <div class="medal medal-bronze" id="medal-bronze" title="Povoado: 50 populaçêo">🏅</div>
+        <div class="medal medal-silver" id="medal-silver" title="Vila: 200 populaçêo">🥈</div>
+        <div class="medal medal-gold" id="medal-gold" title="Cidade: 500 populaçêo">🥇</div>
+        <div class="medal medal-diamond" id="medal-diamond" title="Metrópole: 1000 populaçêo">💎</div>
     </div>
 
     <div class="game-area">
@@ -511,7 +511,7 @@
                 <div class="indicator-bar">
                     <div class="indicator-fill" id="education-fill" style="width: 30%"></div>
                 </div>
-                <div class="indicator-label">Educação</div>
+                <div class="indicator-label">Educaçêo</div>
             </div>
         </div>
 
@@ -628,7 +628,7 @@
                 description: 'Os moradores querem celebrar!',
                 options: [
                     { text: '🎊 Organizar festa (-100💰)', effect: { money: -100, happiness: 20 } },
-                    { text: '❌ Não realizar', effect: { happiness: -5 } }
+                    { text: '❌ Nêo realizar', effect: { happiness: -5 } }
                 ]
             },
             {
@@ -641,8 +641,8 @@
             },
             {
                 icon: '📚',
-                title: 'Campanha de Educação',
-                description: 'Uma ONG quer ajudar com educação. Aceitar?',
+                title: 'Campanha de Educaçêo',
+                description: 'Uma ONG quer ajudar com educaçêo. Aceitar?',
                 options: [
                     { text: '✅ Aceitar', effect: { education: 15, happiness: 5 } },
                     { text: '❌ Recusar', effect: {} }
@@ -650,7 +650,7 @@
             },
             {
                 icon: '💡',
-                title: 'Apagão!',
+                title: 'Apagêo!',
                 description: 'Falta energia na cidade!',
                 options: [
                     { text: '⚡ Comprar energia (-150💰)', effect: { money: -150, energy: 30 } },
@@ -672,7 +672,7 @@
                 description: 'Moradores querem plantar árvores!',
                 options: [
                     { text: '🌱 Apoiar (-50💰)', effect: { money: -50, environment: 15, happiness: 10 } },
-                    { text: '🙅 Não participar', effect: {} }
+                    { text: '🙅 Nêo participar', effect: {} }
                 ]
             }
         ];
@@ -681,9 +681,9 @@
             'Equilibre construções com áreas verdes!',
             'Escolas e hospitais deixam os moradores felizes!',
             'Fábricas geram dinheiro mas poluem.',
-            'Energia solar e eólica são sustentáveis!',
+            'Energia solar e eólica sêo sustentáveis!',
             'Parques melhoram o ambiente e a felicidade!',
-            'Bibliotecas aumentam a educação!',
+            'Bibliotecas aumentam a educaçêo!',
             'Cuidado com o consumo de energia!',
             'Uma cidade equilibrada é uma cidade feliz!'
         ];
@@ -772,7 +772,7 @@
             const cell = gameState.grid[index];
 
             if (cell === 'water') {
-                showMessage('🌊 Não pode construir na água!', 'warning');
+                showMessage('🌊 Nêo pode construir na água!', 'warning');
                 return;
             }
 
@@ -800,7 +800,7 @@
             }
 
             if (!gameState.selectedBuilding) {
-                showMessage('Selecione uma construção primeiro!', 'warning');
+                showMessage('Selecione uma construçêo primeiro!', 'warning');
                 return;
             }
 
@@ -842,9 +842,9 @@
             });
 
             if (gameState.demolishMode) {
-                showMessage('🔨 Modo demolição ativado. Clique em uma construção para demolir.', 'warning');
+                showMessage('🔨 Modo demoliçêo ativado. Clique em uma construçêo para demolir.', 'warning');
             } else {
-                showMessage('Modo demolição desativado.', '');
+                showMessage('Modo demoliçêo desativado.', '');
             }
         }
 
@@ -867,12 +867,12 @@
         function processTurn(income) {
             // Check game over conditions
             if (gameState.energy < 0) {
-                showMessage('⚡ Apagão! A cidade ficou sem energia!', 'danger');
+                showMessage('⚡ Apagêo! A cidade ficou sem energia!', 'danger');
                 gameState.happiness -= 10;
             }
 
             if (gameState.happiness <= 0) {
-                showMessage('😢 Os moradores estão muito infelizes!', 'danger');
+                showMessage('😢 Os moradores estêo muito infelizes!', 'danger');
             }
 
             if (gameState.turn > gameState.maxTurns) {
@@ -946,7 +946,7 @@
             else if (finalScore >= 200) rating = '🌟🌟 VILA PROMISSORA';
             else rating = '🌟 POVOADO INICIANTE';
 
-            showMessage(`🎮 FIM DE JOGO! Pontuação: ${finalScore} - ${rating}`, 'success');
+            showMessage(`🎮 FIM DE JOGO! Pontuaçêo: ${finalScore} - ${rating}`, 'success');
             updateDisplay();
             updateMedals();
             saveProgress();

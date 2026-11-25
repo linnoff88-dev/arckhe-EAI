@@ -155,7 +155,7 @@ class SlitherGame {
     const cx = this.canvas.width / 2;
     const cy = this.canvas.height / 2;
 
-    // Botão Jogar
+    // Botêo Jogar
     if (x > cx - 100 && x < cx + 100 && y > cy - 20 && y < cy + 40) {
       this.startGame();
     }
@@ -348,7 +348,7 @@ class SlitherGame {
     const dy = worldMouseY - head.y;
     const targetAngle = Math.atan2(dy, dx);
 
-    // Suavizar rotação
+    // Suavizar rotaçêo
     let angleDiff = targetAngle - this.player.angle;
     while (angleDiff > Math.PI) angleDiff -= Math.PI * 2;
     while (angleDiff < -Math.PI) angleDiff += Math.PI * 2;
@@ -426,7 +426,7 @@ class SlitherGame {
       }
     }
 
-    // Mover em direção ao alvo
+    // Mover em direçêo ao alvo
     if (snake.aiTarget) {
       const head = snake.segments[0];
       const dx = snake.aiTarget.x - head.x;
@@ -524,7 +524,7 @@ class SlitherGame {
       });
     });
 
-    // Colisão entre cobras
+    // Colisêo entre cobras
     this.snakes.forEach(snake => {
       if (!snake.alive) return;
 
@@ -533,7 +533,7 @@ class SlitherGame {
       this.snakes.forEach(other => {
         if (other === snake || !other.alive) return;
 
-        // Verificar colisão com corpo
+        // Verificar colisêo com corpo
         for (let i = 3; i < other.segments.length; i++) {
           const seg = other.segments[i];
           const dist = Math.hypot(seg.x - head.x, seg.y - head.y);
@@ -546,7 +546,7 @@ class SlitherGame {
       });
     });
 
-    // Colisão com bordas
+    // Colisêo com bordas
     this.snakes.forEach(snake => {
       if (!snake.alive) return;
       const head = snake.segments[0];
@@ -672,7 +672,7 @@ class SlitherGame {
     ctx.font = '60px Arial';
     ctx.fillText('🐍', cx, cy - 50);
 
-    // Botão Jogar
+    // Botêo Jogar
     const gradient = ctx.createLinearGradient(cx - 100, cy, cx + 100, cy);
     gradient.addColorStop(0, '#8b5cf6');
     gradient.addColorStop(1, '#ec4899');
@@ -703,7 +703,7 @@ class SlitherGame {
       const sx = startX + i * 70;
       const sy = cy + 130;
 
-      // Borda de seleção
+      // Borda de seleçêo
       if (key === this.playerSkin) {
         ctx.strokeStyle = '#fbbf24';
         ctx.lineWidth = 3;
@@ -721,7 +721,7 @@ class SlitherGame {
       ctx.arc(sx, sy, 25, 0, Math.PI * 2);
       ctx.fill();
 
-      // Cadeado se não desbloqueado
+      // Cadeado se nêo desbloqueado
       if (!skin.unlocked) {
         ctx.fillStyle = 'rgba(0,0,0,0.7)';
         ctx.beginPath();
@@ -984,7 +984,7 @@ class SlitherGame {
       ctx.fillText(`+${this.rewards.coins} 🪙`, cx + 50, cy + 30);
     }
 
-    // Botão Jogar Novamente
+    // Botêo Jogar Novamente
     const gradient = ctx.createLinearGradient(cx - 100, cy + 60, cx + 100, cy + 60);
     gradient.addColorStop(0, '#8b5cf6');
     gradient.addColorStop(1, '#ec4899');

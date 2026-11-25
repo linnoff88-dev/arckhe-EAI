@@ -171,7 +171,7 @@
             transform: scale(1.05);
         }
 
-        /* ===== SELEÇÃO DE FASE ===== */
+        /* ===== SELEÇêO DE FASE ===== */
         #phase-select {
             position: fixed;
             inset: 0;
@@ -406,7 +406,7 @@
             75% { transform: translateX(10px); }
         }
 
-        /* Painel de informação do estado */
+        /* Painel de informaçêo do estado */
         .state-info-panel {
             position: fixed;
             bottom: 20px;
@@ -667,8 +667,8 @@
                     <li><strong>Fase 2:</strong> Sigla ↔ Nome do Estado</li>
                     <li><strong>Fase 3:</strong> Sigla ↔ Forma do Mapa</li>
                     <li><strong>Fase 4:</strong> Sigla ↔ Capital</li>
-                    <li><strong>Fase 5:</strong> Estado ↔ Região</li>
-                    <li><strong>Fase 6:</strong> Estado ↔ População</li>
+                    <li><strong>Fase 5:</strong> Estado ↔ Regiêo</li>
+                    <li><strong>Fase 6:</strong> Estado ↔ Populaçêo</li>
                     <li><strong>Fase 7:</strong> Estado ↔ Culinária Típica</li>
                     <li><strong>Fase 8:</strong> Estado ↔ Ponto Turístico</li>
                     <li><strong>Fase 9:</strong> Desafio Final - Tudo misturado!</li>
@@ -677,7 +677,7 @@
 
             <div class="modal-section">
                 <h3>⏱️ Tempo e Pontos</h3>
-                <p>Você tem tempo limitado! Cada acerto dá pontos, mas erros e tempo consumido diminuem sua pontuação.</p>
+                <p>Você tem tempo limitado! Cada acerto dá pontos, mas erros e tempo consumido diminuem sua pontuaçêo.</p>
                 <ul>
                     <li><strong>Acerto:</strong> +100 pontos</li>
                     <li><strong>Erro:</strong> -25 pontos</li>
@@ -686,18 +686,18 @@
             </div>
 
             <div class="modal-section">
-                <h3>🌟 Bônus de Perfeição</h3>
+                <h3>🌟 Bônus de Perfeiçêo</h3>
                 <ul>
-                    <li><strong>100% de acertos:</strong> Pontuação x5!</li>
-                    <li><strong>90%+ de acertos:</strong> Pontuação x2!</li>
-                    <li><strong>Combo:</strong> Acertos seguidos dão bônus extra!</li>
+                    <li><strong>100% de acertos:</strong> Pontuaçêo x5!</li>
+                    <li><strong>90%+ de acertos:</strong> Pontuaçêo x2!</li>
+                    <li><strong>Combo:</strong> Acertos seguidos dêo bônus extra!</li>
                 </ul>
             </div>
 
             <div class="modal-section">
                 <h3>✨ Dicas</h3>
                 <ul>
-                    <li>Memorize a posição das cartas!</li>
+                    <li>Memorize a posiçêo das cartas!</li>
                     <li>Quando acertar, veja as informações do estado</li>
                     <li>Complete fases para desbloquear as próximas</li>
                     <li>Tente conseguir 3 estrelas em todas as fases!</li>
@@ -708,7 +708,7 @@
         </div>
     </div>
 
-    <!-- SELEÇÃO DE FASE -->
+    <!-- SELEÇêO DE FASE -->
     <div id="phase-select">
         <h1 class="phase-title">🗺️ Escolha a Fase</h1>
         <div class="phases-grid" id="phases-container"></div>
@@ -747,8 +747,8 @@
         </div>
 
         <div class="state-info-panel" id="state-info-panel">
-            <div class="state-name" id="state-name">São Paulo</div>
-            <div class="state-capital" id="state-capital">Capital: São Paulo</div>
+            <div class="state-name" id="state-name">Sêo Paulo</div>
+            <div class="state-capital" id="state-capital">Capital: Sêo Paulo</div>
             <div class="state-map" id="state-map">🗺️</div>
             <div class="state-facts" id="state-facts">Informações do estado...</div>
         </div>
@@ -788,19 +788,19 @@
         const ESTADOS = [
             { sigla: 'AC', nome: 'Acre', capital: 'Rio Branco', regiao: 'Norte', mapa: '🌳', populacao: '0.9 mi', culinaria: 'Tacacá', turismo: 'Parque Nacional da Serra do Divisor', cor: '#1E90FF' },
             { sigla: 'AL', nome: 'Alagoas', capital: 'Maceió', regiao: 'Nordeste', mapa: '🏖️', populacao: '3.4 mi', culinaria: 'Sururu', turismo: 'Praia de Maragogi', cor: '#FF6347' },
-            { sigla: 'AP', nome: 'Amapá', capital: 'Macapá', regiao: 'Norte', mapa: '🌿', populacao: '0.9 mi', culinaria: 'Camarão Regional', turismo: 'Fortaleza de São José', cor: '#32CD32' },
+            { sigla: 'AP', nome: 'Amapá', capital: 'Macapá', regiao: 'Norte', mapa: '🌿', populacao: '0.9 mi', culinaria: 'Camarêo Regional', turismo: 'Fortaleza de Sêo José', cor: '#32CD32' },
             { sigla: 'AM', nome: 'Amazonas', capital: 'Manaus', regiao: 'Norte', mapa: '🌲', populacao: '4.2 mi', culinaria: 'Pirarucu', turismo: 'Teatro Amazonas', cor: '#228B22' },
             { sigla: 'BA', nome: 'Bahia', capital: 'Salvador', regiao: 'Nordeste', mapa: '🥁', populacao: '14.9 mi', culinaria: 'Acarajé', turismo: 'Pelourinho', cor: '#FF4500' },
-            { sigla: 'CE', nome: 'Ceará', capital: 'Fortaleza', regiao: 'Nordeste', mapa: '☀️', populacao: '9.2 mi', culinaria: 'Baião de Dois', turismo: 'Beach Park', cor: '#FFD700' },
+            { sigla: 'CE', nome: 'Ceará', capital: 'Fortaleza', regiao: 'Nordeste', mapa: '☀️', populacao: '9.2 mi', culinaria: 'Baiêo de Dois', turismo: 'Beach Park', cor: '#FFD700' },
             { sigla: 'DF', nome: 'Distrito Federal', capital: 'Brasília', regiao: 'Centro-Oeste', mapa: '🏛️', populacao: '3.1 mi', culinaria: 'Galinhada', turismo: 'Congresso Nacional', cor: '#4169E1' },
             { sigla: 'ES', nome: 'Espírito Santo', capital: 'Vitória', regiao: 'Sudeste', mapa: '⛰️', populacao: '4.1 mi', culinaria: 'Moqueca Capixaba', turismo: 'Convento da Penha', cor: '#20B2AA' },
-            { sigla: 'GO', nome: 'Goiás', capital: 'Goiânia', regiao: 'Centro-Oeste', mapa: '🌾', populacao: '7.1 mi', culinaria: 'Empadão Goiano', turismo: 'Chapada dos Veadeiros', cor: '#DAA520' },
-            { sigla: 'MA', nome: 'Maranhão', capital: 'São Luís', regiao: 'Nordeste', mapa: '🏝️', populacao: '7.1 mi', culinaria: 'Arroz de Cuxá', turismo: 'Lençóis Maranhenses', cor: '#DC143C' },
+            { sigla: 'GO', nome: 'Goiás', capital: 'Goiânia', regiao: 'Centro-Oeste', mapa: '🌾', populacao: '7.1 mi', culinaria: 'Empadêo Goiano', turismo: 'Chapada dos Veadeiros', cor: '#DAA520' },
+            { sigla: 'MA', nome: 'Maranhêo', capital: 'Sêo Luís', regiao: 'Nordeste', mapa: '🏝️', populacao: '7.1 mi', culinaria: 'Arroz de Cuxá', turismo: 'Lençóis Maranhenses', cor: '#DC143C' },
             { sigla: 'MT', nome: 'Mato Grosso', capital: 'Cuiabá', regiao: 'Centro-Oeste', mapa: '🐆', populacao: '3.5 mi', culinaria: 'Maria Isabel', turismo: 'Pantanal', cor: '#FF8C00' },
             { sigla: 'MS', nome: 'Mato Grosso do Sul', capital: 'Campo Grande', regiao: 'Centro-Oeste', mapa: '🌊', populacao: '2.8 mi', culinaria: 'Sobá', turismo: 'Bonito', cor: '#00CED1' },
-            { sigla: 'MG', nome: 'Minas Gerais', capital: 'Belo Horizonte', regiao: 'Sudeste', mapa: '⛏️', populacao: '21.3 mi', culinaria: 'Pão de Queijo', turismo: 'Ouro Preto', cor: '#CD853F' },
+            { sigla: 'MG', nome: 'Minas Gerais', capital: 'Belo Horizonte', regiao: 'Sudeste', mapa: '⛏️', populacao: '21.3 mi', culinaria: 'Pêo de Queijo', turismo: 'Ouro Preto', cor: '#CD853F' },
             { sigla: 'PA', nome: 'Pará', capital: 'Belém', regiao: 'Norte', mapa: '🌴', populacao: '8.7 mi', culinaria: 'Pato no Tucupi', turismo: 'Mercado Ver-o-Peso', cor: '#2E8B57' },
-            { sigla: 'PB', nome: 'Paraíba', capital: 'João Pessoa', regiao: 'Nordeste', mapa: '🌅', populacao: '4.1 mi', culinaria: 'Rubacão', turismo: 'Ponta do Seixas', cor: '#FF69B4' },
+            { sigla: 'PB', nome: 'Paraíba', capital: 'Joêo Pessoa', regiao: 'Nordeste', mapa: '🌅', populacao: '4.1 mi', culinaria: 'Rubacêo', turismo: 'Ponta do Seixas', cor: '#FF69B4' },
             { sigla: 'PR', nome: 'Paraná', capital: 'Curitiba', regiao: 'Sul', mapa: '🌲', populacao: '11.5 mi', culinaria: 'Barreado', turismo: 'Cataratas do Iguaçu', cor: '#4682B4' },
             { sigla: 'PE', nome: 'Pernambuco', capital: 'Recife', regiao: 'Nordeste', mapa: '🎭', populacao: '9.6 mi', culinaria: 'Bolo de Rolo', turismo: 'Fernando de Noronha', cor: '#8B0000' },
             { sigla: 'PI', nome: 'Piauí', capital: 'Teresina', regiao: 'Nordeste', mapa: '🏜️', populacao: '3.3 mi', culinaria: 'Capote', turismo: 'Serra da Capivara', cor: '#B8860B' },
@@ -810,9 +810,9 @@
             { sigla: 'RO', nome: 'Rondônia', capital: 'Porto Velho', regiao: 'Norte', mapa: '🌳', populacao: '1.8 mi', culinaria: 'Peixe na Telha', turismo: 'Forte Príncipe da Beira', cor: '#8B4513' },
             { sigla: 'RR', nome: 'Roraima', capital: 'Boa Vista', regiao: 'Norte', mapa: '🏔️', populacao: '0.6 mi', culinaria: 'Damurida', turismo: 'Monte Roraima', cor: '#9932CC' },
             { sigla: 'SC', nome: 'Santa Catarina', capital: 'Florianópolis', regiao: 'Sul', mapa: '🏄', populacao: '7.3 mi', culinaria: 'Ostra', turismo: 'Praia de Balneário Camboriú', cor: '#1E90FF' },
-            { sigla: 'SP', nome: 'São Paulo', capital: 'São Paulo', regiao: 'Sudeste', mapa: '🏙️', populacao: '46.3 mi', culinaria: 'Virado à Paulista', turismo: 'Avenida Paulista', cor: '#FF0000' },
+            { sigla: 'SP', nome: 'Sêo Paulo', capital: 'Sêo Paulo', regiao: 'Sudeste', mapa: '🏙️', populacao: '46.3 mi', culinaria: 'Virado à Paulista', turismo: 'Avenida Paulista', cor: '#FF0000' },
             { sigla: 'SE', nome: 'Sergipe', capital: 'Aracaju', regiao: 'Nordeste', mapa: '🌺', populacao: '2.3 mi', culinaria: 'Caranguejo', turismo: 'Orla de Atalaia', cor: '#FF6347' },
-            { sigla: 'TO', nome: 'Tocantins', capital: 'Palmas', regiao: 'Norte', mapa: '🌿', populacao: '1.6 mi', culinaria: 'Peixe Assado', turismo: 'Jalapão', cor: '#3CB371' }
+            { sigla: 'TO', nome: 'Tocantins', capital: 'Palmas', regiao: 'Norte', mapa: '🌿', populacao: '1.6 mi', culinaria: 'Peixe Assado', turismo: 'Jalapêo', cor: '#3CB371' }
         ];
 
         // Estado do jogo
@@ -834,20 +834,20 @@
             paused: false
         };
 
-        // ===== CONFIGURAÇÃO DAS FASES =====
+        // ===== CONFIGURAÇêO DAS FASES =====
         const PHASES = [
             { id: 1, name: 'Siglas', desc: 'Encontre pares de siglas iguais', pairs: 8, time: 90 },
             { id: 2, name: 'Sigla ↔ Nome', desc: 'Combine sigla com nome do estado', pairs: 8, time: 120 },
             { id: 3, name: 'Sigla ↔ Mapa', desc: 'Combine sigla com forma do mapa', pairs: 8, time: 120 },
             { id: 4, name: 'Sigla ↔ Capital', desc: 'Combine sigla com a capital', pairs: 8, time: 120 },
-            { id: 5, name: 'Estado ↔ Região', desc: 'Combine estado com sua região', pairs: 10, time: 150 },
-            { id: 6, name: 'Estado ↔ População', desc: 'Combine estado com população', pairs: 10, time: 150 },
+            { id: 5, name: 'Estado ↔ Regiêo', desc: 'Combine estado com sua regiêo', pairs: 10, time: 150 },
+            { id: 6, name: 'Estado ↔ Populaçêo', desc: 'Combine estado com populaçêo', pairs: 10, time: 150 },
             { id: 7, name: 'Estado ↔ Culinária', desc: 'Combine estado com prato típico', pairs: 10, time: 150 },
             { id: 8, name: 'Estado ↔ Turismo', desc: 'Combine estado com ponto turístico', pairs: 10, time: 180 },
             { id: 9, name: 'Desafio Final', desc: 'Tudo misturado! Boa sorte!', pairs: 12, time: 240 }
         ];
 
-        // ===== INICIALIZAÇÃO =====
+        // ===== INICIALIZAÇêO =====
         function init() {
             loadProgress();
             renderPhases();
@@ -871,7 +871,7 @@
             }));
         }
 
-        // ===== NAVEGAÇÃO =====
+        // ===== NAVEGAÇêO =====
         function showTitle() {
             document.getElementById('title-screen').style.display = 'flex';
             document.getElementById('phase-select').style.display = 'none';
@@ -985,11 +985,11 @@
                     card1Content = { type: 'sigla', text: estado.sigla, estado };
                     card2Content = { type: 'capital', text: estado.capital, estado };
                     break;
-                case 5: // Estado ↔ Região
+                case 5: // Estado ↔ Regiêo
                     card1Content = { type: 'nome', text: estado.nome, estado };
                     card2Content = { type: 'regiao', text: estado.regiao, estado };
                     break;
-                case 6: // Estado ↔ População
+                case 6: // Estado ↔ Populaçêo
                     card1Content = { type: 'sigla', text: estado.sigla, estado };
                     card2Content = { type: 'populacao', text: estado.populacao, estado };
                     break;
@@ -1105,7 +1105,7 @@
             document.getElementById('state-name').textContent = `${estado.nome} (${estado.sigla})`;
             document.getElementById('state-capital').textContent = `Capital: ${estado.capital}`;
             document.getElementById('state-map').textContent = estado.mapa;
-            document.getElementById('state-facts').textContent = `Região: ${estado.regiao} | População: ${estado.populacao} | Prato típico: ${estado.culinaria}`;
+            document.getElementById('state-facts').textContent = `Regiêo: ${estado.regiao} | Populaçêo: ${estado.populacao} | Prato típico: ${estado.culinaria}`;
 
             panel.classList.add('show');
             setTimeout(() => panel.classList.remove('show'), 4000);
@@ -1162,10 +1162,10 @@
             if (won) {
                 if (accuracy === 1) {
                     finalScore *= 5;
-                    bonusText = '🌟 PERFEITO! Pontuação x5!';
+                    bonusText = '🌟 PERFEITO! Pontuaçêo x5!';
                 } else if (accuracy >= 0.9) {
                     finalScore *= 2;
-                    bonusText = '✨ Excelente! Pontuação x2!';
+                    bonusText = '✨ Excelente! Pontuaçêo x2!';
                 }
             }
 
@@ -1208,7 +1208,7 @@
             document.getElementById('stat-wrong').textContent = gameState.wrongMatches;
             document.getElementById('stat-time').textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
-            // Esconder botão "Próxima Fase" se for a última ou perdeu
+            // Esconder botêo "Próxima Fase" se for a última ou perdeu
             const btnNext = document.getElementById('btn-next');
             btnNext.style.display = (won && gameState.currentPhase < 9) ? 'block' : 'none';
 

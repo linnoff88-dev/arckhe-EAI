@@ -48,7 +48,7 @@ const GameData = {
   labs: [
     {
       id: 'intro',
-      name: 'Introdução à Química',
+      name: 'Introduçêo à Química',
       icon: '📚',
       color: '#4CAF50',
       levels: 50,
@@ -62,7 +62,7 @@ const GameData = {
       color: '#FF9800',
       levels: 50,
       unlockLevel: 10,
-      topics: ['Síntese', 'Decomposição', 'Troca Simples', 'Troca Dupla']
+      topics: ['Síntese', 'Decomposiçêo', 'Troca Simples', 'Troca Dupla']
     },
     {
       id: 'acids',
@@ -71,7 +71,7 @@ const GameData = {
       color: '#9C27B0',
       levels: 50,
       unlockLevel: 20,
-      topics: ['pH', 'Indicadores', 'Neutralização', 'Titulação']
+      topics: ['pH', 'Indicadores', 'Neutralizaçêo', 'Titulaçêo']
     },
     {
       id: 'organic',
@@ -89,7 +89,7 @@ const GameData = {
       color: '#00BCD4',
       levels: 50,
       unlockLevel: 50,
-      topics: ['Concentração', 'Diluição', 'Solubilidade', 'Coloides']
+      topics: ['Concentraçêo', 'Diluiçêo', 'Solubilidade', 'Coloides']
     },
     {
       id: 'thermo',
@@ -107,7 +107,7 @@ const GameData = {
       color: '#FFEB3B',
       levels: 50,
       unlockLevel: 80,
-      topics: ['Oxidação', 'Redução', 'Pilhas', 'Eletrólise']
+      topics: ['Oxidaçêo', 'Reduçêo', 'Pilhas', 'Eletrólise']
     },
     {
       id: 'nuclear',
@@ -116,14 +116,14 @@ const GameData = {
       color: '#673AB7',
       levels: 50,
       unlockLevel: 100,
-      topics: ['Radioatividade', 'Fissão', 'Fusão', 'Meia-vida']
+      topics: ['Radioatividade', 'Fissêo', 'Fusêo', 'Meia-vida']
     }
   ],
 
   // Reações químicas
   reactions: [
-    { reactants: ['H', 'H', 'O'], products: ['H2O'], name: 'Formação da Água', type: 'synthesis' },
-    { reactants: ['Na', 'Cl'], products: ['NaCl'], name: 'Formação do Sal', type: 'synthesis' },
+    { reactants: ['H', 'H', 'O'], products: ['H2O'], name: 'Formaçêo da Água', type: 'synthesis' },
+    { reactants: ['Na', 'Cl'], products: ['NaCl'], name: 'Formaçêo do Sal', type: 'synthesis' },
     { reactants: ['C', 'O', 'O'], products: ['CO2'], name: 'Dióxido de Carbono', type: 'synthesis' },
     { reactants: ['Fe', 'O', 'O'], products: ['FeO2'], name: 'Ferrugem', type: 'oxidation' },
     { reactants: ['H', 'Cl'], products: ['HCl'], name: 'Ácido Clorídrico', type: 'synthesis' },
@@ -213,14 +213,14 @@ const ChemistryProblems = {
 
       case 'element_category':
         const categories = {
-          'nonmetal': 'Não-metal',
+          'nonmetal': 'Nêo-metal',
           'noble': 'Gás Nobre',
           'alkali': 'Metal Alcalino',
           'alkaline': 'Metal Alcalino Terroso',
           'metalloid': 'Metaloide',
           'metal': 'Metal',
           'halogen': 'Halogênio',
-          'transition': 'Metal de Transição'
+          'transition': 'Metal de Transiçêo'
         };
         question = `O ${element.name} é classificado como:`;
         answer = categories[element.category];
@@ -291,7 +291,7 @@ const ChemistryProblems = {
         break;
 
       case 'product':
-        question = 'Na reação: Na + Cl₂ →\nQual o produto formado?';
+        question = 'Na reaçêo: Na + Cl₂ →\nQual o produto formado?';
         answer = 'NaCl';
         options = ['NaCl', 'NaCl₂', 'Na₂Cl', 'Na₂Cl₂'];
         break;
@@ -299,14 +299,14 @@ const ChemistryProblems = {
       case 'type':
         const reactions = [
           { eq: 'A + B → AB', type: 'Síntese' },
-          { eq: 'AB → A + B', type: 'Decomposição' },
+          { eq: 'AB → A + B', type: 'Decomposiçêo' },
           { eq: 'A + BC → AC + B', type: 'Troca Simples' },
           { eq: 'AB + CD → AD + CB', type: 'Troca Dupla' }
         ];
         const r = reactions[Math.floor(Math.random() * reactions.length)];
-        question = `Que tipo de reação é:\n${r.eq}`;
+        question = `Que tipo de reaçêo é:\n${r.eq}`;
         answer = r.type;
-        options = ['Síntese', 'Decomposição', 'Troca Simples', 'Troca Dupla'];
+        options = ['Síntese', 'Decomposiçêo', 'Troca Simples', 'Troca Dupla'];
         break;
 
       case 'reagent':
@@ -330,7 +330,7 @@ const ChemistryProblems = {
     switch(type) {
       case 'ph_scale':
         const ph = Math.floor(Math.random() * 14) + 1;
-        question = `Uma solução com pH ${ph} é:`;
+        question = `Uma soluçêo com pH ${ph} é:`;
         if (ph < 7) answer = 'Ácida';
         else if (ph > 7) answer = 'Básica';
         else answer = 'Neutra';
@@ -426,21 +426,21 @@ const ChemistryProblems = {
         const mass = (Math.floor(Math.random() * 5) + 1) * 10;
         const volume = Math.floor(Math.random() * 5) + 1;
         const conc = mass / volume;
-        question = `Concentração: ${mass}g de soluto em ${volume}L de solução. C = ?`;
+        question = `Concentraçêo: ${mass}g de soluto em ${volume}L de soluçêo. C = ?`;
         answer = conc + ' g/L';
         options = [conc + ' g/L', (conc * 2) + ' g/L', (conc / 2) + ' g/L', (conc + 10) + ' g/L'];
         break;
 
       case 'dilution':
-        question = 'Ao diluir uma solução, a concentração:';
+        question = 'Ao diluir uma soluçêo, a concentraçêo:';
         answer = 'Diminui';
-        options = ['Aumenta', 'Diminui', 'Não muda', 'Depende'];
+        options = ['Aumenta', 'Diminui', 'Nêo muda', 'Depende'];
         break;
 
       case 'solubility':
         question = 'A solubilidade geralmente aumenta com:';
         answer = 'Aumento da temperatura';
-        options = ['Aumento da temperatura', 'Diminuição da temperatura', 'Pressão', 'Luz'];
+        options = ['Aumento da temperatura', 'Diminuiçêo da temperatura', 'Pressêo', 'Luz'];
         break;
     }
 
@@ -457,21 +457,21 @@ const ChemistryProblems = {
     switch(type) {
       case 'endo_exo':
         const reactions = [
-          { name: 'Combustão', type: 'Exotérmica' },
+          { name: 'Combustêo', type: 'Exotérmica' },
           { name: 'Fotossíntese', type: 'Endotérmica' },
-          { name: 'Dissolução de NaOH', type: 'Exotérmica' },
-          { name: 'Fusão do gelo', type: 'Endotérmica' }
+          { name: 'Dissoluçêo de NaOH', type: 'Exotérmica' },
+          { name: 'Fusêo do gelo', type: 'Endotérmica' }
         ];
         const r = reactions[Math.floor(Math.random() * reactions.length)];
-        question = `A ${r.name} é uma reação:`;
+        question = `A ${r.name} é uma reaçêo:`;
         answer = r.type;
         options = ['Exotérmica', 'Endotérmica', 'Isotérmica', 'Adiabática'];
         break;
 
       case 'enthalpy':
-        question = 'Se ΔH < 0, a reação é:';
+        question = 'Se ΔH < 0, a reaçêo é:';
         answer = 'Exotérmica';
-        options = ['Exotérmica', 'Endotérmica', 'Espontânea', 'Não-espontânea'];
+        options = ['Exotérmica', 'Endotérmica', 'Espontânea', 'Nêo-espontânea'];
         break;
 
       case 'hess':
@@ -493,21 +493,21 @@ const ChemistryProblems = {
 
     switch(type) {
       case 'oxidation':
-        question = 'Na oxidação, o elemento:';
+        question = 'Na oxidaçêo, o elemento:';
         answer = 'Perde elétrons';
         options = ['Perde elétrons', 'Ganha elétrons', 'Perde prótons', 'Ganha prótons'];
         break;
 
       case 'reduction':
-        question = 'Na redução, o NOX:';
+        question = 'Na reduçêo, o NOX:';
         answer = 'Diminui';
-        options = ['Aumenta', 'Diminui', 'Não muda', 'Zera'];
+        options = ['Aumenta', 'Diminui', 'Nêo muda', 'Zera'];
         break;
 
       case 'cell':
         question = 'Em uma pilha, o cátodo é o eletrodo:';
-        answer = 'Positivo (redução)';
-        options = ['Positivo (redução)', 'Negativo (redução)', 'Positivo (oxidação)', 'Negativo (oxidação)'];
+        answer = 'Positivo (reduçêo)';
+        options = ['Positivo (reduçêo)', 'Negativo (reduçêo)', 'Positivo (oxidaçêo)', 'Negativo (oxidaçêo)'];
         break;
     }
 
@@ -523,7 +523,7 @@ const ChemistryProblems = {
 
     switch(type) {
       case 'decay':
-        question = 'A emissão de partículas alfa consiste em:';
+        question = 'A emissêo de partículas alfa consiste em:';
         answer = '2 prótons + 2 nêutrons';
         options = ['2 prótons + 2 nêutrons', '1 elétron', '1 pósitron', '2 elétrons'];
         break;
@@ -539,8 +539,8 @@ const ChemistryProblems = {
       case 'fission_fusion':
         const isFission = Math.random() > 0.5;
         question = isFission
-          ? 'Na fissão nuclear, um núcleo pesado:'
-          : 'Na fusão nuclear, núcleos leves:';
+          ? 'Na fissêo nuclear, um núcleo pesado:'
+          : 'Na fusêo nuclear, núcleos leves:';
         answer = isFission ? 'Se divide em menores' : 'Se unem formando maior';
         options = ['Se divide em menores', 'Se unem formando maior', 'Permanece estável', 'Emite luz'];
         break;
@@ -598,7 +598,7 @@ function createNewPlayer(name) {
   };
 }
 
-// ==================== RENDERIZAÇÃO ====================
+// ==================== RENDERIZAÇêO ====================
 function render() {
   ctx.fillStyle = '#0a1628';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -1165,11 +1165,11 @@ function renderPeriodicTable() {
 
   // Legenda
   const categories = [
-    { name: 'Não-metal', color: '#ff6b6b' },
+    { name: 'Nêo-metal', color: '#ff6b6b' },
     { name: 'Metal Alcalino', color: '#ff9f43' },
     { name: 'Gás Nobre', color: '#ffd93d' },
     { name: 'Halogênio', color: '#00b894' },
-    { name: 'Metal de Transição', color: '#d63031' }
+    { name: 'Metal de Transiçêo', color: '#d63031' }
   ];
 
   ctx.font = '10px Arial';

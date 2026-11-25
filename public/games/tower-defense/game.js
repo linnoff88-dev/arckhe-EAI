@@ -57,7 +57,7 @@ class TowerDefenseGame {
         description: 'Tiro rápido, dano baixo',
       },
       cannon: {
-        name: 'Canhão',
+        name: 'Canhêo',
         cost: 100,
         damage: 40,
         range: 100,
@@ -79,7 +79,7 @@ class TowerDefenseGame {
         projectileSpeed: 6,
         slow: 0.5,
         slowDuration: 2,
-        description: 'Causa lentidão',
+        description: 'Causa lentidêo',
       },
       tesla: {
         name: 'Tesla',
@@ -220,7 +220,7 @@ class TowerDefenseGame {
 
   handleClick(x, y) {
     if (this.state === 'menu') {
-      // Botão jogar
+      // Botêo jogar
       const cx = this.canvas.width / 2;
       const cy = this.canvas.height / 2;
       if (x > cx - 100 && x < cx + 100 && y > cy && y < cy + 60) {
@@ -254,7 +254,7 @@ class TowerDefenseGame {
         }
       });
 
-      // Botão de próxima wave
+      // Botêo de próxima wave
       if (this.betweenWaves) {
         const waveBtn = this.canvas.width - 120;
         if (x > waveBtn && x < waveBtn + 100) {
@@ -314,7 +314,7 @@ class TowerDefenseGame {
 
     this.towers.push(tower);
 
-    // Partículas de construção
+    // Partículas de construçêo
     for (let i = 0; i < 10; i++) {
       this.particles.push({
         x: tower.x,
@@ -497,7 +497,7 @@ class TowerDefenseGame {
       }
     }
 
-    // Mover em direção ao próximo ponto do caminho
+    // Mover em direçêo ao próximo ponto do caminho
     if (enemy.pathIndex < this.path.length) {
       const target = this.path[enemy.pathIndex];
       const targetX = target.x * this.gridSize + this.gridSize / 2;
@@ -615,7 +615,7 @@ class TowerDefenseGame {
         }
       });
 
-      // Efeito visual de explosão
+      // Efeito visual de explosêo
       for (let i = 0; i < 15; i++) {
         const angle = (Math.PI * 2 * i) / 15;
         this.particles.push({
@@ -782,7 +782,7 @@ class TowerDefenseGame {
     ctx.font = '60px Arial';
     ctx.fillText('🏰', cx, cy - 10);
 
-    // Botão
+    // Botêo
     const gradient = ctx.createLinearGradient(cx - 100, cy, cx + 100, cy);
     gradient.addColorStop(0, '#8b5cf6');
     gradient.addColorStop(1, '#ec4899');
@@ -1022,7 +1022,7 @@ class TowerDefenseGame {
       const btnX = 20 + i * 90;
       const btnY = this.canvas.height - 60;
 
-      // Fundo do botão
+      // Fundo do botêo
       const canAfford = this.money >= tower.cost;
       const isSelected = this.selectedTowerType === key;
 
@@ -1050,7 +1050,7 @@ class TowerDefenseGame {
       ctx.fillText(`${tower.cost}`, btnX + 60, btnY + 32);
     });
 
-    // Botão de próxima wave
+    // Botêo de próxima wave
     if (this.betweenWaves && this.state === 'playing') {
       const waveBtn = this.canvas.width - 120;
       const waveBtnY = this.canvas.height - 55;

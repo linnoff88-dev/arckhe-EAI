@@ -103,7 +103,7 @@ export default function HomePage() {
 
             {/* Subtitle */}
             <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
-              A plataforma que combina diversão e aprendizado. Jogos casuais,
+              A plataforma que combina diversêo e aprendizado. Jogos casuais,
               conteúdo educacional e desenvolvimento profissional em um só lugar.
             </p>
 
@@ -280,7 +280,7 @@ export default function HomePage() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-yellow-500 to-amber-600 shadow-lg shadow-amber-500/25 mb-6">
                 <Zap className="h-8 w-8 text-white" />
               </div>
-              <h3 className="font-display text-xl font-bold text-white mb-3">Zero Fricção</h3>
+              <h3 className="font-display text-xl font-bold text-white mb-3">Zero Fricçêo</h3>
               <p className="text-white/50">
                 Jogue instantaneamente, sem cadastro ou downloads necessários
               </p>
@@ -322,7 +322,7 @@ export default function HomePage() {
                 Pronto para começar?
               </h2>
               <p className="text-white/80 max-w-xl mx-auto mb-8">
-                Escolha sua área favorita e comece a jogar agora mesmo. Sem cadastro, sem complicação.
+                Escolha sua área favorita e comece a jogar agora mesmo. Sem cadastro, sem complicaçêo.
               </p>
               <div className="flex items-center justify-center gap-4 flex-wrap">
                 <Link

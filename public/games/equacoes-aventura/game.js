@@ -737,7 +737,7 @@
         ctx.font = '15px Segoe UI, sans-serif';
         const descs = [
             'Resolva equações de dificuldade crescente.',
-            'Ganhe pontos, mantenha combos e não perca suas vidas!',
+            'Ganhe pontos, mantenha combos e nêo perca suas vidas!',
             '4 níveis: equações simples até equações quadráticas.'
         ];
         descs.forEach((d, i) => {
@@ -805,7 +805,7 @@
 
         ctx.fillStyle = '#fbbf24';
         ctx.font = 'bold 22px Segoe UI, sans-serif';
-        ctx.fillText(`Pontuação: ${score}`, w / 2, h * 0.45);
+        ctx.fillText(`Pontuaçêo: ${score}`, w / 2, h * 0.45);
 
         ctx.fillStyle = 'rgba(255,255,255,0.6)';
         ctx.font = '18px Segoe UI, sans-serif';
@@ -837,7 +837,7 @@
 
         ctx.fillStyle = '#fbbf24';
         ctx.font = 'bold 24px Segoe UI, sans-serif';
-        ctx.fillText(`Pontuação Final: ${score}`, w / 2, h * 0.42);
+        ctx.fillText(`Pontuaçêo Final: ${score}`, w / 2, h * 0.42);
 
         ctx.fillStyle = 'rgba(255,255,255,0.6)';
         ctx.font = '18px Segoe UI, sans-serif';
@@ -878,7 +878,7 @@
 
         ctx.fillStyle = '#fbbf24';
         ctx.font = 'bold 28px Segoe UI, sans-serif';
-        ctx.fillText(`Pontuação Final: ${score}`, w / 2, h * 0.48);
+        ctx.fillText(`Pontuaçêo Final: ${score}`, w / 2, h * 0.48);
 
         // Rating
         let rating = '';

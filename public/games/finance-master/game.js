@@ -51,120 +51,120 @@ const QUESTIONS = {
     0: [
         { q: 'O que é reserva de emergência?', a: ['Dinheiro para imprevistos', 'Investimento', 'Dívida', 'Salário'], correct: 0 },
         { q: 'Quantos meses de despesas deve ter a reserva?', a: ['6-12 meses', '1 mês', '1 ano', '5 anos'], correct: 0 },
-        { q: 'O que é educação financeira?', a: ['Aprender sobre dinheiro', 'Curso de economia', 'MBA', 'Contabilidade'], correct: 0 },
+        { q: 'O que é educaçêo financeira?', a: ['Aprender sobre dinheiro', 'Curso de economia', 'MBA', 'Contabilidade'], correct: 0 },
         { q: 'Qual é a regra 50-30-20?', a: ['Necessidades, desejos, poupança', 'Investir tudo', 'Gastar tudo', 'Poupar tudo'], correct: 0 },
-        { q: 'O que são juros compostos?', a: ['Juros sobre juros', 'Juros simples', 'Sem juros', 'Taxa fixa'], correct: 0 },
-        { q: 'O que é score de crédito?', a: ['Pontuação financeira', 'Nota escolar', 'Salário', 'Patrimônio'], correct: 0 },
-        { q: 'O que é planejamento financeiro?', a: ['Organizar finanças', 'Gastar mais', 'Não planejar', 'Endividar'], correct: 0 },
-        { q: 'O que é inflação?', a: ['Aumento geral de preços', 'Queda de preços', 'Estabilidade', 'Deflação'], correct: 0 },
-        { q: 'O que significa pagar-se primeiro?', a: ['Poupar antes de gastar', 'Pagar dívidas', 'Gastar primeiro', 'Não poupar'], correct: 0 },
+        { q: 'O que sêo juros compostos?', a: ['Juros sobre juros', 'Juros simples', 'Sem juros', 'Taxa fixa'], correct: 0 },
+        { q: 'O que é score de crédito?', a: ['Pontuaçêo financeira', 'Nota escolar', 'Salário', 'Patrimônio'], correct: 0 },
+        { q: 'O que é planejamento financeiro?', a: ['Organizar finanças', 'Gastar mais', 'Nêo planejar', 'Endividar'], correct: 0 },
+        { q: 'O que é inflaçêo?', a: ['Aumento geral de preços', 'Queda de preços', 'Estabilidade', 'Deflaçêo'], correct: 0 },
+        { q: 'O que significa pagar-se primeiro?', a: ['Poupar antes de gastar', 'Pagar dívidas', 'Gastar primeiro', 'Nêo poupar'], correct: 0 },
         { q: 'O que é meta SMART?', a: ['Específica, mensurável, atingível, relevante, temporal', 'Inteligente', 'Rápida', 'Fácil'], correct: 0 }
     ],
     1: [
         { q: 'O que é orçamento?', a: ['Plano de receitas e despesas', 'Lista de compras', 'Salário', 'Dívida'], correct: 0 },
-        { q: 'O que são despesas fixas?', a: ['Gastos regulares iguais', 'Gastos variáveis', 'Investimentos', 'Receitas'], correct: 0 },
-        { q: 'O que são despesas variáveis?', a: ['Gastos que mudam', 'Gastos fixos', 'Salário', 'Poupança'], correct: 0 },
+        { q: 'O que sêo despesas fixas?', a: ['Gastos regulares iguais', 'Gastos variáveis', 'Investimentos', 'Receitas'], correct: 0 },
+        { q: 'O que sêo despesas variáveis?', a: ['Gastos que mudam', 'Gastos fixos', 'Salário', 'Poupança'], correct: 0 },
         { q: 'O que é fluxo de caixa?', a: ['Entrada e saída de dinheiro', 'Conta bancária', 'Investimento', 'Dívida'], correct: 0 },
         { q: 'O que é saldo?', a: ['Diferença entre receitas e despesas', 'Apenas receitas', 'Apenas despesas', 'Dívida'], correct: 0 },
         { q: 'O que é receita líquida?', a: ['Receita após descontos', 'Receita bruta', 'Despesa', 'Lucro'], correct: 0 },
-        { q: 'Por que fazer orçamento?', a: ['Controlar gastos', 'Gastar mais', 'Não é necessário', 'Complicar vida'], correct: 0 },
+        { q: 'Por que fazer orçamento?', a: ['Controlar gastos', 'Gastar mais', 'Nêo é necessário', 'Complicar vida'], correct: 0 },
         { q: 'O que é déficit orçamentário?', a: ['Gastar mais que ganha', 'Poupar', 'Investir', 'Equilíbrio'], correct: 0 },
         { q: 'O que é superávit?', a: ['Sobra de dinheiro', 'Falta de dinheiro', 'Dívida', 'Empréstimo'], correct: 0 },
-        { q: 'O que cortar primeiro no orçamento?', a: ['Supérfluos', 'Necessidades', 'Alimentação', 'Moradia'], correct: 0 }
+        { q: 'O que cortar primeiro no orçamento?', a: ['Supérfluos', 'Necessidades', 'Alimentaçêo', 'Moradia'], correct: 0 }
     ],
     2: [
-        { q: 'O que é diversificação?', a: ['Não colocar tudo em um lugar', 'Investir em um ativo', 'Não investir', 'Poupar apenas'], correct: 0 },
+        { q: 'O que é diversificaçêo?', a: ['Nêo colocar tudo em um lugar', 'Investir em um ativo', 'Nêo investir', 'Poupar apenas'], correct: 0 },
         { q: 'O que é risco?', a: ['Possibilidade de perda', 'Garantia de ganho', 'Sem perdas', 'Certeza'], correct: 0 },
         { q: 'O que é retorno?', a: ['Ganho do investimento', 'Perda', 'Risco', 'Capital'], correct: 0 },
         { q: 'O que é liquidez?', a: ['Facilidade de converter em dinheiro', 'Solidez', 'Risco', 'Rentabilidade'], correct: 0 },
-        { q: 'O que é perfil de investidor?', a: ['Tolerância ao risco', 'Idade', 'Profissão', 'Salário'], correct: 0 },
-        { q: 'O que é investidor conservador?', a: ['Evita riscos', 'Aceita riscos', 'Não investe', 'Especula'], correct: 0 },
-        { q: 'O que é investidor arrojado?', a: ['Aceita mais riscos', 'Evita riscos', 'Não investe', 'Conservador'], correct: 0 },
+        { q: 'O que é perfil de investidor?', a: ['Tolerância ao risco', 'Idade', 'Profissêo', 'Salário'], correct: 0 },
+        { q: 'O que é investidor conservador?', a: ['Evita riscos', 'Aceita riscos', 'Nêo investe', 'Especula'], correct: 0 },
+        { q: 'O que é investidor arrojado?', a: ['Aceita mais riscos', 'Evita riscos', 'Nêo investe', 'Conservador'], correct: 0 },
         { q: 'O que é horizonte de investimento?', a: ['Tempo que pretende investir', 'Valor investido', 'Risco', 'Retorno'], correct: 0 },
         { q: 'O que é carteira de investimentos?', a: ['Conjunto de ativos', 'Conta bancária', 'Salário', 'Dívida'], correct: 0 },
-        { q: 'O que é alocação de ativos?', a: ['Distribuição do investimento', 'Um único ativo', 'Não investir', 'Gastar'], correct: 0 }
+        { q: 'O que é alocaçêo de ativos?', a: ['Distribuiçêo do investimento', 'Um único ativo', 'Nêo investir', 'Gastar'], correct: 0 }
     ],
     3: [
-        { q: 'O que é ação?', a: ['Parte de uma empresa', 'Dívida', 'Empréstimo', 'Conta'], correct: 0 },
+        { q: 'O que é açêo?', a: ['Parte de uma empresa', 'Dívida', 'Empréstimo', 'Conta'], correct: 0 },
         { q: 'O que é bolsa de valores?', a: ['Mercado de ações', 'Banco', 'Loja', 'Governo'], correct: 0 },
         { q: 'O que é B3?', a: ['Bolsa brasileira', 'Banco', 'Empresa', 'Índice'], correct: 0 },
-        { q: 'O que é Ibovespa?', a: ['Índice da bolsa brasileira', 'Ação', 'Empresa', 'Banco'], correct: 0 },
-        { q: 'O que é dividendo?', a: ['Parte do lucro distribuída', 'Preço da ação', 'Taxa', 'Imposto'], correct: 0 },
-        { q: 'O que é day trade?', a: ['Comprar e vender no mesmo dia', 'Investir longo prazo', 'Poupar', 'Não operar'], correct: 0 },
-        { q: 'O que é swing trade?', a: ['Operações de dias/semanas', 'Day trade', 'Longo prazo', 'Não operar'], correct: 0 },
-        { q: 'O que é análise fundamentalista?', a: ['Avaliar fundamentos da empresa', 'Gráficos', 'Sorte', 'Intuição'], correct: 0 },
-        { q: 'O que é análise técnica?', a: ['Análise de gráficos', 'Fundamentos', 'Sorte', 'Intuição'], correct: 0 },
+        { q: 'O que é Ibovespa?', a: ['Índice da bolsa brasileira', 'Açêo', 'Empresa', 'Banco'], correct: 0 },
+        { q: 'O que é dividendo?', a: ['Parte do lucro distribuída', 'Preço da açêo', 'Taxa', 'Imposto'], correct: 0 },
+        { q: 'O que é day trade?', a: ['Comprar e vender no mesmo dia', 'Investir longo prazo', 'Poupar', 'Nêo operar'], correct: 0 },
+        { q: 'O que é swing trade?', a: ['Operações de dias/semanas', 'Day trade', 'Longo prazo', 'Nêo operar'], correct: 0 },
+        { q: 'O que é análise fundamentalista?', a: ['Avaliar fundamentos da empresa', 'Gráficos', 'Sorte', 'Intuiçêo'], correct: 0 },
+        { q: 'O que é análise técnica?', a: ['Análise de gráficos', 'Fundamentos', 'Sorte', 'Intuiçêo'], correct: 0 },
         { q: 'O que é IPO?', a: ['Oferta pública inicial', 'Venda de ações', 'Fechamento', 'Falência'], correct: 0 }
     ],
     4: [
         { q: 'O que é renda fixa?', a: ['Rentabilidade previsível', 'Renda variável', 'Sem rentabilidade', 'Ações'], correct: 0 },
         { q: 'O que é Tesouro Direto?', a: ['Títulos do governo', 'Ações', 'Fundos', 'Poupança'], correct: 0 },
-        { q: 'O que é CDB?', a: ['Certificado de depósito bancário', 'Ação', 'Fundo', 'Criptomoeda'], correct: 0 },
-        { q: 'O que é LCI?', a: ['Letra de crédito imobiliário', 'Ação', 'Fundo', 'Tesouro'], correct: 0 },
-        { q: 'O que é LCA?', a: ['Letra de crédito agrícola', 'Ação', 'Fundo', 'Tesouro'], correct: 0 },
-        { q: 'O que é Selic?', a: ['Taxa básica de juros', 'Índice de ações', 'Inflação', 'Câmbio'], correct: 0 },
-        { q: 'O que é CDI?', a: ['Taxa de referência interbancária', 'Ação', 'Fundo', 'Título'], correct: 0 },
-        { q: 'O que é IPCA?', a: ['Índice de inflação', 'Taxa de juros', 'Índice de ações', 'Câmbio'], correct: 0 },
+        { q: 'O que é CDB?', a: ['Certificado de depósito bancário', 'Açêo', 'Fundo', 'Criptomoeda'], correct: 0 },
+        { q: 'O que é LCI?', a: ['Letra de crédito imobiliário', 'Açêo', 'Fundo', 'Tesouro'], correct: 0 },
+        { q: 'O que é LCA?', a: ['Letra de crédito agrícola', 'Açêo', 'Fundo', 'Tesouro'], correct: 0 },
+        { q: 'O que é Selic?', a: ['Taxa básica de juros', 'Índice de ações', 'Inflaçêo', 'Câmbio'], correct: 0 },
+        { q: 'O que é CDI?', a: ['Taxa de referência interbancária', 'Açêo', 'Fundo', 'Título'], correct: 0 },
+        { q: 'O que é IPCA?', a: ['Índice de inflaçêo', 'Taxa de juros', 'Índice de ações', 'Câmbio'], correct: 0 },
         { q: 'O que é FGC?', a: ['Garantia de até R$250 mil', 'Taxa', 'Índice', 'Imposto'], correct: 0 },
-        { q: 'O que é marcação a mercado?', a: ['Atualização do valor', 'Taxa fixa', 'Sem atualização', 'Desconto'], correct: 0 }
+        { q: 'O que é marcaçêo a mercado?', a: ['Atualizaçêo do valor', 'Taxa fixa', 'Sem atualizaçêo', 'Desconto'], correct: 0 }
     ],
     5: [
-        { q: 'O que é fundo de investimento?', a: ['Dinheiro de vários investidores', 'Conta individual', 'Ação única', 'Poupança'], correct: 0 },
+        { q: 'O que é fundo de investimento?', a: ['Dinheiro de vários investidores', 'Conta individual', 'Açêo única', 'Poupança'], correct: 0 },
         { q: 'O que é gestor de fundo?', a: ['Quem administra o fundo', 'Investidor', 'Banco', 'Corretora'], correct: 0 },
-        { q: 'O que é taxa de administração?', a: ['Custo para gerir o fundo', 'Rentabilidade', 'Imposto', 'Saldo'], correct: 0 },
-        { q: 'O que é cota?', a: ['Fração do fundo', 'Fundo inteiro', 'Taxa', 'Lucro'], correct: 0 },
+        { q: 'O que é taxa de administraçêo?', a: ['Custo para gerir o fundo', 'Rentabilidade', 'Imposto', 'Saldo'], correct: 0 },
+        { q: 'O que é cota?', a: ['Fraçêo do fundo', 'Fundo inteiro', 'Taxa', 'Lucro'], correct: 0 },
         { q: 'O que é fundo multimercado?', a: ['Investe em vários ativos', 'Só ações', 'Só renda fixa', 'Só câmbio'], correct: 0 },
         { q: 'O que é FII?', a: ['Fundo imobiliário', 'Fundo de ações', 'Fundo cambial', 'Fundo de renda fixa'], correct: 0 },
-        { q: 'O que é ETF?', a: ['Fundo de índice', 'Ação', 'CDB', 'Tesouro'], correct: 0 },
-        { q: 'O que é come-cotas?', a: ['Antecipação de IR em fundos', 'Taxa', 'Cota', 'Lucro'], correct: 0 },
+        { q: 'O que é ETF?', a: ['Fundo de índice', 'Açêo', 'CDB', 'Tesouro'], correct: 0 },
+        { q: 'O que é come-cotas?', a: ['Antecipaçêo de IR em fundos', 'Taxa', 'Cota', 'Lucro'], correct: 0 },
         { q: 'O que é benchmark?', a: ['Referência de desempenho', 'Taxa', 'Cota', 'Fundo'], correct: 0 },
         { q: 'O que é fundo DI?', a: ['Segue CDI/Selic', 'Fundo de ações', 'Fundo cambial', 'Multimercado'], correct: 0 }
     ],
     6: [
-        { q: 'O que é Bitcoin?', a: ['Criptomoeda descentralizada', 'Moeda física', 'Banco', 'Ação'], correct: 0 },
+        { q: 'O que é Bitcoin?', a: ['Criptomoeda descentralizada', 'Moeda física', 'Banco', 'Açêo'], correct: 0 },
         { q: 'O que é blockchain?', a: ['Tecnologia de registro', 'Moeda', 'Banco', 'Empresa'], correct: 0 },
         { q: 'O que é carteira digital?', a: ['Armazena criptomoedas', 'Carteira física', 'Banco', 'Corretora'], correct: 0 },
-        { q: 'O que é mineração?', a: ['Processo de validação', 'Escavação', 'Investimento', 'Trading'], correct: 0 },
-        { q: 'O que é Ethereum?', a: ['Plataforma de contratos inteligentes', 'Bitcoin', 'Banco', 'Ação'], correct: 0 },
-        { q: 'O que é altcoin?', a: ['Criptomoedas alternativas', 'Bitcoin', 'Moeda física', 'Ação'], correct: 0 },
-        { q: 'O que é stablecoin?', a: ['Cripto pareada a moeda fiat', 'Bitcoin', 'Altcoin volátil', 'Ação'], correct: 0 },
-        { q: 'O que é DeFi?', a: ['Finanças descentralizadas', 'Banco tradicional', 'Ação', 'Fundo'], correct: 0 },
-        { q: 'O que é NFT?', a: ['Token não fungível', 'Criptomoeda', 'Bitcoin', 'Ação'], correct: 0 },
-        { q: 'O que é volatilidade em cripto?', a: ['Variação intensa de preço', 'Estabilidade', 'Garantia', 'Segurança'], correct: 0 }
+        { q: 'O que é mineraçêo?', a: ['Processo de validaçêo', 'Escavaçêo', 'Investimento', 'Trading'], correct: 0 },
+        { q: 'O que é Ethereum?', a: ['Plataforma de contratos inteligentes', 'Bitcoin', 'Banco', 'Açêo'], correct: 0 },
+        { q: 'O que é altcoin?', a: ['Criptomoedas alternativas', 'Bitcoin', 'Moeda física', 'Açêo'], correct: 0 },
+        { q: 'O que é stablecoin?', a: ['Cripto pareada a moeda fiat', 'Bitcoin', 'Altcoin volátil', 'Açêo'], correct: 0 },
+        { q: 'O que é DeFi?', a: ['Finanças descentralizadas', 'Banco tradicional', 'Açêo', 'Fundo'], correct: 0 },
+        { q: 'O que é NFT?', a: ['Token nêo fungível', 'Criptomoeda', 'Bitcoin', 'Açêo'], correct: 0 },
+        { q: 'O que é volatilidade em cripto?', a: ['Variaçêo intensa de preço', 'Estabilidade', 'Garantia', 'Segurança'], correct: 0 }
     ],
     7: [
-        { q: 'O que é PIB?', a: ['Produto Interno Bruto', 'Índice de ações', 'Taxa de juros', 'Inflação'], correct: 0 },
-        { q: 'O que é recessão?', a: ['Queda da atividade econômica', 'Crescimento', 'Estabilidade', 'Inflação'], correct: 0 },
+        { q: 'O que é PIB?', a: ['Produto Interno Bruto', 'Índice de ações', 'Taxa de juros', 'Inflaçêo'], correct: 0 },
+        { q: 'O que é recessêo?', a: ['Queda da atividade econômica', 'Crescimento', 'Estabilidade', 'Inflaçêo'], correct: 0 },
         { q: 'O que é política monetária?', a: ['Controle de moeda e juros', 'Impostos', 'Gastos do governo', 'Câmbio'], correct: 0 },
         { q: 'O que é política fiscal?', a: ['Impostos e gastos do governo', 'Juros', 'Moeda', 'Câmbio'], correct: 0 },
-        { q: 'O que é taxa de câmbio?', a: ['Valor de uma moeda em relação a outra', 'Juros', 'Inflação', 'PIB'], correct: 0 },
+        { q: 'O que é taxa de câmbio?', a: ['Valor de uma moeda em relaçêo a outra', 'Juros', 'Inflaçêo', 'PIB'], correct: 0 },
         { q: 'O que é déficit público?', a: ['Governo gasta mais que arrecada', 'Superávit', 'Equilíbrio', 'Lucro'], correct: 0 },
         { q: 'O que é Banco Central?', a: ['Autoridade monetária', 'Banco comercial', 'Corretora', 'Empresa'], correct: 0 },
-        { q: 'O que é taxa de desemprego?', a: ['% de pessoas sem trabalho', 'Salário', 'PIB', 'Inflação'], correct: 0 },
-        { q: 'O que é balança comercial?', a: ['Exportações menos importações', 'PIB', 'Juros', 'Inflação'], correct: 0 },
-        { q: 'O que é ciclo econômico?', a: ['Fases de expansão e contração', 'Crescimento constante', 'Recessão constante', 'Estabilidade'], correct: 0 }
+        { q: 'O que é taxa de desemprego?', a: ['% de pessoas sem trabalho', 'Salário', 'PIB', 'Inflaçêo'], correct: 0 },
+        { q: 'O que é balança comercial?', a: ['Exportações menos importações', 'PIB', 'Juros', 'Inflaçêo'], correct: 0 },
+        { q: 'O que é ciclo econômico?', a: ['Fases de expansêo e contraçêo', 'Crescimento constante', 'Recessêo constante', 'Estabilidade'], correct: 0 }
     ],
     8: [
         { q: 'O que é IR?', a: ['Imposto de Renda', 'Índice de rentabilidade', 'Taxa', 'Investimento'], correct: 0 },
         { q: 'O que é IRPF?', a: ['IR Pessoa Física', 'IR Pessoa Jurídica', 'Taxa', 'Índice'], correct: 0 },
-        { q: 'O que é dedução?', a: ['Redução na base de cálculo', 'Aumento', 'Imposto', 'Multa'], correct: 0 },
+        { q: 'O que é deduçêo?', a: ['Reduçêo na base de cálculo', 'Aumento', 'Imposto', 'Multa'], correct: 0 },
         { q: 'O que é IOF?', a: ['Imposto sobre operações financeiras', 'IR', 'IPTU', 'IPVA'], correct: 0 },
-        { q: 'O que é declaração de IR?', a: ['Informar rendimentos à Receita', 'Pagar imposto', 'Receber restituição', 'Multa'], correct: 0 },
-        { q: 'O que é restituição?', a: ['Devolução de imposto pago a mais', 'Pagamento', 'Multa', 'Taxa'], correct: 0 },
-        { q: 'O que é alíquota?', a: ['Percentual do imposto', 'Valor fixo', 'Base de cálculo', 'Dedução'], correct: 0 },
-        { q: 'O que é isenção fiscal?', a: ['Não pagar imposto em certas condições', 'Pagar mais', 'Multa', 'Taxa extra'], correct: 0 },
-        { q: 'O que é planejamento tributário?', a: ['Reduzir impostos legalmente', 'Sonegar', 'Pagar mais', 'Não declarar'], correct: 0 },
-        { q: 'O que é DARF?', a: ['Documento de arrecadação', 'Declaração', 'Multa', 'Taxa'], correct: 0 }
+        { q: 'O que é declaraçêo de IR?', a: ['Informar rendimentos à Receita', 'Pagar imposto', 'Receber restituiçêo', 'Multa'], correct: 0 },
+        { q: 'O que é restituiçêo?', a: ['Devoluçêo de imposto pago a mais', 'Pagamento', 'Multa', 'Taxa'], correct: 0 },
+        { q: 'O que é alíquota?', a: ['Percentual do imposto', 'Valor fixo', 'Base de cálculo', 'Deduçêo'], correct: 0 },
+        { q: 'O que é isençêo fiscal?', a: ['Nêo pagar imposto em certas condições', 'Pagar mais', 'Multa', 'Taxa extra'], correct: 0 },
+        { q: 'O que é planejamento tributário?', a: ['Reduzir impostos legalmente', 'Sonegar', 'Pagar mais', 'Nêo declarar'], correct: 0 },
+        { q: 'O que é DARF?', a: ['Documento de arrecadaçêo', 'Declaraçêo', 'Multa', 'Taxa'], correct: 0 }
     ],
     9: [
         { q: 'O que é empreendedor?', a: ['Cria e gerencia negócios', 'Funcionário', 'Investidor apenas', 'Governo'], correct: 0 },
         { q: 'O que é startup?', a: ['Empresa em estágio inicial', 'Empresa grande', 'Governo', 'ONG'], correct: 0 },
         { q: 'O que é plano de negócios?', a: ['Documento que descreve o negócio', 'Contrato', 'Imposto', 'Licença'], correct: 0 },
         { q: 'O que é MVP?', a: ['Produto mínimo viável', 'Produto final', 'Marketing', 'Vendas'], correct: 0 },
-        { q: 'O que é capital de giro?', a: ['Recursos para operação diária', 'Lucro', 'Investimento fixo', 'Patrimônio'], correct: 0 },
+        { q: 'O que é capital de giro?', a: ['Recursos para operaçêo diária', 'Lucro', 'Investimento fixo', 'Patrimônio'], correct: 0 },
         { q: 'O que é ponto de equilíbrio?', a: ['Receita igual às despesas', 'Lucro máximo', 'Prejuízo', 'Falência'], correct: 0 },
         { q: 'O que é margem de lucro?', a: ['% do lucro sobre vendas', 'Prejuízo', 'Despesa', 'Imposto'], correct: 0 },
-        { q: 'O que é pitch?', a: ['Apresentação rápida do negócio', 'Contrato', 'Plano longo', 'Relatório'], correct: 0 },
+        { q: 'O que é pitch?', a: ['Apresentaçêo rápida do negócio', 'Contrato', 'Plano longo', 'Relatório'], correct: 0 },
         { q: 'O que é investidor-anjo?', a: ['Investe em startups iniciais', 'Banco', 'Governo', 'ONG'], correct: 0 },
         { q: 'O que é MEI?', a: ['Microempreendedor Individual', 'Empresa grande', 'Banco', 'Investidor'], correct: 0 }
     ]
@@ -464,7 +464,7 @@ function drawQuestion() {
     ctx.fillStyle = '#FFF';
     ctx.font = 'bold 24px Arial';
     ctx.textAlign = 'center';
-    ctx.fillText(`${topic.icon} ${topic.name} - Lição ${selectedLesson + 1}`, canvas.width/2, 100);
+    ctx.fillText(`${topic.icon} ${topic.name} - Liçêo ${selectedLesson + 1}`, canvas.width/2, 100);
 
     if (!currentQuestion) {
         const questions = QUESTIONS[selectedTopic];
@@ -650,7 +650,7 @@ function drawAchievements() {
     ctx.fillText('← Voltar', 70, 107);
 
     const achievements = [
-        { name: 'Primeiro Investimento', desc: 'Complete sua primeira lição', icon: '💰', unlocked: true },
+        { name: 'Primeiro Investimento', desc: 'Complete sua primeira liçêo', icon: '💰', unlocked: true },
         { name: 'Diversificado', desc: 'Desbloqueie 3 tópicos', icon: '📊', unlocked: playerData.unlockedTopics.length >= 3 },
         { name: 'Investidor', desc: 'Alcance nível 10', icon: '📈', unlocked: level >= 10 },
         { name: 'Milionário', desc: 'R$ 10.000 de patrimônio', icon: '🤑', unlocked: playerData.netWorth >= 10000 },

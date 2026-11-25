@@ -24,7 +24,7 @@ class GalaxyConquest {
     this.showTutorial = !localStorage.getItem('eai_galaxy_tutorial_seen');
     this.tutorialPage = 0;
     this.tutorialPages = [
-      { title: 'Bem-vindo Comandante!', lines: ['Você é o líder de um', 'império galáctico em expansão!'], emoji: '🌌' },
+      { title: 'Bem-vindo Comandante!', lines: ['Você é o líder de um', 'império galáctico em expansêo!'], emoji: '🌌' },
       { title: 'Conquiste Planetas', lines: ['Explore sistemas estelares', 'e conquiste novos mundos!'], emoji: '🪐' },
       { title: 'Construa sua Frota', lines: ['Monte uma armada poderosa', 'de naves espaciais!'], emoji: '🚀' },
       { title: 'Recursos', lines: ['Colete créditos e cristais', 'para expandir seu império!'], emoji: '💎' },
@@ -60,7 +60,7 @@ class GalaxyConquest {
       { id: 'weapons', name: 'Armas', emoji: '🔫', level: 1, effect: '+10% dano', maxLevel: 10 },
       { id: 'shields', name: 'Escudos', emoji: '🛡️', level: 1, effect: '+10% HP', maxLevel: 10 },
       { id: 'engines', name: 'Motores', emoji: '⚡', level: 1, effect: '+10% velocidade', maxLevel: 10 },
-      { id: 'mining', name: 'Mineração', emoji: '⛏️', level: 1, effect: '+10% créditos', maxLevel: 10 }
+      { id: 'mining', name: 'Mineraçêo', emoji: '⛏️', level: 1, effect: '+10% créditos', maxLevel: 10 }
     ];
     this.loadTechnologies();
 

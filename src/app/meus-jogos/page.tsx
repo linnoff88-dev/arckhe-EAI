@@ -119,7 +119,7 @@ export default function MeusJogosPage() {
                 Nenhum favorito ainda
               </h2>
               <p className="text-zinc-600 max-w-md mx-auto mb-6">
-                Clique no coração nos jogos para adicioná-los aos seus favoritos!
+                Clique no coraçêo nos jogos para adicioná-los aos seus favoritos!
               </p>
               <Link
                 href="/arcade"
@@ -186,7 +186,7 @@ export default function MeusJogosPage() {
                   Nenhum jogo recente
                 </h2>
                 <p className="text-zinc-600 max-w-md mx-auto mb-6">
-                  Os jogos que você jogar aparecerão aqui!
+                  Os jogos que você jogar aparecerêo aqui!
                 </p>
                 <Link
                   href="/arcade"

@@ -68,7 +68,7 @@ Plataforma web unificada com 4 areas distintas, construidas gradualmente:
 ### Segmento Primario 1: Jogador Casual
 - **Idade:** 8-25 anos
 - **Comportamento:** Busca diversao rapida, joga no navegador entre atividades
-- **Necessidades:** Jogos que carregam rapido, sem fricção, variedade
+- **Necessidades:** Jogos que carregam rapido, sem fricçêo, variedade
 - **Goals:** Passar tempo, desestressar, competir casualmente
 - **Prioridade MVP:** SIM
 

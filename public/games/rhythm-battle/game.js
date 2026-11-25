@@ -108,7 +108,7 @@ class RhythmBattle {
     // Audio context para sons
     this.audioCtx = null;
 
-    // Animação
+    // Animaçêo
     this.lastTime = 0;
     this.animationFrame = null;
     this.beatPulse = 0;
@@ -183,7 +183,7 @@ class RhythmBattle {
         });
       }
 
-      // Variação no timing
+      // Variaçêo no timing
       const variation = difficulty === 'easy' ? 1 :
                        difficulty === 'normal' ? 0.75 :
                        difficulty === 'hard' ? 0.5 : 0.25;
@@ -277,7 +277,7 @@ class RhythmBattle {
           }
         });
 
-        // Verificar botão play
+        // Verificar botêo play
         const playBtnY = this.canvas.height - 120;
         if (y >= playBtnY - 30 && y <= playBtnY + 30) {
           this.startSong();
@@ -326,7 +326,7 @@ class RhythmBattle {
     this.particles = [];
     this.hitEffects = [];
 
-    // Regenerar padrão para variedade
+    // Regenerar padrêo para variedade
     this.currentSong.pattern = this.generatePattern(
       song.bpm,
       song.difficulty === 'Fácil' ? 30 :
@@ -416,7 +416,7 @@ class RhythmBattle {
 
     const col = this.columns[columnIndex];
 
-    // Pontuação
+    // Pontuaçêo
     let points = 0;
     switch (type) {
       case 'PERFECT':
@@ -755,7 +755,7 @@ class RhythmBattle {
       }
     });
 
-    // Botão jogar
+    // Botêo jogar
     const playBtnY = this.canvas.height - 100;
     const selectedSong = this.songs[this.selectedSongIndex];
     const canPlay = this.unlockedSongs.includes(selectedSong.id);
@@ -1064,7 +1064,7 @@ class RhythmBattle {
     ctx.fillStyle = '#4ECDC4';
     ctx.fillText(`+${50 + Math.floor(this.score / 100)} XP`, cx + 70, statsY + 180);
 
-    // Botão continuar
+    // Botêo continuar
     const btnY = this.canvas.height - 80;
     ctx.fillStyle = this.currentSong.color;
     ctx.beginPath();
@@ -1094,7 +1094,7 @@ class RhythmBattle {
   }
 }
 
-// Inicialização
+// Inicializaçêo
 window.addEventListener('load', () => {
   const canvas = document.getElementById('gameCanvas');
   if (canvas) {

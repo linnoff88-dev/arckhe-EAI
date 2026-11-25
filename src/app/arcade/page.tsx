@@ -114,7 +114,7 @@ export default function ArcadePage() {
               Nenhum jogo encontrado
             </h2>
             <p className="text-white/50 max-w-md mx-auto mb-6">
-              Não encontramos jogos nesta categoria.
+              Nêo encontramos jogos nesta categoria.
             </p>
             <button
               onClick={() => setSelectedCategory('todos')}

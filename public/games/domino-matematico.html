@@ -428,7 +428,7 @@
 
             <button class="level-btn easy" onclick="startGame('easy')">
                 ➕ Fácil
-                <small>Adição e subtração até 20</small>
+                <small>Adiçêo e subtraçêo até 20</small>
             </button>
 
             <button class="level-btn medium" onclick="startGame('medium')">
@@ -438,7 +438,7 @@
 
             <button class="level-btn hard" onclick="startGame('hard')">
                 🧮 Difícil
-                <small>Multiplicação e divisão</small>
+                <small>Multiplicaçêo e divisêo</small>
             </button>
 
             <div class="medals-container" style="margin-top: 30px;">
@@ -461,7 +461,7 @@
 
             <!-- Board -->
             <div class="board" id="board">
-                <div class="board-empty">As peças conectadas aparecerão aqui</div>
+                <div class="board-empty">As peças conectadas aparecerêo aqui</div>
             </div>
 
             <!-- Hand -->
@@ -508,7 +508,7 @@
                 </div>
                 <div class="result-item">
                     <div class="result-value" id="finalAccuracy">0%</div>
-                    <div class="result-label">Precisão</div>
+                    <div class="result-label">Precisêo</div>
                 </div>
             </div>
 
@@ -724,7 +724,7 @@
             // Render board
             const board = document.getElementById('board');
             if (boardPieces.length === 0) {
-                board.innerHTML = '<div class="board-empty">As peças conectadas aparecerão aqui</div>';
+                board.innerHTML = '<div class="board-empty">As peças conectadas aparecerêo aqui</div>';
             } else {
                 board.innerHTML = '';
                 boardPieces.forEach(piece => {
@@ -808,7 +808,7 @@
                 playSound('wrong');
 
                 feedback.className = 'feedback error show';
-                feedbackText.textContent = `✗ ${piece.display} = ${piece.result}, não ${targetValue}!`;
+                feedbackText.textContent = `✗ ${piece.display} = ${piece.result}, nêo ${targetValue}!`;
 
                 // Mark piece as wrong (visual feedback)
                 const pieces = document.querySelectorAll('.hand-pieces .domino');

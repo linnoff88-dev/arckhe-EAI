@@ -23,9 +23,9 @@ export default function EducationalGamePage({ params }: GamePageProps) {
       <main className="flex-1">
         <div className="container-main py-8 text-center">
           <h1 className="font-display text-2xl font-bold text-white mb-4">
-            Jogo não encontrado
+            Jogo nêo encontrado
           </h1>
-          <p className="text-white/60 mb-6">O jogo educacional que você procura não existe.</p>
+          <p className="text-white/60 mb-6">O jogo educacional que você procura nêo existe.</p>
           <Link href="/educacional" className="text-cyan-400 hover:underline">
             Voltar para Educacional
           </Link>

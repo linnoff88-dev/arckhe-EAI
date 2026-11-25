@@ -29,33 +29,33 @@ let exhibitScroll = 0;
 
 const QUESTIONS = {
   0: [
-    { q: 'O que são pinturas rupestres?', a: ['Arte pré-histórica em cavernas', 'Quadros modernos', 'Esculturas', 'Cerâmicas'], correct: 0 },
+    { q: 'O que sêo pinturas rupestres?', a: ['Arte pré-histórica em cavernas', 'Quadros modernos', 'Esculturas', 'Cerâmicas'], correct: 0 },
     { q: 'Onde fica a caverna de Lascaux?', a: ['França', 'Brasil', 'Espanha', 'Itália'], correct: 0 },
-    { q: 'O que são Vênus pré-históricas?', a: ['Esculturas femininas', 'Pinturas', 'Cavernas', 'Ferramentas'], correct: 0 }
+    { q: 'O que sêo Vênus pré-históricas?', a: ['Esculturas femininas', 'Pinturas', 'Cavernas', 'Ferramentas'], correct: 0 }
   ],
   1: [
-    { q: 'Qual civilização construiu as pirâmides?', a: ['Egípcia', 'Grega', 'Romana', 'Persa'], correct: 0 },
-    { q: 'O que é arte grega clássica?', a: ['Perfeição e harmonia', 'Abstração', 'Geometria', 'Surrealismo'], correct: 0 },
-    { q: 'O que caracteriza a escultura romana?', a: ['Realismo', 'Abstração', 'Impressionismo', 'Cubismo'], correct: 0 }
+    { q: 'Qual civilizaçêo construiu as pirâmides?', a: ['Egípcia', 'Grega', 'Romana', 'Persa'], correct: 0 },
+    { q: 'O que é arte grega clássica?', a: ['Perfeiçêo e harmonia', 'Abstraçêo', 'Geometria', 'Surrealismo'], correct: 0 },
+    { q: 'O que caracteriza a escultura romana?', a: ['Realismo', 'Abstraçêo', 'Impressionismo', 'Cubismo'], correct: 0 }
   ],
   2: [
-    { q: 'O que são iluminuras medievais?', a: ['Ilustrações em manuscritos', 'Vitrais', 'Esculturas', 'Afrescos'], correct: 0 },
+    { q: 'O que sêo iluminuras medievais?', a: ['Ilustrações em manuscritos', 'Vitrais', 'Esculturas', 'Afrescos'], correct: 0 },
     { q: 'O que é arte gótica?', a: ['Catedrais com vitrais', 'Arte romana', 'Arte grega', 'Arte moderna'], correct: 0 },
-    { q: 'O que são vitrais?', a: ['Janelas de vidro colorido', 'Pinturas', 'Esculturas', 'Mosaicos'], correct: 0 }
+    { q: 'O que sêo vitrais?', a: ['Janelas de vidro colorido', 'Pinturas', 'Esculturas', 'Mosaicos'], correct: 0 }
   ],
   3: [
     { q: 'Quem pintou a Mona Lisa?', a: ['Leonardo da Vinci', 'Michelangelo', 'Rafael', 'Botticelli'], correct: 0 },
     { q: 'O que é perspectiva linear?', a: ['Técnica de profundidade', 'Cor', 'Luz', 'Sombra'], correct: 0 },
     { q: 'Quem pintou o teto da Capela Sistina?', a: ['Michelangelo', 'Da Vinci', 'Rafael', 'Caravaggio'], correct: 0 },
-    { q: 'O que caracteriza o Renascimento?', a: ['Humanismo e naturalismo', 'Abstração', 'Cubismo', 'Impressionismo'], correct: 0 }
+    { q: 'O que caracteriza o Renascimento?', a: ['Humanismo e naturalismo', 'Abstraçêo', 'Cubismo', 'Impressionismo'], correct: 0 }
   ],
   4: [
     { q: 'Quem pintou "A Ronda Noturna"?', a: ['Rembrandt', 'Vermeer', 'Rubens', 'Velázquez'], correct: 0 },
-    { q: 'O que caracteriza o Barroco?', a: ['Drama e movimento', 'Simplicidade', 'Geometria', 'Abstração'], correct: 0 },
+    { q: 'O que caracteriza o Barroco?', a: ['Drama e movimento', 'Simplicidade', 'Geometria', 'Abstraçêo'], correct: 0 },
     { q: 'O que é chiaroscuro?', a: ['Contraste luz e sombra', 'Cor', 'Perspectiva', 'Textura'], correct: 0 }
   ],
   5: [
-    { q: 'O que caracteriza o Neoclassicismo?', a: ['Inspiração na Antiguidade', 'Abstração', 'Impressionismo', 'Surrealismo'], correct: 0 },
+    { q: 'O que caracteriza o Neoclassicismo?', a: ['Inspiraçêo na Antiguidade', 'Abstraçêo', 'Impressionismo', 'Surrealismo'], correct: 0 },
     { q: 'Quem pintou "O Juramento dos Horácios"?', a: ['Jacques-Louis David', 'Ingres', 'Delacroix', 'Géricault'], correct: 0 }
   ],
   6: [
@@ -65,7 +65,7 @@ const QUESTIONS = {
   ],
   7: [
     { q: 'Quem criou o Cubismo?', a: ['Picasso e Braque', 'Monet', 'Dalí', 'Kandinsky'], correct: 0 },
-    { q: 'O que é Surrealismo?', a: ['Arte do inconsciente', 'Realismo', 'Abstração', 'Impressionismo'], correct: 0 },
+    { q: 'O que é Surrealismo?', a: ['Arte do inconsciente', 'Realismo', 'Abstraçêo', 'Impressionismo'], correct: 0 },
     { q: 'Quem pintou relógios derretidos?', a: ['Salvador Dalí', 'Picasso', 'Magritte', 'Miró'], correct: 0 }
   ],
   8: [
@@ -75,7 +75,7 @@ const QUESTIONS = {
   ],
   9: [
     { q: 'Quem pintou "Abaporu"?', a: ['Tarsila do Amaral', 'Di Cavalcanti', 'Portinari', 'Volpi'], correct: 0 },
-    { q: 'O que foi a Semana de Arte Moderna?', a: ['Evento artístico de 1922', 'Exposição atual', 'Festival de música', 'Feira de artesanato'], correct: 0 },
+    { q: 'O que foi a Semana de Arte Moderna?', a: ['Evento artístico de 1922', 'Exposiçêo atual', 'Festival de música', 'Feira de artesanato'], correct: 0 },
     { q: 'Quem pintou "Guernica" influenciando artistas brasileiros?', a: ['Picasso', 'Dalí', 'Monet', 'Van Gogh'], correct: 0 }
   ]
 };
@@ -344,7 +344,7 @@ function drawExhibit() {
   ctx.fillStyle = '#fff';
   ctx.font = 'bold 13px Georgia';
   ctx.textAlign = 'center';
-  ctx.fillText(`${period.icon} Exposição ${currentExhibit + 1}`, canvas.width / 2, 28);
+  ctx.fillText(`${period.icon} Exposiçêo ${currentExhibit + 1}`, canvas.width / 2, 28);
 
   if (streak > 0) {
     ctx.fillStyle = '#d4af37';

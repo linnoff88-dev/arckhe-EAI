@@ -18,7 +18,7 @@ const REGIONS = [
   { id: 6, name: 'Exoplanetas', color: '#0d9488', icon: '🪐', unlockLevel: 40, missions: 50 },
   { id: 7, name: 'Cosmologia', color: '#dc2626', icon: '💥', unlockLevel: 50, missions: 50 },
   { id: 8, name: 'Astrofísica', color: '#0891b2', icon: '🔭', unlockLevel: 60, missions: 50 },
-  { id: 9, name: 'Exploração Espacial', color: '#16a34a', icon: '🚀', unlockLevel: 70, missions: 50 }
+  { id: 9, name: 'Exploraçêo Espacial', color: '#16a34a', icon: '🚀', unlockLevel: 70, missions: 50 }
 ];
 
 let currentRegion = 0;
@@ -36,16 +36,16 @@ const QUESTIONS = {
     { q: 'Qual planeta tem os maiores anéis?', a: ['Saturno', 'Júpiter', 'Urano', 'Netuno'], correct: 0 }
   ],
   1: [
-    { q: 'Qual é o satélite natural da Terra?', a: ['Lua', 'Fobos', 'Europa', 'Titã'], correct: 0 },
+    { q: 'Qual é o satélite natural da Terra?', a: ['Lua', 'Fobos', 'Europa', 'Titê'], correct: 0 },
     { q: 'Quanto tempo a Lua leva para orbitar a Terra?', a: ['~27 dias', '30 dias', '24 horas', '365 dias'], correct: 0 },
     { q: 'Qual lua de Júpiter pode ter oceano?', a: ['Europa', 'Ganimedes', 'Calisto', 'Io'], correct: 0 },
-    { q: 'Qual é a maior lua do Sistema Solar?', a: ['Ganimedes', 'Titã', 'Lua', 'Europa'], correct: 0 }
+    { q: 'Qual é a maior lua do Sistema Solar?', a: ['Ganimedes', 'Titê', 'Lua', 'Europa'], correct: 0 }
   ],
   2: [
-    { q: 'O que é uma estrela?', a: ['Esfera de plasma em fusão', 'Planeta brilhante', 'Satélite', 'Asteroide'], correct: 0 },
+    { q: 'O que é uma estrela?', a: ['Esfera de plasma em fusêo', 'Planeta brilhante', 'Satélite', 'Asteroide'], correct: 0 },
     { q: 'Qual é a estrela mais próxima da Terra?', a: ['Sol', 'Proxima Centauri', 'Sirius', 'Alpha Centauri'], correct: 0 },
     { q: 'O que acontece quando uma estrela massiva morre?', a: ['Supernova', 'Evapora', 'Vira planeta', 'Nada'], correct: 0 },
-    { q: 'O que é uma anã branca?', a: ['Resto de estrela média', 'Estrela jovem', 'Buraco negro', 'Nebulosa'], correct: 0 }
+    { q: 'O que é uma anê branca?', a: ['Resto de estrela média', 'Estrela jovem', 'Buraco negro', 'Nebulosa'], correct: 0 }
   ],
   3: [
     { q: 'O que é uma nebulosa?', a: ['Nuvem de gás e poeira', 'Tipo de estrela', 'Planeta gasoso', 'Galáxia pequena'], correct: 0 },
@@ -55,32 +55,32 @@ const QUESTIONS = {
   4: [
     { q: 'O que é uma galáxia?', a: ['Sistema de estrelas, gás e matéria escura', 'Estrela gigante', 'Nebulosa', 'Sistema solar'], correct: 0 },
     { q: 'Qual é nossa galáxia?', a: ['Via Láctea', 'Andrômeda', 'Triangulum', 'Sombrero'], correct: 0 },
-    { q: 'Quantas estrelas tem a Via Láctea?', a: ['100-400 bilhões', '1 milhão', '1 bilhão', '10 bilhões'], correct: 0 }
+    { q: 'Quantas estrelas tem a Via Láctea?', a: ['100-400 bilhões', '1 milhêo', '1 bilhêo', '10 bilhões'], correct: 0 }
   ],
   5: [
-    { q: 'O que é um buraco negro?', a: ['Região de gravidade extrema', 'Estrela escura', 'Planeta negro', 'Nuvem de gás'], correct: 0 },
+    { q: 'O que é um buraco negro?', a: ['Regiêo de gravidade extrema', 'Estrela escura', 'Planeta negro', 'Nuvem de gás'], correct: 0 },
     { q: 'O que é horizonte de eventos?', a: ['Limite de escape de luz', 'Borda do universo', 'Tipo de estrela', 'Planeta'], correct: 0 },
     { q: 'O que há no centro da Via Láctea?', a: ['Buraco negro supermassivo', 'Estrela gigante', 'Nebulosa', 'Vazio'], correct: 0 }
   ],
   6: [
-    { q: 'O que são exoplanetas?', a: ['Planetas fora do Sistema Solar', 'Planetas sem estrela', 'Asteroides grandes', 'Luas gigantes'], correct: 0 },
+    { q: 'O que sêo exoplanetas?', a: ['Planetas fora do Sistema Solar', 'Planetas sem estrela', 'Asteroides grandes', 'Luas gigantes'], correct: 0 },
     { q: 'Quantos exoplanetas foram descobertos?', a: ['Mais de 5000', 'Menos de 100', '500', '1000'], correct: 0 },
-    { q: 'O que é zona habitável?', a: ['Região com água líquida possível', 'Centro da galáxia', 'Perto de buraco negro', 'Nebulosa'], correct: 0 }
+    { q: 'O que é zona habitável?', a: ['Regiêo com água líquida possível', 'Centro da galáxia', 'Perto de buraco negro', 'Nebulosa'], correct: 0 }
   ],
   7: [
-    { q: 'O que foi o Big Bang?', a: ['Origem do universo', 'Explosão de estrela', 'Colisão de galáxias', 'Formação do Sol'], correct: 0 },
-    { q: 'Qual é a idade do universo?', a: ['~13.8 bilhões de anos', '4.5 bilhões', '1 bilhão', '100 bilhões'], correct: 0 },
+    { q: 'O que foi o Big Bang?', a: ['Origem do universo', 'Explosêo de estrela', 'Colisêo de galáxias', 'Formaçêo do Sol'], correct: 0 },
+    { q: 'Qual é a idade do universo?', a: ['~13.8 bilhões de anos', '4.5 bilhões', '1 bilhêo', '100 bilhões'], correct: 0 },
     { q: 'O que é matéria escura?', a: ['Matéria invisível que afeta gravidade', 'Buracos negros', 'Gás interestelar', 'Antimatéria'], correct: 0 }
   ],
   8: [
     { q: 'O que estuda a astrofísica?', a: ['Física dos corpos celestes', 'Apenas estrelas', 'Apenas planetas', 'Mitologia'], correct: 0 },
-    { q: 'O que é espectroscopia?', a: ['Análise de luz', 'Estudo de órbitas', 'Medição de distâncias', 'Fotografia'], correct: 0 },
-    { q: 'O que é fusão nuclear?', a: ['União de núcleos atômicos', 'Divisão de átomos', 'Reação química', 'Explosão'], correct: 0 }
+    { q: 'O que é espectroscopia?', a: ['Análise de luz', 'Estudo de órbitas', 'Mediçêo de distâncias', 'Fotografia'], correct: 0 },
+    { q: 'O que é fusêo nuclear?', a: ['Uniêo de núcleos atômicos', 'Divisêo de átomos', 'Reaçêo química', 'Explosêo'], correct: 0 }
   ],
   9: [
     { q: 'Quem foi o primeiro humano no espaço?', a: ['Yuri Gagarin', 'Neil Armstrong', 'Buzz Aldrin', 'John Glenn'], correct: 0 },
     { q: 'Em que ano o homem pisou na Lua?', a: ['1969', '1965', '1972', '1959'], correct: 0 },
-    { q: 'O que é a ISS?', a: ['Estação Espacial Internacional', 'Satélite de GPS', 'Sonda espacial', 'Telescópio'], correct: 0 }
+    { q: 'O que é a ISS?', a: ['Estaçêo Espacial Internacional', 'Satélite de GPS', 'Sonda espacial', 'Telescópio'], correct: 0 }
   ]
 };
 
@@ -365,7 +365,7 @@ function drawMission() {
   ctx.fillStyle = '#fff';
   ctx.font = 'bold 14px Arial';
   ctx.textAlign = 'center';
-  ctx.fillText(`${region.icon} Missão ${currentMission + 1}`, canvas.width / 2, 28);
+  ctx.fillText(`${region.icon} Missêo ${currentMission + 1}`, canvas.width / 2, 28);
 
   if (streak > 0) {
     ctx.fillStyle = '#fbbf24';
@@ -430,7 +430,7 @@ function drawVictory() {
   ctx.fillStyle = '#fbbf24';
   ctx.font = 'bold 32px Arial';
   ctx.textAlign = 'center';
-  ctx.fillText('🌟 MISSÃO COMPLETA!', canvas.width / 2, canvas.height / 2 - 50);
+  ctx.fillText('🌟 MISSêO COMPLETA!', canvas.width / 2, canvas.height / 2 - 50);
 
   const reward = 45 + currentMission * 5;
   ctx.fillStyle = '#ffd700';

@@ -8,43 +8,43 @@
 
 ## Resumo
 
-Análise completa do projeto com verificação de build, dados, jogos, componentes e tema visual. Foram encontrados e corrigidos 4 problemas significativos.
+Análise completa do projeto com verificaçêo de build, dados, jogos, componentes e tema visual. Foram encontrados e corrigidos 4 problemas significativos.
 
 ---
 
 ## Problemas Encontrados e Corrigidos
 
-### 1. 20 Jogos Órfãos (CRÍTICO)
-**Problema:** 20 pastas de jogos existiam em `public/games/` com arquivos completos (index.html + game.js) mas não estavam cadastrados em nenhum arquivo de dados, tornando-os invisíveis no site.
+### 1. 20 Jogos Órfêos (CRÍTICO)
+**Problema:** 20 pastas de jogos existiam em `public/games/` com arquivos completos (index.html + game.js) mas nêo estavam cadastrados em nenhum arquivo de dados, tornando-os invisíveis no site.
 
 **Jogos adicionados ao `src/data/arcade-games.ts`:**
 1. Animal Farm Builder (estratégia)
-2. Anime Hero Arena (ação)
-3. Battle Clicker Wars (ação)
+2. Anime Hero Arena (açêo)
+3. Battle Clicker Wars (açêo)
 4. Block Blast EAI (puzzle)
 5. Bubble Pop Kingdom (puzzle)
-6. Candy Land Rush (ação)
+6. Candy Land Rush (açêo)
 7. Cookie Bakery Tycoon (estratégia)
 8. Crypto Miner Empire (estratégia)
 9. Dino Adventure World (aventura)
 10. Dragon Quest Legends (aventura)
-11. Fruit Ninja Master (ação)
+11. Fruit Ninja Master (açêo)
 12. Galaxy Conquest (estratégia)
 13. Infinity Runner (corrida)
 14. Music Maker Studio (criatividade)
-15. Ninja Shadow Strike (ação)
+15. Ninja Shadow Strike (açêo)
 16. Ocean Quest Adventure (aventura)
 17. Pet World Paradise (aventura)
 18. Racing Thunder 3D (corrida)
 19. Space Explorer Kids (aventura)
-20. Zombie Survival Idle (ação)
+20. Zombie Survival Idle (açêo)
 
 **Resultado:** Arcade passou de 20 para 40 jogos. Total de páginas geradas: 126 -> 146.
 
 ### 2. Links Mortos no Footer (ALTO)
 **Arquivo:** `src/components/layout/Footer.tsx`
 **Problema:** 3 links apontavam para rotas inexistentes (`/sobre`, `/termos`, `/privacidade`), causando erro 404.
-**Correção:** Substituídos por links para rotas existentes: `/busca`, `/aulas`, `/stats`.
+**Correçêo:** Substituídos por links para rotas existentes: `/busca`, `/aulas`, `/stats`.
 
 ### 3. Inconsistência de Tema Visual (ALTO)
 **Arquivos:**
@@ -54,16 +54,16 @@ Análise completa do projeto com verificação de build, dados, jogos, component
 
 **Problema:** Estas 3 páginas usavam tema claro (classes `text-zinc-900`, `bg-zinc-100`, `border-zinc-200`) enquanto todo o restante do site usa tema escuro (`bg-[#0d0d18]`, `text-white`, cores purple/cyan/pink).
 
-**Correção:** Migração completa para tema escuro:
+**Correçêo:** Migraçêo completa para tema escuro:
 - `text-zinc-900` -> `text-white`
 - `text-zinc-500/600` -> `text-white/50`, `text-white/60`
 - `bg-zinc-100/200` -> `bg-white/10`
 - `border-zinc-200` -> `border-white/10`
 - Botões e badges com gradientes purple/cyan
 
-### 4. Import Não Utilizado (BAIXO)
+### 4. Import Nêo Utilizado (BAIXO)
 **Arquivo:** `src/components/games/GameCard.tsx`
-**Problema:** Investigação mostrou que o `Image` do Next.js era de fato utilizado no JSX (linha 73). Import mantido corretamente.
+**Problema:** Investigaçêo mostrou que o `Image` do Next.js era de fato utilizado no JSX (linha 73). Import mantido corretamente.
 
 ---
 
@@ -81,7 +81,7 @@ Análise completa do projeto com verificação de build, dados, jogos, component
 - Todos com loading screens funcionais
 
 ### Jogos HTML Standalone (59 arquivos)
-- Todos os 59 arquivos `.html` em `public/games/` existem e estão referenciados nos dados
+- Todos os 59 arquivos `.html` em `public/games/` existem e estêo referenciados nos dados
 
 ### Dados
 - 89 jogos cadastrados (40 arcade + 69 educacionais, com 20 novos)
@@ -90,10 +90,10 @@ Análise completa do projeto com verificação de build, dados, jogos, component
 - Todas as `embedUrl` apontam para arquivos existentes
 
 ### Rotas
-- Todas as rotas do Header e navegação são válidas
+- Todas as rotas do Header e navegaçêo sêo válidas
 - API routes funcionais (visit, click, health, debug-stats)
 
-### Configuração
+### Configuraçêo
 - `tsconfig.json` - OK
 - `next.config.js` - OK
 - `tailwind.config.ts` - OK
@@ -113,9 +113,9 @@ Análise de cobertura identificou gap crítico no **Fundamental II (6º-9º ano)
 | Química dos Elementos | Ciências | 8-9 | Tabela periódica e moléculas |
 | Geopolítica Mundial | Geografia | 8-9 | Geopolítica por continente |
 | Sequências Mágicas | Lógica | 1-2 | Padrões para crianças |
-| Lógica de Programação | Lógica | 8-9 | Programação visual com robô |
+| Lógica de Programaçêo | Lógica | 8-9 | Programaçêo visual com robô |
 | Arte Digital Studio | Artes | 6-9 | Desenho digital e teoria das cores |
-| Educação Financeira | Transversal | 6-9 | Orçamento e investimentos |
+| Educaçêo Financeira | Transversal | 6-9 | Orçamento e investimentos |
 | English Kids | Inglês | 1-2 | Primeiras palavras em inglês |
 
 ---

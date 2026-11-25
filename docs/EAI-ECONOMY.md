@@ -1,6 +1,6 @@
 # EAI Games - Sistema de Economia
 
-## Visão Geral
+## Visêo Geral
 
 Este documento define as regras oficiais do sistema de economia dos jogos EAI. Todas as implementações devem seguir estas diretrizes para manter consistência.
 
@@ -15,18 +15,18 @@ Este documento define as regras oficiais do sistema de economia dos jogos EAI. T
 | **Diamantes** | 💎 | 100 moedas | Itens especiais, personagens |
 | **Ouro** | 🥇 | 1000 moedas | Itens premium, conteúdo exclusivo |
 
-### Conversão
+### Conversêo
 - 100 Moedas Bronze = 1 Diamante
 - 1000 Moedas Bronze = 1 Ouro
 - 10 Diamantes = 1 Ouro
 
 ---
 
-## 2. Sistema de Pontuação por Jogo
+## 2. Sistema de Pontuaçêo por Jogo
 
 ### 2.1 Ganho de Moedas (Acertos)
 
-| Desempenho | Acertos | Multiplicador | Descrição |
+| Desempenho | Acertos | Multiplicador | Descriçêo |
 |------------|---------|---------------|-----------|
 | **Normal** | < 90% | 1x | Ganho base |
 | **Excelente** | 90-99% | 2x | Dobro de moedas |
@@ -36,13 +36,13 @@ Este documento define as regras oficiais do sistema de economia dos jogos EAI. T
 
 | Tipo de Erro | Penalidade | Limite |
 |--------------|------------|--------|
-| Erro simples | -1 moeda | Mínimo 0 (não fica negativo) |
+| Erro simples | -1 moeda | Mínimo 0 (nêo fica negativo) |
 | Erro grave | -2 moedas | Mínimo 0 |
 | Game Over | -5 moedas | Mínimo 0 |
 
 ### 2.3 Recompensa Base por Tipo de Jogo
 
-| Categoria | Base por Acerto | Bônus Conclusão |
+| Categoria | Base por Acerto | Bônus Conclusêo |
 |-----------|-----------------|-----------------|
 | **Quiz/Educacional** | 2 moedas | 10 moedas |
 | **Arcade** | 1 moeda | 5 moedas |
@@ -120,7 +120,7 @@ Os jogadores ganham moedas automaticamente por tempo jogado:
 |------|-------|
 | Pack de 5 níveis | 50 moedas |
 | Mundo novo | 2 diamantes |
-| Expansão completa | 5 diamantes |
+| Expansêo completa | 5 diamantes |
 
 #### Desafios Especiais
 | Tipo | Preço | Recompensa |
@@ -144,12 +144,12 @@ Alguns itens podem ser desbloqueados gratuitamente ao atingir certos níveis:
 
 ---
 
-## 5. Exibição de Ganhos (UX)
+## 5. Exibiçêo de Ganhos (UX)
 
 ### Regras de Interface
-1. **Não intrusivo**: Ganhos aparecem de forma sutil, sem interromper gameplay
-2. **Rápido**: Animação dura no máximo 1.5 segundos
-3. **Posição**: Canto superior direito ou inferior direito
+1. **Nêo intrusivo**: Ganhos aparecem de forma sutil, sem interromper gameplay
+2. **Rápido**: Animaçêo dura no máximo 1.5 segundos
+3. **Posiçêo**: Canto superior direito ou inferior direito
 4. **Cor**: Verde para ganhos, vermelho para perdas
 
 ### Formato Visual
@@ -163,7 +163,7 @@ Alguns itens podem ser desbloqueados gratuitamente ao atingir certos níveis:
 ### Toast de Recompensa
 - Aparece por 1.5 segundos
 - Fade in/out suave (0.3s)
-- Não bloqueia interação
+- Nêo bloqueia interaçêo
 - Empilha se múltiplos ganhos
 
 ---
@@ -212,9 +212,9 @@ addGold(amount)                // Adiciona ouro
 canAfford(type, amount)        // Verifica se pode pagar
 purchase(type, amount)         // Realiza compra
 
-// === Pontuação ===
+// === Pontuaçêo ===
 calculateReward(config)        // Calcula recompensa baseado nas regras
-giveReward(type, amount)       // Dá recompensa com animação
+giveReward(type, amount)       // Dá recompensa com animaçêo
 showRewardToast(message)       // Mostra toast de recompensa
 applyPenalty(amount)           // Aplica penalidade
 
@@ -233,9 +233,9 @@ getInventory()                 // Retorna itens do jogador
 
 ---
 
-## 8. Exemplos de Implementação
+## 8. Exemplos de Implementaçêo
 
-### Quiz com Sistema de Pontuação
+### Quiz com Sistema de Pontuaçêo
 ```javascript
 function finalizarQuiz(acertos, total) {
   const config = {
@@ -277,7 +277,7 @@ function onGameOver() {
   const percentual = (acertos / total) * 100;
   EAI.applyPenalty(5); // Penalidade de game over
 
-  // Bônus de conclusão baseado no desempenho
+  // Bônus de conclusêo baseado no desempenho
   if (percentual >= 90) {
     EAI.giveReward('coins', 10);
   }
@@ -288,16 +288,16 @@ function onGameOver() {
 
 ## 9. Changelog
 
-| Versão | Data | Mudanças |
+| Versêo | Data | Mudanças |
 |--------|------|----------|
 | 1.0.0 | 2024-12-28 | Documento inicial |
 
 ---
 
-## 10. Notas de Implementação
+## 10. Notas de Implementaçêo
 
 1. **Sempre validar no cliente E servidor** (quando aplicável)
 2. **Nunca permitir valores negativos** na carteira
-3. **Logs de transação** para debug
-4. **Animações não-bloqueantes** para UX fluida
-5. **Fallback graceful** se localStorage não disponível
+3. **Logs de transaçêo** para debug
+4. **Animações nêo-bloqueantes** para UX fluida
+5. **Fallback graceful** se localStorage nêo disponível

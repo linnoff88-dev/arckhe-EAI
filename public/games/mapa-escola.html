@@ -377,7 +377,7 @@
     <div class="container">
         <div class="header">
             <h1>🗺️ Mapa da Escola e <span>Bairro</span></h1>
-            <p>Aprenda sobre localização e direções!</p>
+            <p>Aprenda sobre localizaçêo e direções!</p>
         </div>
 
         <div class="stats-bar">
@@ -688,13 +688,13 @@
             gameState.correctAnswer = targetIndex;
         }
 
-        // Pergunta de direção
+        // Pergunta de direçêo
         function setupDirectionQuestion() {
             const dirKeys = Object.keys(directions);
             const dirKey = dirKeys[Math.floor(Math.random() * dirKeys.length)];
             const dir = directions[dirKey];
 
-            // Encontrar uma posição válida
+            // Encontrar uma posiçêo válida
             let validPositions = [];
             for (let i = 0; i < 20; i++) {
                 const x = i % 5;

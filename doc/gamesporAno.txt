@@ -1,12 +1,12 @@
 Perfeito. Abaixo está a **LISTA COMPLETA DE GAMES (JOGOS) NECESSÁRIOS PARA O FUNDAMENTAL I**, pensada para:
 
-* 🎮 **gamificação educacional**
-* 📘 **reutilização em vários planos**
+* 🎮 **gamificaçêo educacional**
+* 📘 **reutilizaçêo em vários planos**
 * 📄 **registro em JSON**
 * 🧒 **uso por aluno, pais ou professores**
 * 🏫 **alinhamento ao currículo do Ensino Fundamental I**
 
-Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓGICA**.
+Os jogos estêo organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇêO PEDAGÓGICA**.
 
 ---
 
@@ -18,8 +18,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** físico / papel
 * **Anos:** 1º
-* **Descrição:** Cartelas com letras do alfabeto. O mediador sorteia letras e o aluno marca.
-* **Aprendizagem:** reconhecimento das letras, associação visual
+* **Descriçêo:** Cartelas com letras do alfabeto. O mediador sorteia letras e o aluno marca.
+* **Aprendizagem:** reconhecimento das letras, associaçêo visual
 * **Reutilizável:** sim (1º ao 2º)
 
 ---
@@ -28,7 +28,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** físico / papel
 * **Anos:** 1º–2º
-* **Descrição:** Cartelas com sílabas simples (BA, BE, BI…).
+* **Descriçêo:** Cartelas com sílabas simples (BA, BE, BI…).
 * **Aprendizagem:** consciência silábica e leitura inicial
 
 ---
@@ -37,7 +37,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** físico / digital simples
 * **Anos:** 1º–3º
-* **Descrição:** Cartas com letras ou sílabas para formar palavras.
+* **Descriçêo:** Cartas com letras ou sílabas para formar palavras.
 * **Aprendizagem:** escrita, ortografia, leitura
 
 ---
@@ -46,8 +46,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** papel / digital
 * **Anos:** 2º–5º
-* **Descrição:** Encontrar palavras escondidas em uma grade.
-* **Aprendizagem:** leitura, atenção, vocabulário
+* **Descriçêo:** Encontrar palavras escondidas em uma grade.
+* **Aprendizagem:** leitura, atençêo, vocabulário
 
 ---
 
@@ -55,7 +55,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** cartas / papel
 * **Anos:** 2º–4º
-* **Descrição:** Organizar palavras para formar frases corretas.
+* **Descriçêo:** Organizar palavras para formar frases corretas.
 * **Aprendizagem:** estrutura textual e gramática básica
 
 ---
@@ -64,7 +64,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** cartas
 * **Anos:** 3º–5º
-* **Descrição:** Cartas com personagens, lugares e ações para criar histórias.
+* **Descriçêo:** Cartas com personagens, lugares e ações para criar histórias.
 * **Aprendizagem:** narrativa, criatividade, escrita
 
 ---
@@ -73,8 +73,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** papel / digital
 * **Anos:** 3º–5º
-* **Descrição:** Perguntas sobre textos lidos.
-* **Aprendizagem:** interpretação de texto
+* **Descriçêo:** Perguntas sobre textos lidos.
+* **Aprendizagem:** interpretaçêo de texto
 
 ---
 
@@ -82,8 +82,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** narrativo / papel
 * **Anos:** 4º–5º
-* **Descrição:** O aluno cria decisões dentro de uma história guiada.
-* **Aprendizagem:** leitura, argumentação, produção textual
+* **Descriçêo:** O aluno cria decisões dentro de uma história guiada.
+* **Aprendizagem:** leitura, argumentaçêo, produçêo textual
 
 ---
 
@@ -93,8 +93,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** físico
 * **Anos:** 1º
-* **Descrição:** Contar objetos e associar a números.
-* **Aprendizagem:** noção de quantidade
+* **Descriçêo:** Contar objetos e associar a números.
+* **Aprendizagem:** noçêo de quantidade
 
 ---
 
@@ -102,7 +102,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** tabuleiro
 * **Anos:** 1º–3º
-* **Descrição:** Avançar casas resolvendo desafios matemáticos.
+* **Descriçêo:** Avançar casas resolvendo desafios matemáticos.
 * **Aprendizagem:** cálculo mental
 
 ---
@@ -111,7 +111,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** físico
 * **Anos:** 1º–4º
-* **Descrição:** Jogar dados para somar, subtrair, multiplicar.
+* **Descriçêo:** Jogar dados para somar, subtrair, multiplicar.
 * **Aprendizagem:** operações básicas
 
 ---
@@ -120,16 +120,16 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** físico
 * **Anos:** 2º–4º
-* **Descrição:** Relacionar operações com resultados.
+* **Descriçêo:** Relacionar operações com resultados.
 * **Aprendizagem:** cálculo e lógica
 
 ---
 
 ### 13. Mercadinho Educativo
 
-* **Tipo:** simulação
+* **Tipo:** simulaçêo
 * **Anos:** 2º–5º
-* **Descrição:** Compra e venda com dinheiro fictício.
+* **Descriçêo:** Compra e venda com dinheiro fictício.
 * **Aprendizagem:** sistema monetário, problemas reais
 
 ---
@@ -138,8 +138,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** material concreto
 * **Anos:** 3º–5º
-* **Descrição:** Representar frações com objetos.
-* **Aprendizagem:** noção de fração
+* **Descriçêo:** Representar frações com objetos.
+* **Aprendizagem:** noçêo de fraçêo
 
 ---
 
@@ -147,7 +147,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** quebra-cabeça
 * **Anos:** 3º–5º
-* **Descrição:** Sequências, padrões e desafios.
+* **Descriçêo:** Sequências, padrões e desafios.
 * **Aprendizagem:** raciocínio lógico
 
 ---
@@ -156,7 +156,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** gráfico / papel
 * **Anos:** 4º–5º
-* **Descrição:** Criar gráficos a partir de dados reais.
+* **Descriçêo:** Criar gráficos a partir de dados reais.
 * **Aprendizagem:** leitura de dados
 
 ---
@@ -167,8 +167,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** físico
 * **Anos:** 1º
-* **Descrição:** Explorar visão, tato, olfato, paladar e audição.
-* **Aprendizagem:** percepção corporal
+* **Descriçêo:** Explorar visêo, tato, olfato, paladar e audiçêo.
+* **Aprendizagem:** percepçêo corporal
 
 ---
 
@@ -176,7 +176,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** quebra-cabeça
 * **Anos:** 1º–3º
-* **Descrição:** Montar sistemas do corpo humano.
+* **Descriçêo:** Montar sistemas do corpo humano.
 * **Aprendizagem:** anatomia básica
 
 ---
@@ -185,7 +185,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** prático
 * **Anos:** 2º–5º
-* **Descrição:** Experimentos simples com registro.
+* **Descriçêo:** Experimentos simples com registro.
 * **Aprendizagem:** método científico
 
 ---
@@ -194,17 +194,17 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** cartas
 * **Anos:** 3º–5º
-* **Descrição:** Relacionar produtores e consumidores.
+* **Descriçêo:** Relacionar produtores e consumidores.
 * **Aprendizagem:** ecossistemas
 
 ---
 
 ### 21. Jogo da Sustentabilidade
 
-* **Tipo:** simulação
+* **Tipo:** simulaçêo
 * **Anos:** 4º–5º
-* **Descrição:** Decisões ambientais.
-* **Aprendizagem:** educação ambiental
+* **Descriçêo:** Decisões ambientais.
+* **Aprendizagem:** educaçêo ambiental
 
 ---
 
@@ -214,8 +214,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** papel
 * **Anos:** 1º–2º
-* **Descrição:** Organizar eventos da própria vida.
-* **Aprendizagem:** noção de tempo histórico
+* **Descriçêo:** Organizar eventos da própria vida.
+* **Aprendizagem:** noçêo de tempo histórico
 
 ---
 
@@ -223,7 +223,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** cartas
 * **Anos:** 1º–2º
-* **Descrição:** Papéis sociais e convivência.
+* **Descriçêo:** Papéis sociais e convivência.
 * **Aprendizagem:** cidadania
 
 ---
@@ -232,8 +232,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** desenho / jogo
 * **Anos:** 2º–3º
-* **Descrição:** Criar mapas simples.
-* **Aprendizagem:** noção espacial
+* **Descriçêo:** Criar mapas simples.
+* **Aprendizagem:** noçêo espacial
 
 ---
 
@@ -241,28 +241,28 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** cartas / tabuleiro
 * **Anos:** 3º–5º
-* **Descrição:** Associar regiões, estados e características.
+* **Descriçêo:** Associar regiões, estados e características.
 * **Aprendizagem:** geografia do Brasil
 
 ---
 
-### 26. Simulação de Cidade
+### 26. Simulaçêo de Cidade
 
 * **Tipo:** projeto
 * **Anos:** 4º–5º
-* **Descrição:** Criar cidade sustentável.
-* **Aprendizagem:** organização social e geográfica
+* **Descriçêo:** Criar cidade sustentável.
+* **Aprendizagem:** organizaçêo social e geográfica
 
 ---
 
-## 🎨 5. JOGOS DE ARTE E EXPRESSÃO
+## 🎨 5. JOGOS DE ARTE E EXPRESSêO
 
 ### 27. Desafio de Desenho Criativo
 
 * **Tipo:** artístico
 * **Anos:** 1º–5º
-* **Descrição:** Criar desenhos a partir de temas.
-* **Aprendizagem:** expressão artística
+* **Descriçêo:** Criar desenhos a partir de temas.
+* **Aprendizagem:** expressêo artística
 
 ---
 
@@ -270,17 +270,17 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** corporal
 * **Anos:** 1º–5º
-* **Descrição:** Jogos rítmicos com o corpo.
-* **Aprendizagem:** percepção sonora
+* **Descriçêo:** Jogos rítmicos com o corpo.
+* **Aprendizagem:** percepçêo sonora
 
 ---
 
 ### 29. Teatro de Personagens
 
-* **Tipo:** dramatização
+* **Tipo:** dramatizaçêo
 * **Anos:** 2º–5º
-* **Descrição:** Encenação de histórias.
-* **Aprendizagem:** comunicação e criatividade
+* **Descriçêo:** Encenaçêo de histórias.
+* **Aprendizagem:** comunicaçêo e criatividade
 
 ---
 
@@ -288,7 +288,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** audiovisual
 * **Anos:** 4º–5º
-* **Descrição:** Criar animações simples.
+* **Descriçêo:** Criar animações simples.
 * **Aprendizagem:** narrativa visual
 
 ---
@@ -299,7 +299,7 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** desafio
 * **Anos:** 1º–5º
-* **Descrição:** Tarefas curtas com objetivos claros.
+* **Descriçêo:** Tarefas curtas com objetivos claros.
 * **Aprendizagem:** autonomia
 
 ---
@@ -308,8 +308,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** perguntas
 * **Anos:** 1º–5º
-* **Descrição:** Revisão de conteúdos.
-* **Aprendizagem:** fixação
+* **Descriçêo:** Revisêo de conteúdos.
+* **Aprendizagem:** fixaçêo
 
 ---
 
@@ -317,8 +317,8 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 * **Tipo:** desafio lógico
 * **Anos:** 3º–5º
-* **Descrição:** Resolver enigmas para avançar.
-* **Aprendizagem:** resolução de problemas
+* **Descriçêo:** Resolver enigmas para avançar.
+* **Aprendizagem:** resoluçêo de problemas
 
 ---
 
@@ -328,13 +328,13 @@ Os jogos estão organizados por **TIPO**, **DISCIPLINA** e **DESCRIÇÃO PEDAGÓ
 
 ---
 
-## 🚀 PRÓXIMO PASSO (SUGESTÃO)
+## 🚀 PRÓXIMO PASSO (SUGESTêO)
 
 Posso agora:
 
 1️⃣ Criar o **arquivo `games_base.json`** com todos esses jogos
 2️⃣ Relacionar **quais jogos cada ano usa**
 3️⃣ Criar **templates automáticos de plano por ano**
-4️⃣ Criar **sistema de pontuação e níveis padrão**
+4️⃣ Criar **sistema de pontuaçêo e níveis padrêo**
 
 👉 Diga qual você quer primeiro e eu sigo direto.

@@ -23,24 +23,24 @@ const GameData = {
     { id: 'dynamics', name: 'Dinâmica', icon: '💪', color: '#FF9800', levels: 50, unlockLevel: 20,
       topics: ['Leis de Newton', 'Atrito', 'Força Resultante'] },
     { id: 'energy', name: 'Energia', icon: '⚡', color: '#FFEB3B', levels: 50, unlockLevel: 35,
-      topics: ['Cinética', 'Potencial', 'Conservação', 'Trabalho'] },
+      topics: ['Cinética', 'Potencial', 'Conservaçêo', 'Trabalho'] },
     { id: 'waves', name: 'Ondas', icon: '🌊', color: '#00BCD4', levels: 50, unlockLevel: 50,
       topics: ['Frequência', 'Comprimento', 'Som', 'Luz'] },
     { id: 'thermo', name: 'Termodinâmica', icon: '🔥', color: '#f44336', levels: 50, unlockLevel: 65,
       topics: ['Temperatura', 'Calor', 'Leis da Termo', 'Gases'] },
     { id: 'electro', name: 'Eletricidade', icon: '💡', color: '#9C27B0', levels: 50, unlockLevel: 80,
-      topics: ['Corrente', 'Tensão', 'Resistência', 'Circuitos'] },
+      topics: ['Corrente', 'Tensêo', 'Resistência', 'Circuitos'] },
     { id: 'magnetism', name: 'Magnetismo', icon: '🧲', color: '#E91E63', levels: 50, unlockLevel: 95,
-      topics: ['Campo Magnético', 'Indução', 'Eletromagnetismo'] },
+      topics: ['Campo Magnético', 'Induçêo', 'Eletromagnetismo'] },
     { id: 'optics', name: 'Óptica', icon: '🔦', color: '#673AB7', levels: 50, unlockLevel: 110,
-      topics: ['Reflexão', 'Refração', 'Lentes', 'Espelhos'] },
+      topics: ['Reflexêo', 'Refraçêo', 'Lentes', 'Espelhos'] },
     { id: 'modern', name: 'Física Moderna', icon: '🔬', color: '#3F51B5', levels: 50, unlockLevel: 130,
       topics: ['Relatividade', 'Quântica', 'Átomo', 'Nuclear'] }
   ],
 
   formulas: [
     { name: 'Velocidade Média', formula: 'v = Δs/Δt', unit: 'm/s' },
-    { name: 'Aceleração', formula: 'a = Δv/Δt', unit: 'm/s²' },
+    { name: 'Aceleraçêo', formula: 'a = Δv/Δt', unit: 'm/s²' },
     { name: 'Força', formula: 'F = m × a', unit: 'N' },
     { name: 'Peso', formula: 'P = m × g', unit: 'N' },
     { name: 'Energia Cinética', formula: 'Ec = mv²/2', unit: 'J' },
@@ -68,10 +68,10 @@ const GameData = {
 
   achievements: [
     { id: 'first_exp', name: 'Primeiro Experimento', desc: 'Complete seu primeiro experimento', icon: '⚡', reward: 50 },
-    { id: 'newton_fan', name: 'Fã de Newton', desc: 'Complete 20 problemas de mecânica', icon: '🍎', reward: 200 },
+    { id: 'newton_fan', name: 'Fê de Newton', desc: 'Complete 20 problemas de mecânica', icon: '🍎', reward: 200 },
     { id: 'einstein', name: 'Mini Einstein', desc: 'Alcance nível 50', icon: '🧠', reward: 500 },
     { id: 'formula_master', name: 'Mestre das Fórmulas', desc: 'Aprenda 10 fórmulas', icon: '📐', reward: 300 },
-    { id: 'perfect_10', name: 'Precisão', desc: '10 respostas certas seguidas', icon: '🎯', reward: 250 }
+    { id: 'perfect_10', name: 'Precisêo', desc: '10 respostas certas seguidas', icon: '🎯', reward: 250 }
   ]
 };
 
@@ -171,7 +171,7 @@ const PhysicsProblems = {
     const laws = [
       { q: 'Um corpo em repouso tende a:', a: 'Permanecer em repouso', opts: ['Permanecer em repouso', 'Acelerar', 'Desacelerar', 'Oscilar'] },
       { q: 'A 2ª Lei de Newton afirma:', a: 'F = m × a', opts: ['F = m × a', 'F = m × v', 'F = m / a', 'F = a / m'] },
-      { q: 'Ação e reação atuam em:', a: 'Corpos diferentes', opts: ['Corpos diferentes', 'O mesmo corpo', 'O vácuo', 'Líquidos apenas'] },
+      { q: 'Açêo e reaçêo atuam em:', a: 'Corpos diferentes', opts: ['Corpos diferentes', 'O mesmo corpo', 'O vácuo', 'Líquidos apenas'] },
       { q: 'A força de atrito sempre:', a: 'Opõe-se ao movimento', opts: ['Opõe-se ao movimento', 'Favorece o movimento', 'É nula', 'É vertical'] }
     ];
     const law = laws[Math.floor(Math.random() * laws.length)];
@@ -217,7 +217,7 @@ const PhysicsProblems = {
   waves(diff) {
     const concepts = [
       { q: 'A frequência é medida em:', a: 'Hertz (Hz)', opts: ['Hertz (Hz)', 'Metros (m)', 'Segundos (s)', 'Watts (W)'] },
-      { q: 'Ondas sonoras são:', a: 'Mecânicas longitudinais', opts: ['Mecânicas longitudinais', 'Eletromagnéticas', 'Transversais', 'Estacionárias'] },
+      { q: 'Ondas sonoras sêo:', a: 'Mecânicas longitudinais', opts: ['Mecânicas longitudinais', 'Eletromagnéticas', 'Transversais', 'Estacionárias'] },
       { q: 'A luz se propaga no vácuo a:', a: '300.000 km/s', opts: ['300.000 km/s', '340 m/s', '1.000 km/s', '3.000 m/s'] },
       { q: 'Comprimento de onda é:', a: 'Distância entre duas cristas', opts: ['Distância entre duas cristas', 'Altura da onda', 'Velocidade da onda', 'Frequência'] }
     ];
@@ -230,8 +230,8 @@ const PhysicsProblems = {
     const concepts = [
       { q: 'A temperatura absoluta zero é:', a: '-273°C (0 K)', opts: ['-273°C (0 K)', '0°C', '100°C', '-100°C'] },
       { q: 'Calor sempre flui do corpo:', a: 'Mais quente para o mais frio', opts: ['Mais quente para o mais frio', 'Mais frio para o mais quente', 'Maior para o menor', 'Menor para o maior'] },
-      { q: 'Em uma expansão isotérmica:', a: 'Temperatura constante', opts: ['Temperatura constante', 'Pressão constante', 'Volume constante', 'Entropia constante'] },
-      { q: 'A 1ª Lei da Termodinâmica trata de:', a: 'Conservação de energia', opts: ['Conservação de energia', 'Entropia', 'Temperatura', 'Pressão'] }
+      { q: 'Em uma expansêo isotérmica:', a: 'Temperatura constante', opts: ['Temperatura constante', 'Pressêo constante', 'Volume constante', 'Entropia constante'] },
+      { q: 'A 1ª Lei da Termodinâmica trata de:', a: 'Conservaçêo de energia', opts: ['Conservaçêo de energia', 'Entropia', 'Temperatura', 'Pressêo'] }
     ];
     const c = concepts[Math.floor(Math.random() * concepts.length)];
     const options = [...c.opts].sort(() => Math.random() - 0.5);
@@ -253,7 +253,7 @@ const PhysicsProblems = {
     } else {
       const concepts = [
         { q: 'A unidade de corrente elétrica é:', a: 'Ampère (A)', opts: ['Ampère (A)', 'Volt (V)', 'Ohm (Ω)', 'Watt (W)'] },
-        { q: 'Resistores em série têm:', a: 'Mesma corrente', opts: ['Mesma corrente', 'Mesma tensão', 'Mesma potência', 'Nenhuma relação'] },
+        { q: 'Resistores em série têm:', a: 'Mesma corrente', opts: ['Mesma corrente', 'Mesma tensêo', 'Mesma potência', 'Nenhuma relaçêo'] },
         { q: 'A potência elétrica é:', a: 'P = V × I', opts: ['P = V × I', 'P = V / I', 'P = I / V', 'P = V + I'] }
       ];
       const c = concepts[Math.floor(Math.random() * concepts.length)];
@@ -267,10 +267,10 @@ const PhysicsProblems = {
 
   magnetism(diff) {
     const concepts = [
-      { q: 'Polos magnéticos iguais:', a: 'Se repelem', opts: ['Se repelem', 'Se atraem', 'Não interagem', 'Anulam-se'] },
+      { q: 'Polos magnéticos iguais:', a: 'Se repelem', opts: ['Se repelem', 'Se atraem', 'Nêo interagem', 'Anulam-se'] },
       { q: 'O campo magnético da Terra:', a: 'Protege dos ventos solares', opts: ['Protege dos ventos solares', 'Causa terremotos', 'Aquece o planeta', 'É constante'] },
-      { q: 'A indução eletromagnética foi descoberta por:', a: 'Faraday', opts: ['Faraday', 'Newton', 'Einstein', 'Ohm'] },
-      { q: 'Ímãs naturais são feitos de:', a: 'Magnetita', opts: ['Magnetita', 'Ouro', 'Prata', 'Cobre'] }
+      { q: 'A induçêo eletromagnética foi descoberta por:', a: 'Faraday', opts: ['Faraday', 'Newton', 'Einstein', 'Ohm'] },
+      { q: 'Ímês naturais sêo feitos de:', a: 'Magnetita', opts: ['Magnetita', 'Ouro', 'Prata', 'Cobre'] }
     ];
     const c = concepts[Math.floor(Math.random() * concepts.length)];
     const options = [...c.opts].sort(() => Math.random() - 0.5);
@@ -279,9 +279,9 @@ const PhysicsProblems = {
 
   optics(diff) {
     const concepts = [
-      { q: 'A reflexão ocorre quando a luz:', a: 'Retorna ao meio original', opts: ['Retorna ao meio original', 'Muda de meio', 'Desaparece', 'Acelera'] },
+      { q: 'A reflexêo ocorre quando a luz:', a: 'Retorna ao meio original', opts: ['Retorna ao meio original', 'Muda de meio', 'Desaparece', 'Acelera'] },
       { q: 'Lentes convergentes formam imagens:', a: 'Reais ou virtuais', opts: ['Reais ou virtuais', 'Apenas reais', 'Apenas virtuais', 'Nenhuma imagem'] },
-      { q: 'O arco-íris é causado por:', a: 'Dispersão da luz', opts: ['Dispersão da luz', 'Reflexão total', 'Difração', 'Absorção'] },
+      { q: 'O arco-íris é causado por:', a: 'Dispersêo da luz', opts: ['Dispersêo da luz', 'Reflexêo total', 'Difraçêo', 'Absorçêo'] },
       { q: 'Espelhos planos formam imagens:', a: 'Virtuais e simétricas', opts: ['Virtuais e simétricas', 'Reais e invertidas', 'Aumentadas', 'Diminuídas'] }
     ];
     const c = concepts[Math.floor(Math.random() * concepts.length)];
@@ -293,8 +293,8 @@ const PhysicsProblems = {
     const concepts = [
       { q: 'E = mc² foi proposta por:', a: 'Einstein', opts: ['Einstein', 'Newton', 'Bohr', 'Planck'] },
       { q: 'O princípio da incerteza é de:', a: 'Heisenberg', opts: ['Heisenberg', 'Schrödinger', 'Dirac', 'Feynman'] },
-      { q: 'Fótons são partículas de:', a: 'Luz', opts: ['Luz', 'Elétrons', 'Prótons', 'Nêutrons'] },
-      { q: 'A dualidade onda-partícula significa:', a: 'Matéria tem comportamento dual', opts: ['Matéria tem comportamento dual', 'Ondas são partículas', 'Partículas são ondas', 'Não há diferença'] }
+      { q: 'Fótons sêo partículas de:', a: 'Luz', opts: ['Luz', 'Elétrons', 'Prótons', 'Nêutrons'] },
+      { q: 'A dualidade onda-partícula significa:', a: 'Matéria tem comportamento dual', opts: ['Matéria tem comportamento dual', 'Ondas sêo partículas', 'Partículas sêo ondas', 'Nêo há diferença'] }
     ];
     const c = concepts[Math.floor(Math.random() * concepts.length)];
     const options = [...c.opts].sort(() => Math.random() - 0.5);
@@ -337,7 +337,7 @@ function createPlayer(name) {
   };
 }
 
-// ==================== RENDERIZAÇÃO ====================
+// ==================== RENDERIZAÇêO ====================
 function render() {
   ctx.fillStyle = '#0d1b2a';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -648,7 +648,7 @@ function renderExperiment() {
   ctx.fillStyle = grad;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // Decoração de laboratório
+  // Decoraçêo de laboratório
   ctx.fillStyle = '#2a3a4a';
   ctx.fillRect(0, canvas.height - 150, canvas.width, 150);
 

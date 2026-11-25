@@ -283,7 +283,7 @@
       </div>
     </div>
 
-    <p class="instruction" id="instruction">Qual fração da pizza está destacada?</p>
+    <p class="instruction" id="instruction">Qual fraçêo da pizza está destacada?</p>
 
     <div class="pizza-container">
       <div class="pizza">
@@ -294,7 +294,7 @@
     </div>
 
     <div class="question-area" id="questionArea">
-      <p class="question" id="question">Quantas fatias estão selecionadas?</p>
+      <p class="question" id="question">Quantas fatias estêo selecionadas?</p>
       <div class="fraction-display" id="fractionDisplay" style="display: none;">
         <div class="fraction">
           <span class="fraction-num" id="fracNum">?</span>
@@ -447,7 +447,7 @@
         highlightSlices(targetNumerator);
         correctAnswer = `${targetNumerator}/${currentSlices}`;
 
-        document.getElementById('instruction').textContent = 'Qual fração da pizza está destacada?';
+        document.getElementById('instruction').textContent = 'Qual fraçêo da pizza está destacada?';
         document.getElementById('question').textContent = `${targetNumerator} de ${currentSlices} fatias`;
         document.getElementById('fractionDisplay').style.display = 'none';
 
@@ -458,7 +458,7 @@
         targetNumerator = 1 + Math.floor(Math.random() * (currentSlices - 1));
         correctAnswer = targetNumerator;
 
-        document.getElementById('instruction').textContent = 'Clique nas fatias para selecionar a fração:';
+        document.getElementById('instruction').textContent = 'Clique nas fatias para selecionar a fraçêo:';
         document.getElementById('question').textContent = 'Selecione:';
         document.getElementById('fractionDisplay').style.display = 'flex';
         document.getElementById('fracNum').textContent = '?';
@@ -517,7 +517,7 @@
       const btn = document.createElement('button');
       btn.className = 'answer-btn';
       btn.style.gridColumn = 'span 4';
-      btn.innerHTML = '✓ Verificar Seleção';
+      btn.innerHTML = '✓ Verificar Seleçêo';
       btn.onclick = checkSelectAnswer;
       container.appendChild(btn);
     }
@@ -539,7 +539,7 @@
       else if (val1 < val2) correctAnswer = '<';
       else correctAnswer = '=';
 
-      document.getElementById('instruction').textContent = 'Qual fração é maior?';
+      document.getElementById('instruction').textContent = 'Qual fraçêo é maior?';
       document.getElementById('question').innerHTML = `
         <div style="display:flex;align-items:center;justify-content:center;gap:1rem;">
           <div class="fraction" style="background:white;padding:0.5rem 1rem;border-radius:0.5rem;">

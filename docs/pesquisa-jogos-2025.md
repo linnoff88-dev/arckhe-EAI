@@ -25,9 +25,9 @@
 4. **Surviv.io / Zombs Royale** - Battle Royale .io
 5. **Shell Shockers** - FPS com ovos armados
 6. **Wormax.io** - Snake com mecânica de invisibilidade
-7. **Moomoo.io** - Proteção de território/base building
+7. **Moomoo.io** - Proteçêo de território/base building
 8. **Cookie Clicker** - Rei dos jogos incrementais
-9. **Little Alchemy 2** - Puzzle de combinação de elementos
+9. **Little Alchemy 2** - Puzzle de combinaçêo de elementos
 
 ---
 
@@ -35,7 +35,7 @@
 
 ### Mobile
 - **Free Fire** - Líder absoluto, especialmente nas periferias
-- Jogos mobile são mais populares que console pela acessibilidade
+- Jogos mobile sêo mais populares que console pela acessibilidade
 
 ### PC/Console
 - **Roblox** - 380M+ usuários ativos, "Dress to Impress" viralizou
@@ -46,23 +46,23 @@
 
 ### Jogos Brasileiros em Destaque
 - **9 Kings** - Estratégia com mecânica viciante estilo Balatro/Vampire Survivors
-- **Aviãozinho do Tráfico 3** - Sucesso nacional e internacional
+- **Aviêozinho do Tráfico 3** - Sucesso nacional e internacional
 
 ### Influência dos Streamers
-Streamers como Nobru (Free Fire), Cerol, Gaules (CS/Valorant) têm papel fundamental na popularização de jogos.
+Streamers como Nobru (Free Fire), Cerol, Gaules (CS/Valorant) têm papel fundamental na popularizaçêo de jogos.
 
 ---
 
-## 3. Mecânicas que Estão Bombando em 2025
+## 3. Mecânicas que Estêo Bombando em 2025
 
 ### Roguelike + Core Simples
 - **Exemplos:** BALL x PIT, Balatro, StarVaders, Hades 2
 - **Por que funciona:** Rejogabilidade infinita, cada run é diferente
 - **Característica:** Fácil de aprender, difícil de dominar
 
-### Fusão/Merge Mechanics
+### Fusêo/Merge Mechanics
 - **Exemplos:** Ball fusion, Pokémon-style merging
-- **Por que funciona:** Progressão satisfatória, dopamina constante
+- **Por que funciona:** Progressêo satisfatória, dopamina constante
 - **Característica:** Combinar itens para criar versões melhores
 
 ### Plinko/Física Caótica
@@ -72,7 +72,7 @@ Streamers como Nobru (Free Fire), Cerol, Gaules (CS/Valorant) têm papel fundame
 
 ### Sobrevivência Caótica (Survivors-like)
 - **Exemplos:** Megabonk, Vampire Survivors, Brotato
-- **Por que funciona:** Builds overpowered, satisfação de destruição em massa
+- **Por que funciona:** Builds overpowered, satisfaçêo de destruiçêo em massa
 - **Característica:** Movimento simples, escolhas de upgrades
 
 ### Puzzle + RNG
@@ -82,7 +82,7 @@ Streamers como Nobru (Free Fire), Cerol, Gaules (CS/Valorant) têm papel fundame
 
 ### Multiplayer Social/Casual
 - **Exemplos:** Peak, Dress to Impress, Fall Guys
-- **Por que funciona:** Interação social, risadas, competição amigável
+- **Por que funciona:** Interaçêo social, risadas, competiçêo amigável
 - **Característica:** Fácil de jogar em grupo
 
 ---
@@ -92,12 +92,12 @@ Streamers como Nobru (Free Fire), Cerol, Gaules (CS/Valorant) têm papel fundame
 ### BALL x PIT
 - Brick-breaking + base-building + roguelike
 - "Perigosamente difícil de largar"
-- Fusão de bolas como mecânica central
+- Fusêo de bolas como mecânica central
 
 ### Blue Prince
 - Puzzle mansion com 46 salas
 - RNG-based gameplay loop
-- Fusão de roguelike com puzzle ambiental
+- Fusêo de roguelike com puzzle ambiental
 
 ### Balatro
 - Poker + roguelike
@@ -125,17 +125,17 @@ Streamers como Nobru (Free Fire), Cerol, Gaules (CS/Valorant) têm papel fundame
 
 ### Prioridade Alta (Tendências Fortes)
 
-| # | Jogo | Inspiração | Mecânica | Dificuldade |
+| # | Jogo | Inspiraçêo | Mecânica | Dificuldade |
 |---|------|------------|----------|-------------|
-| 1 | **Ball Fusion Arena** | BALL x PIT + Peggle | Brick-breaker roguelike com fusão | Média |
-| 2 | **Fashion Battle EAI** | Dress to Impress | Fashion show com votação | Média |
+| 1 | **Ball Fusion Arena** | BALL x PIT + Peggle | Brick-breaker roguelike com fusêo | Média |
+| 2 | **Fashion Battle EAI** | Dress to Impress | Fashion show com votaçêo | Média |
 | 3 | **Plinko Tycoon** | Nubby's Number Factory | Plinko idle com upgrades | Fácil |
 | 4 | **Survivors EAI** | Vampire Survivors | Sobrevivência com builds | Alta |
-| 5 | **Merge Kingdom** | Merge games + RPG | Fusão de unidades para batalha | Média |
+| 5 | **Merge Kingdom** | Merge games + RPG | Fusêo de unidades para batalha | Média |
 
 ### Prioridade Média (Nichos Fortes)
 
-| # | Jogo | Inspiração | Mecânica |
+| # | Jogo | Inspiraçêo | Mecânica |
 |---|------|------------|----------|
 | 6 | **Territory Wars** | Paper.io + State.io | Conquista de território |
 | 7 | **Egg Shooter** | Shell Shockers | FPS casual com ovos |

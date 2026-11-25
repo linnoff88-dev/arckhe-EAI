@@ -5,7 +5,7 @@ Abaixo está o **PROJETO DEFINITIVO – FUNDAMENTAL I**, dividido em:
 1️⃣ Arquitetura do funcionamento
 2️⃣ Estrutura dos arquivos JSON
 3️⃣ Modelo do **PLANO (base, somente leitura)**
-4️⃣ Modelo da **EXECUÇÃO (cópia local do aluno)**
+4️⃣ Modelo da **EXECUÇêO (cópia local do aluno)**
 5️⃣ Fluxo de uso (aluno / pais / professor)
 6️⃣ Próximos passos possíveis
 
@@ -25,7 +25,7 @@ Abaixo está o **PROJETO DEFINITIVO – FUNDAMENTAL I**, dividido em:
 * Ao iniciar o uso:
 
   * O sistema **COPIA o plano base**
-  * Cria um **arquivo de execução local**
+  * Cria um **arquivo de execuçêo local**
 * Cada aluno tem seu próprio progresso
 * Nenhum dado sobrescreve o plano original
 
@@ -34,14 +34,14 @@ Abaixo está o **PROJETO DEFINITIVO – FUNDAMENTAL I**, dividido em:
 ```
 Plano Base (somente leitura)
         ↓ cópia
-Plano em Execução (local do aluno)
+Plano em Execuçêo (local do aluno)
         ↓
 Registro de progresso
 ```
 
 ---
 
-## 2️⃣ ORGANIZAÇÃO DE PASTAS (LOCAL)
+## 2️⃣ ORGANIZAÇêO DE PASTAS (LOCAL)
 
 Exemplo (PC ou celular):
 
@@ -65,7 +65,7 @@ Exemplo (PC ou celular):
 
 ## 3️⃣ MODELO JSON – PLANO BASE (FUNDAMENTAL I)
 
-🔒 **Este arquivo NÃO muda**
+🔒 **Este arquivo NêO muda**
 📘 Criado por professor ou sistema
 
 ### `fundamental1_2ano.json` (exemplo)
@@ -77,7 +77,7 @@ Exemplo (PC ou celular):
   "ano_escolar": "2º Ano",
   "disciplina": "Língua Portuguesa",
   "nome_plano": "Exploradores das Palavras",
-  "descricao": "Plano gamificado para alfabetização e leitura inicial.",
+  "descricao": "Plano gamificado para alfabetizaçêo e leitura inicial.",
   "duracao_semanas": 4,
 
   "objetivos_aprendizagem": [
@@ -138,7 +138,7 @@ Exemplo (PC ou celular):
 
 ---
 
-## 4️⃣ MODELO JSON – EXECUÇÃO (CÓPIA LOCAL DO ALUNO)
+## 4️⃣ MODELO JSON – EXECUÇêO (CÓPIA LOCAL DO ALUNO)
 
 📂 Criado automaticamente quando o aluno inicia
 ✏️ **Este arquivo é editável e cresce com o uso**
@@ -152,7 +152,7 @@ Exemplo (PC ou celular):
 
   "aluno": {
     "id": "AL001",
-    "nome": "João",
+    "nome": "Joêo",
     "idade": 7,
     "ano_escolar": "2º Ano"
   },
@@ -169,7 +169,7 @@ Exemplo (PC ou celular):
 
 ---
 
-## 5️⃣ REGISTRO DE UMA SESSÃO (ADICIONADO AO JSON)
+## 5️⃣ REGISTRO DE UMA SESSêO (ADICIONADO AO JSON)
 
 Cada vez que o aluno joga, um bloco é **adicionado**:
 
@@ -181,7 +181,7 @@ Cada vez que o aluno joga, um bloco é **adicionado**:
   "tempo_realizado_min": 18,
   "resultado": "concluida",
   "pontos_ganhos": 10,
-  "observacoes": "Boa identificação das sílabas"
+  "observacoes": "Boa identificaçêo das sílabas"
 }
 ```
 
@@ -210,7 +210,7 @@ E também atualiza:
 
 ### 👨‍👩‍👧 Pais
 
-* Acompanham execução
+* Acompanham execuçêo
 * Inserem observações
 * Ajustam ritmo
 
@@ -239,7 +239,7 @@ Posso seguir de três formas:
 
 1️⃣ Criar **TODOS os planos base do Fundamental I (1º ao 5º ano)**
 2️⃣ Criar um **JSON genérico reutilizável (template)**
-3️⃣ Criar a **lógica de progressão automática (níveis, medalhas)**
+3️⃣ Criar a **lógica de progressêo automática (níveis, medalhas)**
 4️⃣ Criar **biblioteca de jogos reutilizáveis em JSON**
 5️⃣ Pensar a **interface (app / web / desktop)**
 

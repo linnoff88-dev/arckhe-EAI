@@ -72,7 +72,7 @@ export default function PlanoAulaPage() {
                 Planos completos alinhados à BNCC
               </h2>
               <p className="text-white/60 text-sm">
-                Cada plano inclui objetivos, materiais, passo a passo, avaliação e jogos EAI integrados.
+                Cada plano inclui objetivos, materiais, passo a passo, avaliaçêo e jogos EAI integrados.
                 Pronto para usar em sala de aula!
               </p>
             </div>
@@ -282,7 +282,7 @@ export default function PlanoAulaPage() {
               Nenhum plano encontrado
             </h2>
             <p className="text-white/50 max-w-md mx-auto mb-6">
-              Não encontramos planos com os filtros selecionados. Tente outra combinação!
+              Nêo encontramos planos com os filtros selecionados. Tente outra combinaçêo!
             </p>
             <button
               onClick={() => {
@@ -302,7 +302,7 @@ export default function PlanoAulaPage() {
             Precisa de um plano específico?
           </h2>
           <p className="text-white/60 max-w-xl mx-auto mb-6">
-            Nossos planos são criados por educadores e alinhados à BNCC.
+            Nossos planos sêo criados por educadores e alinhados à BNCC.
             Cada jogo EAI foi desenvolvido pensando no uso pedagógico em sala de aula.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

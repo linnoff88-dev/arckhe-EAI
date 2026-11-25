@@ -96,7 +96,7 @@ const encouragements = [
     'Continue assim!', 'Mandou bem!', 'Perfeito!', 'Genial!'
 ];
 const tryAgainMessages = [
-    'Tente de novo!', 'Quase lá!', 'Não desista!', 'Você consegue!'
+    'Tente de novo!', 'Quase lá!', 'Nêo desista!', 'Você consegue!'
 ];
 
 // ===================== BACKGROUND STARS =====================
@@ -856,7 +856,7 @@ function drawMenu() {
     ctx.font = `${20 * scale}px 'Segoe UI', sans-serif`;
     ctx.fillStyle = 'rgba(255,255,255,0.6)';
     ctx.textAlign = 'center';
-    ctx.fillText('Descubra o padrão e complete a sequência!', W / 2, titleY + 50 * scale);
+    ctx.fillText('Descubra o padrêo e complete a sequência!', W / 2, titleY + 50 * scale);
 
     // Decorative emojis
     const decoY = titleY + 100 * scale;
@@ -948,7 +948,7 @@ function drawGameOver() {
     ctx.fillStyle = '#e0e7ff';
     const statsY = py + 110 * scale;
     const lineH = 40 * scale;
-    ctx.fillText(`Pontuação: ${score}`, W / 2, statsY);
+    ctx.fillText(`Pontuaçêo: ${score}`, W / 2, statsY);
     ctx.fillText(`Estrelas: \u2B50 ${stars}`, W / 2, statsY + lineH);
     ctx.fillText(`Nível: ${difficultyNames[difficulty]}`, W / 2, statsY + lineH * 2);
 

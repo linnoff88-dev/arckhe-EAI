@@ -15,7 +15,7 @@ export function Footer() {
               <span className="font-display text-xl font-bold text-white">EAI Games</span>
             </div>
             <p className="text-sm text-white/50 max-w-sm">
-              A plataforma que combina diversão e aprendizado. Jogos casuais, conteúdo educacional e desenvolvimento profissional em um só lugar.
+              A plataforma que combina diversêo e aprendizado. Jogos casuais, conteúdo educacional e desenvolvimento profissional em um só lugar.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} EAI Games. Todos os direitos reservados.
           </p>
           <p className="text-sm text-white/30">
-            Feito com <span className="text-pink-500">♥</span> para educação e diversão
+            Feito com <span className="text-pink-500">♥</span> para educaçêo e diversêo
           </p>
         </div>
       </div>

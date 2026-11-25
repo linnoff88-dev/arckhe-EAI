@@ -465,7 +465,7 @@
                 <div class="progress-bar" id="progressBar" style="width: 0%"></div>
             </div>
 
-            <div class="question" id="question">Qual fração representa a parte colorida?</div>
+            <div class="question" id="question">Qual fraçêo representa a parte colorida?</div>
 
             <div class="fraction-display" id="fractionDisplay"></div>
 
@@ -679,7 +679,7 @@
             }
         }
 
-        // Criar representação visual de fração
+        // Criar representaçêo visual de fraçêo
         function createFractionVisual(numerator, denominator, type = 'pie') {
             const container = document.createElement('div');
             container.className = 'fraction-visual';
@@ -706,7 +706,7 @@
             return container;
         }
 
-        // Criar número de fração
+        // Criar número de fraçêo
         function createFractionNumber(numerator, denominator) {
             const fracNum = document.createElement('div');
             fracNum.className = 'fraction-number';
@@ -717,13 +717,13 @@
             return fracNum;
         }
 
-        // Questão de identificação
+        // Questêo de identificaçêo
         function setupIdentifyQuestion() {
             const settings = difficultySettings[gameState.difficulty];
             const denominator = settings.denominators[Math.floor(Math.random() * settings.denominators.length)];
             const numerator = Math.floor(Math.random() * denominator) + 1;
 
-            document.getElementById('question').textContent = 'Qual fração representa a parte colorida?';
+            document.getElementById('question').textContent = 'Qual fraçêo representa a parte colorida?';
 
             const display = document.getElementById('fractionDisplay');
             display.innerHTML = '';
@@ -747,7 +747,7 @@
             renderOptions(shuffle(options));
         }
 
-        // Questão de comparação
+        // Questêo de comparaçêo
         function setupCompareQuestion() {
             const settings = difficultySettings[gameState.difficulty];
 
@@ -757,13 +757,13 @@
             let den2 = settings.denominators[Math.floor(Math.random() * settings.denominators.length)];
             let num2 = Math.floor(Math.random() * den2) + 1;
 
-            // Garantir que não sejam iguais
+            // Garantir que nêo sejam iguais
             while (num1/den1 === num2/den2) {
                 den2 = settings.denominators[Math.floor(Math.random() * settings.denominators.length)];
                 num2 = Math.floor(Math.random() * den2) + 1;
             }
 
-            document.getElementById('question').textContent = 'Qual fração é MAIOR?';
+            document.getElementById('question').textContent = 'Qual fraçêo é MAIOR?';
 
             const display = document.getElementById('fractionDisplay');
             display.innerHTML = '';
@@ -790,24 +790,24 @@
 
             gameState.correctAnswer = frac1Value > frac2Value ? `${num1}/${den1}` : `${num2}/${den2}`;
 
-            const options = [`${num1}/${den1}`, `${num2}/${den2}`, 'São iguais'];
+            const options = [`${num1}/${den1}`, `${num2}/${den2}`, 'Sêo iguais'];
             renderOptions(options, true);
         }
 
-        // Questão de equivalência
+        // Questêo de equivalência
         function setupEquivalentQuestion() {
             const settings = difficultySettings[gameState.difficulty];
 
-            // Criar fração base
+            // Criar fraçêo base
             const baseDen = settings.denominators[Math.floor(Math.random() * Math.min(3, settings.denominators.length))];
             const baseNum = Math.floor(Math.random() * (baseDen - 1)) + 1;
 
-            // Criar fração equivalente
+            // Criar fraçêo equivalente
             const multiplier = Math.floor(Math.random() * 3) + 2;
             const equivNum = baseNum * multiplier;
             const equivDen = baseDen * multiplier;
 
-            document.getElementById('question').textContent = `Qual fração é equivalente a ${baseNum}/${baseDen}?`;
+            document.getElementById('question').textContent = `Qual fraçêo é equivalente a ${baseNum}/${baseDen}?`;
 
             const display = document.getElementById('fractionDisplay');
             display.innerHTML = '';
@@ -831,7 +831,7 @@
             renderOptions(shuffle(options));
         }
 
-        // Questão de operação
+        // Questêo de operaçêo
         function setupOperationQuestion() {
             const denominator = [2, 4, 6, 8][Math.floor(Math.random() * 4)];
             const num1 = Math.floor(Math.random() * (denominator - 1)) + 1;

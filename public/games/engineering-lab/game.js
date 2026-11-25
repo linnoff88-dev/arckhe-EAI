@@ -2,7 +2,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// Configuração do canvas
+// Configuraçêo do canvas
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -58,121 +58,121 @@ const QUESTIONS = {
     0: [ // Engenharia Civil
         { q: 'O que é resistência dos materiais?', a: ['Estudo de tensões e deformações', 'Peso dos materiais', 'Cor dos materiais', 'Preço dos materiais'], correct: 0 },
         { q: 'O que é concreto armado?', a: ['Concreto com barras de aço', 'Concreto puro', 'Concreto com madeira', 'Concreto colorido'], correct: 0 },
-        { q: 'O que é fundação?', a: ['Base que transmite cargas ao solo', 'Teto do prédio', 'Parede lateral', 'Janela'], correct: 0 },
+        { q: 'O que é fundaçêo?', a: ['Base que transmite cargas ao solo', 'Teto do prédio', 'Parede lateral', 'Janela'], correct: 0 },
         { q: 'O que é momento fletor?', a: ['Tendência de curvar uma viga', 'Peso da viga', 'Cor da viga', 'Preço da viga'], correct: 0 },
-        { q: 'O que é tensão?', a: ['Força dividida pela área', 'Apenas força', 'Apenas área', 'Comprimento'], correct: 0 },
-        { q: 'O que é deformação?', a: ['Mudança de forma sob carga', 'Cor do material', 'Peso', 'Altura'], correct: 0 },
+        { q: 'O que é tensêo?', a: ['Força dividida pela área', 'Apenas força', 'Apenas área', 'Comprimento'], correct: 0 },
+        { q: 'O que é deformaçêo?', a: ['Mudança de forma sob carga', 'Cor do material', 'Peso', 'Altura'], correct: 0 },
         { q: 'O que é topografia?', a: ['Estudo do terreno', 'Estudo do clima', 'Estudo do mar', 'Estudo das plantas'], correct: 0 },
-        { q: 'O que é cisalhamento?', a: ['Força que desliza camadas', 'Força de compressão', 'Força de tração', 'Força magnética'], correct: 0 },
+        { q: 'O que é cisalhamento?', a: ['Força que desliza camadas', 'Força de compressêo', 'Força de traçêo', 'Força magnética'], correct: 0 },
         { q: 'O que é viga?', a: ['Elemento horizontal estrutural', 'Parede', 'Teto', 'Piso'], correct: 0 },
         { q: 'O que é pilar?', a: ['Elemento vertical estrutural', 'Janela', 'Porta', 'Telhado'], correct: 0 }
     ],
     1: [ // Engenharia Mecânica
         { q: 'O que é termodinâmica?', a: ['Estudo de calor e energia', 'Estudo de luz', 'Estudo de som', 'Estudo de cor'], correct: 0 },
-        { q: 'O que é torque?', a: ['Momento de força rotacional', 'Velocidade', 'Aceleração', 'Massa'], correct: 0 },
-        { q: 'O que é viscosidade?', a: ['Resistência ao escoamento', 'Temperatura', 'Pressão', 'Densidade'], correct: 0 },
-        { q: 'O que é transmissão?', a: ['Sistema que transfere potência', 'Motor', 'Freio', 'Volante'], correct: 0 },
+        { q: 'O que é torque?', a: ['Momento de força rotacional', 'Velocidade', 'Aceleraçêo', 'Massa'], correct: 0 },
+        { q: 'O que é viscosidade?', a: ['Resistência ao escoamento', 'Temperatura', 'Pressêo', 'Densidade'], correct: 0 },
+        { q: 'O que é transmissêo?', a: ['Sistema que transfere potência', 'Motor', 'Freio', 'Volante'], correct: 0 },
         { q: 'O que é CAD?', a: ['Desenho assistido por computador', 'Motor de carro', 'Tipo de metal', 'Ferramenta'], correct: 0 },
-        { q: 'O que é refrigeração?', a: ['Transferência de calor', 'Aquecimento', 'Iluminação', 'Ventilação apenas'], correct: 0 },
+        { q: 'O que é refrigeraçêo?', a: ['Transferência de calor', 'Aquecimento', 'Iluminaçêo', 'Ventilaçêo apenas'], correct: 0 },
         { q: 'O que é engrenagem?', a: ['Roda dentada para transmitir movimento', 'Tipo de parafuso', 'Tipo de porca', 'Motor'], correct: 0 },
-        { q: 'O que é usinagem?', a: ['Processo de fabricação por remoção', 'Soldagem', 'Pintura', 'Montagem'], correct: 0 },
-        { q: 'O que é atrito?', a: ['Resistência ao movimento entre superfícies', 'Velocidade', 'Aceleração', 'Força gravitacional'], correct: 0 },
+        { q: 'O que é usinagem?', a: ['Processo de fabricaçêo por remoçêo', 'Soldagem', 'Pintura', 'Montagem'], correct: 0 },
+        { q: 'O que é atrito?', a: ['Resistência ao movimento entre superfícies', 'Velocidade', 'Aceleraçêo', 'Força gravitacional'], correct: 0 },
         { q: 'O que é pneumática?', a: ['Sistema com ar comprimido', 'Sistema elétrico', 'Sistema hidráulico', 'Sistema solar'], correct: 0 }
     ],
     2: [ // Engenharia Elétrica
-        { q: 'O que é corrente elétrica?', a: ['Fluxo de cargas elétricas', 'Tensão', 'Resistência', 'Potência'], correct: 0 },
+        { q: 'O que é corrente elétrica?', a: ['Fluxo de cargas elétricas', 'Tensêo', 'Resistência', 'Potência'], correct: 0 },
         { q: 'Lei de Ohm relaciona?', a: ['V = R × I', 'F = m × a', 'E = m × c²', 'P = V × I'], correct: 0 },
         { q: 'O que é um capacitor?', a: ['Armazena energia elétrica', 'Gera energia', 'Consome energia', 'Transforma energia'], correct: 0 },
         { q: 'O que é indutor?', a: ['Armazena energia magnética', 'Armazena água', 'Armazena calor', 'Armazena luz'], correct: 0 },
-        { q: 'O que é corrente alternada?', a: ['Muda de direção periodicamente', 'Sempre na mesma direção', 'Não existe', 'É constante'], correct: 0 },
-        { q: 'O que é transformador?', a: ['Muda níveis de tensão', 'Gera eletricidade', 'Armazena eletricidade', 'Consome eletricidade'], correct: 0 },
+        { q: 'O que é corrente alternada?', a: ['Muda de direçêo periodicamente', 'Sempre na mesma direçêo', 'Nêo existe', 'É constante'], correct: 0 },
+        { q: 'O que é transformador?', a: ['Muda níveis de tensêo', 'Gera eletricidade', 'Armazena eletricidade', 'Consome eletricidade'], correct: 0 },
         { q: 'O que é semicondutor?', a: ['Material entre condutor e isolante', 'Apenas condutor', 'Apenas isolante', 'Supercondutor'], correct: 0 },
-        { q: 'O que é diodo?', a: ['Permite corrente em uma direção', 'Resiste à corrente', 'Amplifica corrente', 'Armazena corrente'], correct: 0 },
+        { q: 'O que é diodo?', a: ['Permite corrente em uma direçêo', 'Resiste à corrente', 'Amplifica corrente', 'Armazena corrente'], correct: 0 },
         { q: 'O que é transistor?', a: ['Amplifica ou chaveaм sinais', 'Armazena energia', 'Gera energia', 'Transforma energia'], correct: 0 },
         { q: 'O que é circuito integrado?', a: ['Muitos componentes em um chip', 'Um componente', 'Fio elétrico', 'Bateria'], correct: 0 }
     ],
     3: [ // Engenharia Química
         { q: 'O que é reator químico?', a: ['Equipamento onde ocorrem reações', 'Gerador de energia', 'Motor', 'Bomba'], correct: 0 },
-        { q: 'O que é destilação?', a: ['Separação por ponto de ebulição', 'Mistura de substâncias', 'Reação química', 'Combustão'], correct: 0 },
-        { q: 'O que é catalisador?', a: ['Acelera reação sem ser consumido', 'Reagente', 'Produto', 'Solvente'], correct: 0 },
+        { q: 'O que é destilaçêo?', a: ['Separaçêo por ponto de ebuliçêo', 'Mistura de substâncias', 'Reaçêo química', 'Combustêo'], correct: 0 },
+        { q: 'O que é catalisador?', a: ['Acelera reaçêo sem ser consumido', 'Reagente', 'Produto', 'Solvente'], correct: 0 },
         { q: 'O que é balanço de massa?', a: ['Entrada = Saída + Acúmulo', 'Peso total', 'Volume total', 'Temperatura'], correct: 0 },
         { q: 'O que é transferência de calor?', a: ['Energia térmica em movimento', 'Energia elétrica', 'Energia mecânica', 'Energia nuclear'], correct: 0 },
         { q: 'O que é polímero?', a: ['Molécula grande de unidades repetidas', 'Átomo simples', 'Íon', 'Elétron'], correct: 0 },
-        { q: 'O que é extração?', a: ['Separação por solvente', 'Mistura', 'Reação', 'Combustão'], correct: 0 },
-        { q: 'O que é fermentação?', a: ['Reação biológica', 'Reação nuclear', 'Reação elétrica', 'Reação mecânica'], correct: 0 },
-        { q: 'O que é craqueamento?', a: ['Quebra de moléculas grandes', 'União de moléculas', 'Coloração', 'Purificação'], correct: 0 },
+        { q: 'O que é extraçêo?', a: ['Separaçêo por solvente', 'Mistura', 'Reaçêo', 'Combustêo'], correct: 0 },
+        { q: 'O que é fermentaçêo?', a: ['Reaçêo biológica', 'Reaçêo nuclear', 'Reaçêo elétrica', 'Reaçêo mecânica'], correct: 0 },
+        { q: 'O que é craqueamento?', a: ['Quebra de moléculas grandes', 'Uniêo de moléculas', 'Coloraçêo', 'Purificaçêo'], correct: 0 },
         { q: 'O que é PID em controle?', a: ['Proporcional-Integral-Derivativo', 'Programa de computador', 'Tipo de reator', 'Medidor'], correct: 0 }
     ],
     4: [ // Engenharia de Software
         { q: 'O que é algoritmo?', a: ['Sequência de passos para resolver problema', 'Linguagem', 'Hardware', 'Rede'], correct: 0 },
         { q: 'O que é debugging?', a: ['Encontrar e corrigir erros', 'Criar erros', 'Ignorar erros', 'Documentar erros'], correct: 0 },
         { q: 'O que é banco de dados?', a: ['Sistema organizado de dados', 'Programa', 'Hardware', 'Rede'], correct: 0 },
-        { q: 'O que é API?', a: ['Interface de programação', 'Linguagem', 'Sistema operacional', 'Hardware'], correct: 0 },
+        { q: 'O que é API?', a: ['Interface de programaçêo', 'Linguagem', 'Sistema operacional', 'Hardware'], correct: 0 },
         { q: 'O que é versionamento?', a: ['Controle de mudanças no código', 'Criar versões aleatórias', 'Deletar código', 'Copiar código'], correct: 0 },
-        { q: 'O que é teste unitário?', a: ['Testa partes individuais', 'Testa tudo junto', 'Não testa nada', 'Testa hardware'], correct: 0 },
-        { q: 'O que é OOP?', a: ['Programação orientada a objetos', 'Sistema operacional', 'Banco de dados', 'Rede'], correct: 0 },
+        { q: 'O que é teste unitário?', a: ['Testa partes individuais', 'Testa tudo junto', 'Nêo testa nada', 'Testa hardware'], correct: 0 },
+        { q: 'O que é OOP?', a: ['Programaçêo orientada a objetos', 'Sistema operacional', 'Banco de dados', 'Rede'], correct: 0 },
         { q: 'O que é Agile?', a: ['Metodologia de desenvolvimento', 'Linguagem', 'Banco de dados', 'Hardware'], correct: 0 },
-        { q: 'O que é cloud computing?', a: ['Computação em nuvem', 'Hardware local', 'CD-ROM', 'Disquete'], correct: 0 },
+        { q: 'O que é cloud computing?', a: ['Computaçêo em nuvem', 'Hardware local', 'CD-ROM', 'Disquete'], correct: 0 },
         { q: 'O que é DevOps?', a: ['Desenvolvimento + Operações', 'Só desenvolvimento', 'Só operações', 'Marketing'], correct: 0 }
     ],
     5: [ // Engenharia Ambiental
-        { q: 'O que é EIA/RIMA?', a: ['Estudo de impacto ambiental', 'Tipo de poluição', 'Lei ambiental', 'Órgão público'], correct: 0 },
-        { q: 'O que é tratamento de efluentes?', a: ['Limpeza de águas residuais', 'Poluição', 'Desmatamento', 'Queimada'], correct: 0 },
-        { q: 'O que é aterro sanitário?', a: ['Disposição controlada de resíduos', 'Lixão', 'Rio', 'Floresta'], correct: 0 },
-        { q: 'O que é DBO?', a: ['Demanda bioquímica de oxigênio', 'Tipo de poluente', 'Lei ambiental', 'Órgão'], correct: 0 },
+        { q: 'O que é EIA/RIMA?', a: ['Estudo de impacto ambiental', 'Tipo de poluiçêo', 'Lei ambiental', 'Órgêo público'], correct: 0 },
+        { q: 'O que é tratamento de efluentes?', a: ['Limpeza de águas residuais', 'Poluiçêo', 'Desmatamento', 'Queimada'], correct: 0 },
+        { q: 'O que é aterro sanitário?', a: ['Disposiçêo controlada de resíduos', 'Lixêo', 'Rio', 'Floresta'], correct: 0 },
+        { q: 'O que é DBO?', a: ['Demanda bioquímica de oxigênio', 'Tipo de poluente', 'Lei ambiental', 'Órgêo'], correct: 0 },
         { q: 'O que é reciclagem?', a: ['Reprocessamento de materiais', 'Descarte', 'Queima', 'Enterro'], correct: 0 },
-        { q: 'O que é licenciamento ambiental?', a: ['Autorização para atividades', 'Multa', 'Poluição', 'Desmatamento'], correct: 0 },
-        { q: 'O que é energia renovável?', a: ['Energia de fontes inesgotáveis', 'Petróleo', 'Carvão', 'Gás natural'], correct: 0 },
+        { q: 'O que é licenciamento ambiental?', a: ['Autorizaçêo para atividades', 'Multa', 'Poluiçêo', 'Desmatamento'], correct: 0 },
+        { q: 'O que é energia renovável?', a: ['Energia de fontes inesgotáveis', 'Petróleo', 'Carvêo', 'Gás natural'], correct: 0 },
         { q: 'O que é efeito estufa?', a: ['Aquecimento por gases na atmosfera', 'Resfriamento', 'Chuva', 'Vento'], correct: 0 },
-        { q: 'O que é pegada de carbono?', a: ['Emissões de CO2', 'Pegada no chão', 'Rastro de animal', 'Marca'], correct: 0 },
-        { q: 'O que é compostagem?', a: ['Decomposição de matéria orgânica', 'Queima', 'Enterro', 'Reciclagem de metal'], correct: 0 }
+        { q: 'O que é pegada de carbono?', a: ['Emissões de CO2', 'Pegada no chêo', 'Rastro de animal', 'Marca'], correct: 0 },
+        { q: 'O que é compostagem?', a: ['Decomposiçêo de matéria orgânica', 'Queima', 'Enterro', 'Reciclagem de metal'], correct: 0 }
     ],
     6: [ // Engenharia Aeroespacial
         { q: 'O que é aerodinâmica?', a: ['Estudo do ar em movimento', 'Estudo da água', 'Estudo do fogo', 'Estudo da terra'], correct: 0 },
-        { q: 'O que gera sustentação em uma asa?', a: ['Diferença de pressão', 'Cor da asa', 'Material da asa', 'Tamanho apenas'], correct: 0 },
-        { q: 'O que é empuxo em foguetes?', a: ['Força de propulsão', 'Peso', 'Arrasto', 'Sustentação'], correct: 0 },
-        { q: 'O que é número de Mach?', a: ['Velocidade / Velocidade do som', 'Velocidade apenas', 'Aceleração', 'Força'], correct: 0 },
-        { q: 'O que é órbita geoestacionária?', a: ['Órbita que acompanha rotação da Terra', 'Órbita baixa', 'Órbita lunar', 'Órbita solar'], correct: 0 },
-        { q: 'O que é arrasto aerodinâmico?', a: ['Resistência do ar ao movimento', 'Sustentação', 'Empuxo', 'Peso'], correct: 0 },
+        { q: 'O que gera sustentaçêo em uma asa?', a: ['Diferença de pressêo', 'Cor da asa', 'Material da asa', 'Tamanho apenas'], correct: 0 },
+        { q: 'O que é empuxo em foguetes?', a: ['Força de propulsêo', 'Peso', 'Arrasto', 'Sustentaçêo'], correct: 0 },
+        { q: 'O que é número de Mach?', a: ['Velocidade / Velocidade do som', 'Velocidade apenas', 'Aceleraçêo', 'Força'], correct: 0 },
+        { q: 'O que é órbita geoestacionária?', a: ['Órbita que acompanha rotaçêo da Terra', 'Órbita baixa', 'Órbita lunar', 'Órbita solar'], correct: 0 },
+        { q: 'O que é arrasto aerodinâmico?', a: ['Resistência do ar ao movimento', 'Sustentaçêo', 'Empuxo', 'Peso'], correct: 0 },
         { q: 'O que é combustível de foguete?', a: ['Propelente para gerar empuxo', 'Gasolina comum', 'Água', 'Ar'], correct: 0 },
         { q: 'O que é aviônica?', a: ['Eletrônica de aeronaves', 'Motor', 'Asa', 'Fuselagem'], correct: 0 },
         { q: 'O que é velocidade de escape?', a: ['Velocidade para sair da gravidade', 'Velocidade mínima', 'Velocidade média', 'Velocidade zero'], correct: 0 },
-        { q: 'O que é telemetria?', a: ['Transmissão de dados à distância', 'Motor', 'Combustível', 'Estrutura'], correct: 0 }
+        { q: 'O que é telemetria?', a: ['Transmissêo de dados à distância', 'Motor', 'Combustível', 'Estrutura'], correct: 0 }
     ],
     7: [ // Engenharia Biomédica
         { q: 'O que é prótese?', a: ['Dispositivo que substitui parte do corpo', 'Medicamento', 'Vacina', 'Exame'], correct: 0 },
         { q: 'O que é ECG?', a: ['Eletrocardiograma', 'Tipo de prótese', 'Medicamento', 'Cirurgia'], correct: 0 },
         { q: 'O que é biomaterial?', a: ['Material compatível com o corpo', 'Qualquer material', 'Só metal', 'Só plástico'], correct: 0 },
-        { q: 'O que é biocompatibilidade?', a: ['Compatibilidade com tecidos vivos', 'Incompatibilidade', 'Rejeição', 'Alergia'], correct: 0 },
+        { q: 'O que é biocompatibilidade?', a: ['Compatibilidade com tecidos vivos', 'Incompatibilidade', 'Rejeiçêo', 'Alergia'], correct: 0 },
         { q: 'O que é ressonância magnética?', a: ['Exame com campos magnéticos', 'Raio-X', 'Ultrassom', 'Tomografia'], correct: 0 },
-        { q: 'O que é marcapasso?', a: ['Regula batimentos cardíacos', 'Mede pressão', 'Mede temperatura', 'Mede glicose'], correct: 0 },
+        { q: 'O que é marcapasso?', a: ['Regula batimentos cardíacos', 'Mede pressêo', 'Mede temperatura', 'Mede glicose'], correct: 0 },
         { q: 'O que é engenharia de tecidos?', a: ['Criar tecidos biológicos', 'Fazer roupas', 'Construir prédios', 'Fazer móveis'], correct: 0 },
         { q: 'O que é biomecânica?', a: ['Mecânica aplicada ao corpo', 'Biologia apenas', 'Mecânica apenas', 'Química'], correct: 0 },
         { q: 'O que é stent?', a: ['Tubo que mantém artéria aberta', 'Medicamento', 'Vacina', 'Exame'], correct: 0 },
-        { q: 'O que é eletroencefalograma?', a: ['Registra atividade cerebral', 'Registra coração', 'Registra músculos', 'Registra ossos'], correct: 0 }
+        { q: 'O que é eletroencefalograma?', a: ['Registra atividade cerebral', 'Registra coraçêo', 'Registra músculos', 'Registra ossos'], correct: 0 }
     ],
     8: [ // Engenharia de Materiais
         { q: 'O que é metalurgia?', a: ['Ciência dos metais', 'Ciência das plantas', 'Ciência dos animais', 'Ciência do clima'], correct: 0 },
         { q: 'O que é liga metálica?', a: ['Mistura de metais', 'Metal puro', 'Plástico', 'Cerâmica'], correct: 0 },
-        { q: 'O que é cerâmica?', a: ['Material inorgânico não-metálico', 'Metal', 'Plástico', 'Madeira'], correct: 0 },
+        { q: 'O que é cerâmica?', a: ['Material inorgânico nêo-metálico', 'Metal', 'Plástico', 'Madeira'], correct: 0 },
         { q: 'O que é polímero?', a: ['Cadeia de moléculas repetidas', 'Átomo', 'Íon', 'Elétron'], correct: 0 },
-        { q: 'O que é compósito?', a: ['Combinação de materiais', 'Material único', 'Metal puro', 'Plástico puro'], correct: 0 },
+        { q: 'O que é compósito?', a: ['Combinaçêo de materiais', 'Material único', 'Metal puro', 'Plástico puro'], correct: 0 },
         { q: 'O que é nanomaterial?', a: ['Material em escala nanométrica', 'Material grande', 'Material colorido', 'Material pesado'], correct: 0 },
-        { q: 'O que é corrosão?', a: ['Degradação por reação química', 'Fortalecimento', 'Crescimento', 'Melhoramento'], correct: 0 },
+        { q: 'O que é corrosêo?', a: ['Degradaçêo por reaçêo química', 'Fortalecimento', 'Crescimento', 'Melhoramento'], correct: 0 },
         { q: 'O que é tratamento térmico?', a: ['Alterar propriedades por calor', 'Pintura', 'Polimento', 'Corte'], correct: 0 },
-        { q: 'O que é fadiga de material?', a: ['Falha por cargas repetidas', 'Fortalecimento', 'Crescimento', 'Recuperação'], correct: 0 },
+        { q: 'O que é fadiga de material?', a: ['Falha por cargas repetidas', 'Fortalecimento', 'Crescimento', 'Recuperaçêo'], correct: 0 },
         { q: 'O que é cristalografia?', a: ['Estudo de estruturas cristalinas', 'Estudo de líquidos', 'Estudo de gases', 'Estudo de plasma'], correct: 0 }
     ],
     9: [ // Engenharia Robótica
         { q: 'O que é robô?', a: ['Máquina programável para tarefas', 'Computador comum', 'Calculadora', 'Celular'], correct: 0 },
-        { q: 'O que são sensores?', a: ['Dispositivos que detectam estímulos', 'Motores', 'Baterias', 'Telas'], correct: 0 },
-        { q: 'O que são atuadores?', a: ['Dispositivos que produzem movimento', 'Sensores', 'Câmeras', 'Microfones'], correct: 0 },
+        { q: 'O que sêo sensores?', a: ['Dispositivos que detectam estímulos', 'Motores', 'Baterias', 'Telas'], correct: 0 },
+        { q: 'O que sêo atuadores?', a: ['Dispositivos que produzem movimento', 'Sensores', 'Câmeras', 'Microfones'], correct: 0 },
         { q: 'O que é cinemática?', a: ['Estudo do movimento sem forças', 'Estudo das forças', 'Estudo da cor', 'Estudo do som'], correct: 0 },
         { q: 'O que é grau de liberdade em robótica?', a: ['Eixos de movimento independentes', 'Peso do robô', 'Cor do robô', 'Tamanho'], correct: 0 },
-        { q: 'O que é visão computacional?', a: ['Máquinas interpretam imagens', 'Humanos veem', 'Animais veem', 'Plantas veem'], correct: 0 },
+        { q: 'O que é visêo computacional?', a: ['Máquinas interpretam imagens', 'Humanos veem', 'Animais veem', 'Plantas veem'], correct: 0 },
         { q: 'O que é ROS?', a: ['Sistema operacional de robôs', 'Tipo de motor', 'Tipo de sensor', 'Tipo de bateria'], correct: 0 },
-        { q: 'O que é robô colaborativo?', a: ['Trabalha com humanos', 'Trabalha sozinho', 'Não funciona', 'É perigoso'], correct: 0 },
-        { q: 'O que é SLAM?', a: ['Mapeamento e localização simultâneos', 'Tipo de motor', 'Tipo de sensor', 'Linguagem'], correct: 0 },
+        { q: 'O que é robô colaborativo?', a: ['Trabalha com humanos', 'Trabalha sozinho', 'Nêo funciona', 'É perigoso'], correct: 0 },
+        { q: 'O que é SLAM?', a: ['Mapeamento e localizaçêo simultâneos', 'Tipo de motor', 'Tipo de sensor', 'Linguagem'], correct: 0 },
         { q: 'O que é controle PID em robótica?', a: ['Sistema de controle de feedback', 'Tipo de robô', 'Linguagem', 'Sensor'], correct: 0 }
     ]
 };
@@ -181,7 +181,7 @@ const QUESTIONS = {
 const SHOP_ITEMS = [
     { id: 'blueprint_pack', name: 'Pacote de Projetos', price: 100, currency: 'coins', description: '+50 projetos' },
     { id: 'patent_file', name: 'Arquivo de Patente', price: 150, currency: 'coins', description: '+1 patente' },
-    { id: 'innovation_boost', name: 'Boost de Inovação', price: 200, currency: 'coins', description: '+100 inovações' },
+    { id: 'innovation_boost', name: 'Boost de Inovaçêo', price: 200, currency: 'coins', description: '+100 inovações' },
     { id: 'field_unlock', name: 'Desbloquear Campo', price: 5, currency: 'gems', description: 'Próximo campo' },
     { id: 'double_xp', name: 'XP Dobrado', price: 3, currency: 'gems', description: '2x XP por 10 projetos' },
     { id: 'engineer_helmet', name: 'Capacete de Engenheiro', price: 10, currency: 'gems', description: 'Visual profissional' }
@@ -437,7 +437,7 @@ function drawMenu() {
     ctx.fillText(`💡 Inovações: ${playerData.innovations}`, canvas.width/2, 640);
 }
 
-// Desenhar seleção de campos
+// Desenhar seleçêo de campos
 function drawFieldSelect() {
     drawEngineeringBackground();
     drawHUD();
@@ -447,7 +447,7 @@ function drawFieldSelect() {
     ctx.textAlign = 'center';
     ctx.fillText('🏗️ CAMPOS DA ENGENHARIA', canvas.width/2, 100);
 
-    // Botão voltar
+    // Botêo voltar
     ctx.fillStyle = '#DC143C';
     ctx.fillRect(20, 80, 100, 40);
     ctx.fillStyle = '#FFF';
@@ -508,7 +508,7 @@ function drawFieldSelect() {
     maxScroll = Math.max(0, FIELDS.length * (cardHeight + 15) - (canvas.height - 180));
 }
 
-// Desenhar seleção de projeto
+// Desenhar seleçêo de projeto
 function drawProjectSelect() {
     const field = FIELDS[selectedField];
 
@@ -581,7 +581,7 @@ function drawProjectSelect() {
     maxScroll = Math.max(0, Math.ceil(field.projects / cols) * (size + spacing) - (canvas.height - 200));
 }
 
-// Desenhar questão
+// Desenhar questêo
 function drawQuestion() {
     const field = FIELDS[selectedField];
 
@@ -614,7 +614,7 @@ function drawQuestion() {
         showingResult = false;
     }
 
-    // Caixa da questão
+    // Caixa da questêo
     ctx.fillStyle = 'rgba(26, 26, 46, 0.95)';
     ctx.shadowColor = '#000';
     ctx.shadowBlur = 15;
@@ -661,7 +661,7 @@ function drawQuestion() {
         ctx.fillText(answer.text, canvas.width/2, y + 38);
     });
 
-    // Botão confirmar
+    // Botêo confirmar
     if (selectedAnswer !== null && !showingResult) {
         ctx.fillStyle = '#8B4513';
         ctx.fillRect(canvas.width/2 - 100, 610, 200, 50);
@@ -767,7 +767,7 @@ function drawShop() {
         ctx.font = 'bold 16px Arial';
         ctx.fillText(`${item.currency === 'gems' ? '💎' : '🪙'} ${item.price}`, x + 15, cardY + 72);
 
-        // Botão comprar
+        // Botêo comprar
         ctx.fillStyle = '#8B4513';
         ctx.fillRect(x + 200, cardY + 50, 65, 28);
         ctx.fillStyle = '#FFF';
@@ -830,9 +830,9 @@ function drawProjects() {
     ctx.font = '14px Arial';
     const tips = [
         'Sempre considere a segurança primeiro.',
-        'Projete para facilitar a manutenção.',
+        'Projete para facilitar a manutençêo.',
         'Teste, teste, teste novamente.',
-        'Documentação é parte do projeto.'
+        'Documentaçêo é parte do projeto.'
     ];
     ctx.fillText(tips[Math.floor(Date.now() / 6000) % tips.length], canvas.width/2, 455);
 }
@@ -1108,6 +1108,6 @@ canvas.addEventListener('touchmove', (e) => {
     }
 }, { passive: false });
 
-// Inicialização
+// Inicializaçêo
 loadGame();
 gameLoop();

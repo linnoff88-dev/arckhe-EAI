@@ -398,7 +398,7 @@
 
         <div class="word-example" id="wordExample">
           <span class="word-image">🍎</span>
-          <span class="word-text"><span class="highlight">A</span>bela - Maçã</span>
+          <span class="word-text"><span class="highlight">A</span>bela - Maçê</span>
         </div>
 
         <div class="nav-buttons">
@@ -416,7 +416,7 @@
           </div>
           <div class="stat">
             <div class="stat-value"><span id="current">1</span>/10</div>
-            <div class="stat-label">Questão</div>
+            <div class="stat-label">Questêo</div>
           </div>
         </div>
 
@@ -437,7 +437,7 @@
         <h2>🎉 Parabéns!</h2>
         <div class="end-stars" id="endStars">⭐⭐⭐</div>
         <div class="end-score" id="endScore">100 pontos</div>
-        <p id="endMessage">Você é um campeão do alfabeto!</p>
+        <p id="endMessage">Você é um campeêo do alfabeto!</p>
         <button class="restart-btn" onclick="restartQuiz()">🔄 Jogar Novamente</button>
       </div>
     </div>
@@ -449,10 +449,10 @@
 
   <script>
     const alphabet = [
-      { letter: 'A', type: 'vogal', words: [{ word: 'Abacaxi', emoji: '🍍' }, { word: 'Abelha', emoji: '🐝' }, { word: 'Avião', emoji: '✈️' }] },
+      { letter: 'A', type: 'vogal', words: [{ word: 'Abacaxi', emoji: '🍍' }, { word: 'Abelha', emoji: '🐝' }, { word: 'Aviêo', emoji: '✈️' }] },
       { letter: 'B', type: 'consoante', words: [{ word: 'Bola', emoji: '⚽' }, { word: 'Banana', emoji: '🍌' }, { word: 'Borboleta', emoji: '🦋' }] },
       { letter: 'C', type: 'consoante', words: [{ word: 'Casa', emoji: '🏠' }, { word: 'Cachorro', emoji: '🐕' }, { word: 'Coelho', emoji: '🐰' }] },
-      { letter: 'D', type: 'consoante', words: [{ word: 'Dado', emoji: '🎲' }, { word: 'Dinossauro', emoji: '🦕' }, { word: 'Dragão', emoji: '🐉' }] },
+      { letter: 'D', type: 'consoante', words: [{ word: 'Dado', emoji: '🎲' }, { word: 'Dinossauro', emoji: '🦕' }, { word: 'Dragêo', emoji: '🐉' }] },
       { letter: 'E', type: 'vogal', words: [{ word: 'Elefante', emoji: '🐘' }, { word: 'Estrela', emoji: '⭐' }, { word: 'Escola', emoji: '🏫' }] },
       { letter: 'F', type: 'consoante', words: [{ word: 'Foca', emoji: '🦭' }, { word: 'Flor', emoji: '🌸' }, { word: 'Foguete', emoji: '🚀' }] },
       { letter: 'G', type: 'consoante', words: [{ word: 'Gato', emoji: '🐱' }, { word: 'Girafa', emoji: '🦒' }, { word: 'Gorila', emoji: '🦍' }] },
@@ -460,8 +460,8 @@
       { letter: 'I', type: 'vogal', words: [{ word: 'Igreja', emoji: '⛪' }, { word: 'Iglu', emoji: '🏔️' }, { word: 'Índio', emoji: '🪶' }] },
       { letter: 'J', type: 'consoante', words: [{ word: 'Jacaré', emoji: '🐊' }, { word: 'Joaninha', emoji: '🐞' }] },
       { letter: 'K', type: 'consoante', words: [{ word: 'Kiwi', emoji: '🥝' }, { word: 'Koala', emoji: '🐨' }] },
-      { letter: 'L', type: 'consoante', words: [{ word: 'Leão', emoji: '🦁' }, { word: 'Lua', emoji: '🌙' }, { word: 'Livro', emoji: '📚' }] },
-      { letter: 'M', type: 'consoante', words: [{ word: 'Macaco', emoji: '🐵' }, { word: 'Maçã', emoji: '🍎' }, { word: 'Mar', emoji: '🌊' }] },
+      { letter: 'L', type: 'consoante', words: [{ word: 'Leêo', emoji: '🦁' }, { word: 'Lua', emoji: '🌙' }, { word: 'Livro', emoji: '📚' }] },
+      { letter: 'M', type: 'consoante', words: [{ word: 'Macaco', emoji: '🐵' }, { word: 'Maçê', emoji: '🍎' }, { word: 'Mar', emoji: '🌊' }] },
       { letter: 'N', type: 'consoante', words: [{ word: 'Navio', emoji: '🚢' }, { word: 'Nuvem', emoji: '☁️' }] },
       { letter: 'O', type: 'vogal', words: [{ word: 'Ovo', emoji: '🥚' }, { word: 'Ovelha', emoji: '🐑' }, { word: 'Olho', emoji: '👁️' }] },
       { letter: 'P', type: 'consoante', words: [{ word: 'Pato', emoji: '🦆' }, { word: 'Pizza', emoji: '🍕' }, { word: 'Peixe', emoji: '🐟' }] },
@@ -470,11 +470,11 @@
       { letter: 'S', type: 'consoante', words: [{ word: 'Sol', emoji: '☀️' }, { word: 'Sapo', emoji: '🐸' }, { word: 'Sorvete', emoji: '🍦' }] },
       { letter: 'T', type: 'consoante', words: [{ word: 'Tartaruga', emoji: '🐢' }, { word: 'Tigre', emoji: '🐯' }, { word: 'Trem', emoji: '🚂' }] },
       { letter: 'U', type: 'vogal', words: [{ word: 'Uva', emoji: '🍇' }, { word: 'Urso', emoji: '🐻' }, { word: 'Unicórnio', emoji: '🦄' }] },
-      { letter: 'V', type: 'consoante', words: [{ word: 'Vaca', emoji: '🐄' }, { word: 'Violão', emoji: '🎸' }] },
+      { letter: 'V', type: 'consoante', words: [{ word: 'Vaca', emoji: '🐄' }, { word: 'Violêo', emoji: '🎸' }] },
       { letter: 'W', type: 'consoante', words: [{ word: 'Waffle', emoji: '🧇' }] },
       { letter: 'X', type: 'consoante', words: [{ word: 'Xícara', emoji: '☕' }, { word: 'Xadrez', emoji: '♟️' }] },
       { letter: 'Y', type: 'consoante', words: [{ word: 'Yoga', emoji: '🧘' }] },
-      { letter: 'Z', type: 'consoante', words: [{ word: 'Zebra', emoji: '🦓' }, { word: 'Zangão', emoji: '🐝' }] },
+      { letter: 'Z', type: 'consoante', words: [{ word: 'Zebra', emoji: '🦓' }, { word: 'Zangêo', emoji: '🐝' }] },
     ];
 
     let currentIndex = 0;

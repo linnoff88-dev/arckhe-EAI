@@ -518,7 +518,7 @@ class BattleRoyale {
       }
     }
 
-    // Direção do mouse
+    // Direçêo do mouse
     const worldMouseX = this.mouse.x - this.canvas.width / 2 + this.camera.x;
     const worldMouseY = this.mouse.y - this.canvas.height / 2 + this.camera.y;
     this.player.angle = Math.atan2(worldMouseY - this.player.y, worldMouseX - this.player.x);
@@ -748,7 +748,7 @@ class BattleRoyale {
       bullet.y += dy;
       bullet.distTraveled += Math.hypot(dx, dy);
 
-      // Verificar colisão com estruturas
+      // Verificar colisêo com estruturas
       if (this.checkStructureCollision(bullet.x, bullet.y, 3)) {
         this.bullets.splice(i, 1);
         continue;
@@ -760,7 +760,7 @@ class BattleRoyale {
         continue;
       }
 
-      // Verificar colisão com jogador
+      // Verificar colisêo com jogador
       if (bullet.owner !== 'player' && this.player) {
         if (Math.hypot(bullet.x - this.player.x, bullet.y - this.player.y) < this.player.radius) {
           this.damageEntity(this.player, bullet.damage);
@@ -769,7 +769,7 @@ class BattleRoyale {
         }
       }
 
-      // Verificar colisão com bots
+      // Verificar colisêo com bots
       for (let j = this.bots.length - 1; j >= 0; j--) {
         const bot = this.bots[j];
         if (bullet.owner === bot) continue;
@@ -881,7 +881,7 @@ class BattleRoyale {
         } else if (item.type === 'ammo') {
           this.player.ammo[item.ammoType] += item.amount;
           collected = true;
-          message = `+${item.amount} munição`;
+          message = `+${item.amount} muniçêo`;
         } else if (item.type === 'heal') {
           this.player.healItems++;
           collected = true;
@@ -1062,7 +1062,7 @@ class BattleRoyale {
     ctx.fillStyle = '#FFD93D';
     ctx.fillText(`${this.eaiCoins} Coins | ${this.eaiXP} XP`, cx, cy - 20);
 
-    // Botão jogar
+    // Botêo jogar
     ctx.fillStyle = '#4ECDC4';
     ctx.beginPath();
     ctx.roundRect(cx - 120, cy + 20, 240, 60, 30);
@@ -1213,7 +1213,7 @@ class BattleRoyale {
     ctx.arc(entity.x, entity.y, entity.radius, 0, Math.PI * 2);
     ctx.fill();
 
-    // Direção (arma)
+    // Direçêo (arma)
     ctx.strokeStyle = '#333';
     ctx.lineWidth = 6;
     ctx.beginPath();
@@ -1395,7 +1395,7 @@ class BattleRoyale {
     ctx.textAlign = 'center';
     ctx.fillText(this.state === 'victory' ? 'VITORIA!' : 'ELIMINADO', cx, cy - 80);
 
-    // Posição
+    // Posiçêo
     ctx.fillStyle = '#fff';
     ctx.font = 'bold 32px Arial';
     ctx.fillText(`#${this.playersAlive}`, cx, cy - 30);
@@ -1411,7 +1411,7 @@ class BattleRoyale {
     ctx.fillText(`+${this.kills * 5 + (this.state === 'victory' ? 100 : 0)} Coins`, cx - 80, cy + 60);
     ctx.fillText(`+${this.kills * 10 + (this.state === 'victory' ? 200 : 0)} XP`, cx + 80, cy + 60);
 
-    // Botão continuar
+    // Botêo continuar
     ctx.fillStyle = '#4ECDC4';
     ctx.beginPath();
     ctx.roundRect(cx - 100, cy + 100, 200, 50, 25);
@@ -1433,7 +1433,7 @@ class BattleRoyale {
   }
 }
 
-// Inicialização
+// Inicializaçêo
 window.addEventListener('load', () => {
   const canvas = document.getElementById('gameCanvas');
   if (canvas) {

@@ -42,9 +42,9 @@ let empire = {
 // Questions database
 const QUESTIONS = {
   0: [ // América do Sul
-    { q: 'Qual é a capital do Brasil?', a: ['Brasília', 'São Paulo', 'Rio de Janeiro', 'Salvador'], correct: 0 },
-    { q: 'Qual é o maior rio da América do Sul?', a: ['Amazonas', 'Paraná', 'Orinoco', 'São Francisco'], correct: 0 },
-    { q: 'Qual país tem a maior população?', a: ['Brasil', 'Argentina', 'Colômbia', 'Peru'], correct: 0 },
+    { q: 'Qual é a capital do Brasil?', a: ['Brasília', 'Sêo Paulo', 'Rio de Janeiro', 'Salvador'], correct: 0 },
+    { q: 'Qual é o maior rio da América do Sul?', a: ['Amazonas', 'Paraná', 'Orinoco', 'Sêo Francisco'], correct: 0 },
+    { q: 'Qual país tem a maior populaçêo?', a: ['Brasil', 'Argentina', 'Colômbia', 'Peru'], correct: 0 },
     { q: 'Onde fica Machu Picchu?', a: ['Peru', 'Bolívia', 'Chile', 'Equador'], correct: 0 },
     { q: 'Qual é a capital da Argentina?', a: ['Buenos Aires', 'Córdoba', 'Rosário', 'Mendoza'], correct: 0 },
     { q: 'Qual é a moeda do Chile?', a: ['Peso chileno', 'Real', 'Dólar', 'Sol'], correct: 0 }
@@ -59,24 +59,24 @@ const QUESTIONS = {
   2: [ // Europa
     { q: 'Qual é a capital da França?', a: ['Paris', 'Lyon', 'Marselha', 'Nice'], correct: 0 },
     { q: 'Qual é a capital da Alemanha?', a: ['Berlim', 'Munique', 'Frankfurt', 'Hamburgo'], correct: 0 },
-    { q: 'Qual é a capital da Itália?', a: ['Roma', 'Milão', 'Nápoles', 'Veneza'], correct: 0 },
+    { q: 'Qual é a capital da Itália?', a: ['Roma', 'Milêo', 'Nápoles', 'Veneza'], correct: 0 },
     { q: 'Qual é a capital do Reino Unido?', a: ['Londres', 'Manchester', 'Liverpool', 'Birmingham'], correct: 0 },
     { q: 'Qual é a capital da Espanha?', a: ['Madri', 'Barcelona', 'Sevilha', 'Valencia'], correct: 0 },
     { q: 'Qual é a capital de Portugal?', a: ['Lisboa', 'Porto', 'Faro', 'Coimbra'], correct: 0 }
   ],
   3: [ // África
-    { q: 'Qual é o maior país da África?', a: ['Argélia', 'Sudão', 'Congo', 'Líbia'], correct: 0 },
-    { q: 'Onde fica as Pirâmides de Gizé?', a: ['Egito', 'Sudão', 'Líbia', 'Marrocos'], correct: 0 },
+    { q: 'Qual é o maior país da África?', a: ['Argélia', 'Sudêo', 'Congo', 'Líbia'], correct: 0 },
+    { q: 'Onde fica as Pirâmides de Gizé?', a: ['Egito', 'Sudêo', 'Líbia', 'Marrocos'], correct: 0 },
     { q: 'Qual é a capital da África do Sul?', a: ['Pretória', 'Cidade do Cabo', 'Johanesburgo', 'Durban'], correct: 0 },
     { q: 'Qual rio atravessa o Egito?', a: ['Nilo', 'Congo', 'Níger', 'Zambeze'], correct: 0 },
     { q: 'Qual é o maior deserto da África?', a: ['Saara', 'Kalahari', 'Namíbia', 'Líbio'], correct: 0 }
   ],
   4: [ // Ásia
-    { q: 'Qual é a capital do Japão?', a: ['Tóquio', 'Osaka', 'Kyoto', 'Hiroshima'], correct: 0 },
+    { q: 'Qual é a capital do Japêo?', a: ['Tóquio', 'Osaka', 'Kyoto', 'Hiroshima'], correct: 0 },
     { q: 'Qual é a capital da China?', a: ['Pequim', 'Xangai', 'Hong Kong', 'Shenzhen'], correct: 0 },
     { q: 'Qual é a capital da Índia?', a: ['Nova Delhi', 'Mumbai', 'Calcutá', 'Bangalore'], correct: 0 },
     { q: 'Qual é o maior país do mundo?', a: ['Rússia', 'China', 'Canadá', 'EUA'], correct: 0 },
-    { q: 'Onde fica o Monte Everest?', a: ['Nepal/China', 'Índia', 'Butão', 'Paquistão'], correct: 0 }
+    { q: 'Onde fica o Monte Everest?', a: ['Nepal/China', 'Índia', 'Butêo', 'Paquistêo'], correct: 0 }
   ],
   5: [ // Oceania
     { q: 'Qual é a capital da Austrália?', a: ['Camberra', 'Sydney', 'Melbourne', 'Brisbane'], correct: 0 },
@@ -87,7 +87,7 @@ const QUESTIONS = {
   6: [ // Oriente Médio
     { q: 'Qual é a capital da Arábia Saudita?', a: ['Riad', 'Jeddah', 'Meca', 'Medina'], correct: 0 },
     { q: 'Qual é a capital de Israel?', a: ['Jerusalém', 'Tel Aviv', 'Haifa', 'Beersheba'], correct: 0 },
-    { q: 'Qual é a capital do Irã?', a: ['Teerã', 'Isfahan', 'Shiraz', 'Tabriz'], correct: 0 },
+    { q: 'Qual é a capital do Irê?', a: ['Teerê', 'Isfahan', 'Shiraz', 'Tabriz'], correct: 0 },
     { q: 'Qual é a capital da Turquia?', a: ['Ancara', 'Istambul', 'Izmir', 'Antalya'], correct: 0 }
   ],
   7: [ // Ártico
@@ -116,7 +116,7 @@ let streak = 0;
 
 // Buildings/Upgrades
 const BUILDINGS = [
-  { id: 'castle', name: 'Castelo', desc: '+100 população', cost: 500, effect: () => empire.population += 100 },
+  { id: 'castle', name: 'Castelo', desc: '+100 populaçêo', cost: 500, effect: () => empire.population += 100 },
   { id: 'barracks', name: 'Quartel', desc: '+50 militar', cost: 400, effect: () => empire.military += 50 },
   { id: 'market', name: 'Mercado', desc: '+50 economia', cost: 400, effect: () => empire.economy += 50 },
   { id: 'university', name: 'Universidade', desc: '+30 cultura', cost: 600, effect: () => empire.culture += 30 },

@@ -186,7 +186,7 @@ class PlinkoTycoon {
   }
 
   getSlotMultipliers(count) {
-    // Distribuição: bordas têm multiplicadores altos, centro baixo
+    // Distribuiçêo: bordas têm multiplicadores altos, centro baixo
     const mults = [];
     const mid = Math.floor(count / 2);
     const luckyBonus = this.upgrades.luckySlots.level * 0.5;
@@ -389,7 +389,7 @@ class PlinkoTycoon {
       // Gravidade
       ball.vy += 500 * dt;
 
-      // Atualizar posição
+      // Atualizar posiçêo
       ball.x += ball.vx * dt;
       ball.y += ball.vy * dt;
 
@@ -397,7 +397,7 @@ class PlinkoTycoon {
       ball.trail.push({ x: ball.x, y: ball.y, alpha: 1 });
       if (ball.trail.length > 10) ball.trail.shift();
 
-      // Colisão com pegs
+      // Colisêo com pegs
       for (const peg of this.pegs) {
         const dx = ball.x - peg.x;
         const dy = ball.y - peg.y;
@@ -433,7 +433,7 @@ class PlinkoTycoon {
         }
       }
 
-      // Colisão com paredes
+      // Colisêo com paredes
       const leftWall = this.canvas.width / 2 - 180;
       const rightWall = this.canvas.width / 2 + 180;
 
@@ -923,7 +923,7 @@ class PlinkoTycoon {
   }
 }
 
-// Inicialização
+// Inicializaçêo
 window.addEventListener('load', () => {
   const canvas = document.getElementById('gameCanvas');
   if (canvas) {

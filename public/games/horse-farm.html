@@ -955,7 +955,7 @@
     <button class="intro-help-btn" onclick="showInstructions()">📖 Como Jogar</button>
   </div>
 
-  <!-- Botão de ajuda flutuante -->
+  <!-- Botêo de ajuda flutuante -->
   <button class="help-btn" onclick="showInstructions()" title="Como Jogar">❓</button>
 
   <!-- Modal de Instruções -->
@@ -974,10 +974,10 @@
         <ul>
           <li>👤 <strong>Escolha seu Personagem</strong> - Menino ou menina que cresce junto com o cavalo</li>
           <li>🐴 <strong>Cavalo Bebê</strong> - Cuide dele desde filhote até adulto</li>
-          <li>🍎 <strong>Alimentação</strong> - Feno, maçã, cenoura, água, açúcar e aveia</li>
+          <li>🍎 <strong>Alimentaçêo</strong> - Feno, maçê, cenoura, água, açúcar e aveia</li>
           <li>🎾 <strong>Atividades</strong> - Brincar, escovar e fazer o cavalo dormir</li>
           <li>📊 <strong>Barras de Status</strong> - Fome, felicidade e crescimento</li>
-          <li>🦄 <strong>Evolução Mágica</strong> - Transforme seu cavalo em unicórnio!</li>
+          <li>🦄 <strong>Evoluçêo Mágica</strong> - Transforme seu cavalo em unicórnio!</li>
         </ul>
       </div>
 
@@ -986,7 +986,7 @@
         <ul>
           <li>🍎 Mantenha seu cavalo sempre alimentado e feliz</li>
           <li>📈 Faça o cavalo crescer pelos 3 estágios (Bebê → Jovem → Adulto)</li>
-          <li>⭐ Acumule 1000 pontos para desbloquear a evolução para unicórnio</li>
+          <li>⭐ Acumule 1000 pontos para desbloquear a evoluçêo para unicórnio</li>
           <li>💰 Ganhe moedas cuidando bem do seu cavalo</li>
         </ul>
       </div>
@@ -994,7 +994,7 @@
       <div class="instructions-section magic-tips">
         <h3>✨ Dicas Mágicas</h3>
         <ul>
-          <li>🌟 <strong>Açúcar dá mais pontos!</strong> Mas não enche tanto a fome</li>
+          <li>🌟 <strong>Açúcar dá mais pontos!</strong> Mas nêo enche tanto a fome</li>
           <li>🌟 <strong>Brincar gasta fome</strong> - alimente antes de brincar muito</li>
           <li>🌟 <strong>Dormir avança o dia</strong> e dá bônus de crescimento</li>
           <li>🌟 <strong>Clique nas tigelas</strong> da fazenda para alimentar rapidamente</li>
@@ -1032,7 +1032,7 @@
         <div class="cloud cloud-1"></div>
         <div class="cloud cloud-2"></div>
 
-        <div class="time-indicator" id="timeIndicator">☀️ Manhã</div>
+        <div class="time-indicator" id="timeIndicator">☀️ Manhê</div>
 
         <!-- Barn -->
         <div class="barn">
@@ -1081,7 +1081,7 @@
 
           <!-- Unicorn Section -->
           <div class="unicorn-section" id="unicornSection">
-            <div class="unicorn-title">🦄 Evolução Mágica</div>
+            <div class="unicorn-title">🦄 Evoluçêo Mágica</div>
             <div class="progress-bar">
               <div class="progress-fill magic" id="magicProgress" style="width: 0%"></div>
             </div>
@@ -1139,7 +1139,7 @@
             </div>
             <div class="food-item" onclick="feed('apple')">
               <span class="food-emoji">🍎</span>
-              <span class="food-name">Maçã</span>
+              <span class="food-name">Maçê</span>
               <span class="food-points">+15</span>
             </div>
             <div class="food-item" onclick="feed('carrot')">
@@ -1239,7 +1239,7 @@
 
     const TIME_CYCLE = ['morning', 'afternoon', 'evening', 'night'];
     const TIME_LABELS = {
-      morning: '☀️ Manhã',
+      morning: '☀️ Manhê',
       afternoon: '🌤️ Tarde',
       evening: '🌅 Entardecer',
       night: '🌙 Noite'
@@ -1692,7 +1692,7 @@
         horseArea.classList.remove('evolving');
 
         const stage = STAGES.horse[newStage];
-        showAchievement(stage.emoji, 'Evolução!', `Seu cavalo evoluiu para ${stage.name}!`);
+        showAchievement(stage.emoji, 'Evoluçêo!', `Seu cavalo evoluiu para ${stage.name}!`);
 
         // Reward
         if (typeof EAI !== 'undefined') {

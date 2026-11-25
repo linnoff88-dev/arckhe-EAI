@@ -1,4 +1,4 @@
-Excelente direção. Agora estamos falando de **produto educacional de alto nível**, não só pedagogia.
+Excelente direçêo. Agora estamos falando de **produto educacional de alto nível**, nêo só pedagogia.
 
 Abaixo está uma **LISTA COMPLETA DE NECESSIDADES E ASPECTOS DE JOGO** para que o sistema:
 
@@ -8,13 +8,13 @@ Abaixo está uma **LISTA COMPLETA DE NECESSIDADES E ASPECTOS DE JOGO** para que 
 * funcione **offline-first**
 * seja adequado ao **Fundamental I**
 
-Isso é uma **visão de design + psicologia + jogo + educação**.
+Isso é uma **visêo de design + psicologia + jogo + educaçêo**.
 
 ---
 
 # 🎮 SISTEMA EDUCACIONAL GAMIFICADO
 
-## Necessidades & Aspectos Essenciais (Padrão Mercado Top Tier)
+## Necessidades & Aspectos Essenciais (Padrêo Mercado Top Tier)
 
 ---
 
@@ -42,7 +42,7 @@ O sistema **deve mostrar progresso claro**:
 * Barra de progresso
 * Feedback imediato
 * Missões concluídas visíveis
-* Evolução de nível
+* Evoluçêo de nível
 
 ➡️ *O aluno sente que está melhorando.*
 
@@ -60,13 +60,13 @@ O sistema **deve criar vínculo emocional**:
 
 ---
 
-## 😊 2. FELICIDADE E EMOÇÃO POSITIVA
+## 😊 2. FELICIDADE E EMOÇêO POSITIVA
 
 ### 2.1 Feedback Emocional Imediato
 
 Sempre que o aluno faz algo:
 
-* Animação
+* Animaçêo
 * Som positivo
 * Mensagem encorajadora
 
@@ -74,20 +74,20 @@ Sempre que o aluno faz algo:
 
 ---
 
-### 2.2 Celebração de Conquistas
+### 2.2 Celebraçêo de Conquistas
 
 * Pequenas vitórias frequentes
 * Grandes conquistas comemoradas
 * Certificados simbólicos
 
-➡️ *Dopamina saudável, não vício.*
+➡️ *Dopamina saudável, nêo vício.*
 
 ---
 
 ### 2.3 Segurança Emocional
 
 * Erro tratado como tentativa
-* Possibilidade de repetir sem punição
+* Possibilidade de repetir sem puniçêo
 * Linguagem sempre positiva
 
 ---
@@ -96,7 +96,7 @@ Sempre que o aluno faz algo:
 
 ### 3.1 Objetivos Claros
 
-Cada missão tem:
+Cada missêo tem:
 
 * O que fazer
 * Por que fazer
@@ -104,7 +104,7 @@ Cada missão tem:
 
 ---
 
-### 3.2 Progressão Visível
+### 3.2 Progressêo Visível
 
 * Níveis
 * Mundos
@@ -125,7 +125,7 @@ Cada missão tem:
 
 ### 4.1 Sistema de Pontos
 
-* Pontos por esforço, não só acerto
+* Pontos por esforço, nêo só acerto
 * Pontos visíveis e acumuláveis
 
 ---
@@ -147,7 +147,7 @@ Cada missão tem:
 ### 4.4 Missões Curtas
 
 * 10–20 minutos
-* Sensação de conclusão rápida
+* Sensaçêo de conclusêo rápida
 
 ---
 
@@ -155,7 +155,7 @@ Cada missão tem:
 
 * Mundo fictício
 * Personagens fixos
-* Evolução da história junto com o aluno
+* Evoluçêo da história junto com o aluno
 
 ---
 
@@ -163,7 +163,7 @@ Cada missão tem:
 
 ### 5.1 Interface Infantil Premium
 
-* Cores vivas (não agressivas)
+* Cores vivas (nêo agressivas)
 * Ícones grandes
 * Texto mínimo
 * Emojis moderados
@@ -178,7 +178,7 @@ Cada missão tem:
 
 ---
 
-### 5.3 Personalização
+### 5.3 Personalizaçêo
 
 * Avatar
 * Nome do personagem
@@ -188,11 +188,11 @@ Cada missão tem:
 
 ## 🧑‍🏫 6. PAPEL DO ADULTO (PAIS / PROFESSORES)
 
-### 6.1 Visão Clara de Progresso
+### 6.1 Visêo Clara de Progresso
 
 * Relatórios simples
-* Linguagem não técnica
-* Comparação com o próprio aluno (não outros)
+* Linguagem nêo técnica
+* Comparaçêo com o próprio aluno (nêo outros)
 
 ---
 
@@ -204,25 +204,25 @@ Cada missão tem:
 
 ---
 
-### 6.3 Comunicação Positiva
+### 6.3 Comunicaçêo Positiva
 
 * Sugestões automáticas
-* Alertas não invasivos
+* Alertas nêo invasivos
 
 ---
 
-## 🔒 7. CONFIANÇA, ÉTICA E EDUCAÇÃO
+## 🔒 7. CONFIANÇA, ÉTICA E EDUCAÇêO
 
-### 7.1 Sem Competição Tóxica
+### 7.1 Sem Competiçêo Tóxica
 
 ❌ Ranking público
 ✅ Progresso individual
 
 ---
 
-### 7.2 Sem Monetização Agressiva
+### 7.2 Sem Monetizaçêo Agressiva
 
-* Nada de pressão
+* Nada de pressêo
 * Nada de anúncios
 
 ---
@@ -243,7 +243,7 @@ Cada missão tem:
 
 ---
 
-### 8.2 Aprender Jogando, Não Jogar para Aprender
+### 8.2 Aprender Jogando, Nêo Jogar para Aprender
 
 * Jogo é o meio
 * Aprendizagem é o centro
@@ -252,8 +252,8 @@ Cada missão tem:
 
 ### 8.3 Transferência para a Vida Real
 
-* Aplicação prática
-* Reflexão final
+* Aplicaçêo prática
+* Reflexêo final
 
 ---
 
@@ -261,7 +261,7 @@ Cada missão tem:
 
 Mesmo offline:
 
-* Sugere revisão
+* Sugere revisêo
 * Detecta dificuldade
 * Ajusta ritmo
 
@@ -272,9 +272,9 @@ Mesmo offline:
 | Aspecto           | Duolingo | Khan | Proposta |
 | ----------------- | -------- | ---- | -------- |
 | Feedback imediato | ✔        | ✔    | ✔✔       |
-| Gamificação       | ✔✔       | ✔    | ✔✔✔      |
+| Gamificaçêo       | ✔✔       | ✔    | ✔✔✔      |
 | Offline           | ❌        | ❌    | ✔✔✔      |
-| Personalização    | ✔        | ❌    | ✔✔✔      |
+| Personalizaçêo    | ✔        | ❌    | ✔✔✔      |
 | Foco emocional    | ✔        | ❌    | ✔✔✔      |
 | Infantil          | ❌        | ❌    | ✔✔✔      |
 
@@ -284,7 +284,7 @@ Mesmo offline:
 
 Para competir com os melhores, o sistema **PRECISA**:
 
-✔ Emoção
+✔ Emoçêo
 ✔ Narrativa
 ✔ Progresso visível
 ✔ Segurança emocional
@@ -296,11 +296,11 @@ Para competir com os melhores, o sistema **PRECISA**:
 
 ## 🚀 PRÓXIMO PASSO NATURAL
 
-Sugestão lógica agora:
+Sugestêo lógica agora:
 
 1️⃣ Criar o **GAME LOOP PRINCIPAL** (fluxo do aluno)
 2️⃣ Criar o **MODELO DE NARRATIVA (mundos e personagens)**
-3️⃣ Traduzir isso para **estrutura JSON (gamificação)**
+3️⃣ Traduzir isso para **estrutura JSON (gamificaçêo)**
 4️⃣ Criar **UX flow (telas)**
 
 👉 Diga qual você quer seguir, e eu construo o próximo bloco **no mesmo nível de mercado**.

@@ -17,7 +17,7 @@ class NinjaShadowStrike {
       { title: 'Combate', lines: ['Combine ataques para combos', 'Use habilidades especiais', 'Colete energia chi!'], emoji: '⚔️' },
       { title: 'Habilidades', lines: ['🔥 Shuriken de Fogo', '⚡ Dash Relâmpago', '💨 Corte Sombrio'], emoji: '✨' },
       { title: 'Equipamentos', lines: ['Desbloqueie armas lendárias', 'Melhore suas habilidades', 'Domine todos os estilos!'], emoji: '⚔️' },
-      { title: 'Missão', lines: ['Complete 5 reinos', '10 estágios cada', 'Derrote os chefes!'], emoji: '🏯' }
+      { title: 'Missêo', lines: ['Complete 5 reinos', '10 estágios cada', 'Derrote os chefes!'], emoji: '🏯' }
     ];
 
     // Game state
@@ -50,7 +50,7 @@ class NinjaShadowStrike {
       shadow: { name: 'Ninja das Sombras', emoji: '🥷', color: '#333', speed: 1, damage: 1, price: 0 },
       fire: { name: 'Ninja do Fogo', emoji: '🔥', color: '#ff4444', speed: 0.9, damage: 1.3, price: 2000 },
       ice: { name: 'Ninja do Gelo', emoji: '❄️', color: '#44aaff', speed: 1.1, damage: 0.9, price: 2500 },
-      thunder: { name: 'Ninja do Trovão', emoji: '⚡', color: '#ffff44', speed: 1.2, damage: 1.1, price: 3500 },
+      thunder: { name: 'Ninja do Trovêo', emoji: '⚡', color: '#ffff44', speed: 1.2, damage: 1.1, price: 3500 },
       void: { name: 'Ninja do Vazio', emoji: '🌀', color: '#aa44ff', speed: 1, damage: 1.5, price: 5000 }
     };
 
@@ -68,7 +68,7 @@ class NinjaShadowStrike {
       fireball: { name: 'Shuriken de Fogo', cost: 20, damage: 25, cooldown: 0, maxCooldown: 3000, icon: '🔥' },
       dash: { name: 'Dash Relâmpago', cost: 15, damage: 15, cooldown: 0, maxCooldown: 2000, icon: '⚡' },
       shadowCut: { name: 'Corte Sombrio', cost: 35, damage: 50, cooldown: 0, maxCooldown: 5000, icon: '💨' },
-      heal: { name: 'Meditação', cost: 40, damage: 0, cooldown: 0, maxCooldown: 8000, icon: '💚' }
+      heal: { name: 'Meditaçêo', cost: 40, damage: 0, cooldown: 0, maxCooldown: 8000, icon: '💚' }
     };
 
     // Upgrades
@@ -85,7 +85,7 @@ class NinjaShadowStrike {
       { name: 'Floresta Sombria', bg1: '#1a4d2e', bg2: '#0d260f', unlockLevel: 1 },
       { name: 'Templo do Fogo', bg1: '#8B0000', bg2: '#4d0000', unlockLevel: 5 },
       { name: 'Montanha Gelada', bg1: '#1e3a5f', bg2: '#0a1628', unlockLevel: 10 },
-      { name: 'Castelo Trovão', bg1: '#4a3728', bg2: '#251c14', unlockLevel: 15 },
+      { name: 'Castelo Trovêo', bg1: '#4a3728', bg2: '#251c14', unlockLevel: 15 },
       { name: 'Reino do Vazio', bg1: '#2d1b4e', bg2: '#0f0a1a', unlockLevel: 20 }
     ];
 
@@ -540,11 +540,11 @@ class NinjaShadowStrike {
 
   spawnBoss() {
     const bosses = [
-      { emoji: '🐲', name: 'Dragão das Sombras', hp: 500, damage: 30, speed: 1 },
-      { emoji: '👻', name: 'Espectro Anciã', hp: 400, damage: 25, speed: 1.5 },
-      { emoji: '🦂', name: 'Escorpião Gigante', hp: 600, damage: 35, speed: 0.8 },
+      { emoji: '🐲', name: 'Dragêo das Sombras', hp: 500, damage: 30, speed: 1 },
+      { emoji: '👻', name: 'Espectro Anciê', hp: 400, damage: 25, speed: 1.5 },
+      { emoji: '🦂', name: 'Escorpiêo Gigante', hp: 600, damage: 35, speed: 0.8 },
       { emoji: '🐺', name: 'Lobo Alfa', hp: 450, damage: 28, speed: 1.3 },
-      { emoji: '🦁', name: 'Leão Demoníaco', hp: 700, damage: 40, speed: 0.7 }
+      { emoji: '🦁', name: 'Leêo Demoníaco', hp: 700, damage: 40, speed: 0.7 }
     ];
 
     const boss = bosses[this.currentRealm] || bosses[0];

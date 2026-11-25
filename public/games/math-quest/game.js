@@ -6,7 +6,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// Configuração do canvas
+// Configuraçêo do canvas
 function resizeCanvas() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -27,7 +27,7 @@ const GameData = {
       bgGradient: ['#1a4a1a', '#0d2d0d'],
       levels: 50,
       unlockLevel: 0,
-      topics: ['Adição', 'Subtração', 'Multiplicação', 'Divisão', 'Potências', 'Raízes']
+      topics: ['Adiçêo', 'Subtraçêo', 'Multiplicaçêo', 'Divisêo', 'Potências', 'Raízes']
     },
     {
       id: 'algebra',
@@ -82,7 +82,7 @@ const GameData = {
       bgGradient: ['#1a4a5c', '#0d252e'],
       levels: 50,
       unlockLevel: 70,
-      topics: ['Média', 'Mediana', 'Moda', 'Desvio Padrão', 'Probabilidade']
+      topics: ['Média', 'Mediana', 'Moda', 'Desvio Padrêo', 'Probabilidade']
     },
     {
       id: 'matrices',
@@ -115,11 +115,11 @@ const GameData = {
       bgGradient: ['#5c2a1a', '#2e150d'],
       levels: 50,
       unlockLevel: 115,
-      topics: ['Permutação', 'Arranjo', 'Combinação', 'Binômio de Newton']
+      topics: ['Permutaçêo', 'Arranjo', 'Combinaçêo', 'Binômio de Newton']
     },
     {
       id: 'calculus',
-      name: 'Dimensão do Cálculo',
+      name: 'Dimensêo do Cálculo',
       description: 'O desafio supremo',
       icon: '🌌',
       color: '#673AB7',
@@ -144,11 +144,11 @@ const GameData = {
       { name: 'Slime Numérico', icon: '🟢', hp: 50, damage: 5, xp: 10, coins: 5 },
       { name: 'Goblin Contador', icon: '👺', hp: 80, damage: 8, xp: 15, coins: 8 },
       { name: 'Lobo Divisor', icon: '🐺', hp: 100, damage: 10, xp: 20, coins: 12 },
-      { name: 'Boss: Dragão Aritmético', icon: '🐉', hp: 300, damage: 25, xp: 100, coins: 50, isBoss: true }
+      { name: 'Boss: Dragêo Aritmético', icon: '🐉', hp: 300, damage: 25, xp: 100, coins: 50, isBoss: true }
     ],
     algebra: [
       { name: 'Fantasma X', icon: '👻', hp: 120, damage: 12, xp: 25, coins: 15 },
-      { name: 'Esqueleto Equação', icon: '💀', hp: 150, damage: 15, xp: 30, coins: 20 },
+      { name: 'Esqueleto Equaçêo', icon: '💀', hp: 150, damage: 15, xp: 30, coins: 20 },
       { name: 'Bruxa Polinomial', icon: '🧙‍♀️', hp: 200, damage: 20, xp: 40, coins: 30 },
       { name: 'Boss: Hidra Algébrica', icon: '🐲', hp: 500, damage: 35, xp: 200, coins: 100, isBoss: true }
     ],
@@ -172,26 +172,26 @@ const GameData = {
     ],
     statistics: [
       { name: 'Média Móvel', icon: '📊', hp: 450, damage: 45, xp: 90, coins: 75 },
-      { name: 'Desvio Padrão', icon: '📉', hp: 550, damage: 55, xp: 110, coins: 90 },
+      { name: 'Desvio Padrêo', icon: '📉', hp: 550, damage: 55, xp: 110, coins: 90 },
       { name: 'Outlier Extremo', icon: '⚡', hp: 650, damage: 65, xp: 130, coins: 110 },
-      { name: 'Boss: Distribuição Normal', icon: '🎯', hp: 1500, damage: 85, xp: 600, coins: 300, isBoss: true }
+      { name: 'Boss: Distribuiçêo Normal', icon: '🎯', hp: 1500, damage: 85, xp: 600, coins: 300, isBoss: true }
     ],
     matrices: [
       { name: 'Vetor Errante', icon: '➡️', hp: 550, damage: 55, xp: 110, coins: 95 },
       { name: 'Matriz Singular', icon: '🔲', hp: 680, damage: 68, xp: 135, coins: 115 },
       { name: 'Determinante Zero', icon: '0️⃣', hp: 800, damage: 80, xp: 160, coins: 140 },
-      { name: 'Boss: Transformação Linear', icon: '🌀', hp: 1800, damage: 100, xp: 700, coins: 350, isBoss: true }
+      { name: 'Boss: Transformaçêo Linear', icon: '🌀', hp: 1800, damage: 100, xp: 700, coins: 350, isBoss: true }
     ],
     sequences: [
       { name: 'Termo Geral', icon: '🔄', hp: 700, damage: 70, xp: 140, coins: 120 },
-      { name: 'Razão Comum', icon: '➗', hp: 850, damage: 85, xp: 170, coins: 145 },
+      { name: 'Razêo Comum', icon: '➗', hp: 850, damage: 85, xp: 170, coins: 145 },
       { name: 'Série Infinita', icon: '♾️', hp: 1000, damage: 100, xp: 200, coins: 175 },
       { name: 'Boss: Fibonacci Dourado', icon: '🐚', hp: 2200, damage: 120, xp: 800, coins: 400, isBoss: true }
     ],
     combinatorics: [
       { name: 'Fatorial!', icon: '❗', hp: 900, damage: 90, xp: 180, coins: 155 },
       { name: 'Arranjo Caótico', icon: '🎰', hp: 1100, damage: 110, xp: 220, coins: 190 },
-      { name: 'Combinação Perfeita', icon: '🎯', hp: 1300, damage: 130, xp: 260, coins: 225 },
+      { name: 'Combinaçêo Perfeita', icon: '🎯', hp: 1300, damage: 130, xp: 260, coins: 225 },
       { name: 'Boss: Binômio de Newton', icon: '🍎', hp: 2800, damage: 150, xp: 1000, coins: 500, isBoss: true }
     ],
     calculus: [
@@ -217,7 +217,7 @@ const GameData = {
       { id: 'leather', name: 'Armadura de Couro', icon: '🥋', defense: 10, price: 150 },
       { id: 'chainmail', name: 'Cota de Malha', icon: '🛡️', defense: 25, price: 750 },
       { id: 'plate', name: 'Armadura de Placas', icon: '🦺', defense: 45, price: 2500 },
-      { id: 'dragon', name: 'Armadura de Dragão', icon: '🐉', defense: 70, price: 8000 },
+      { id: 'dragon', name: 'Armadura de Dragêo', icon: '🐉', defense: 70, price: 8000 },
       { id: 'divine', name: 'Armadura Divina', icon: '✨', defense: 120, price: 25000 }
     ],
     accessories: [
@@ -236,8 +236,8 @@ const GameData = {
     { id: 'level_25', name: 'Estudante', desc: 'Alcance nível 25', icon: '🎓', reward: 250 },
     { id: 'level_50', name: 'Matemático', desc: 'Alcance nível 50', icon: '🧮', reward: 500 },
     { id: 'level_100', name: 'Mestre', desc: 'Alcance nível 100', icon: '👨‍🏫', reward: 1000 },
-    { id: 'perfect_10', name: 'Precisão', desc: '10 respostas certas seguidas', icon: '🎯', reward: 200 },
-    { id: 'perfect_25', name: 'Perfeição', desc: '25 respostas certas seguidas', icon: '💯', reward: 500 },
+    { id: 'perfect_10', name: 'Precisêo', desc: '10 respostas certas seguidas', icon: '🎯', reward: 200 },
+    { id: 'perfect_25', name: 'Perfeiçêo', desc: '25 respostas certas seguidas', icon: '💯', reward: 500 },
     { id: 'speed_demon', name: 'Velocista', desc: 'Responda em menos de 3 segundos', icon: '⚡', reward: 150 },
     { id: 'world_1', name: 'Conquistador Aritmético', desc: 'Complete o Reino da Aritmética', icon: '🏰', reward: 300 },
     { id: 'world_2', name: 'Mestre Algébrico', desc: 'Complete a Floresta Algébrica', icon: '🌲', reward: 500 },
@@ -245,12 +245,12 @@ const GameData = {
     { id: 'boss_slayer', name: 'Caçador de Chefes', desc: 'Derrote 10 chefes', icon: '🐉', reward: 1000 },
     { id: 'rich', name: 'Milionário', desc: 'Acumule 10.000 moedas', icon: '💰', reward: 500 },
     { id: 'collector', name: 'Colecionador', desc: 'Compre 10 itens', icon: '🛒', reward: 300 },
-    { id: 'daily_streak', name: 'Dedicação', desc: '7 dias seguidos jogando', icon: '📅', reward: 700 }
+    { id: 'daily_streak', name: 'Dedicaçêo', desc: '7 dias seguidos jogando', icon: '📅', reward: 700 }
   ],
 
   // Skins de personagem
   skins: [
-    { id: 'default', name: 'Padrão', icon: '👤', price: 0 },
+    { id: 'default', name: 'Padrêo', icon: '👤', price: 0 },
     { id: 'fire', name: 'Mago de Fogo', icon: '🔥', price: 500 },
     { id: 'ice', name: 'Mago de Gelo', icon: '❄️', price: 500 },
     { id: 'nature', name: 'Druida', icon: '🌿', price: 500 },
@@ -526,13 +526,13 @@ const ProblemGenerator = {
       const r = Math.floor(Math.random() * 5) + 1;
       const n = Math.floor(Math.random() * 5) + 5;
       answer = a1 + (n - 1) * r;
-      question = `PA: primeiro termo = ${a1}, razão = ${r}\nQual o ${n}º termo?`;
+      question = `PA: primeiro termo = ${a1}, razêo = ${r}\nQual o ${n}º termo?`;
     } else {
       const a1 = Math.floor(Math.random() * 3) + 1;
       const q = Math.floor(Math.random() * 3) + 2;
       const n = Math.floor(Math.random() * 3) + 3;
       answer = a1 * Math.pow(q, n - 1);
-      question = `PG: primeiro termo = ${a1}, razão = ${q}\nQual o ${n}º termo?`;
+      question = `PG: primeiro termo = ${a1}, razêo = ${q}\nQual o ${n}º termo?`;
     }
 
     return this.createOptions(question, answer, 'number');
@@ -561,7 +561,7 @@ const ProblemGenerator = {
         const n3 = Math.floor(Math.random() * 3) + 4;
         const k = 2;
         answer = factorial(n3) / (factorial(k) * factorial(n3 - k));
-        question = `C(${n3},${k}) = ?\n(Combinação de ${n3}, ${k} a ${k})`;
+        question = `C(${n3},${k}) = ?\n(Combinaçêo de ${n3}, ${k} a ${k})`;
         break;
     }
 
@@ -706,7 +706,7 @@ function createNewPlayer(name, classId) {
       revives: 1
     },
 
-    // Customização
+    // Customizaçêo
     skin: 'default',
     unlockedSkins: ['default'],
 
@@ -720,7 +720,7 @@ function createNewPlayer(name, classId) {
   };
 }
 
-// ==================== RENDERIZAÇÃO ====================
+// ==================== RENDERIZAÇêO ====================
 function render() {
   // Limpar canvas
   ctx.fillStyle = '#0a0a20';
@@ -813,7 +813,7 @@ function renderTitle() {
     });
   }
 
-  // Versão
+  // Versêo
   ctx.font = '12px Arial';
   ctx.fillStyle = '#666';
   ctx.fillText('v1.0 - EAI Games', cx, canvas.height - 20);
@@ -985,7 +985,7 @@ function renderCreateCharacter() {
     });
   });
 
-  // Botão criar
+  // Botêo criar
   drawButton(cx, cy + 180, 200, 50, 'COMEÇAR AVENTURA', '#4CAF50', () => {
     gameState.player = createNewPlayer(gameState.playerName || 'Herói', gameState.selectedClass || 'mage');
     savePlayer();
@@ -1182,7 +1182,7 @@ function renderWorlds() {
     ctx.fillStyle = unlocked ? '#fff' : '#555';
     ctx.fillText(world.icon, 35, y + 55);
 
-    // Nome e descrição
+    // Nome e descriçêo
     ctx.font = 'bold 18px Arial';
     ctx.fillStyle = unlocked ? '#fff' : '#666';
     ctx.fillText(world.name, 90, y + 35);
@@ -1393,7 +1393,7 @@ function renderBattle() {
   // Inimigo
   const enemyY = 130;
 
-  // Animação de dano no inimigo
+  // Animaçêo de dano no inimigo
   let enemyShake = 0;
   if (battle.animations.includes('enemy_hit')) {
     enemyShake = Math.sin(Date.now() / 30) * 10;
@@ -1763,7 +1763,7 @@ function renderShop() {
     else if (item.bonus) statText = `+${Math.round((item.value - 1) * 100)}% ${item.bonus.toUpperCase()}`;
     ctx.fillText(statText, 80, y + 45);
 
-    // Botão
+    // Botêo
     ctx.textAlign = 'right';
     if (owned) {
       if (equipped) {
@@ -1966,7 +1966,7 @@ function renderAchievements() {
     ctx.fillStyle = unlocked ? '#fff' : '#555';
     ctx.fillText(ach.icon, 35, y + 40);
 
-    // Nome e descrição
+    // Nome e descriçêo
     ctx.font = 'bold 14px Arial';
     ctx.fillStyle = unlocked ? '#fff' : '#888';
     ctx.fillText(ach.name, 80, y + 25);
@@ -2007,7 +2007,7 @@ function renderSettings() {
   const options = [
     { label: 'Sons', key: 'sound', type: 'toggle' },
     { label: 'Música', key: 'music', type: 'toggle' },
-    { label: 'Vibração', key: 'vibration', type: 'toggle' },
+    { label: 'Vibraçêo', key: 'vibration', type: 'toggle' },
     { label: 'Notificações', key: 'notifications', type: 'toggle' }
   ];
 
@@ -2048,7 +2048,7 @@ function renderSettings() {
     });
   });
 
-  // Botão de reset
+  // Botêo de reset
   drawButton(cx, canvas.height - 100, 200, 45, 'Resetar Progresso', '#f44336', () => {
     if (confirm('Tem certeza? Todo progresso será perdido!')) {
       localStorage.removeItem('mathquest_player');

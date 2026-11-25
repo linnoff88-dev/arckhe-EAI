@@ -301,7 +301,7 @@ export default function AulasPage() {
             </div>
             <h3 className="font-display font-bold text-white mb-2">Progresso Pessoal</h3>
             <p className="text-white/60 text-sm">
-              Acompanhe seu nível, XP e conquistas. Veja sua evolução ao longo do tempo!
+              Acompanhe seu nível, XP e conquistas. Veja sua evoluçêo ao longo do tempo!
             </p>
           </div>
 

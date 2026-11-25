@@ -1,7 +1,7 @@
 /**
  * EAI Economy System v2.0
  * Sistema completo de economia para jogos EAI
- * Documentação: /docs/EAI-ECONOMY.md
+ * Documentaçêo: /docs/EAI-ECONOMY.md
  */
 
 const EAI = (function() {
@@ -13,7 +13,7 @@ const EAI = (function() {
     stats: 'eai_stats'
   };
 
-  // === CONFIGURAÇÃO ===
+  // === CONFIGURAÇêO ===
   const CONFIG = {
     currency: {
       coin: { value: 1, icon: '🪙', name: 'Moedas', color: '#CD7F32' },
@@ -110,7 +110,7 @@ const EAI = (function() {
            (wallet.gold * CONFIG.currency.gold.value);
   }
 
-  // === SISTEMA DE PONTUAÇÃO ===
+  // === SISTEMA DE PONTUAÇêO ===
   function calculateReward(options) {
     const {
       correct = 0,
@@ -251,7 +251,7 @@ const EAI = (function() {
     setTimeout(() => toast.remove(), 2000);
   }
 
-  // Injetar estilos de animação
+  // Injetar estilos de animaçêo
   function injectStyles() {
     if (document.getElementById('eai-economy-styles')) return;
 
@@ -414,7 +414,7 @@ const EAI = (function() {
     styleEl.textContent = styles;
     document.head.appendChild(styleEl);
 
-    // Botão do baú
+    // Botêo do baú
     const chestBtn = document.createElement('button');
     chestBtn.className = 'eai-chest-btn';
     chestBtn.innerHTML = '🎁';
@@ -515,7 +515,7 @@ const EAI = (function() {
     }
   }
 
-  // === INICIALIZAÇÃO ===
+  // === INICIALIZAÇêO ===
   function init() {
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', () => {
@@ -541,7 +541,7 @@ const EAI = (function() {
     canAfford,
     getTotalInCoins,
 
-    // Pontuação
+    // Pontuaçêo
     calculateReward,
     giveReward,
     giveGameReward,

@@ -8,9 +8,9 @@
 
 ## Executive Summary
 
-**Topic:** Plataforma EAI - Ecossistema de Games, Educação e Criação
+**Topic:** Plataforma EAI - Ecossistema de Games, Educaçêo e Criaçêo
 
-**Session Goals:** Definir visão completa do ecossistema, layout e prioridades para MVP
+**Session Goals:** Definir visêo completa do ecossistema, layout e prioridades para MVP
 
 **Techniques Used:** Mind Mapping, Abordagem Recomendada
 
@@ -36,7 +36,7 @@
 | Formal 4 | **E**veryone's **A**rcade **I**nteractive | Inclusivo |
 | Informal | "E aí?!" (gíria BR) | Jovens, kids |
 
-**Estratégia:** Usar todos os significados conforme o público-alvo da comunicação.
+**Estratégia:** Usar todos os significados conforme o público-alvo da comunicaçêo.
 
 ---
 
@@ -70,11 +70,11 @@
 
 ### 4 Grandes Áreas do Ecossistema
 
-| Área | Descrição | Público Principal | Status MVP |
+| Área | Descriçêo | Público Principal | Status MVP |
 |------|-----------|-------------------|------------|
 | **Arcade** | Jogos casuais estilo Poki, acesso livre | Todos | Fase 1 |
 | **Educacional** | Jogos educativos para crianças | Crianças, escolas, pais | Fase 1 |
-| **Profissional** | Educação gamificada para carreiras | Jovens, adultos | Fase 2 |
+| **Profissional** | Educaçêo gamificada para carreiras | Jovens, adultos | Fase 2 |
 | **Estúdio** | Ambiente para criar jogos | Desenvolvedores | Fase 3 (outro ambiente) |
 
 ---
@@ -85,7 +85,7 @@
 
 | Tier | Acesso | Cadastro | Preço |
 |------|--------|----------|-------|
-| **Free** | Jogos básicos, níveis iniciais | Não requer | Grátis |
+| **Free** | Jogos básicos, níveis iniciais | Nêo requer | Grátis |
 | **Premium** | Jogos avançados, níveis completos, sem ads | Requer | Assinatura |
 | **Escolas** | Pacote educacional completo | Institucional | B2B |
 
@@ -104,13 +104,13 @@
 
 ### Immediate Opportunities (MVP Fase 1)
 1. **Portal Arcade** - Jogos casuais HTML5/WebGL sem cadastro
-2. **Seção Educacional Kids** - Jogos educativos para crianças
+2. **Seçêo Educacional Kids** - Jogos educativos para crianças
 3. **Layout Unificado** - Design que mostre todo ecossistema
 
 ### Future Innovations (Fase 2-3)
 1. **Área Profissional** - Cursos gamificados
-2. **Estúdio EAI** - Plataforma de criação (ambiente separado)
-3. **Sistema de Progressão** - Achievements cross-áreas
+2. **Estúdio EAI** - Plataforma de criaçêo (ambiente separado)
+3. **Sistema de Progressêo** - Achievements cross-áreas
 
 ### Moonshots
 1. **EAI Academy** - Certificações reconhecidas
@@ -121,9 +121,9 @@
 
 ## SCAMPER Analysis
 
-| Letra | Aplicação EAI |
+| Letra | Aplicaçêo EAI |
 |-------|---------------|
-| **C**ombinar | Jogos + Educação Infantil + Educação Profissional (diferencial único) |
+| **C**ombinar | Jogos + Educaçêo Infantil + Educaçêo Profissional (diferencial único) |
 | **P**ut (novos usos) | Escolas como clientes B2B, empresas para treinamento |
 
 ---
@@ -132,7 +132,7 @@
 
 | # | Persona | Idade | O que busca | Prioridade MVP |
 |---|---------|-------|-------------|----------------|
-| 1 | **Jogador Casual** | 8-25 | Diversão rápida, joga e sai | SIM |
+| 1 | **Jogador Casual** | 8-25 | Diversêo rápida, joga e sai | SIM |
 | 2 | **Estudante Kids** | 6-12 | Aprender brincando | SIM |
 | 3 | Jovem Profissional | 16-30 | Skills para carreira | Fase 2 |
 | 4 | Pai/Professor | 25-50 | Conteúdo seguro/educativo | Fase 2 |
@@ -143,7 +143,7 @@
 
 **Tagline:** "Jogue. Aprenda. Evolua."
 
-**Visão:** Plataforma de games que combina entretenimento casual com educação,
+**Visêo:** Plataforma de games que combina entretenimento casual com educaçêo,
 atingindo desde crianças até profissionais, com modelo freemium acessível.
 
 ---
@@ -159,10 +159,10 @@ atingindo desde crianças até profissionais, com modelo freemium acessível.
 
 2. **Área Profissional (Fase 2)**
    - Cursos gamificados
-   - Sistema de progressão
+   - Sistema de progressêo
 
 3. **Estúdio EAI (Fase 3)**
-   - Ambiente separado para criação de jogos
+   - Ambiente separado para criaçêo de jogos
 
 ---
 
@@ -171,7 +171,7 @@ atingindo desde crianças até profissionais, com modelo freemium acessível.
 ### What Worked Well
 - Mind Mapping para visualizar ecossistema
 - SCAMPER para diferenciais
-- Definição clara de personas
+- Definiçêo clara de personas
 
 ### Next Steps
 1. Criar Project Brief formal

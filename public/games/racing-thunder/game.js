@@ -82,7 +82,7 @@ class RacingThunder {
       { id: 'first_race', name: 'Piloto Novato', desc: 'Complete sua primeira corrida', icon: '🏎️', unlocked: false },
       { id: 'first_win', name: 'Primeira Vitória', desc: 'Vença sua primeira corrida', icon: '🏆', unlocked: false },
       { id: 'races_10', name: 'Experiente', desc: 'Complete 10 corridas', icon: '🎮', unlocked: false },
-      { id: 'wins_10', name: 'Campeão', desc: 'Vença 10 corridas', icon: '🥇', unlocked: false },
+      { id: 'wins_10', name: 'Campeêo', desc: 'Vença 10 corridas', icon: '🥇', unlocked: false },
       { id: 'car_3', name: 'Colecionador', desc: 'Desbloqueie 3 carros', icon: '🚗', unlocked: false },
       { id: 'car_all', name: 'Garagem Completa', desc: 'Desbloqueie todos os carros', icon: '🏁', unlocked: false },
       { id: 'nitro_master', name: 'Nitro Master', desc: 'Use nitro 50 vezes', icon: '💨', unlocked: false },

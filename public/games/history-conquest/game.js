@@ -19,7 +19,7 @@ const ERAS = [
   { id: 5, name: 'Idade Média', color: '#556b2f', icon: '🏰', unlockLevel: 30, battles: 50 },
   { id: 6, name: 'Renascimento', color: '#9932cc', icon: '🎨', unlockLevel: 40, battles: 50 },
   { id: 7, name: 'Era das Navegações', color: '#1e90ff', icon: '⛵', unlockLevel: 50, battles: 50 },
-  { id: 8, name: 'Revolução Industrial', color: '#2f4f4f', icon: '🏭', unlockLevel: 60, battles: 50 },
+  { id: 8, name: 'Revoluçêo Industrial', color: '#2f4f4f', icon: '🏭', unlockLevel: 60, battles: 50 },
   { id: 9, name: 'Era Moderna', color: '#ff6347', icon: '🌍', unlockLevel: 70, battles: 50 }
 ];
 
@@ -60,7 +60,7 @@ const SHOP_ITEMS = [
   { id: 'attack1', name: 'Forja Militar', desc: '+10% Ataque', cost: 500, gem: false, effect: () => ownedUpgrades.attackBonus += 10 },
   { id: 'defense1', name: 'Muralhas', desc: '+10% Defesa', cost: 500, gem: false, effect: () => ownedUpgrades.defenseBonus += 10 },
   { id: 'resource1', name: 'Economia', desc: '+20 Recursos', cost: 800, gem: false, effect: () => ownedUpgrades.resourceBonus += 20 },
-  { id: 'slots1', name: 'Expansão', desc: '+2 Unidades', cost: 20, gem: true, effect: () => ownedUpgrades.unitSlots += 2 },
+  { id: 'slots1', name: 'Expansêo', desc: '+2 Unidades', cost: 20, gem: true, effect: () => ownedUpgrades.unitSlots += 2 },
   { id: 'attack2', name: 'Arsenal', desc: '+25% Ataque', cost: 50, gem: true, effect: () => ownedUpgrades.attackBonus += 25 },
   { id: 'defense2', name: 'Fortaleza', desc: '+25% Defesa', cost: 50, gem: true, effect: () => ownedUpgrades.defenseBonus += 25 }
 ];
@@ -69,7 +69,7 @@ const SHOP_ITEMS = [
 const QUESTIONS = {
   0: [ // Pré-História
     { q: 'Qual período é caracterizado pelo uso de pedra lascada?', a: ['Paleolítico', 'Neolítico', 'Idade do Bronze', 'Idade do Ferro'], correct: 0 },
-    { q: 'O que marcou a Revolução Neolítica?', a: ['Agricultura', 'Escrita', 'Metalurgia', 'Comércio'], correct: 0 },
+    { q: 'O que marcou a Revoluçêo Neolítica?', a: ['Agricultura', 'Escrita', 'Metalurgia', 'Comércio'], correct: 0 },
     { q: 'Qual espécie humana pintou as cavernas de Lascaux?', a: ['Homo sapiens', 'Homo erectus', 'Neanderthal', 'Homo habilis'], correct: 0 },
     { q: 'O que é um dolmen?', a: ['Monumento megalítico', 'Ferramenta de pedra', 'Pintura rupestre', 'Arma primitiva'], correct: 0 },
     { q: 'Qual animal foi domesticado primeiro?', a: ['Cachorro', 'Cavalo', 'Vaca', 'Ovelha'], correct: 0 }
@@ -78,18 +78,18 @@ const QUESTIONS = {
     { q: 'Onde surgiu a escrita cuneiforme?', a: ['Mesopotâmia', 'Egito', 'China', 'Índia'], correct: 0 },
     { q: 'Quem foi Hamurabi?', a: ['Rei da Babilônia', 'Faraó egípcio', 'Filósofo grego', 'Imperador romano'], correct: 0 },
     { q: 'O que é o Código de Hamurabi?', a: ['Conjunto de leis', 'Livro sagrado', 'Tratado de paz', 'Mapa antigo'], correct: 0 },
-    { q: 'Qual civilização inventou a roda?', a: ['Sumérios', 'Egípcios', 'Gregos', 'Romanos'], correct: 0 },
+    { q: 'Qual civilizaçêo inventou a roda?', a: ['Sumérios', 'Egípcios', 'Gregos', 'Romanos'], correct: 0 },
     { q: 'O que eram os zigurates?', a: ['Templos em degraus', 'Palácios reais', 'Mercados', 'Bibliotecas'], correct: 0 }
   ],
   2: [ // Egito Antigo
     { q: 'Qual faraó construiu a Grande Pirâmide?', a: ['Quéops', 'Tutancâmon', 'Ramsés II', 'Cleópatra'], correct: 0 },
-    { q: 'O que é o processo de mumificação?', a: ['Preservação de corpos', 'Construção de pirâmides', 'Escrita hieroglífica', 'Adoração aos deuses'], correct: 0 },
-    { q: 'Qual era o papel do Nilo para o Egito?', a: ['Irrigação e fertilidade', 'Defesa militar', 'Transporte apenas', 'Adoração religiosa'], correct: 0 },
-    { q: 'Quem decifrou os hieróglifos?', a: ['Champollion', 'Howard Carter', 'Heródoto', 'Napoleão'], correct: 0 },
+    { q: 'O que é o processo de mumificaçêo?', a: ['Preservaçêo de corpos', 'Construçêo de pirâmides', 'Escrita hieroglífica', 'Adoraçêo aos deuses'], correct: 0 },
+    { q: 'Qual era o papel do Nilo para o Egito?', a: ['Irrigaçêo e fertilidade', 'Defesa militar', 'Transporte apenas', 'Adoraçêo religiosa'], correct: 0 },
+    { q: 'Quem decifrou os hieróglifos?', a: ['Champollion', 'Howard Carter', 'Heródoto', 'Napoleêo'], correct: 0 },
     { q: 'O que é a Pedra de Roseta?', a: ['Pedra com 3 escritas', 'Tumba real', 'Templo antigo', 'Amuleto sagrado'], correct: 0 }
   ],
   3: [ // Grécia Antiga
-    { q: 'Qual filósofo foi mestre de Alexandre?', a: ['Aristóteles', 'Platão', 'Sócrates', 'Tales'], correct: 0 },
+    { q: 'Qual filósofo foi mestre de Alexandre?', a: ['Aristóteles', 'Platêo', 'Sócrates', 'Tales'], correct: 0 },
     { q: 'O que era a democracia ateniense?', a: ['Governo do povo', 'Governo de um rei', 'Governo militar', 'Governo religioso'], correct: 0 },
     { q: 'Qual guerra opôs Atenas e Esparta?', a: ['Guerra do Peloponeso', 'Guerras Médicas', 'Guerra de Troia', 'Guerra Púnica'], correct: 0 },
     { q: 'O que eram os Jogos Olímpicos antigos?', a: ['Competições esportivas religiosas', 'Batalhas entre cidades', 'Festivais de teatro', 'Mercados anuais'], correct: 0 },
@@ -99,43 +99,43 @@ const QUESTIONS = {
     { q: 'Quem foi o primeiro imperador romano?', a: ['Augusto', 'Júlio César', 'Nero', 'Trajano'], correct: 0 },
     { q: 'O que era o Coliseu?', a: ['Anfiteatro para espetáculos', 'Templo religioso', 'Palácio imperial', 'Mercado central'], correct: 0 },
     { q: 'Qual era a língua oficial do Império?', a: ['Latim', 'Grego', 'Etrusco', 'Púnico'], correct: 0 },
-    { q: 'O que foram as estradas romanas?', a: ['Rede de vias pavimentadas', 'Aquedutos', 'Muralhas defensivas', 'Canais de irrigação'], correct: 0 },
+    { q: 'O que foram as estradas romanas?', a: ['Rede de vias pavimentadas', 'Aquedutos', 'Muralhas defensivas', 'Canais de irrigaçêo'], correct: 0 },
     { q: 'Quando Roma caiu?', a: ['476 d.C.', '27 a.C.', '1453 d.C.', '800 d.C.'], correct: 0 }
   ],
   5: [ // Idade Média
-    { q: 'O que era o feudalismo?', a: ['Sistema de terras e vassalagem', 'Forma de governo democrático', 'Sistema monetário', 'Religião medieval'], correct: 0 },
+    { q: 'O que era o feudalismo?', a: ['Sistema de terras e vassalagem', 'Forma de governo democrático', 'Sistema monetário', 'Religiêo medieval'], correct: 0 },
     { q: 'O que foram as Cruzadas?', a: ['Expedições religiosas militares', 'Invasões vikings', 'Guerras entre reinos', 'Peregrinações pacíficas'], correct: 0 },
-    { q: 'Quem era Carlos Magno?', a: ['Imperador do Sacro Império', 'Papa medieval', 'Rei da Inglaterra', 'Sultão árabe'], correct: 0 },
+    { q: 'Quem era Carlos Magno?', a: ['Imperador do Sacro Império', 'Papa medieval', 'Rei da Inglaterra', 'Sultêo árabe'], correct: 0 },
     { q: 'O que foi a Peste Negra?', a: ['Pandemia de peste bubônica', 'Fome generalizada', 'Guerra religiosa', 'Crise econômica'], correct: 0 },
     { q: 'O que era um castelo medieval?', a: ['Fortaleza defensiva', 'Templo religioso', 'Mercado', 'Escola'], correct: 0 }
   ],
   6: [ // Renascimento
     { q: 'Onde surgiu o Renascimento?', a: ['Itália', 'França', 'Inglaterra', 'Alemanha'], correct: 0 },
     { q: 'Quem pintou a Mona Lisa?', a: ['Leonardo da Vinci', 'Michelangelo', 'Rafael', 'Botticelli'], correct: 0 },
-    { q: 'O que foi a Reforma Protestante?', a: ['Movimento religioso de Lutero', 'Renovação artística', 'Revolução política', 'Descoberta científica'], correct: 0 },
+    { q: 'O que foi a Reforma Protestante?', a: ['Movimento religioso de Lutero', 'Renovaçêo artística', 'Revoluçêo política', 'Descoberta científica'], correct: 0 },
     { q: 'Quem escreveu "O Príncipe"?', a: ['Maquiavel', 'Dante', 'Petrarca', 'Boccaccio'], correct: 0 },
-    { q: 'O que caracteriza o humanismo?', a: ['Valorização do ser humano', 'Teocentrismo', 'Feudalismo', 'Absolutismo'], correct: 0 }
+    { q: 'O que caracteriza o humanismo?', a: ['Valorizaçêo do ser humano', 'Teocentrismo', 'Feudalismo', 'Absolutismo'], correct: 0 }
   ],
   7: [ // Era das Navegações
-    { q: 'Quem chegou ao Brasil em 1500?', a: ['Pedro Álvares Cabral', 'Cristóvão Colombo', 'Vasco da Gama', 'Fernão de Magalhães'], correct: 0 },
-    { q: 'O que foi o Tratado de Tordesilhas?', a: ['Divisão de terras entre Portugal e Espanha', 'Aliança militar', 'Acordo comercial', 'Tratado de paz'], correct: 0 },
-    { q: 'Quem fez a primeira viagem de circunavegação?', a: ['Fernão de Magalhães/Elcano', 'Colombo', 'Cabral', 'Vasco da Gama'], correct: 0 },
+    { q: 'Quem chegou ao Brasil em 1500?', a: ['Pedro Álvares Cabral', 'Cristóvêo Colombo', 'Vasco da Gama', 'Fernêo de Magalhêes'], correct: 0 },
+    { q: 'O que foi o Tratado de Tordesilhas?', a: ['Divisêo de terras entre Portugal e Espanha', 'Aliança militar', 'Acordo comercial', 'Tratado de paz'], correct: 0 },
+    { q: 'Quem fez a primeira viagem de circunavegaçêo?', a: ['Fernêo de Magalhêes/Elcano', 'Colombo', 'Cabral', 'Vasco da Gama'], correct: 0 },
     { q: 'O que buscavam as especiarias?', a: ['Condimentos e conservantes', 'Ouro e prata', 'Escravos', 'Armas'], correct: 0 },
-    { q: 'Qual era a Escola de Sagres?', a: ['Centro de navegação', 'Universidade medieval', 'Mosteiro', 'Fortaleza'], correct: 0 }
+    { q: 'Qual era a Escola de Sagres?', a: ['Centro de navegaçêo', 'Universidade medieval', 'Mosteiro', 'Fortaleza'], correct: 0 }
   ],
-  8: [ // Revolução Industrial
-    { q: 'Onde começou a Revolução Industrial?', a: ['Inglaterra', 'França', 'Alemanha', 'EUA'], correct: 0 },
+  8: [ // Revoluçêo Industrial
+    { q: 'Onde começou a Revoluçêo Industrial?', a: ['Inglaterra', 'França', 'Alemanha', 'EUA'], correct: 0 },
     { q: 'Quem inventou a máquina a vapor?', a: ['James Watt', 'Thomas Edison', 'Graham Bell', 'Henry Ford'], correct: 0 },
-    { q: 'O que era o ludismo?', a: ['Destruição de máquinas', 'Movimento artístico', 'Sistema político', 'Religião'], correct: 0 },
-    { q: 'O que foi o êxodo rural?', a: ['Migração para cidades', 'Volta ao campo', 'Colonização', 'Emigração'], correct: 0 },
-    { q: 'Qual combustível moveu a 1ª Revolução?', a: ['Carvão', 'Petróleo', 'Eletricidade', 'Gás natural'], correct: 0 }
+    { q: 'O que era o ludismo?', a: ['Destruiçêo de máquinas', 'Movimento artístico', 'Sistema político', 'Religiêo'], correct: 0 },
+    { q: 'O que foi o êxodo rural?', a: ['Migraçêo para cidades', 'Volta ao campo', 'Colonizaçêo', 'Emigraçêo'], correct: 0 },
+    { q: 'Qual combustível moveu a 1ª Revoluçêo?', a: ['Carvêo', 'Petróleo', 'Eletricidade', 'Gás natural'], correct: 0 }
   ],
   9: [ // Era Moderna
     { q: 'Quando foi a Primeira Guerra Mundial?', a: ['1914-1918', '1939-1945', '1950-1953', '1961-1975'], correct: 0 },
-    { q: 'O que foi a Guerra Fria?', a: ['Tensão EUA-URSS sem guerra direta', 'Guerra no Ártico', 'Conflito econômico', 'Guerra nuclear'], correct: 0 },
+    { q: 'O que foi a Guerra Fria?', a: ['Tensêo EUA-URSS sem guerra direta', 'Guerra no Ártico', 'Conflito econômico', 'Guerra nuclear'], correct: 0 },
     { q: 'Quando caiu o Muro de Berlim?', a: ['1989', '1991', '1985', '1979'], correct: 0 },
-    { q: 'O que foi a ONU?', a: ['Organização das Nações Unidas', 'Aliança militar', 'Bloco econômico', 'Tratado de paz'], correct: 0 },
-    { q: 'O que caracteriza a globalização?', a: ['Integração mundial', 'Isolamento', 'Colonização', 'Feudalismo'], correct: 0 }
+    { q: 'O que foi a ONU?', a: ['Organizaçêo das Nações Unidas', 'Aliança militar', 'Bloco econômico', 'Tratado de paz'], correct: 0 },
+    { q: 'O que caracteriza a globalizaçêo?', a: ['Integraçêo mundial', 'Isolamento', 'Colonizaçêo', 'Feudalismo'], correct: 0 }
   ]
 };
 

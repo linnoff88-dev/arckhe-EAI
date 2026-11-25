@@ -89,7 +89,7 @@
       box-shadow: 0 4px 0 #5D4037;
     }
 
-    /* === SELEÇÃO DE PERSONAGEM === */
+    /* === SELEÇêO DE PERSONAGEM === */
     .character-select {
       background: linear-gradient(180deg, #E8F5E9 0%, #C8E6C9 100%);
     }
@@ -268,7 +268,7 @@
       transform: translateY(-2px);
     }
 
-    /* === CUSTOMIZAÇÃO DO CAVALO === */
+    /* === CUSTOMIZAÇêO DO CAVALO === */
     .horse-customization {
       background: linear-gradient(180deg, #FFF8E1 0%, #FFECB3 100%);
     }
@@ -1267,7 +1267,7 @@
 
       <div class="instructions-section">
         <h3>🎮 Sobre o Jogo</h3>
-        <p>Bem-vindo à Academia de Cavalos! Aqui você vai aprender a cavalgar do zero e se tornar um campeão de corridas!</p>
+        <p>Bem-vindo à Academia de Cavalos! Aqui você vai aprender a cavalgar do zero e se tornar um campeêo de corridas!</p>
       </div>
 
       <div class="instructions-section">
@@ -1307,7 +1307,7 @@
     </div>
   </div>
 
-  <!-- SELEÇÃO DE PERSONAGEM -->
+  <!-- SELEÇêO DE PERSONAGEM -->
   <div class="screen character-select" id="characterScreen">
     <h2 class="section-title">👤 Crie seu Cavaleiro</h2>
 
@@ -1374,7 +1374,7 @@
     </div>
   </div>
 
-  <!-- CUSTOMIZAÇÃO DO CAVALO -->
+  <!-- CUSTOMIZAÇêO DO CAVALO -->
   <div class="screen horse-customization" id="horseCustomScreen">
     <h2 class="section-title">🐴 Crie seu Cavalo</h2>
 
@@ -1621,7 +1621,7 @@
 
     <div class="stats-panel">
       <div class="stat-row">
-        <span class="stat-label">📍 Posição</span>
+        <span class="stat-label">📍 Posiçêo</span>
         <span class="stat-value" id="finalPosition">1º Lugar</span>
       </div>
       <div class="stat-row">
@@ -1633,7 +1633,7 @@
         <span class="stat-value" id="coinsEarned">+50</span>
       </div>
       <div class="stat-row">
-        <span class="stat-label">⭐ Pontuação</span>
+        <span class="stat-label">⭐ Pontuaçêo</span>
         <span class="stat-value" id="finalScore">1000</span>
       </div>
     </div>
@@ -1839,7 +1839,7 @@
       },
       {
         title: 'Andando Devagar',
-        description: 'Excelente! Continue andando devagar, controlando a direção com as rédeas.',
+        description: 'Excelente! Continue andando devagar, controlando a direçêo com as rédeas.',
         action: '🚶 Continuar Andando',
         skill: 'speed',
         bonus: 25,
@@ -1979,7 +1979,7 @@
       document.getElementById('instructionsModal').classList.remove('active');
     }
 
-    // === PERSONALIZAÇÃO DO CAVALEIRO ===
+    // === PERSONALIZAÇêO DO CAVALEIRO ===
     function selectGender(gender) {
       gameState.rider.gender = gender;
       document.getElementById('girlCard').classList.toggle('selected', gender === 'girl');
@@ -2012,7 +2012,7 @@
       preview.textContent = gameState.rider.gender === 'girl' ? '👧' : '👦';
     }
 
-    // === PERSONALIZAÇÃO DO CAVALO ===
+    // === PERSONALIZAÇêO DO CAVALO ===
     function showTab(tabName) {
       document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
       document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
@@ -2066,7 +2066,7 @@
     // === TUTORIAL ===
     function startTutorial() {
       gameState.rider.name = document.getElementById('riderName').value || 'Cavaleiro';
-      gameState.horse.name = document.getElementById('horseName').value || 'Trovão';
+      gameState.horse.name = document.getElementById('horseName').value || 'Trovêo';
 
       gameState.tutorialStep = 0;
       gameState.skills = { trust: 0, balance: 0, control: 0, speed: 0 };
@@ -2181,7 +2181,7 @@
       playerPosition += 5;
       document.getElementById('racer1').style.left = playerPosition + 'px';
 
-      // Animação do botão
+      // Animaçêo do botêo
       const btn = document.getElementById('tapBtn');
       btn.style.transform = 'scale(0.95)';
       setTimeout(() => btn.style.transform = '', 100);
@@ -2197,19 +2197,19 @@
       const raceTime = ((Date.now() - raceStartTime) / 1000).toFixed(1);
       let position = 1;
 
-      // Calcular posição do jogador
+      // Calcular posiçêo do jogador
       opponents.forEach(pos => {
         if (pos > playerPosition) position++;
       });
 
-      // Calcular pontuação
+      // Calcular pontuaçêo
       let score = 0;
       let coins = 0;
 
       if (position === 1) {
         score = 1000;
         coins = 50;
-        document.getElementById('victoryTitle').textContent = '🏆 CAMPEÃO!';
+        document.getElementById('victoryTitle').textContent = '🏆 CAMPEêO!';
         document.getElementById('victorySubtitle').textContent = 'Você venceu a corrida!';
       } else if (position === 2) {
         score = 700;
@@ -2225,7 +2225,7 @@
         score = 200;
         coins = 10;
         document.getElementById('victoryTitle').textContent = '4º LUGAR';
-        document.getElementById('victorySubtitle').textContent = 'Não desista! Tente novamente!';
+        document.getElementById('victorySubtitle').textContent = 'Nêo desista! Tente novamente!';
       }
 
       gameState.score = score;
@@ -2364,7 +2364,7 @@
       }
     }
 
-    // === INICIALIZAÇÃO ===
+    // === INICIALIZAÇêO ===
     loadGameState();
   </script>
   <script src="eai-header.js"></script>

@@ -99,7 +99,7 @@ class BallFusionArena {
     // Power-ups
     this.powerUps = [];
 
-    // Fusão
+    // Fusêo
     this.fusionRecipes = {
       'normal+normal': 'fire',
       'fire+fire': 'explosive',
@@ -194,7 +194,7 @@ class BallFusionArena {
     }
 
     if (this.state === 'menu') {
-      // Verificar clique no botão jogar
+      // Verificar clique no botêo jogar
       const btnY = this.canvas.height / 2 + 50;
       if (y >= btnY - 25 && y <= btnY + 25) {
         this.startGame();
@@ -436,7 +436,7 @@ class BallFusionArena {
       ball.trail.push({ x: ball.x, y: ball.y });
       if (ball.trail.length > 8) ball.trail.shift();
 
-      // Colisão com paredes
+      // Colisêo com paredes
       if (ball.x - ball.radius < 0) {
         ball.x = ball.radius;
         ball.vx = Math.abs(ball.vx);
@@ -450,7 +450,7 @@ class BallFusionArena {
         ball.vy = Math.abs(ball.vy);
       }
 
-      // Colisão com blocos
+      // Colisêo com blocos
       for (let j = this.blocks.length - 1; j >= 0; j--) {
         const block = this.blocks[j];
         if (this.ballBlockCollision(ball, block)) {
@@ -486,7 +486,7 @@ class BallFusionArena {
               this.spawnPowerUp(block.x + block.width / 2, block.y + block.height / 2);
             }
 
-            // Efeito de destruição
+            // Efeito de destruiçêo
             this.addParticles(block.x + block.width / 2, block.y + block.height / 2, block.color, 10);
 
             this.floatingTexts.push({
@@ -503,7 +503,7 @@ class BallFusionArena {
 
           // Bounce (exceto laser que atravessa)
           if (ball.special !== 'pierce') {
-            // Determinar direção do bounce
+            // Determinar direçêo do bounce
             const overlapX = (ball.x < block.x + block.width / 2) ?
               (block.x - (ball.x + ball.radius)) :
               ((ball.x - ball.radius) - (block.x + block.width));
@@ -716,7 +716,7 @@ class BallFusionArena {
         this.addBallToInventory('electric', 1);
         break;
       case 'heal':
-        // Não tem vida neste jogo, dá XP extra
+        // Nêo tem vida neste jogo, dá XP extra
         this.xp += 50;
         break;
       case 'fusion':
@@ -768,7 +768,7 @@ class BallFusionArena {
       this.floatingTexts.push({
         x: this.canvas.width / 2,
         y: this.canvas.height / 2,
-        text: `FUSÃO: ${this.ballTypes[result].name}!`,
+        text: `FUSêO: ${this.ballTypes[result].name}!`,
         color: this.ballTypes[result].color,
         alpha: 1,
         vy: -1,
@@ -878,7 +878,7 @@ class BallFusionArena {
     ctx.fillStyle = '#FFD700';
     ctx.fillText(`Total XP: ${this.totalXP}`, cx, cy - 20);
 
-    // Botão jogar
+    // Botêo jogar
     ctx.fillStyle = '#4ECDC4';
     ctx.beginPath();
     ctx.roundRect(cx - 100, cy + 25, 200, 50, 25);
@@ -1164,7 +1164,7 @@ class BallFusionArena {
   }
 }
 
-// Inicialização
+// Inicializaçêo
 window.addEventListener('load', () => {
   const canvas = document.getElementById('gameCanvas');
   if (canvas) {

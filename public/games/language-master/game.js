@@ -14,7 +14,7 @@ const LANGUAGES = [
   { id: 0, name: 'Inglês', color: '#1e40af', icon: '🇬🇧', unlockLevel: 1, lessons: 50 },
   { id: 1, name: 'Espanhol', color: '#dc2626', icon: '🇪🇸', unlockLevel: 5, lessons: 50 },
   { id: 2, name: 'Francês', color: '#2563eb', icon: '🇫🇷', unlockLevel: 10, lessons: 50 },
-  { id: 3, name: 'Alemão', color: '#1f2937', icon: '🇩🇪', unlockLevel: 15, lessons: 50 },
+  { id: 3, name: 'Alemêo', color: '#1f2937', icon: '🇩🇪', unlockLevel: 15, lessons: 50 },
   { id: 4, name: 'Italiano', color: '#16a34a', icon: '🇮🇹', unlockLevel: 20, lessons: 50 },
   { id: 5, name: 'Japonês', color: '#dc2626', icon: '🇯🇵', unlockLevel: 30, lessons: 50 },
   { id: 6, name: 'Mandarim', color: '#dc2626', icon: '🇨🇳', unlockLevel: 40, lessons: 50 },
@@ -52,13 +52,13 @@ const VOCABULARY = {
     ],
     animals: [
       { word: 'Dog', translation: 'Cachorro', options: ['Gato', 'Cachorro', 'Pássaro', 'Peixe'] },
-      { word: 'Cat', translation: 'Gato', options: ['Gato', 'Rato', 'Leão', 'Tigre'] },
+      { word: 'Cat', translation: 'Gato', options: ['Gato', 'Rato', 'Leêo', 'Tigre'] },
       { word: 'Bird', translation: 'Pássaro', options: ['Cobra', 'Pássaro', 'Urso', 'Lobo'] }
     ],
     food: [
       { word: 'Water', translation: 'Água', options: ['Leite', 'Suco', 'Água', 'Café'] },
-      { word: 'Bread', translation: 'Pão', options: ['Arroz', 'Pão', 'Carne', 'Fruta'] },
-      { word: 'Apple', translation: 'Maçã', options: ['Banana', 'Laranja', 'Maçã', 'Uva'] }
+      { word: 'Bread', translation: 'Pêo', options: ['Arroz', 'Pêo', 'Carne', 'Fruta'] },
+      { word: 'Apple', translation: 'Maçê', options: ['Banana', 'Laranja', 'Maçê', 'Uva'] }
     ]
   },
   1: { // Spanish
@@ -81,13 +81,13 @@ const VOCABULARY = {
     ],
     animals: [
       { word: 'Perro', translation: 'Cachorro', options: ['Gato', 'Cachorro', 'Pássaro', 'Peixe'] },
-      { word: 'Gato', translation: 'Gato', options: ['Gato', 'Rato', 'Leão', 'Tigre'] },
+      { word: 'Gato', translation: 'Gato', options: ['Gato', 'Rato', 'Leêo', 'Tigre'] },
       { word: 'Pájaro', translation: 'Pássaro', options: ['Cobra', 'Pássaro', 'Urso', 'Lobo'] }
     ],
     food: [
       { word: 'Agua', translation: 'Água', options: ['Leite', 'Suco', 'Água', 'Café'] },
-      { word: 'Pan', translation: 'Pão', options: ['Arroz', 'Pão', 'Carne', 'Fruta'] },
-      { word: 'Manzana', translation: 'Maçã', options: ['Banana', 'Laranja', 'Maçã', 'Uva'] }
+      { word: 'Pan', translation: 'Pêo', options: ['Arroz', 'Pêo', 'Carne', 'Fruta'] },
+      { word: 'Manzana', translation: 'Maçê', options: ['Banana', 'Laranja', 'Maçê', 'Uva'] }
     ]
   },
   2: { // French
@@ -140,7 +140,7 @@ const SHOP_ITEMS = [
   { id: 'xp_boost', name: 'Boost XP', desc: '+50% XP por 1h', cost: 500, gem: false },
   { id: 'hint', name: 'Pacote Dicas', desc: '10 dicas', cost: 300, gem: false },
   { id: 'outfit1', name: 'Roupa Premium', desc: 'Novo visual', cost: 25, gem: true },
-  { id: 'streak_freeze', name: 'Proteger Streak', desc: 'Não perde streak', cost: 15, gem: true },
+  { id: 'streak_freeze', name: 'Proteger Streak', desc: 'Nêo perde streak', cost: 15, gem: true },
   { id: 'unlock_lang', name: 'Desbloquear Idioma', desc: 'Acesso antecipado', cost: 50, gem: true }
 ];
 
@@ -445,7 +445,7 @@ function drawLesson() {
   ctx.fillStyle = '#fff';
   ctx.font = 'bold 18px Arial';
   ctx.textAlign = 'center';
-  ctx.fillText(`Lição ${currentLesson + 1} - ${lang.name}`, canvas.width / 2, 35);
+  ctx.fillText(`Liçêo ${currentLesson + 1} - ${lang.name}`, canvas.width / 2, 35);
 
   // Progress bar
   ctx.fillStyle = 'rgba(255,255,255,0.2)';
@@ -536,7 +536,7 @@ function drawLessonComplete() {
 
   ctx.fillStyle = '#fff';
   ctx.font = '24px Arial';
-  ctx.fillText(`Lição Completa!`, canvas.width / 2, canvas.height / 2 - 30);
+  ctx.fillText(`Liçêo Completa!`, canvas.width / 2, canvas.height / 2 - 30);
 
   const accuracy = Math.round((correctAnswers / lessonWords.length) * 100);
   ctx.font = '20px Arial';

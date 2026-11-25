@@ -1,4 +1,4 @@
-# Plano de Ação: 5 Jogos Arcade Avançados
+# Plano de Açêo: 5 Jogos Arcade Avançados
 
 > **Projeto:** EAI Games - Jogos Arcade para Adolescentes (10-16 anos)
 > **Data:** 30/12/2024
@@ -6,7 +6,7 @@
 
 ---
 
-## Visão Geral
+## Visêo Geral
 
 ### Jogos a Desenvolver
 
@@ -16,14 +16,14 @@
 | 2 | **Slither EAI** | Arcade .io | Média | 🔴 Crítica |
 | 3 | **Tower Defense EAI** | Estratégia | Alta | 🟡 Alta |
 | 4 | **HexRacer 3D** | Corrida/WebGL | Muito Alta | 🟡 Alta |
-| 5 | **Battle Royale 2D** | Ação/Sobrevivência | Alta | 🟢 Média |
+| 5 | **Battle Royale 2D** | Açêo/Sobrevivência | Alta | 🟢 Média |
 
 ### Padrões para Todos os Jogos
 
 - ✅ Responsivo (desktop + mobile)
 - ✅ Controles teclado + touch
-- ✅ Sistema de pontuação com highscore
-- ✅ Integração com sistema EAI (XP, moedas, conquistas)
+- ✅ Sistema de pontuaçêo com highscore
+- ✅ Integraçêo com sistema EAI (XP, moedas, conquistas)
 - ✅ Tela de pause e game over
 - ✅ Efeitos sonoros e música
 - ✅ Tutorial/instruções
@@ -33,16 +33,16 @@
 
 ## JOGO 1: Rhythm Battle 🎵
 
-### Descrição
+### Descriçêo
 Jogo de ritmo estilo Friday Night Funkin'/DDR onde o jogador deve pressionar as setas no tempo certo conforme a música toca.
 
 ### Funcionalidades
 
 #### Core
 - [ ] Sistema de setas (↑ ↓ ← →) sincronizadas com BPM
-- [ ] Detecção de timing (Perfect, Good, Miss)
+- [ ] Detecçêo de timing (Perfect, Good, Miss)
 - [ ] Barra de vida/combo
-- [ ] Sistema de pontuação com multiplicador
+- [ ] Sistema de pontuaçêo com multiplicador
 - [ ] Pelo menos 3 músicas com diferentes dificuldades
 
 #### Visual
@@ -73,10 +73,10 @@ Jogo de ritmo estilo Friday Night Funkin'/DDR onde o jogador deve pressionar as 
 [ ] 2. Mecânica de ritmo
     [ ] Parser de beatmap (JSON com timing das notas)
     [ ] Spawn de setas sincronizado
-    [ ] Detecção de colisão seta/zona de hit
+    [ ] Detecçêo de colisêo seta/zona de hit
     [ ] Cálculo de timing (±50ms Perfect, ±100ms Good)
 
-[ ] 3. Sistema de pontuação
+[ ] 3. Sistema de pontuaçêo
     [ ] Pontos por nota (Perfect=100, Good=50, Miss=0)
     [ ] Multiplicador de combo
     [ ] Barra de vida (Miss reduz, combo recupera)
@@ -89,22 +89,22 @@ Jogo de ritmo estilo Friday Night Funkin'/DDR onde o jogador deve pressionar as 
 
 [ ] 5. Áudio
     [ ] Integrar Web Audio API
-    [ ] Sincronização música/gameplay
+    [ ] Sincronizaçêo música/gameplay
     [ ] Efeitos sonoros
 
 [ ] 6. UI/UX
     [ ] Menu principal
-    [ ] Seleção de música/dificuldade
+    [ ] Seleçêo de música/dificuldade
     [ ] HUD (score, combo, vida)
     [ ] Tela de resultados
 
-[ ] 7. Integração EAI
+[ ] 7. Integraçêo EAI
     [ ] Recompensas por fase (XP, moedas)
     [ ] Conquistas específicas
     [ ] Salvar highscores
 ```
 
-### Critérios de Revisão
+### Critérios de Revisêo
 - [ ] Timing das notas está preciso?
 - [ ] Controles responsivos no mobile?
 - [ ] Áudio sincronizado sem delay?
@@ -115,7 +115,7 @@ Jogo de ritmo estilo Friday Night Funkin'/DDR onde o jogador deve pressionar as 
 
 ## JOGO 2: Slither EAI 🐍
 
-### Descrição
+### Descriçêo
 Jogo estilo Slither.io onde o jogador controla uma cobra que cresce ao comer orbes, competindo com outras cobras (IA).
 
 ### Funcionalidades
@@ -124,7 +124,7 @@ Jogo estilo Slither.io onde o jogador controla uma cobra que cresce ao comer orb
 - [ ] Cobra controlável que segue o mouse/touch
 - [ ] Orbes coloridos espalhados pelo mapa
 - [ ] Crescimento ao comer orbes
-- [ ] Colisão com outras cobras (game over)
+- [ ] Colisêo com outras cobras (game over)
 - [ ] Boost de velocidade (gasta tamanho)
 
 #### Visual
@@ -132,7 +132,7 @@ Jogo estilo Slither.io onde o jogador controla uma cobra que cresce ao comer orb
 - [ ] Skins diferentes para a cobra
 - [ ] Mapa grande com grid de fundo
 - [ ] Orbes brilhantes com cores variadas
-- [ ] Efeito de morte (explosão em orbes)
+- [ ] Efeito de morte (explosêo em orbes)
 
 #### IA
 - [ ] 10-20 cobras controladas por IA
@@ -161,12 +161,12 @@ Jogo estilo Slither.io onde o jogador controla uma cobra que cresce ao comer orb
 [ ] 3. Sistema de orbes
     [ ] Spawn aleatório de orbes
     [ ] Diferentes tamanhos/valores
-    [ ] Colisão cobra-orbe
+    [ ] Colisêo cobra-orbe
     [ ] Respawn contínuo
 
-[ ] 4. Sistema de colisão
-    [ ] Colisão cabeça-corpo (própria e outras)
-    [ ] Morte e explosão em orbes
+[ ] 4. Sistema de colisêo
+    [ ] Colisêo cabeça-corpo (própria e outras)
+    [ ] Morte e explosêo em orbes
     [ ] Bordas do mapa
 
 [ ] 5. Inteligência Artificial
@@ -174,10 +174,10 @@ Jogo estilo Slither.io onde o jogador controla uma cobra que cresce ao comer orb
     [ ] Estados: vagando, caçando, fugindo
     [ ] Spawn/respawn de cobras IA
 
-[ ] 6. Skins e personalização
+[ ] 6. Skins e personalizaçêo
     [ ] 5+ skins diferentes
     [ ] Desbloqueio com moedas EAI
-    [ ] Preview na seleção
+    [ ] Preview na seleçêo
 
 [ ] 7. UI/UX
     [ ] Minimap
@@ -185,13 +185,13 @@ Jogo estilo Slither.io onde o jogador controla uma cobra que cresce ao comer orb
     [ ] Tamanho atual
     [ ] Controles touch (joystick virtual)
 
-[ ] 8. Integração EAI
+[ ] 8. Integraçêo EAI
     [ ] XP baseado no tamanho máximo
     [ ] Moedas por orbes coletados
     [ ] Conquistas (maior cobra, sobreviver X min)
 ```
 
-### Critérios de Revisão
+### Critérios de Revisêo
 - [ ] Movimento da cobra é suave?
 - [ ] IA oferece desafio justo?
 - [ ] Performance com muitas cobras?
@@ -202,7 +202,7 @@ Jogo estilo Slither.io onde o jogador controla uma cobra que cresce ao comer orb
 
 ## JOGO 3: Tower Defense EAI 🏰
 
-### Descrição
+### Descriçêo
 Jogo de defesa de torre onde o jogador posiciona torres estrategicamente para impedir que inimigos cheguem ao objetivo.
 
 ### Funcionalidades
@@ -218,10 +218,10 @@ Jogo de defesa de torre onde o jogador posiciona torres estrategicamente para im
 | Torre | Dano | Alcance | Especial |
 |-------|------|---------|----------|
 | Arqueiro | Baixo | Médio | Rápido |
-| Canhão | Alto | Curto | Área |
+| Canhêo | Alto | Curto | Área |
 | Mago | Médio | Longo | Slow |
 | Tesla | Médio | Médio | Chain |
-| Bomba | Muito Alto | - | Explosão única |
+| Bomba | Muito Alto | - | Explosêo única |
 
 #### Inimigos
 | Inimigo | Vida | Velocidade | Especial |
@@ -249,7 +249,7 @@ Jogo de defesa de torre onde o jogador posiciona torres estrategicamente para im
     [ ] Base class Torre
     [ ] 5 tipos de torres
     [ ] Targeting (mais perto, mais forte, primeiro)
-    [ ] Animação de ataque
+    [ ] Animaçêo de ataque
     [ ] Sistema de upgrade (3 níveis)
 
 [ ] 3. Sistema de inimigos
@@ -260,8 +260,8 @@ Jogo de defesa de torre onde o jogador posiciona torres estrategicamente para im
     [ ] Drops (moedas do jogo)
 
 [ ] 4. Sistema de waves
-    [ ] Configuração de waves por JSON
-    [ ] Progressão de dificuldade
+    [ ] Configuraçêo de waves por JSON
+    [ ] Progressêo de dificuldade
     [ ] Wave boss a cada 5 rounds
     [ ] Intervalo entre waves
 
@@ -275,7 +275,7 @@ Jogo de defesa de torre onde o jogador posiciona torres estrategicamente para im
     [ ] Info de torre selecionada
     [ ] Indicador de wave atual
     [ ] Vidas restantes
-    [ ] Botão de acelerar/pausar
+    [ ] Botêo de acelerar/pausar
 
 [ ] 7. Efeitos e polish
     [ ] Projéteis animados
@@ -283,17 +283,17 @@ Jogo de defesa de torre onde o jogador posiciona torres estrategicamente para im
     [ ] Sons de ataque/morte
     [ ] Música de fundo
 
-[ ] 8. Integração EAI
+[ ] 8. Integraçêo EAI
     [ ] XP por wave completada
     [ ] Moedas EAI por vitória
     [ ] Conquistas (sem perder vida, etc)
     [ ] Desbloquear torres com moedas
 ```
 
-### Critérios de Revisão
+### Critérios de Revisêo
 - [ ] Balanceamento está divertido?
-- [ ] Torres são distintas e úteis?
-- [ ] Waves têm progressão justa?
+- [ ] Torres sêo distintas e úteis?
+- [ ] Waves têm progressêo justa?
 - [ ] Performance com muitos inimigos?
 - [ ] UI é intuitiva?
 
@@ -301,7 +301,7 @@ Jogo de defesa de torre onde o jogador posiciona torres estrategicamente para im
 
 ## JOGO 4: HexRacer 3D 🚀
 
-### Descrição
+### Descriçêo
 Jogo de corrida futurista 3D estilo F-Zero/Wipeout com naves em pistas neon.
 
 ### Funcionalidades
@@ -315,7 +315,7 @@ Jogo de corrida futurista 3D estilo F-Zero/Wipeout com naves em pistas neon.
 
 #### Visual (WebGL/Three.js)
 - [ ] Modelos 3D low-poly
-- [ ] Iluminação neon/cyberpunk
+- [ ] Iluminaçêo neon/cyberpunk
 - [ ] Efeitos de velocidade (motion blur, trails)
 - [ ] Skybox futurista
 
@@ -330,14 +330,14 @@ Jogo de corrida futurista 3D estilo F-Zero/Wipeout com naves em pistas neon.
 ```
 [ ] 1. Setup Three.js
     [ ] Cena, câmera, renderer
-    [ ] Iluminação básica
+    [ ] Iluminaçêo básica
     [ ] Controles orbitais (dev)
 
 [ ] 2. Nave do jogador
     [ ] Modelo 3D da nave
     [ ] Física de movimento
     [ ] Controles (WASD + setas)
-    [ ] Inclinação visual nas curvas
+    [ ] Inclinaçêo visual nas curvas
 
 [ ] 3. Pista
     [ ] Geometria da pista
@@ -345,9 +345,9 @@ Jogo de corrida futurista 3D estilo F-Zero/Wipeout com naves em pistas neon.
     [ ] Checkpoints
     [ ] Linha de chegada
 
-[ ] 4. Física e colisão
-    [ ] Colisão nave-parede
-    [ ] Detecção de saída da pista
+[ ] 4. Física e colisêo
+    [ ] Colisêo nave-parede
+    [ ] Detecçêo de saída da pista
     [ ] Respawn em checkpoint
 
 [ ] 5. Gameplay
@@ -358,7 +358,7 @@ Jogo de corrida futurista 3D estilo F-Zero/Wipeout com naves em pistas neon.
 
 [ ] 6. Power-ups
     [ ] Boost (velocidade extra)
-    [ ] Escudo (1 colisão grátis)
+    [ ] Escudo (1 colisêo grátis)
     [ ] Slow-mo (tempo lento)
 
 [ ] 7. Visual polish
@@ -367,25 +367,25 @@ Jogo de corrida futurista 3D estilo F-Zero/Wipeout com naves em pistas neon.
     [ ] Post-processing (bloom, etc)
     [ ] Música eletrônica
 
-[ ] 8. Integração EAI
+[ ] 8. Integraçêo EAI
     [ ] XP por corrida completada
-    [ ] Moedas por posição/tempo
+    [ ] Moedas por posiçêo/tempo
     [ ] Conquistas (recorde, sem bater)
     [ ] Skins de nave desbloqueáveis
 ```
 
-### Critérios de Revisão
+### Critérios de Revisêo
 - [ ] Performance 60fps estável?
 - [ ] Controles precisos e divertidos?
 - [ ] Visual impressionante?
 - [ ] Funciona em mobile? (pode ser só desktop)
-- [ ] Pistas são interessantes?
+- [ ] Pistas sêo interessantes?
 
 ---
 
 ## JOGO 5: Battle Royale 2D ⚔️
 
-### Descrição
+### Descriçêo
 Jogo battle royale 2D top-down onde jogadores coletam armas e lutam para ser o último sobrevivente.
 
 ### Funcionalidades
@@ -459,18 +459,18 @@ Jogo battle royale 2D top-down onde jogadores coletam armas e lutam para ser o �
     [ ] Indicador de dano
     [ ] Música tensa
 
-[ ] 8. Integração EAI
+[ ] 8. Integraçêo EAI
     [ ] XP por kill e placement
     [ ] Moedas por vitória
     [ ] Conquistas (win, kills)
     [ ] Skins de personagem
 ```
 
-### Critérios de Revisão
+### Critérios de Revisêo
 - [ ] IA oferece desafio justo?
-- [ ] Armas são balanceadas?
+- [ ] Armas sêo balanceadas?
 - [ ] Zona fecha em ritmo bom?
-- [ ] Partidas têm duração ideal?
+- [ ] Partidas têm duraçêo ideal?
 - [ ] Performance com 20 entidades?
 
 ---
@@ -503,29 +503,29 @@ Jogo battle royale 2D top-down onde jogadores coletam armas e lutam para ser o �
 │ - UI/UX refinada                                        │
 │ - Balanceamento                                         │
 ├─────────────────────────────────────────────────────────┤
-│ FASE 3: Integração                                      │
+│ FASE 3: Integraçêo                                      │
 │ - Conectar sistema EAI (XP, moedas)                     │
 │ - Adicionar conquistas                                  │
 │ - Salvar progresso                                      │
-│ - Testar integração                                     │
+│ - Testar integraçêo                                     │
 ├─────────────────────────────────────────────────────────┤
-│ FASE 4: Revisão                                         │
+│ FASE 4: Revisêo                                         │
 │ - Testes em diferentes dispositivos                     │
-│ - Correção de bugs                                      │
-│ - Otimização de performance                             │
-│ - Validação com usuários                                │
+│ - Correçêo de bugs                                      │
+│ - Otimizaçêo de performance                             │
+│ - Validaçêo com usuários                                │
 ├─────────────────────────────────────────────────────────┤
 │ FASE 5: Deploy                                          │
-│ - Build de produção                                     │
+│ - Build de produçêo                                     │
 │ - Adicionar à página /arcade                            │
-│ - Criar thumbnail e descrição                           │
+│ - Criar thumbnail e descriçêo                           │
 │ - Commit e deploy                                       │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Checklist Geral de Revisão
+## Checklist Geral de Revisêo
 
 ### Para Cada Jogo Completado
 
@@ -533,7 +533,7 @@ Jogo battle royale 2D top-down onde jogadores coletam armas e lutam para ser o �
 - [ ] Todas as features implementadas
 - [ ] Sem bugs críticos
 - [ ] Salva progresso corretamente
-- [ ] Integração EAI funcionando
+- [ ] Integraçêo EAI funcionando
 
 #### Performance
 - [ ] 60fps no desktop

@@ -1,5 +1,5 @@
 // Anime Hero Arena - EAI Games
-// Jogo de coleção e batalha de heróis anime para adolescentes
+// Jogo de coleçêo e batalha de heróis anime para adolescentes
 
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
@@ -27,10 +27,10 @@ class AnimeHeroArena {
     this.tutorialPage = 0;
     this.tutorialPages = [
       { title: 'Bem-vindo à Arena!', lines: ['Monte seu time de heróis', 'e domine as batalhas!'], emoji: '⚔️' },
-      { title: 'Invocação', lines: ['Use gemas para invocar', 'heróis poderosos!'], emoji: '✨' },
+      { title: 'Invocaçêo', lines: ['Use gemas para invocar', 'heróis poderosos!'], emoji: '✨' },
       { title: 'Raridades', lines: ['Comum, Raro, Épico, Lendário', 'e Mítico - colete todos!'], emoji: '🌟' },
       { title: 'Batalhas PvE', lines: ['Complete missões e campanhas', 'para ganhar recompensas!'], emoji: '🎯' },
-      { title: 'Evolução', lines: ['Fortaleça seus heróis', 'e desbloqueie habilidades!'], emoji: '⬆️' }
+      { title: 'Evoluçêo', lines: ['Fortaleça seus heróis', 'e desbloqueie habilidades!'], emoji: '⬆️' }
     ];
 
     // Heroes database
@@ -46,9 +46,9 @@ class AnimeHeroArena {
       { id: 'witch', name: 'Bruxa', emoji: '🧙‍♀️', rarity: 'rare', element: 'magic', baseHP: 75, baseATK: 40, baseDEF: 10 },
       { id: 'priest', name: 'Sacerdote', emoji: '✝️', rarity: 'rare', element: 'holy', baseHP: 100, baseATK: 20, baseDEF: 15 },
       // Epic
-      { id: 'dragon_knight', name: 'Cavaleiro Dragão', emoji: '🐉', rarity: 'epic', element: 'fire', baseHP: 140, baseATK: 45, baseDEF: 25 },
+      { id: 'dragon_knight', name: 'Cavaleiro Dragêo', emoji: '🐉', rarity: 'epic', element: 'fire', baseHP: 140, baseATK: 45, baseDEF: 25 },
       { id: 'ice_queen', name: 'Rainha do Gelo', emoji: '❄️', rarity: 'epic', element: 'ice', baseHP: 100, baseATK: 55, baseDEF: 18 },
-      { id: 'thunder_god', name: 'Deus Trovão', emoji: '⚡', rarity: 'epic', element: 'lightning', baseHP: 120, baseATK: 50, baseDEF: 20 },
+      { id: 'thunder_god', name: 'Deus Trovêo', emoji: '⚡', rarity: 'epic', element: 'lightning', baseHP: 120, baseATK: 50, baseDEF: 20 },
       { id: 'shadow_assassin', name: 'Assassino Sombrio', emoji: '🌑', rarity: 'epic', element: 'shadow', baseHP: 90, baseATK: 65, baseDEF: 12 },
       // Legendary
       { id: 'phoenix', name: 'Fênix', emoji: '🔥', rarity: 'legendary', element: 'fire', baseHP: 180, baseATK: 70, baseDEF: 30 },
@@ -57,7 +57,7 @@ class AnimeHeroArena {
       { id: 'time_wizard', name: 'Mago do Tempo', emoji: '⏰', rarity: 'legendary', element: 'magic', baseHP: 150, baseATK: 75, baseDEF: 28 },
       // Mythic
       { id: 'god_slayer', name: 'Matador de Deuses', emoji: '⚔️', rarity: 'mythic', element: 'physical', baseHP: 250, baseATK: 100, baseDEF: 40 },
-      { id: 'cosmic_dragon', name: 'Dragão Cósmico', emoji: '🌌', rarity: 'mythic', element: 'cosmic', baseHP: 280, baseATK: 90, baseDEF: 45 }
+      { id: 'cosmic_dragon', name: 'Dragêo Cósmico', emoji: '🌌', rarity: 'mythic', element: 'cosmic', baseHP: 280, baseATK: 90, baseDEF: 45 }
     ];
 
     this.rarityColors = {
@@ -85,7 +85,7 @@ class AnimeHeroArena {
     // Campaign
     this.campaigns = [
       { id: 'forest', name: 'Floresta Sombria', emoji: '🌲', stages: 10, cleared: 0 },
-      { id: 'volcano', name: 'Vulcão Infernal', emoji: '🌋', stages: 10, cleared: 0 },
+      { id: 'volcano', name: 'Vulcêo Infernal', emoji: '🌋', stages: 10, cleared: 0 },
       { id: 'ice', name: 'Reino do Gelo', emoji: '🏔️', stages: 10, cleared: 0 },
       { id: 'sky', name: 'Fortaleza Celeste', emoji: '☁️', stages: 10, cleared: 0 },
       { id: 'abyss', name: 'Abismo Eterno', emoji: '🕳️', stages: 10, cleared: 0 }
@@ -113,7 +113,7 @@ class AnimeHeroArena {
 
     // Achievements
     this.achievements = [
-      { id: 'first_summon', name: 'Primeiro Invocador', desc: 'Faça sua primeira invocação', icon: '✨', unlocked: false },
+      { id: 'first_summon', name: 'Primeiro Invocador', desc: 'Faça sua primeira invocaçêo', icon: '✨', unlocked: false },
       { id: 'hero_10', name: 'Colecionador', desc: 'Colete 10 heróis', icon: '👥', unlocked: false },
       { id: 'legendary', name: 'Sortudo', desc: 'Obtenha um herói lendário', icon: '🌟', unlocked: false },
       { id: 'mythic', name: 'Escolhido', desc: 'Obtenha um herói mítico', icon: '🌌', unlocked: false },
@@ -874,7 +874,7 @@ class AnimeHeroArena {
 
     // Buttons
     const buttons = [
-      { text: '✨ Invocação', y: h/2 - 60 },
+      { text: '✨ Invocaçêo', y: h/2 - 60 },
       { text: '🗺️ Campanha', y: h/2 },
       { text: '👥 Heróis', y: h/2 + 60 },
       { text: '⚔️ Time', y: h/2 + 120 },
@@ -909,7 +909,7 @@ class AnimeHeroArena {
     ctx.font = 'bold 28px Arial';
     ctx.textAlign = 'center';
     ctx.fillStyle = '#ff6b6b';
-    ctx.fillText('✨ INVOCAÇÃO ✨', w/2, 70);
+    ctx.fillText('✨ INVOCAÇêO ✨', w/2, 70);
 
     ctx.font = '16px Arial';
     ctx.fillStyle = '#ffd700';
@@ -940,14 +940,14 @@ class AnimeHeroArena {
     ctx.fill();
     ctx.fillStyle = '#fff';
     ctx.font = 'bold 14px Arial';
-    ctx.fillText('💎100 - 1x Invocação', w/2 - 100, h - 88);
+    ctx.fillText('💎100 - 1x Invocaçêo', w/2 - 100, h - 88);
 
     ctx.fillStyle = this.diamonds >= 900 ? '#a4a' : '#444';
     ctx.beginPath();
     ctx.roundRect(w/2 + 20, h - 120, 160, 50, 10);
     ctx.fill();
     ctx.fillStyle = '#fff';
-    ctx.fillText('💎900 - 10x Invocação', w/2 + 100, h - 88);
+    ctx.fillText('💎900 - 10x Invocaçêo', w/2 + 100, h - 88);
 
     // Floating crystals animation
     const time = Date.now() / 1000;
@@ -1040,7 +1040,7 @@ class AnimeHeroArena {
     if (this.myHeroes.length === 0) {
       ctx.fillStyle = '#666';
       ctx.font = '18px Arial';
-      ctx.fillText('Nenhum herói ainda. Faça uma invocação!', w/2, h/2);
+      ctx.fillText('Nenhum herói ainda. Faça uma invocaçêo!', w/2, h/2);
       return;
     }
 

@@ -29,7 +29,7 @@ export default function ProfissionalPage() {
           </h1>
 
           <p className="text-lg text-white/60 mb-10 max-w-lg mx-auto">
-            Evolua sua carreira com cursos gamificados! Programação, soft skills,
+            Evolua sua carreira com cursos gamificados! Programaçêo, soft skills,
             certificações e muito mais - tudo de forma envolvente e prática.
           </p>
 

@@ -7,7 +7,7 @@ import { GameGrid } from '@/components/games';
 import { arcadeGames } from '@/data/arcade-games';
 import { educationalGames } from '@/data/educational-games';
 
-// Todos os jogos combinados (todos são EAI)
+// Todos os jogos combinados (todos sêo EAI)
 const allGames = [...arcadeGames, ...educationalGames];
 
 type FilterType = 'todos' | 'arcade' | 'educacional';
@@ -162,7 +162,7 @@ export default function JogosPage() {
               Nenhum jogo encontrado
             </h2>
             <p className="text-white/50 max-w-md mx-auto">
-              Não encontramos jogos com o filtro selecionado.
+              Nêo encontramos jogos com o filtro selecionado.
             </p>
           </div>
         )}

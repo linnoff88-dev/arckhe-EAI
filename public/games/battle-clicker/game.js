@@ -47,7 +47,7 @@ class BattleClickerGame {
       { id: 'mage', name: 'Mago', emoji: '🧙', dps: 8, cost: 500, level: 0, unlocked: false, reqZone: 3 },
       { id: 'knight', name: 'Cavaleiro', emoji: '🛡️', dps: 20, cost: 1500, level: 0, unlocked: false, reqZone: 5 },
       { id: 'ninja', name: 'Ninja', emoji: '🥷', dps: 50, cost: 5000, level: 0, unlocked: false, reqZone: 8 },
-      { id: 'dragon', name: 'Dragão', emoji: '🐉', dps: 150, cost: 20000, level: 0, unlocked: false, reqZone: 12 },
+      { id: 'dragon', name: 'Dragêo', emoji: '🐉', dps: 150, cost: 20000, level: 0, unlocked: false, reqZone: 12 },
       { id: 'angel', name: 'Anjo', emoji: '👼', dps: 500, cost: 100000, level: 0, unlocked: false, reqZone: 15 },
       { id: 'demon', name: 'Demônio', emoji: '😈', dps: 2000, cost: 500000, level: 0, unlocked: false, reqZone: 20 }
     ];
@@ -67,7 +67,7 @@ class BattleClickerGame {
       { id: 'rage', name: 'Fúria', desc: '2x dano por 30s', emoji: '🔥', cooldown: 120, duration: 30, active: false, timer: 0, unlocked: true },
       { id: 'gold_rush', name: 'Corrida do Ouro', desc: '3x ouro por 30s', emoji: '💰', cooldown: 180, duration: 30, active: false, timer: 0, unlocked: false, reqZone: 5 },
       { id: 'mega_crit', name: 'Mega Crítico', desc: '100% crítico por 15s', emoji: '⚡', cooldown: 240, duration: 15, active: false, timer: 0, unlocked: false, reqZone: 10 },
-      { id: 'time_warp', name: 'Distorção', desc: 'DPS 10x por 10s', emoji: '⏰', cooldown: 300, duration: 10, active: false, timer: 0, unlocked: false, reqZone: 15 }
+      { id: 'time_warp', name: 'Distorçêo', desc: 'DPS 10x por 10s', emoji: '⏰', cooldown: 300, duration: 10, active: false, timer: 0, unlocked: false, reqZone: 15 }
     ];
     this.loadSkills();
 
@@ -99,7 +99,7 @@ class BattleClickerGame {
       { title: 'Batalha!', lines: ['Clique no inimigo para atacar!', 'Cada clique causa dano!', 'Derrote inimigos para ganhar ouro!'], emoji: '⚔️' },
       { title: 'Heróis', lines: ['Contrate heróis para dano automático!', 'Eles atacam mesmo sem clicar!', 'Melhore-os para mais DPS!'], emoji: '🦸' },
       { title: 'Upgrades', lines: ['Aumente seu dano de clique!', 'Melhore chance de crítico!', 'Ganhe mais ouro por inimigo!'], emoji: '⬆️' },
-      { title: 'Chefes', lines: ['A cada 10 inimigos, um chefe aparece!', 'Chefes são mais fortes mas dão mais recompensas!', 'Derrote-os para avançar de zona!'], emoji: '👹' }
+      { title: 'Chefes', lines: ['A cada 10 inimigos, um chefe aparece!', 'Chefes sêo mais fortes mas dêo mais recompensas!', 'Derrote-os para avançar de zona!'], emoji: '👹' }
     ];
 
     // Controles
@@ -127,7 +127,7 @@ class BattleClickerGame {
       { name: 'Caverna', enemies: ['🦇', '🕷️', '🐍', '🦎'], boss: '🐲', color: '#4A4A4A' },
       { name: 'Deserto', enemies: ['🦂', '🐪', '🏜️', '🦅'], boss: '🐊', color: '#C19A6B' },
       { name: 'Neve', enemies: ['🐧', '🦭', '❄️', '🐺'], boss: '🐻‍❄️', color: '#87CEEB' },
-      { name: 'Vulcão', enemies: ['🔥', '🐉', '👹', '😈'], boss: '🌋', color: '#8B0000' }
+      { name: 'Vulcêo', enemies: ['🔥', '🐉', '👹', '😈'], boss: '🌋', color: '#8B0000' }
     ];
 
     const zoneIndex = (this.currentZone - 1) % zones.length;
@@ -221,7 +221,7 @@ class BattleClickerGame {
       this.addNotification(`+${goldGained}g`, this.canvas.width / 2, this.canvas.height / 2 + 50);
     }
 
-    // Explosão de partículas
+    // Explosêo de partículas
     for (let i = 0; i < 20; i++) {
       const angle = (Math.PI * 2 * i) / 20;
       this.particles.push({
@@ -717,7 +717,7 @@ class BattleClickerGame {
     // Skills (na parte inferior)
     this.drawSkillBar();
 
-    // Botão menu
+    // Botêo menu
     this.ctx.fillStyle = 'rgba(244, 67, 54, 0.8)';
     this.ctx.beginPath();
     this.ctx.roundRect(this.canvas.width - 70, 10, 60, 35, 8);
@@ -937,7 +937,7 @@ class BattleClickerGame {
       this.ctx.fillText(skill.desc, 100, y + 55);
 
       this.ctx.fillStyle = skill.unlocked ? '#4CAF50' : '#555';
-      this.ctx.fillText(`Duração: ${skill.duration}s | Cooldown: ${skill.cooldown}s`, 100, y + 80);
+      this.ctx.fillText(`Duraçêo: ${skill.duration}s | Cooldown: ${skill.cooldown}s`, 100, y + 80);
 
       if (!skill.unlocked) {
         this.ctx.font = '14px Arial';
@@ -1047,7 +1047,7 @@ class BattleClickerGame {
       this.ctx.fill();
     }
 
-    // Botão
+    // Botêo
     const btnWidth = 200;
     const btnHeight = 50;
     const btnX = cx - btnWidth / 2;
@@ -1088,7 +1088,7 @@ class BattleClickerGame {
       });
 
     } else if (this.state === 'battle') {
-      // Botão menu
+      // Botêo menu
       if (x > this.canvas.width - 70 && y < 45) {
         this.state = 'menu';
         return;
@@ -1118,7 +1118,7 @@ class BattleClickerGame {
       this.handleHeroesClick(x, y);
     }
 
-    // Botão voltar
+    // Botêo voltar
     if (this.state === 'shop' || this.state === 'heroes' || this.state === 'skills' || this.state === 'achievements') {
       const btnY = this.canvas.height - 65;
       if (y > btnY && y < btnY + 45 && x > cx - 60 && x < cx + 60) {

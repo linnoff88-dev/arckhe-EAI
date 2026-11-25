@@ -16,7 +16,7 @@ class CandyLandRush {
       { title: 'Como Jogar', lines: ['Troque doces adjacentes', 'para formar linhas de 3+', 'doces iguais!'], emoji: '🎮' },
       { title: 'Combos', lines: ['3 em linha = pontos normais', '4 em linha = doce especial!', '5 em linha = bomba arco-íris!'], emoji: '💥' },
       { title: 'Power-ups', lines: ['🔥 Queima uma linha', '💣 Explode área 3x3', '🌈 Remove cor inteira'], emoji: '✨' },
-      { title: 'Objetivos', lines: ['Complete objetivos do nível', 'Colete doces específicos', 'ou alcance pontuação!'], emoji: '🎯' },
+      { title: 'Objetivos', lines: ['Complete objetivos do nível', 'Colete doces específicos', 'ou alcance pontuaçêo!'], emoji: '🎯' },
       { title: 'Vamos Jogar!', lines: ['50 níveis deliciosos', 'te esperam!', 'Boa sorte!'], emoji: '🍭' }
     ];
 
@@ -81,7 +81,7 @@ class CandyLandRush {
     this.themes = [
       { name: 'Clássico', bg1: '#ff9a9e', bg2: '#ff6b9d', unlockLevel: 1 },
       { name: 'Chocolate', bg1: '#8B4513', bg2: '#5D3A1A', unlockLevel: 10 },
-      { name: 'Algodão Doce', bg1: '#ffafcc', bg2: '#bde0fe', unlockLevel: 20 },
+      { name: 'Algodêo Doce', bg1: '#ffafcc', bg2: '#bde0fe', unlockLevel: 20 },
       { name: 'Menta', bg1: '#40916c', bg2: '#1b4332', unlockLevel: 30 },
       { name: 'Arco-íris', bg1: '#ff0000', bg2: '#0000ff', unlockLevel: 40 }
     ];
@@ -89,12 +89,12 @@ class CandyLandRush {
 
     // Achievements
     this.achievements = [
-      { id: 'first_match', name: 'Primeira Combinação', desc: 'Faça sua primeira combinação', icon: '🍬', unlocked: false },
+      { id: 'first_match', name: 'Primeira Combinaçêo', desc: 'Faça sua primeira combinaçêo', icon: '🍬', unlocked: false },
       { id: 'combo_master', name: 'Mestre do Combo', desc: 'Faça um combo de 5x', icon: '🔥', unlocked: false },
       { id: 'level_10', name: 'Explorador', desc: 'Complete 10 níveis', icon: '🌟', unlocked: false },
       { id: 'level_25', name: 'Aventureiro', desc: 'Complete 25 níveis', icon: '⭐', unlocked: false },
       { id: 'level_50', name: 'Mestre dos Doces', desc: 'Complete todos os 50 níveis', icon: '👑', unlocked: false },
-      { id: 'high_score', name: 'Pontuação Alta', desc: 'Alcance 50000 pontos em um nível', icon: '💎', unlocked: false },
+      { id: 'high_score', name: 'Pontuaçêo Alta', desc: 'Alcance 50000 pontos em um nível', icon: '💎', unlocked: false },
       { id: 'rainbow', name: 'Arco-íris', desc: 'Crie um doce arco-íris', icon: '🌈', unlocked: false },
       { id: 'collector', name: 'Colecionador', desc: 'Acumule 10000 moedas', icon: '💰', unlocked: false }
     ];
@@ -1220,7 +1220,7 @@ class CandyLandRush {
 
     ctx.fillStyle = '#fff';
     ctx.font = '18px Arial';
-    ctx.fillText(`Pontuação: ${this.levelScore}`, w/2, h/2 + 20);
+    ctx.fillText(`Pontuaçêo: ${this.levelScore}`, w/2, h/2 + 20);
     ctx.fillText(`Moedas: +${50 * stars + this.currentLevel * 10}`, w/2, h/2 + 50);
 
     ctx.fillStyle = '#c44569';
@@ -1250,7 +1250,7 @@ class CandyLandRush {
 
     ctx.fillStyle = '#fff';
     ctx.font = '16px Arial';
-    ctx.fillText(`Pontuação: ${this.levelScore}/${this.levelTarget}`, w/2, h/2 + 30);
+    ctx.fillText(`Pontuaçêo: ${this.levelScore}/${this.levelTarget}`, w/2, h/2 + 30);
 
     ctx.fillStyle = '#c44569';
     ctx.fillRect(w/2 - 100, h/2 + 50, 200, 50);

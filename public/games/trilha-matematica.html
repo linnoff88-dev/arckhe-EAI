@@ -521,7 +521,7 @@
             </div>
             <div class="stat">
                 <div class="stat-value" id="position">1</div>
-                <div class="stat-label">Posição</div>
+                <div class="stat-label">Posiçêo</div>
             </div>
             <div class="stat">
                 <div class="stat-value" id="correct">0</div>
@@ -539,7 +539,7 @@
 
             <button class="level-btn easy" onclick="startGame('easy')">
                 🌟 Fácil
-                <small>Soma e subtração até 20 (1º ano)</small>
+                <small>Soma e subtraçêo até 20 (1º ano)</small>
             </button>
 
             <button class="level-btn medium" onclick="startGame('medium')">
@@ -549,7 +549,7 @@
 
             <button class="level-btn hard" onclick="startGame('hard')">
                 💫 Difícil
-                <small>Multiplicação incluída (3º ano)</small>
+                <small>Multiplicaçêo incluída (3º ano)</small>
             </button>
 
             <div class="medals-container" style="margin-top: 30px;">
@@ -598,7 +598,7 @@
 
             <!-- Challenge -->
             <div class="challenge" id="challenge">
-                <div class="challenge-type" id="challengeType">Adição</div>
+                <div class="challenge-type" id="challengeType">Adiçêo</div>
                 <div class="challenge-question" id="challengeQuestion">5 + 3 = ?</div>
                 <div class="challenge-options" id="challengeOptions">
                     <!-- Options will be generated -->
@@ -947,8 +947,8 @@
             const problem = generateProblem();
 
             document.getElementById('challengeType').textContent =
-                problem.type === 'addition' ? 'Adição' :
-                (problem.type === 'subtraction' ? 'Subtração' : 'Multiplicação');
+                problem.type === 'addition' ? 'Adiçêo' :
+                (problem.type === 'subtraction' ? 'Subtraçêo' : 'Multiplicaçêo');
             document.getElementById('challengeType').className = `challenge-type ${problem.type}`;
             document.getElementById('challengeQuestion').textContent = problem.question;
 

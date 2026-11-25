@@ -262,7 +262,7 @@ export default async function PlanoAulaDetailPage({
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-500/20">
                   <Brain className="h-5 w-5 text-purple-400" />
                 </div>
-                <h2 className="font-display text-xl font-bold text-white">Avaliação</h2>
+                <h2 className="font-display text-xl font-bold text-white">Avaliaçêo</h2>
               </div>
               <ul className="space-y-3">
                 {plan.assessment.map((item, index) => (
@@ -316,7 +316,7 @@ export default async function PlanoAulaDetailPage({
               <div className="rounded-2xl bg-white/5 border border-white/10 p-4">
                 <div className="flex items-center gap-2 mb-3">
                   <Sparkles className="h-4 w-4 text-cyan-400" />
-                  <h3 className="font-semibold text-white">Extensões / Lição de Casa</h3>
+                  <h3 className="font-semibold text-white">Extensões / Liçêo de Casa</h3>
                 </div>
                 <ul className="space-y-2">
                   {plan.extensions.map((extension, index) => (
